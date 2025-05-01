@@ -5,19 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    // Input
+    [Header("Input")]
+    [SerializeField] private InteractionDetector interactionDetector;
     private InputAction move;
 
-    // Movement
+    [Header("Movement")]
     [SerializeField] private float moveSpeed;
     private Rigidbody2D rb;
-
-    // !THIS IS TEMPORARY. I just need to create an interaction system first.
-    public UnityEvent interacted;
 
 
     private void Awake()
     {
+        // Get component references
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -42,6 +41,6 @@ public class PlayerController : MonoBehaviour
     private void DoInteract(InputAction.CallbackContext context)
     {
         Debug.Log("Interact");
-        interacted?.Invoke();
+        interactionDetector.OnInteract();
     }
 }
