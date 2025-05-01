@@ -11,6 +11,7 @@ using System.Collections.Generic;
 // DONE: Create scriptable objects from csv/tsv files
 // DONE: Automaticly add portraits to scriptable object based on the name. (Just needs the names and character portraits)
 // FIXED: Dialogue objects are removed form game objects when generating new dialogue, even if the objects hasn't been changed
+// TODO: Add support for creating and saving DialogueObjects into subfolders by adding a "/" in the file name/ID (ex. Lab/lab_banter_01, Lab/lab_banter_02)
 
 public class TsvToSo
 {
