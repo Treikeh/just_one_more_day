@@ -1,12 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
+// TODO: Find a way to send messages between the dialogue manager and ui without using code
+// TODO: Find a better place to handle InputActionMap switching. The ui SHOULD NOT be responsible for swithcing inputs (I belive)
+// I could handle the InputActionMap switching in the DialogueManager, but connecting manager scripts together sonuds like a nightmare waiting to happen.
 
 public class DialogueUi : MonoBehaviour
 {
-    // TODO: Find a way to send messages between the dialogue manager and ui without using code
     // Time (in seconds) it takes for a new letter to appear
     [SerializeField] private float textSpeed = 0.05f;
     [SerializeField] private Image characterPortrait;
@@ -15,21 +18,26 @@ public class DialogueUi : MonoBehaviour
     [SerializeField] private Animator animator;
 
 
+    // Subscribe to events
     private void OnEnable()
     {
         DialogueManager.Instance.updateUi += UpdateDialougeUi;
         DialogueManager.Instance.dialogueFinished += EndDialogue;
+        InputManager.Instance.inputActions.Ui.Advance.performed += ShowNextSentence;
     }
 
+    // Unsubscribe from events
     private void OnDisable()
     {
         DialogueManager.Instance.updateUi -= UpdateDialougeUi;
         DialogueManager.Instance.dialogueFinished -= EndDialogue;
+        InputManager.Instance.inputActions.Ui.Advance.performed -= ShowNextSentence;
     }
 
     private void UpdateDialougeUi(DialogueObject dialogue, int sentence)
     {
         animator.SetBool("IsOpen", true);
+        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Ui);
         // Clear Text
         dialogueSentence.text = string.Empty;
         StopAllCoroutines();
@@ -46,7 +54,7 @@ public class DialogueUi : MonoBehaviour
     }
 
 
-    public void ShowNextSentence()
+    public void ShowNextSentence(InputAction.CallbackContext context)
     {
         DialogueManager.Instance.GetNextSentence();
     }
@@ -68,5 +76,6 @@ public class DialogueUi : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         animator.SetBool("IsOpen", false);
+        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
     }
 }
