@@ -1,0 +1,8 @@
+ID	Speaker/Name	Dialogue		 Use " | " to define different sentences in the same dialogue cell (It's importat that there's a space before and after the "|")
+placeholder_1_test	Placeholder_1	This is the first sentence | This is the second sentence | A third sentence		To type | you have to press the button below ESC
+placeholder_2_test	Placeholder_2	A new person appears | Now with more than one sentence | Isn't that amazing!?		To use it in Unity you have to Download this sheet as a .tsv. Then you have to replace the file that's allready in the editor
+plceholder_dialogue_event_01	Placeholder_1	You see that green box over there?		The ID is also the File name the object will be saved as
+plceholder_dialogue_event_02	Placeholder_2	Yes?		
+plceholder_dialogue_event_03	Placeholder_1	Well it's red now		
+plceholder_dialogue_event_04	Placeholder_2	What!? | How?		
+plceholder_dialogue_event_05	Placeholder_1	Magic | And {Insert praise for programmer} | But mostly magic		
