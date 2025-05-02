@@ -50,6 +50,13 @@ public class DialogueManager : MonoBehaviour
     // Should move the updateUi action out of this function or rename the function to be more descriptive of what it actually does.
     public void GetNextSentence()
     {
+        // !WHY DID I DO THIS!?!?!?!?!
+        // Stop null reference error when there's no more dialogue
+        if (currentDialogue > dialogueList.Count - 1)
+        {
+            Debug.Log("No More Dialogue");
+            return;
+        }
         // Get the next sentence in the list
         currentSentence++;
 

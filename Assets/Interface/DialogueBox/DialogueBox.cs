@@ -8,7 +8,7 @@ using UnityEngine.UI;
 // TODO: Find a better place to handle InputActionMap switching. The ui SHOULD NOT be responsible for swithcing inputs (I belive)
 // I could handle the InputActionMap switching in the DialogueManager, but connecting manager scripts together sonuds like a nightmare waiting to happen.
 
-public class DialogueUi : MonoBehaviour
+public class DialogueBox : MonoBehaviour
 {
     // Time (in seconds) it takes for a new letter to appear
     [SerializeField] private float textSpeed = 0.05f;
@@ -74,7 +74,7 @@ public class DialogueUi : MonoBehaviour
     // Invoke(function, time) could also be used to hide it with a delay, but then we wouldn't be able to stop it from hiding when starting a new dialogue.
     private IEnumerator ColseDialogueWindowDelay()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         animator.SetBool("IsOpen", false);
         InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
     }
