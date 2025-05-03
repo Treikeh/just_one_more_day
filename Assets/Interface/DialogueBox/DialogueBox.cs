@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-// TODO: Find a way to send messages between the dialogue manager and ui without using code
-// TODO: Find a better place to handle InputActionMap switching. The ui SHOULD NOT be responsible for swithcing inputs (I belive)
-// I could handle the InputActionMap switching in the DialogueManager, but connecting manager scripts together sonuds like a nightmare waiting to happen.
+// *This class is a bit messy and should be refactored. It does its job well, but there are parts that could be better
+// // TODO: Find a way to send messages between the dialogue manager and ui without using code
+// TODO: Find a better place to handle InputActionMap switching. I don't think the ui should be responsible for swithcing inputs
+// // I could handle the InputActionMap switching in the DialogueManager, but connecting manager scripts together sonuds like a nightmare waiting to happen.
 
 public class DialogueBox : MonoBehaviour
 {
@@ -17,49 +21,109 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private TMP_Text dialogueSentence;
     [SerializeField] private Animator animator;
 
+    private int currentDialogue = 0;
+    // Starts as -1 since it would skip over the first sentence if it was 0
+    private int currentSentence = -1;
+    private List<DialogueObject> dialogueList;
+    // Reference to the DialogueTriggers dialogueFinishedEvent
+    private UnityEvent dialogueTriggerEvent;
+    private Coroutine sentenceAnimation;
+
 
     // Subscribe to events
     private void OnEnable()
     {
-        DialogueManager.Instance.updateUi += UpdateDialougeUi;
-        DialogueManager.Instance.dialogueFinished += EndDialogue;
-        InputManager.Instance.inputActions.Ui.Advance.performed += ShowNextSentence;
+        DialogueManager.startDialogue += StartDialogue;
+        InputManager.Instance.inputActions.Ui.Advance.performed += AdvanceDialogue;
     }
 
     // Unsubscribe from events
     private void OnDisable()
     {
-        DialogueManager.Instance.updateUi -= UpdateDialougeUi;
-        DialogueManager.Instance.dialogueFinished -= EndDialogue;
-        InputManager.Instance.inputActions.Ui.Advance.performed -= ShowNextSentence;
+        DialogueManager.startDialogue -= StartDialogue;
+        InputManager.Instance.inputActions.Ui.Advance.performed -= AdvanceDialogue;
     }
 
-    private void UpdateDialougeUi(DialogueObject dialogue, int sentence)
+    // Advance sentence when pressing E
+    private void AdvanceDialogue(InputAction.CallbackContext context)
     {
+        // Check if the sentece is still being animated and if so stop the animation and display the entire sentence
+        if (sentenceAnimation != null)
+        {
+            // Stop sentence animation
+            StopCoroutine(sentenceAnimation);
+            sentenceAnimation = null;
+            // Display the entire sentence
+            dialogueSentence.text = dialogueList[currentDialogue].sentences[currentSentence];
+        }
+        else
+        {
+            DisplayNextSentence();
+        }
+    }
+
+
+    private void StartDialogue(List<DialogueObject> list, UnityEvent dialogueEvent)
+    {
+        Debug.Log("Dialogue started");
+        DialogueManager.dialogueStarted?.Invoke();
+        // Show dialogue window
         animator.SetBool("IsOpen", true);
+        // Set ui input action map
         InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Ui);
+        // Reset values
+        dialogueTriggerEvent = dialogueEvent;
+        currentDialogue = 0;
+        currentSentence = -1;
+        dialogueList = list;
+        // Show the first sentence in the dialogue list
+        DisplayNextSentence();
+    }
+
+    // *Might be a good idea to change the name of this function so that it's clear that it starts the AnimateSentence coroutine
+    public void DisplayNextSentence()
+    {
+        // Stop null reference error when there's no more dialogue and the player tries to advance the dialogue
+        if (currentDialogue > dialogueList.Count - 1)
+        {
+            Debug.Log("No More Dialogue");
+            return;
+        }
+
+        // Get the next sentence in the list
+        currentSentence++;
+
+        // Get the next dialogue object if we're past the last sentence in the current dialogue object
+        if (currentSentence > dialogueList[currentDialogue].sentences.Count - 1)
+        {
+            currentSentence = 0;
+            currentDialogue++;
+            // End the dialogue if all of the dialogue has been displayed
+            if(currentDialogue > dialogueList.Count - 1)
+            {
+                EndDialogue();
+                return;
+            }
+        }
+        UpdateUi(dialogueList[currentDialogue], currentSentence);
+    }
+
+    // *This function could do with a rewrite
+    private void UpdateUi(DialogueObject dialogue, int sentence)
+    {
         // Clear Text
         dialogueSentence.text = string.Empty;
+        // Stop sentence animation
         StopAllCoroutines();
 
         // Update display
         characterName.text = dialogue.characterName;
         characterPortrait.sprite = dialogue.characterPortrait;
-        StartCoroutine(TypeSentence(dialogue.sentences[sentence]));
+        sentenceAnimation = StartCoroutine(AnimateSentence(dialogue.sentences[sentence]));
     }
 
-    private void EndDialogue()
-    {
-        StartCoroutine(ColseDialogueWindowDelay());
-    }
-
-
-    public void ShowNextSentence(InputAction.CallbackContext context)
-    {
-        DialogueManager.Instance.GetNextSentence();
-    }
-
-    private IEnumerator TypeSentence(string sentence)
+    // Text "animation"
+    private IEnumerator AnimateSentence(string sentence)
     {
         dialogueSentence.text = string.Empty;
         foreach(char letter in sentence.ToCharArray())
@@ -67,9 +131,26 @@ public class DialogueBox : MonoBehaviour
             dialogueSentence.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }
+        // Remove reference to coroutine when it has finished
+        sentenceAnimation = null;
     }
 
-    // Have a small delay before hiding the dialogue window in case the DialogueTriggers dialogueFinishedEvent tiggers another DialogueTrigger.
+    private void EndDialogue()
+    {
+        // Needs to be before "dialogueTriggerEvent?.Invoke();".
+        // If it's after the "ColseDialogueWindowDelay" coroutine won't be stopped when starting a new dialogue
+        // Which means that if you chain DialogueTriggers only the first DialogueTrigger will display all of it's sentences,
+        // since the second DialogueTrigger will be cut off by the dialogue window closing.
+        StartCoroutine(ColseDialogueWindowDelay());
+        Debug.Log("End of Dialogue");
+        DialogueManager.dialogueFinished?.Invoke();
+        // This is it's own event because we only want to trigger the dialogueFinishedEvent on the DialogueTrigger that triggered this dialogue.
+        // If we had connected the DialogueTrigger to dialogueFinished all DialogueTriggers would trigger their dialogueFinishedEvent
+        // whenever any dialogue finished, which would cause an unknowable amount of errors.
+        dialogueTriggerEvent?.Invoke();
+    }
+
+    // Have a small delay before hiding the dialogue window to DialogueTriggers to chain.
     // It's an IEnumerator because it gets stopped in the UpdateDialougeUi function.
     // Invoke(function, time) could also be used to hide it with a delay, but then we wouldn't be able to stop it from hiding when starting a new dialogue.
     private IEnumerator ColseDialogueWindowDelay()
@@ -77,5 +158,6 @@ public class DialogueBox : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         animator.SetBool("IsOpen", false);
         InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
+        Debug.Log("Dialogue finished");
     }
 }
