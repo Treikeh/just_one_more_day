@@ -87,6 +87,9 @@ public class DialogueBox : MonoBehaviour
         if (currentDialogue > dialogueList.Count - 1)
         {
             Debug.Log("No More Dialogue");
+            // Hide the window to stop player from being stuck in the dialogue window if they trigger a DialogueTrigger without any dialogue.
+            // Should probably be a check in the StartDialogue function to not show the dialogue window if it recived no dialogue.
+            StartCoroutine(ColseDialogueWindowDelay());
             return;
         }
 
