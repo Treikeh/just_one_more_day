@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "NewDialogueObject", menuName = "Data/Dialogue")]
+[CreateAssetMenu(fileName = "NewGameEvent", menuName = "Data/GameEvent")]
 public class GameEvent : ScriptableObject
 {
     // All objects that are observing this event
