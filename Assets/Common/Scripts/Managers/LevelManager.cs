@@ -25,6 +25,7 @@ public class LevelManager : MonoBehaviour
 
 
     [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private Animator loadingScreenAnimator;
 
     public void StartLoadingScene(string sceneName)
     {
@@ -40,7 +41,9 @@ public class LevelManager : MonoBehaviour
         // Show loading screen and stop scene from spawning until lodaing screen is fully visible
         scene.allowSceneActivation = false;
         loadingScreen.SetActive(true);
-        yield return new WaitForSeconds(.5f);
+        // Start show loading screen animation
+        loadingScreenAnimator.Play("LoadingScreen_Show");
+        yield return new WaitForSeconds(.25f);
 
         // Allow scene to spawn when ready
         scene.allowSceneActivation = true;
@@ -48,7 +51,9 @@ public class LevelManager : MonoBehaviour
         while (!scene.isDone) { yield return null; }
 
         // Hide loading screen when scene is ready
-        yield return new WaitForSeconds(.5f);
+        // Start hide loading screen animation
+        loadingScreenAnimator.Play("LoadingScreen_Hide");
+        yield return new WaitForSeconds(.25f);
         loadingScreen.SetActive(false);
         // Enalbe player inputs when scene has finished loading
         InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
