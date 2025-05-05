@@ -23,6 +23,4 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
     {
         TriggerDialogue();
     }
-
-    public bool CanInteract() { return true; }
 }

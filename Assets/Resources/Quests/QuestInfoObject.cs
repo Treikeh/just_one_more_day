@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestInfoObject : ScriptableObject
 {
     [Header("General")]
-    public string displayName;
+    public string description;
 
     [Header("Requirements")]
     public QuestInfoObject[] questPrerequisites;

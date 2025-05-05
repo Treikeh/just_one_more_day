@@ -21,12 +21,9 @@ public class Interactable : MonoBehaviour, IInteractable
             defaultResponse?.Invoke();
         }
     }
-
-    public bool CanInteract() { return true; }
 }
 
 public interface IInteractable
 {
     void Interact();
-    bool CanInteract();
 }

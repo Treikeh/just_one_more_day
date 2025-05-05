@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 1075912501}
   - component: {fileID: 1075912500}
   - component: {fileID: 1075912499}
-  - component: {fileID: 1075912503}
   - component: {fileID: 1075912504}
   m_Layer: 0
   m_Name: QuestTrigger
@@ -538,34 +537,6 @@ Transform:
   - {fileID: 1536342942}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1075912503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075912497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexResponses: []
-  defaultResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1075912504}
-        m_TargetAssemblyTypeName: QuestProgressChecker, Assembly-CSharp
-        m_MethodName: CheckQuestProgress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1075912504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,6 +842,72 @@ MonoBehaviour:
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1592760422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592760424}
+  - component: {fileID: 1592760423}
+  m_Layer: 0
+  m_Name: QuestSateObserver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1592760423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592760422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questInfoObject: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
+  notStartedResponse:
+    m_PersistentCalls:
+      m_Calls: []
+  inProgressResponse:
+    m_PersistentCalls:
+      m_Calls: []
+  finishedResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1339717174}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1592760424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592760422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6735270623314153018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -937,3 +974,4 @@ SceneRoots:
   - {fileID: 983736915}
   - {fileID: 1075912502}
   - {fileID: 1339717176}
+  - {fileID: 1592760424}

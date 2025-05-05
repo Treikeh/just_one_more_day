@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 //CREDITS: Shaped by Rain Studios - Github: https://github.com/shapedbyrainstudios/quest-system - Youtube: https://www.youtube.com/watch?v=UyTJLDGcT64
-// It's not an excat copy their code, but a more simplified version.
+// It's not an excat copy their code but a more simplified version.
 
 public class QuestManager : MonoBehaviour
 {
@@ -17,14 +16,12 @@ public class QuestManager : MonoBehaviour
     {
         GameEventManager.Instance.questEvents.onQuestStarted += QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
-        // GameEventManager.Instance.questEvents.onQuestFinished += QuestFinished;
     }
 
     private void OnDisable()
     {
         GameEventManager.Instance.questEvents.onQuestStarted -= QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced -= QuestAdvanced;
-        // GameEventManager.Instance.questEvents.onQuestFinished -= QuestFinished;
     }
 
     // Get all quests in the Assets/Resources/Quests folder
@@ -61,8 +58,14 @@ public class QuestManager : MonoBehaviour
         return quest;
     }
 
+    private void ChangeQuestState(Quest quest, QuestState questState)
+    {
+        quest.state = questState;
+        GameEventManager.Instance.questEvents.QuestStateChanged(quest);
+    }
 
-private void QuestStarted(string questId)
+
+    private void QuestStarted(string questId)
     {
         Quest quest = GetQuestById(questId);
         // TODO: Make sure all prerequisite quest are completed
@@ -71,9 +74,8 @@ private void QuestStarted(string questId)
             Debug.Log("Quest has allready started or is finished");
             return;
         }
-        quest.state = QuestState.IN_PROGRESS;
-        // Check if quest can be started. Can be started if quest has been completed allready or is in progress
         Debug.Log($"{questId} Started");
+        ChangeQuestState(quest, QuestState.IN_PROGRESS);
     }
 
     private void QuestAdvanced(string questId)
@@ -93,19 +95,19 @@ private void QuestStarted(string questId)
         // Finish the quest when all steps are completed
         if (quest.questProgress >= quest.info.questSteps)
         {
-            QuestFinished(questId);
+            FinishQuest(questId);
         }
     }
 
-    private void QuestFinished(string questId)
+    private void FinishQuest(string questId)
     {
         Quest quest = GetQuestById(questId);
 
         // Check if quest has allready finished
         if (quest.state != QuestState.FINISHED)
         {
-            quest.state = QuestState.FINISHED;
             Debug.Log($"{questId} Finished");
+            ChangeQuestState(quest, QuestState.FINISHED);
             GameEventManager.Instance.questEvents.QuestFinished(questId);
         }
     }

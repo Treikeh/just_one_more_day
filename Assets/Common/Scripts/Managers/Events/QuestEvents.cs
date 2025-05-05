@@ -1,5 +1,4 @@
 using System;
-using UnityEngine;
 
 public class QuestEvents
 {
@@ -27,6 +26,15 @@ public class QuestEvents
         if (onQuestFinished != null)
         {
             onQuestFinished(questId);
+        }
+    }
+
+    public event Action<Quest> onQuestStateChanged;
+    public void QuestStateChanged(Quest quest)
+    {
+        if (onQuestStateChanged != null)
+        {
+            onQuestStateChanged(quest);
         }
     }
 }
