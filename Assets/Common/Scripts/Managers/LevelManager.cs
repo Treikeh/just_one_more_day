@@ -8,24 +8,20 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    // Create singleton instance
-    public static LevelManager Instance {get; private set;}
-    private void Awake()
-    {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Animator loadingScreenAnimator;
+
+
+    private void OnEnable()
+    {
+        GameEventManager.Instance.levelEvents.onLoadLevel += StartLoadingScene;
+    }
+
+    private void OnDisable()
+    {
+        GameEventManager.Instance.levelEvents.onLoadLevel -= StartLoadingScene;
+    }
+
 
     public void StartLoadingScene(string sceneName)
     {
@@ -37,7 +33,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator ProgressLoadingScene(AsyncOperation scene)
     {
         // Diable player input when loading scene
-        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Ui);
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
         // Show loading screen and stop scene from spawning until lodaing screen is fully visible
         scene.allowSceneActivation = false;
         loadingScreen.SetActive(true);
@@ -56,6 +52,6 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(.25f);
         loadingScreen.SetActive(false);
         // Enalbe player inputs when scene has finished loading
-        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
     }
 }

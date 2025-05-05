@@ -3,20 +3,5 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    // Create singleton instance
-    public static QuestManager Instance {get; private set;}
-    private void Awake()
-    {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
-
-    // 
+    //
 }

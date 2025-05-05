@@ -2,20 +2,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "NewGameEvent", menuName = "Data/GameEvent")]
-public class GameEvent : ScriptableObject
+[CreateAssetMenu(fileName = "NewGameEventObject", menuName = "Data/GameEvent")]
+public class GameEventObject : ScriptableObject
 {
     // All objects that are observing this event
-    private readonly List<GameEventObserver> observers = new();
+    private readonly List<GameEventObjectObserver> observers = new();
 
     // Add new object to list of observers
-    public void AddObserver(GameEventObserver observer)
+    public void AddObserver(GameEventObjectObserver observer)
     {
         observers.Add(observer);
     }
 
     // Remove object from list of observers
-    public void RemoveObserver(GameEventObserver observer)
+    public void RemoveObserver(GameEventObjectObserver observer)
     {
         observers.Remove(observer);
     }
@@ -26,7 +26,7 @@ public class GameEvent : ScriptableObject
         // Debug log to see which and when a event is triggered.
         // Debug.Log("GameEvent " + name + " Triggered");
         // When this event is triggered, go through every observer it has and activate their response
-        foreach (GameEventObserver observer in observers)
+        foreach (GameEventObjectObserver observer in observers)
         {
             observer.RespondToEvent(name);
         }
