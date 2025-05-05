@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -5,41 +6,55 @@ using UnityEngine.InputSystem;
 
 // Once again i don't like using manager classes especially not MonoBehaviours, but it works and that's the most importat part.
 
+[RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
-    // Create singleton instance
-    public static InputManager Instance {get; private set;}
+    private PlayerInput playerInput;
+
+
     private void Awake()
     {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
-        inputActions = new TopDownInputActions();
+        //playerInput = GetComponent<PlayerInput>();
+        GameEventManager.Instance.inputEvents.onActionMapChanged += ActionMapChanged;
+    }
+
+    private void OnDestory()
+    {
+        GameEventManager.Instance.inputEvents.onActionMapChanged -= ActionMapChanged;
     }
 
 
-    public TopDownInputActions inputActions;
-    public UnityAction<InputActionMap> actionMapChange;
-
-
-    private void Start()
+    private void ActionMapChanged(string actionMap)
     {
-        ToggleActionMap(inputActions.Player);
+        playerInput = GetComponent<PlayerInput>();
+        playerInput.SwitchCurrentActionMap(actionMap);
     }
 
-    public void ToggleActionMap(InputActionMap actionMap)
+
+    // PLAYER INPUTS
+    public void OnMove(InputAction.CallbackContext context)
     {
-        if (actionMap.enabled)
-            return;
-        
-        inputActions.Disable();
-        actionMapChange?.Invoke(actionMap);
-        actionMap.Enable();
+        if (context.performed || context.canceled)
+        {
+            GameEventManager.Instance.inputEvents.MovePressed(context.ReadValue<Vector2>());
+        }
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEventManager.Instance.inputEvents.InteractPressed();
+        }
+    }
+
+
+    // UI INPUTS
+    public void OnAdvance(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEventManager.Instance.inputEvents.AdvancePressed();
+        }
     }
 }

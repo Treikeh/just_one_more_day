@@ -13,7 +13,8 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
     public void TriggerDialogue()
     {
         // Not sure it it's a good idea to Invoke an Action from this script or if i should call a function on the DialogueManager instead.
-        DialogueManager.startDialogue?.Invoke(dialogueList, dialogueFinishedEvent);
+        // DialogueManager.startDialogue?.Invoke(dialogueList, dialogueFinishedEvent);
+        GameEventManager.Instance.dialogueEvents.DialogueStarted(dialogueList, dialogueFinishedEvent);
     }
 
 
