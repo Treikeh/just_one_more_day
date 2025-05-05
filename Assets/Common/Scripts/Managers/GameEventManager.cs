@@ -9,6 +9,7 @@ public class GameEventManager : MonoBehaviour
     public InputEvents inputEvents;
     public LevelEvents levelEvents;
     public DialogueEvents dialogueEvents;
+    public QuestEvents questEvents;
 
 
     private void Awake()
@@ -23,5 +24,6 @@ public class GameEventManager : MonoBehaviour
         inputEvents = new InputEvents();
         levelEvents = new LevelEvents();
         dialogueEvents = new DialogueEvents();
+        questEvents = new QuestEvents();
     }
 }
