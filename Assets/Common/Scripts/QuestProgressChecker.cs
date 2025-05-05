@@ -11,9 +11,10 @@ public class QuestProgressChecker : MonoBehaviour
 
     public void CheckQuestProgress()
     {
+        string questId = questToCheck.name;
         // Get quest info from quest manager
-        QuestState progress = QuestState.FINISHED;
-        switch (progress)
+        QuestState questState = QuestState.FINISHED;
+        switch (questState)
         {
             case QuestState.NOT_STARTED:
                 questNotStarted.Invoke();

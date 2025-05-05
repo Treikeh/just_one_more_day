@@ -15,5 +15,7 @@ MonoBehaviour:
   characterName: Placeholder_1
   characterPortrait: {fileID: 5635092890522734083, guid: 65e22430a27660e49883c1e4196c2b79, type: 3}
   sentences:
+  - What?
+  - Didn't you understand what i just said?
   - Walk on the Red triangle
   - And good things will happen

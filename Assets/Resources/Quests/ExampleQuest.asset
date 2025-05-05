@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fb1d45b71c58743872d3cec663b117, type: 3}
   m_Name: ExampleQuest
   m_EditorClassIdentifier: 
-  id: example_quest
-  displayName: Example quest
+  displayName: Walk on the red triangle
   questPrerequisites: []
+  questSteps: 1
