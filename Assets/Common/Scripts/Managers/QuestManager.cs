@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 //CREDITS: Shaped by Rain Studios - Github: https://github.com/shapedbyrainstudios/quest-system - Youtube: https://www.youtube.com/watch?v=UyTJLDGcT64
@@ -16,12 +17,14 @@ public class QuestManager : MonoBehaviour
     {
         GameEventManager.Instance.questEvents.onQuestStarted += QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
+        GameEventManager.Instance.questEvents.onQuestRefreshed += QuestRefreshed;
     }
 
     private void OnDisable()
     {
         GameEventManager.Instance.questEvents.onQuestStarted -= QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced -= QuestAdvanced;
+        GameEventManager.Instance.questEvents.onQuestRefreshed -= QuestRefreshed;
     }
 
     // Get all quests in the Assets/Resources/Quests folder
@@ -110,6 +113,12 @@ public class QuestManager : MonoBehaviour
             ChangeQuestState(quest, QuestState.FINISHED);
             GameEventManager.Instance.questEvents.QuestFinished(questId);
         }
+    }
+
+    private void QuestRefreshed(string questId)
+    {
+        Quest quest = GetQuestById(questId);
+        GameEventManager.Instance.questEvents.QuestStateChanged(quest);
     }
 
 

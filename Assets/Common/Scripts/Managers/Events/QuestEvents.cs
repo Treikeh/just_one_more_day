@@ -37,4 +37,13 @@ public class QuestEvents
             onQuestStateChanged(quest);
         }
     }
+
+    public event Action<string> onQuestRefreshed;
+    public void QuestRefreshed(string questId)
+    {
+        if (onQuestRefreshed != null)
+        {
+            onQuestRefreshed(questId);
+        }
+    }
 }

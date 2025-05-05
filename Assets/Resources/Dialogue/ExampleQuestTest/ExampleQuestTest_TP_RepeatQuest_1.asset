@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 809348824352fa6458f9aa2c1d53eee3, type: 3}
-  m_Name: objective_test_repeat_objective
+  m_Name: ExampleQuestTest_TP_RepeatQuest_1
   m_EditorClassIdentifier: 
-  characterName: Placeholder_1
+  characterName: Tea pot
   characterPortrait: {fileID: 5635092890522734083, guid: 65e22430a27660e49883c1e4196c2b79, type: 3}
   sentences:
   - What?
-  - Didn't you understand what i just said?
-  - Walk on the Red triangle
-  - And good things will happen
+  - Is there someting on my lid or did you forget what the quest was?
+  - I'll repeat it as many times as you need.

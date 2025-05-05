@@ -12,13 +12,12 @@ public class InputManager : MonoBehaviour
     private PlayerInput playerInput;
 
 
-    private void Awake()
+    private void OnEnable()
     {
-        //playerInput = GetComponent<PlayerInput>();
         GameEventManager.Instance.inputEvents.onActionMapChanged += ActionMapChanged;
     }
 
-    private void OnDestory()
+    private void OnDisable()
     {
         GameEventManager.Instance.inputEvents.onActionMapChanged -= ActionMapChanged;
     }

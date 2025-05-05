@@ -19,11 +19,14 @@ public class GameEventManager : MonoBehaviour
             Debug.LogWarning("GameEventManager allready exists");
             Destroy(this);
         }
-        Instance = this;
+        else
+        {
+            Instance = this;
 
-        inputEvents = new InputEvents();
-        levelEvents = new LevelEvents();
-        dialogueEvents = new DialogueEvents();
-        questEvents = new QuestEvents();
+            inputEvents = new InputEvents();
+            levelEvents = new LevelEvents();
+            dialogueEvents = new DialogueEvents();
+            questEvents = new QuestEvents();
+        }
     }
 }
