@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fb1d45b71c58743872d3cec663b117, type: 3}
   m_Name: ExampleQuest2
   m_EditorClassIdentifier: 
-  description: Example quest 2
+  description: Sort colors
+  finishAutomatically: 0
   questPrerequisites: []
   questSteps: 1
