@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 809348824352fa6458f9aa2c1d53eee3, type: 3}
-  m_Name: ID
+  m_Name: plceholder_dialogue_speed_default
   m_EditorClassIdentifier: 
-  characterName: Speaker/Name
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterName: Placeholder_2
+  characterPortrait: {fileID: 1570831357638300468, guid: 4736397040e337442bb44491a3964108, type: 3}
   sentences:
-  - Dialogue
+  - This sentence has the default animiation speed
   textSpeed: 0.05

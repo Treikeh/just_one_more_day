@@ -18,3 +18,4 @@ MonoBehaviour:
   - A new person appears
   - Now with more than one sentence
   - Isn't that amazing!?
+  textSpeed: 0.05

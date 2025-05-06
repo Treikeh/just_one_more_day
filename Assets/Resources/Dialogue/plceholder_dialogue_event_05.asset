@@ -18,3 +18,4 @@ MonoBehaviour:
   - Magic
   - And {Insert praise for programmer}
   - But mostly magic
+  textSpeed: 0.05

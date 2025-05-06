@@ -62,6 +62,7 @@ public class TsvToSo
         dialogueObject.sentences = GetSentences(dialogueData[2]);
         // Load character portrait
         dialogueObject.characterPortrait = GetPortrait(dialogueData[1]);
+        dialogueObject.textSpeed = GetTextSpeed(dialogueData[3]);
     }
 
     // Turn text field in database into list of sentences
@@ -88,5 +89,16 @@ public class TsvToSo
         // Return the characters portrait. If the character isn't found return the default protrait
         Debug.Log(characterName);
         return AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/Characters/{characterName}/{characterName}_Portrait.png") ?? AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Characters/DefaultPortrait.png");
+    }
+
+    public static float GetTextSpeed(string speed)
+    {
+        // This was a switch statement
+        return speed switch
+        {
+            "Fast" => 0.01f,
+            "Slow" => 0.1f,
+            _ => 0.05f,
+        };
     }
 }

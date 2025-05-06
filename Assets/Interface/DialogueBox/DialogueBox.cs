@@ -15,12 +15,12 @@ using UnityEngine.UI;
 public class DialogueBox : MonoBehaviour
 {
     // Time (in seconds) it takes for a new letter to appear
-    [SerializeField] private float textSpeed = 0.05f;
     [SerializeField] private Image characterPortrait;
     [SerializeField] private TMP_Text characterName;
     [SerializeField] private TMP_Text dialogueSentence;
     [SerializeField] private Animator animator;
 
+    private float textSpeed;
     private int currentDialogue = 0;
     // Starts as -1 since it would skip over the first sentence if it was 0
     private int currentSentence = -1;
@@ -119,6 +119,7 @@ public class DialogueBox : MonoBehaviour
         StopAllCoroutines();
 
         // Update display
+        textSpeed = dialogue.textSpeed;
         characterName.text = dialogue.characterName;
         characterPortrait.sprite = dialogue.characterPortrait;
         sentenceAnimation = StartCoroutine(AnimateSentence(dialogue.sentences[sentence]));
