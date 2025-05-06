@@ -6,6 +6,8 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     private Dictionary<string, Quest> questMap;
+    private Dictionary<string, Quest> activeQuests;
+    private Dictionary<string, Quest> finishedQuests;
 
     private void Awake()
     {
@@ -17,7 +19,7 @@ public class QuestManager : MonoBehaviour
         GameEventManager.Instance.questEvents.onQuestStarted += QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
         GameEventManager.Instance.questEvents.onQuestFinished += QuestFinished;
-        
+
         GameEventManager.Instance.levelEvents.onLevelLoaded += LevelLoaded;
     }
 
@@ -81,6 +83,7 @@ public class QuestManager : MonoBehaviour
             return;
         }
         Debug.Log($"{questId} Started");
+        activeQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.IN_PROGRESS);
     }
 
@@ -132,6 +135,8 @@ public class QuestManager : MonoBehaviour
         if (quest.state != QuestState.FINISHED)
         {
             Debug.Log($"{questId} Finished");
+            activeQuests.Remove(questId);
+            finishedQuests.Add(questId, quest);
             ChangeQuestState(quest, QuestState.FINISHED);
             GameEventManager.Instance.questEvents.QuestFinished(questId);
         }
