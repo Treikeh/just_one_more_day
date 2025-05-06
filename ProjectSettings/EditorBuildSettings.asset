@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: e3ce94175c744f1458b419898109ae1f
   - enabled: 1
     path: Assets/Scenes/ExampleQuestTest02.unity
-    guid: 6371d77278e2d904c98b9fbf7ed2e1b0
+    guid: 270b23a1727470742a163a449bcc8b77
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

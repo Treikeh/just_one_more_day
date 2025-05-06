@@ -6,8 +6,10 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     private Dictionary<string, Quest> questMap;
-    private Dictionary<string, Quest> activeQuests;
-    private Dictionary<string, Quest> finishedQuests;
+    // !Having this as a public static variable is only temporary
+    public static Dictionary<string, Quest> activeQuests = new();
+    // !Having this as a public static variable is only temporary
+    public static Dictionary<string, Quest> finishedQuests = new();
 
     private void Awake()
     {

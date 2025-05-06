@@ -17,3 +17,4 @@ MonoBehaviour:
   sentences:
   - What!?
   - How?
+  textSpeed: 0.05
