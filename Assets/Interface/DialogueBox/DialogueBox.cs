@@ -1,15 +1,13 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 // *This class is a bit messy and should be refactored. It does its job well, but there are parts that could be better
 // // TODO: Find a way to send messages between the dialogue manager and ui without using code
-// TODO: Find a better place to handle InputActionMap switching. I don't think the ui should be responsible for swithcing inputs
+// DONE: Find a better place to handle InputActionMap switching. I don't think the ui should be responsible for swithcing inputs
 // // I could handle the InputActionMap switching in the DialogueManager, but connecting manager scripts together sonuds like a nightmare waiting to happen.
 
 public class DialogueBox : MonoBehaviour
@@ -24,25 +22,16 @@ public class DialogueBox : MonoBehaviour
     private int currentDialogue = 0;
     // Starts as -1 since it would skip over the first sentence if it was 0
     private int currentSentence = -1;
-    private List<DialogueObject> dialogueList;
+    private List<DialogueObject> dialogueList = new();
     // Reference to the DialogueTriggers dialogueFinishedEvent
     private UnityEvent dialogueTriggerEvent;
     private Coroutine sentenceAnimation;
 
 
-    // Subscribe to events
-    private void OnEnable()
-    {
-        GameEventManager.Instance.uiEvents.onDialogueStarted += StartDialogue;
-        GameEventManager.Instance.inputEvents.onAdvancePressed += AdvanceDialogue;
-    }
+    // Subscribe and unsubscribe from input events
+    private void OnEnable() { GameEventManager.Instance.inputEvents.onAdvancePressed += AdvanceDialogue; }
+    private void OnDisable() { GameEventManager.Instance.inputEvents.onAdvancePressed -= AdvanceDialogue; }
 
-    // Unsubscribe from events
-    private void OnDisable()
-    {
-        GameEventManager.Instance.uiEvents.onDialogueStarted -= StartDialogue;
-        GameEventManager.Instance.inputEvents.onAdvancePressed -= AdvanceDialogue;
-    }
 
     // Advance sentence when pressing E
     private void AdvanceDialogue()
@@ -63,13 +52,11 @@ public class DialogueBox : MonoBehaviour
     }
 
 
-    private void StartDialogue(List<DialogueObject> list, UnityEvent dialogueEvent)
+    public void StartDialogue(List<DialogueObject> list, UnityEvent dialogueEvent)
     {
         Debug.Log("Dialogue started");
         // Show dialogue window
         animator.SetBool("IsOpen", true);
-        // Set ui input action map
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
         // Reset values
         dialogueTriggerEvent = dialogueEvent;
         currentDialogue = 0;
@@ -83,7 +70,7 @@ public class DialogueBox : MonoBehaviour
     public void DisplayNextSentence()
     {
         // Stop null reference error when there's no more dialogue and the player tries to advance the dialogue
-        if (currentDialogue > dialogueList.Count - 1)
+        if (currentDialogue > dialogueList.Count - 1 || currentDialogue < 0)
         {
             Debug.Log("No More Dialogue");
             // Hide the window to stop player from being stuck in the dialogue window if they trigger a DialogueTrigger without any dialogue.
@@ -146,7 +133,6 @@ public class DialogueBox : MonoBehaviour
         // since the second DialogueTrigger will be cut off by the dialogue window closing.
         StartCoroutine(ColseDialogueWindowDelay());
         Debug.Log("End of Dialogue");
-        GameEventManager.Instance.uiEvents.DialogueFinished();
         // This is it's own event because we only want to trigger the dialogueFinishedEvent on the DialogueTrigger that triggered this dialogue.
         // If we had connected the DialogueTrigger to dialogueFinished all DialogueTriggers would trigger their dialogueFinishedEvent
         // whenever any dialogue finished, which would cause an unknowable amount of errors.
@@ -158,9 +144,11 @@ public class DialogueBox : MonoBehaviour
     // Invoke(function, time) could also be used to hide it with a delay, but then we wouldn't be able to stop it from hiding when starting a new dialogue.
     private IEnumerator ColseDialogueWindowDelay()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         animator.SetBool("IsOpen", false);
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
+        // Another small delay for the animation to finish
+        yield return new WaitForSeconds(0.2f);
+        GameEventManager.Instance.uiEvents.DialogueFinished();
         Debug.Log("Dialogue finished");
     }
 }

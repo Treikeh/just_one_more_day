@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6825262140162565278}
   - component: {fileID: 1397466502670173552}
   - component: {fileID: 5913456311038092519}
+  - component: {fileID: 3400888165241231954}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: InGameUi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,6 +105,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3400888165241231954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252573987237013086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bca7b451404454b9179c8739e77729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journal: {fileID: 8063046503630814659}
+  dialogueBox: {fileID: 7231927932292242844}
 --- !u!1 &1754174014259048062
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,9 +319,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8063046503630814659}
-        m_TargetAssemblyTypeName: JournalUi, Assembly-CSharp
-        m_MethodName: OnQuitPressed
+      - m_Target: {fileID: 3400888165241231954}
+        m_TargetAssemblyTypeName: Hud, Assembly-CSharp
+        m_MethodName: OnQuitButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -709,9 +724,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8063046503630814659}
-        m_TargetAssemblyTypeName: JournalUi, Assembly-CSharp
-        m_MethodName: OnResumePressed
+      - m_Target: {fileID: 3400888165241231954}
+        m_TargetAssemblyTypeName: InGameUi, Assembly-CSharp
+        m_MethodName: OnResumeButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1009,7 +1024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &246332200423781418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1042,7 +1057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f8181701809384cae5f351e20a1d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  journalPanel: {fileID: 5041624091357374526}
   activeQuests: {fileID: 8935923007362596799}
   finishedQuests: {fileID: 5048212945123656278}
 --- !u!1 &5041624091357374526
@@ -1062,7 +1076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8188038410151182129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1143,7 +1157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5289144566981445970
 RectTransform:
   m_ObjectHideFlags: 0
