@@ -14,6 +14,7 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
     private void OnEnable() { GameEventManager.Instance.questEvents.onQuestStateChanged += QuestStateChanged; }
     private void OnDisable() { GameEventManager.Instance.questEvents.onQuestStateChanged -= QuestStateChanged; }
 
+
     private void QuestStateChanged(Quest quest)
     {
         if (quest.info.name.Equals(questToCheck.name))
@@ -22,7 +23,6 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
             Debug.Log($"Quest Check {currentQuestState}");
         }
     }
-
 
     public void CheckQuestProgress()
     {

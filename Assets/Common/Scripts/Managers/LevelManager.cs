@@ -12,23 +12,23 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Animator loadingScreenAnimator;
 
 
-    private void OnEnable()
+    private void OnEnable() { GameEventManager.Instance.levelEvents.onStartLoadingLevel += StartLoadingLevel; }
+    private void OnDisable() { GameEventManager.Instance.levelEvents.onStartLoadingLevel -= StartLoadingLevel; }
+
+
+    private void Start()
     {
-        GameEventManager.Instance.levelEvents.onLoadLevel += StartLoadingScene;
+        // Trigger level loded event when the game starts.
+        // This is to make sure that objects that depend on this event can setup correctly.
+        GameEventManager.Instance.levelEvents.LevelLoaded();
     }
 
-    private void OnDisable()
-    {
-        GameEventManager.Instance.levelEvents.onLoadLevel -= StartLoadingScene;
-    }
 
-
-    public void StartLoadingScene(string sceneName)
+    public void StartLoadingLevel(string sceneName)
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         StartCoroutine(ProgressLoadingScene(scene));
     }
-
 
     private IEnumerator ProgressLoadingScene(AsyncOperation scene)
     {
@@ -49,6 +49,7 @@ public class LevelManager : MonoBehaviour
         // Hide loading screen when scene is ready
         // Start hide loading screen animation
         loadingScreenAnimator.Play("LoadingScreen_Hide");
+        GameEventManager.Instance.levelEvents.LevelLoaded();
         yield return new WaitForSeconds(.25f);
         loadingScreen.SetActive(false);
         // Enalbe player inputs when scene has finished loading

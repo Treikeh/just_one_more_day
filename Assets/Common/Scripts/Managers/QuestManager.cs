@@ -17,7 +17,8 @@ public class QuestManager : MonoBehaviour
         GameEventManager.Instance.questEvents.onQuestStarted += QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
         GameEventManager.Instance.questEvents.onQuestFinished += QuestFinished;
-        GameEventManager.Instance.questEvents.onQuestRefreshed += QuestRefreshed;
+        
+        GameEventManager.Instance.levelEvents.onLevelLoaded += LevelLoaded;
     }
 
     private void OnDisable()
@@ -25,7 +26,8 @@ public class QuestManager : MonoBehaviour
         GameEventManager.Instance.questEvents.onQuestStarted -= QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced -= QuestAdvanced;
         GameEventManager.Instance.questEvents.onQuestFinished -= QuestFinished;
-        GameEventManager.Instance.questEvents.onQuestRefreshed -= QuestRefreshed;
+
+        GameEventManager.Instance.levelEvents.onLevelLoaded -= LevelLoaded;
     }
 
     // Get all quests in the Assets/Resources/Quests folder
@@ -141,6 +143,14 @@ public class QuestManager : MonoBehaviour
         GameEventManager.Instance.questEvents.QuestStateChanged(quest);
     }
 
+    private void LevelLoaded()
+    {
+        foreach (string questId in questMap.Keys)
+        {
+            Quest quest = GetQuestById(questId);
+            GameEventManager.Instance.questEvents.QuestStateChanged(quest);
+        }
+    }
 
     private QuestState GetQuestState(string questId)
     {
