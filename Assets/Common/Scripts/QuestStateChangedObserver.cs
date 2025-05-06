@@ -10,6 +10,7 @@ public class QuestStateChangedObserver : MonoBehaviour
 
     public UnityEvent notStartedResponse;
     public UnityEvent inProgressResponse;
+    public UnityEvent canFinishResponse;
     public UnityEvent finishedResponse;
 
 
@@ -33,6 +34,9 @@ public class QuestStateChangedObserver : MonoBehaviour
                     break;
                 case QuestState.IN_PROGRESS:
                     inProgressResponse.Invoke();
+                    break;
+                case QuestState.CAN_FINISH:
+                    canFinishResponse.Invoke();
                     break;
                 case QuestState.FINISHED:
                     finishedResponse.Invoke();

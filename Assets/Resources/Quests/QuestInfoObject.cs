@@ -6,6 +6,7 @@ public class QuestInfoObject : ScriptableObject
 {
     [Header("General")]
     public string description;
+    public bool finishAutomatically = false;
 
     [Header("Requirements")]
     public QuestInfoObject[] questPrerequisites;
@@ -19,5 +20,10 @@ public class QuestInfoObject : ScriptableObject
     public void AdvanceQuest()
     {
         GameEventManager.Instance.questEvents.QuestAdvanced(this.name);
+    }
+
+    public void FinishQuest()
+    {
+        GameEventManager.Instance.questEvents.QuestFinished(this.name);
     }
 }

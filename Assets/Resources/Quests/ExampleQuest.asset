@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: ExampleQuest
   m_EditorClassIdentifier: 
   description: Walk on the red triangle
+  finishAutomatically: 0
   questPrerequisites: []
   questSteps: 5

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 //CREDITS: Shaped by Rain Studios - Github: https://github.com/shapedbyrainstudios/quest-system - Youtube: https://www.youtube.com/watch?v=UyTJLDGcT64
@@ -17,6 +16,7 @@ public class QuestManager : MonoBehaviour
     {
         GameEventManager.Instance.questEvents.onQuestStarted += QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
+        GameEventManager.Instance.questEvents.onQuestFinished += QuestFinished;
         GameEventManager.Instance.questEvents.onQuestRefreshed += QuestRefreshed;
     }
 
@@ -24,6 +24,7 @@ public class QuestManager : MonoBehaviour
     {
         GameEventManager.Instance.questEvents.onQuestStarted -= QuestStarted;
         GameEventManager.Instance.questEvents.onQuestAdvanced -= QuestAdvanced;
+        GameEventManager.Instance.questEvents.onQuestFinished -= QuestFinished;
         GameEventManager.Instance.questEvents.onQuestRefreshed -= QuestRefreshed;
     }
 
@@ -98,8 +99,27 @@ public class QuestManager : MonoBehaviour
         // Finish the quest when all steps are completed
         if (quest.questProgress >= quest.info.questSteps)
         {
-            FinishQuest(questId);
+            Debug.Log($"{questId} can be finished");
+            ChangeQuestState(quest, QuestState.CAN_FINISH);
+            if (quest.info.finishAutomatically)
+            {
+                quest.info.FinishQuest();
+            }
         }
+    }
+
+    private void QuestFinished(string questId)
+    {
+        Quest quest = GetQuestById(questId);
+
+        if (quest.state != QuestState.CAN_FINISH)
+        {
+            Debug.Log("Quest cannot be finished yet");
+            return;
+        }
+
+        Debug.Log($"{questId} Finished");
+        ChangeQuestState(quest, QuestState.FINISHED);
     }
 
     private void FinishQuest(string questId)
@@ -135,6 +155,7 @@ public enum QuestState
 {
     NOT_STARTED,
     IN_PROGRESS,
+    CAN_FINISH,
     FINISHED,
 }
 

@@ -6,6 +6,7 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
     [SerializeField] private QuestInfoObject questToCheck;
     public UnityEvent questNotStarted;
     public UnityEvent questInProgress;
+    public UnityEvent questCanFinish;
     public UnityEvent questFinished;
     private QuestState currentQuestState = QuestState.NOT_STARTED;
 
@@ -32,6 +33,9 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
                 break;
             case QuestState.IN_PROGRESS:
                 questInProgress.Invoke();
+                break;
+            case QuestState.CAN_FINISH:
+                questCanFinish.Invoke();
                 break;
             case QuestState.FINISHED:
                 questFinished.Invoke();
