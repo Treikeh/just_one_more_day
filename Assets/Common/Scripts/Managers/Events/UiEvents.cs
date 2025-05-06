@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueEvents
+public class UiEvents
 {
+    // DIALOGUE EVENTS
     public event Action<List<DialogueObject>, UnityEvent> onDialogueStarted;
     public void DialogueStarted(List<DialogueObject> dialogueList, UnityEvent dialogueFinishEvent)
     {

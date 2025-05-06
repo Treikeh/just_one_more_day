@@ -8,7 +8,7 @@ public class GameEventManager : MonoBehaviour
 
     public InputEvents inputEvents;
     public LevelEvents levelEvents;
-    public DialogueEvents dialogueEvents;
+    public UiEvents uiEvents;
     public QuestEvents questEvents;
 
 
@@ -25,7 +25,7 @@ public class GameEventManager : MonoBehaviour
 
             inputEvents = new InputEvents();
             levelEvents = new LevelEvents();
-            dialogueEvents = new DialogueEvents();
+            uiEvents = new UiEvents();
             questEvents = new QuestEvents();
         }
     }

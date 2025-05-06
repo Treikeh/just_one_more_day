@@ -24,13 +24,21 @@ public class InputEvents
         }
     }
 
-
     public event Action onInteractPressed;
     public void InteractPressed()
     {
         if (onInteractPressed != null)
         {
             onInteractPressed();
+        }
+    }
+
+    public event Action onJournalPressed;
+    public void JournalPressed()
+    {
+        if (onJournalPressed != null)
+        {
+            onJournalPressed();
         }
     }
 
@@ -42,6 +50,15 @@ public class InputEvents
         if (onAdvancePressed != null)
         {
             onAdvancePressed();
+        }
+    }
+
+    public event Action onCancelPressed;
+    public void CancelPressed()
+    {
+        if (onCancelPressed != null)
+        {
+            onCancelPressed();
         }
     }
 }

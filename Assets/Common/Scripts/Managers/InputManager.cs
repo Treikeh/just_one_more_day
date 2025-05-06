@@ -47,6 +47,14 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public void OnJournal(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEventManager.Instance.inputEvents.JournalPressed();
+        }
+    }
+
 
     // UI INPUTS
     public void OnAdvance(InputAction.CallbackContext context)
@@ -54,6 +62,14 @@ public class InputManager : MonoBehaviour
         if (context.performed)
         {
             GameEventManager.Instance.inputEvents.AdvancePressed();
+        }
+    }
+
+    public void OnCancel(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEventManager.Instance.inputEvents.CancelPressed();
         }
     }
 }

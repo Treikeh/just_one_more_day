@@ -33,14 +33,14 @@ public class DialogueBox : MonoBehaviour
     // Subscribe to events
     private void OnEnable()
     {
-        GameEventManager.Instance.dialogueEvents.onDialogueStarted += StartDialogue;
+        GameEventManager.Instance.uiEvents.onDialogueStarted += StartDialogue;
         GameEventManager.Instance.inputEvents.onAdvancePressed += AdvanceDialogue;
     }
 
     // Unsubscribe from events
     private void OnDisable()
     {
-        GameEventManager.Instance.dialogueEvents.onDialogueStarted -= StartDialogue;
+        GameEventManager.Instance.uiEvents.onDialogueStarted -= StartDialogue;
         GameEventManager.Instance.inputEvents.onAdvancePressed -= AdvanceDialogue;
     }
 
@@ -145,7 +145,7 @@ public class DialogueBox : MonoBehaviour
         // since the second DialogueTrigger will be cut off by the dialogue window closing.
         StartCoroutine(ColseDialogueWindowDelay());
         Debug.Log("End of Dialogue");
-        GameEventManager.Instance.dialogueEvents.DialogueFinished();
+        GameEventManager.Instance.uiEvents.DialogueFinished();
         // This is it's own event because we only want to trigger the dialogueFinishedEvent on the DialogueTrigger that triggered this dialogue.
         // If we had connected the DialogueTrigger to dialogueFinished all DialogueTriggers would trigger their dialogueFinishedEvent
         // whenever any dialogue finished, which would cause an unknowable amount of errors.

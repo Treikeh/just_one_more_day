@@ -307,7 +307,19 @@ MonoBehaviour:
     m_ActionId: 2aa3b6fd-00f8-473b-a30f-03386d241dc7
     m_ActionName: 'Player/Interact[/Keyboard/e,/Keyboard/enter]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196644229551435782}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: OnJournal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 31cd77aa-be91-47b0-8398-fc703399fc27
     m_ActionName: 'Player/Journal[/Keyboard/escape,/Keyboard/ctrl]'
   - m_PersistentCalls:
@@ -335,7 +347,19 @@ MonoBehaviour:
     m_ActionId: c80da1e2-2472-4d30-9af7-eb8f130fac16
     m_ActionName: 'Ui/Return[/Keyboard/q,/Keyboard/shift]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196644229551435782}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: OnCancel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 09b5155d-4399-40a6-9749-a3eb4d4760dd
     m_ActionName: 'Ui/Cancel[/Keyboard/escape,/Keyboard/ctrl]'
   m_NeverAutoSwitchControlSchemes: 0
