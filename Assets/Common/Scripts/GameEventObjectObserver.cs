@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GameEventObserver : MonoBehaviour
+public class GameEventObjectObserver : MonoBehaviour
 {
     // Every GameEvent and its response that this component is observing
-    public GameEvent gameEvent;
+    public GameEventObject gameEvent;
 
     // You can connect this to many different objects in the same way you would with Ui and they will all activate when the observed Event is triggered
     public UnityEvent response;

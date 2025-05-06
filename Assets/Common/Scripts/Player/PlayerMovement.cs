@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed;
+    private Vector2 velocity;
     private Rigidbody2D rb;
 
 
@@ -18,11 +19,22 @@ public class PlayerMovement : MonoBehaviour
         // Get component references
         rb = GetComponent<Rigidbody2D>();
         // Set movement 
-        move = InputManager.Instance.inputActions.Player.Move;
+        GameEventManager.Instance.inputEvents.onMovePressed += MovePressed;
+    }
+
+    private void OnDestory()
+    {
+        GameEventManager.Instance.inputEvents.onMovePressed -= MovePressed;
+    }
+
+
+    private void MovePressed(Vector2 moveDir)
+    {
+        velocity = moveDir * moveSpeed;
     }
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = move.ReadValue<Vector2>() * moveSpeed;
+        rb.linearVelocity = velocity;
     }
 }

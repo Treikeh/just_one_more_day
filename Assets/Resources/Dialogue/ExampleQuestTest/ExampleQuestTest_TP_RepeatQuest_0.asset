@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809348824352fa6458f9aa2c1d53eee3, type: 3}
+  m_Name: ExampleQuestTest_TP_RepeatQuest_0
+  m_EditorClassIdentifier: 
+  characterName: Tea pot
+  characterPortrait: {fileID: 5635092890522734083, guid: 65e22430a27660e49883c1e4196c2b79, type: 3}
+  sentences:
+  - You know i don't actually know what i need the triangles for
+  - I'm just supposed to give you a quest to test the system
+  - And gathering triangles is the only thing i con come up with
+  - Oh
+  - And by the way
+  - The red barrier blocking the door way should be gone now

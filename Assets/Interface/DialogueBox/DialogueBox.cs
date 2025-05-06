@@ -33,19 +33,19 @@ public class DialogueBox : MonoBehaviour
     // Subscribe to events
     private void OnEnable()
     {
-        DialogueManager.startDialogue += StartDialogue;
-        InputManager.Instance.inputActions.Ui.Advance.performed += AdvanceDialogue;
+        GameEventManager.Instance.dialogueEvents.onDialogueStarted += StartDialogue;
+        GameEventManager.Instance.inputEvents.onAdvancePressed += AdvanceDialogue;
     }
 
     // Unsubscribe from events
     private void OnDisable()
     {
-        DialogueManager.startDialogue -= StartDialogue;
-        InputManager.Instance.inputActions.Ui.Advance.performed -= AdvanceDialogue;
+        GameEventManager.Instance.dialogueEvents.onDialogueStarted -= StartDialogue;
+        GameEventManager.Instance.inputEvents.onAdvancePressed -= AdvanceDialogue;
     }
 
     // Advance sentence when pressing E
-    private void AdvanceDialogue(InputAction.CallbackContext context)
+    private void AdvanceDialogue()
     {
         // Check if the sentece is still being animated and if so stop the animation and display the entire sentence
         if (sentenceAnimation != null)
@@ -66,11 +66,10 @@ public class DialogueBox : MonoBehaviour
     private void StartDialogue(List<DialogueObject> list, UnityEvent dialogueEvent)
     {
         Debug.Log("Dialogue started");
-        DialogueManager.dialogueStarted?.Invoke();
         // Show dialogue window
         animator.SetBool("IsOpen", true);
         // Set ui input action map
-        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Ui);
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
         // Reset values
         dialogueTriggerEvent = dialogueEvent;
         currentDialogue = 0;
@@ -146,7 +145,7 @@ public class DialogueBox : MonoBehaviour
         // since the second DialogueTrigger will be cut off by the dialogue window closing.
         StartCoroutine(ColseDialogueWindowDelay());
         Debug.Log("End of Dialogue");
-        DialogueManager.dialogueFinished?.Invoke();
+        GameEventManager.Instance.dialogueEvents.DialogueFinished();
         // This is it's own event because we only want to trigger the dialogueFinishedEvent on the DialogueTrigger that triggered this dialogue.
         // If we had connected the DialogueTrigger to dialogueFinished all DialogueTriggers would trigger their dialogueFinishedEvent
         // whenever any dialogue finished, which would cause an unknowable amount of errors.
@@ -160,7 +159,7 @@ public class DialogueBox : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         animator.SetBool("IsOpen", false);
-        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
         Debug.Log("Dialogue finished");
     }
 }

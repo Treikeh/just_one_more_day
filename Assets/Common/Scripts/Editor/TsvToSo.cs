@@ -15,7 +15,7 @@ using System.Collections.Generic;
 
 public class TsvToSo
 {
-    private static string dialogueTsvPath = "/Data/Dialogue/DialogueDatabase.tsv";
+    private static string dialogueTsvPath = "/Resources/Dialogue/DialogueDatabase.tsv";
 
     [MenuItem("Uitlities/Genertate Dialogue")]
     public static void GenerateDialogue()
@@ -34,7 +34,7 @@ public class TsvToSo
             }
 
             // Update/Create dialogue objects
-            DialogueObject dialogueObject = AssetDatabase.LoadAssetAtPath<DialogueObject>($"Assets/Data/Dialogue/{splitData[0]}.asset");
+            DialogueObject dialogueObject = AssetDatabase.LoadAssetAtPath<DialogueObject>($"Assets/Resources/Dialogue/{splitData[0]}.asset");
             if(dialogueObject) // Update dialogue object if it exists
             {
                 UpdateDialogueObject(dialogueObject ,splitData);
@@ -44,7 +44,7 @@ public class TsvToSo
                 dialogueObject = ScriptableObject.CreateInstance<DialogueObject>();
                 UpdateDialogueObject(dialogueObject, splitData);
                 // Add object to asset folder
-                AssetDatabase.CreateAsset(dialogueObject, $"Assets/Data/Dialogue/{splitData[0]}.asset");
+                AssetDatabase.CreateAsset(dialogueObject, $"Assets/Resources/Dialogue/{splitData[0]}.asset");
             }
             // Set asset as dirty to make sure that the Sentence list is actually saved (When object is dirty it loses support for undo)
             // Might also be a good idea to use Undo.RecordObject() on the object to allow add support for undo

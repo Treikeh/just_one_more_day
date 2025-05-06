@@ -1,22 +1,29 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Interactable : MonoBehaviour
+public class Interactable : MonoBehaviour, IInteractable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private List<UnityEvent> indexResponses;
+    public UnityEvent defaultResponse;
+    private int timesInteracted = 0;
 
-    // Update is called once per frame
-    void Update()
+
+    public void Interact()
     {
-        
+        if (timesInteracted <= indexResponses.Count - 1)
+        {
+            indexResponses[timesInteracted]?.Invoke();
+            timesInteracted++;
+        }
+        else
+        {
+            defaultResponse?.Invoke();
+        }
     }
 }
 
 public interface IInteractable
 {
     void Interact();
-    bool CanInteract();
 }

@@ -8,36 +8,32 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    // Create singleton instance
-    public static LevelManager Instance {get; private set;}
-    private void Awake()
-    {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Animator loadingScreenAnimator;
 
-    public void StartLoadingScene(string sceneName)
+
+    private void OnEnable() { GameEventManager.Instance.levelEvents.onStartLoadingLevel += StartLoadingLevel; }
+    private void OnDisable() { GameEventManager.Instance.levelEvents.onStartLoadingLevel -= StartLoadingLevel; }
+
+
+    private void Start()
+    {
+        // Trigger level loded event when the game starts.
+        // This is to make sure that objects that depend on this event can setup correctly.
+        GameEventManager.Instance.levelEvents.LevelLoaded();
+    }
+
+
+    public void StartLoadingLevel(string sceneName)
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         StartCoroutine(ProgressLoadingScene(scene));
     }
 
-
     private IEnumerator ProgressLoadingScene(AsyncOperation scene)
     {
         // Diable player input when loading scene
-        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Ui);
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
         // Show loading screen and stop scene from spawning until lodaing screen is fully visible
         scene.allowSceneActivation = false;
         loadingScreen.SetActive(true);
@@ -53,9 +49,10 @@ public class LevelManager : MonoBehaviour
         // Hide loading screen when scene is ready
         // Start hide loading screen animation
         loadingScreenAnimator.Play("LoadingScreen_Hide");
+        GameEventManager.Instance.levelEvents.LevelLoaded();
         yield return new WaitForSeconds(.25f);
         loadingScreen.SetActive(false);
         // Enalbe player inputs when scene has finished loading
-        InputManager.Instance.ToggleActionMap(InputManager.Instance.inputActions.Player);
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
     }
 }

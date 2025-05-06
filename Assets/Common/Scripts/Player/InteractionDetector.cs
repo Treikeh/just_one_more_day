@@ -9,8 +9,13 @@ public class InteractionDetector : MonoBehaviour
 
 
     // Subscribe and unsubscribe from input events
-    private void OnEnable() { InputManager.Instance.inputActions.Player.Interact.started += OnInteract; }
-    private void OnDisable() { InputManager.Instance.inputActions.Player.Interact.started -= OnInteract; }
+    private void OnEnable() { GameEventManager.Instance.inputEvents.onInteractPressed += InteractPressed; }
+    private void OnDisable() { GameEventManager.Instance.inputEvents.onInteractPressed -= InteractPressed; }
+
+    public void InteractPressed()
+    {
+        interactableInRange?.Interact();
+    }
 
 
     private void Start()
@@ -18,9 +23,10 @@ public class InteractionDetector : MonoBehaviour
         interactIcon.SetActive(false);
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
+        if (other.TryGetComponent(out IInteractable interactable))
         {
             interactableInRange = interactable;
             interactIcon.SetActive(true);
@@ -34,11 +40,5 @@ public class InteractionDetector : MonoBehaviour
             interactableInRange = null;
             interactIcon.SetActive(false);
         }
-    }
-
-
-    public void OnInteract(InputAction.CallbackContext context)
-    {
-        interactableInRange?.Interact();
     }
 }
