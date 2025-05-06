@@ -72,4 +72,30 @@ public class InputManager : MonoBehaviour
             GameEventManager.Instance.inputEvents.CancelPressed();
         }
     }
+
+
+    // PUZZLE INPUTS
+    public void OnLeftClick(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEventManager.Instance.inputEvents.LeftClickPressed(true);
+        }
+        else if (context.canceled)
+        {
+            GameEventManager.Instance.inputEvents.LeftClickPressed(false);
+        }
+    }
+
+    public void OnRightClickPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEventManager.Instance.inputEvents.RightClickPressed(true);
+        }
+        else if (context.canceled)
+        {
+            GameEventManager.Instance.inputEvents.RightClickPressed(false);
+        }
+    }
 }

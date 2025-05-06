@@ -61,4 +61,24 @@ public class InputEvents
             onCancelPressed();
         }
     }
+
+
+    // PUZZLE INPUTS
+    public event Action<bool> onLeftClickPressed;
+    public void LeftClickPressed(bool pressed)
+    {
+        if (onLeftClickPressed != null)
+        {
+            onLeftClickPressed(pressed);
+        }
+    }
+
+    public event Action<bool> onRightClickPressed;
+    public void RightClickPressed(bool pressed)
+    {
+        if (onRightClickPressed != null)
+        {
+            onRightClickPressed(pressed);
+        }
+    }
 }
