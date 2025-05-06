@@ -124,28 +124,9 @@ public class QuestManager : MonoBehaviour
         }
 
         Debug.Log($"{questId} Finished");
+        activeQuests.Remove(questId);
+        finishedQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.FINISHED);
-    }
-
-    private void FinishQuest(string questId)
-    {
-        Quest quest = GetQuestById(questId);
-
-        // Check if quest has allready finished
-        if (quest.state != QuestState.FINISHED)
-        {
-            Debug.Log($"{questId} Finished");
-            activeQuests.Remove(questId);
-            finishedQuests.Add(questId, quest);
-            ChangeQuestState(quest, QuestState.FINISHED);
-            GameEventManager.Instance.questEvents.QuestFinished(questId);
-        }
-    }
-
-    private void QuestRefreshed(string questId)
-    {
-        Quest quest = GetQuestById(questId);
-        GameEventManager.Instance.questEvents.QuestStateChanged(quest);
     }
 
     private void LevelLoaded()
@@ -155,13 +136,6 @@ public class QuestManager : MonoBehaviour
             Quest quest = GetQuestById(questId);
             GameEventManager.Instance.questEvents.QuestStateChanged(quest);
         }
-    }
-
-    private QuestState GetQuestState(string questId)
-    {
-        Quest quest = GetQuestById(questId);
-        Debug.Log($"{questId} State is {quest.state}");
-        return quest.state;
     }
 }
 
