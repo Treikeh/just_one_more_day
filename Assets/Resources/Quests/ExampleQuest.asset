@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fb1d45b71c58743872d3cec663b117, type: 3}
   m_Name: ExampleQuest
   m_EditorClassIdentifier: 
-  description: Walk on the red triangle
+  description: Gather 5 red triangles for the teapot
   finishAutomatically: 0
   questPrerequisites: []
   questSteps: 5
