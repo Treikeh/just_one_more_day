@@ -1,28 +1,30 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-// !TODO: Find a better way of getting active and finished quests from the QuestManager. Don't want to use public static variables
 
 public class JournalUi : MonoBehaviour
 {
-    [SerializeField] private TMP_Text activeQuests;
-    [SerializeField] private TMP_Text finishedQuests;
+    [SerializeField] private TMP_Text activeQuestsText;
+    [SerializeField] private TMP_Text finishedQuestsText;
 
 
     private void OnEnable()
     {
         // Display active quests
-        activeQuests.text = "Active Quessts:\n";
-        foreach (string key in QuestManager.activeQuests.Keys)
+        Dictionary<string, Quest> activeQuests = QuestManager.Instance.ActiveQuests;
+        activeQuestsText.text = "Active Quessts:\n";
+        foreach (string key in activeQuests.Keys)
         {
-            activeQuests.text += $"{QuestManager.activeQuests[key].info.description}: {QuestManager.activeQuests[key].questProgress}/{QuestManager.activeQuests[key].info.questSteps}\n";
+            activeQuestsText.text += $"{activeQuests[key].info.description}: {activeQuests[key].questProgress}/{activeQuests[key].info.questSteps}\n";
         }
 
         // Display finished quests
-        finishedQuests.text = "Finished Quests:\n";
-        foreach (string key in QuestManager.finishedQuests.Keys)
+        Dictionary<string, Quest> finishedQuests = QuestManager.Instance.FinishedQuests;
+        finishedQuestsText.text = "Finished Quests:\n";
+        foreach (string key in finishedQuests.Keys)
         {
-            finishedQuests.text += $"{QuestManager.finishedQuests[key].info.description}\n";
+            finishedQuestsText.text += $"{finishedQuests[key].info.description}\n";
         }
     }
 }

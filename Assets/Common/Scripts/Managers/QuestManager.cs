@@ -1,38 +1,34 @@
+using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 //CREDITS: Shaped by Rain Studios - Github: https://github.com/shapedbyrainstudios/quest-system - Youtube: https://www.youtube.com/watch?v=UyTJLDGcT64
 // It's not an excat copy their code but a more simplified version.
 
 public class QuestManager : MonoBehaviour
 {
-    private Dictionary<string, Quest> questMap;
-    // !Having this as a public static variable is only temporary
-    public static Dictionary<string, Quest> activeQuests = new();
-    // !Having this as a public static variable is only temporary
-    public static Dictionary<string, Quest> finishedQuests = new();
-
+    // Create singleton instance
+    public static QuestManager Instance { get; private set; }
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
         questMap = CreateQuestMap();
     }
 
-    private void OnEnable()
-    {
-        GameEventManager.Instance.questEvents.onQuestStarted += QuestStarted;
-        GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
-        GameEventManager.Instance.questEvents.onQuestFinished += QuestFinished;
 
-        LevelManager.onLevelLoaded += LevelLoaded;
-    }
 
-    private void OnDisable()
-    {
-        GameEventManager.Instance.questEvents.onQuestStarted -= QuestStarted;
-        GameEventManager.Instance.questEvents.onQuestAdvanced -= QuestAdvanced;
-        GameEventManager.Instance.questEvents.onQuestFinished -= QuestFinished;
+    private Dictionary<string, Quest> questMap;
+    public Dictionary<string, Quest> ActiveQuests { get; private set; } = new();
+    public Dictionary<string, Quest> FinishedQuests { get; private set; } = new();
 
-        LevelManager.onLevelLoaded -= LevelLoaded;
-    }
+    public event Action<Quest> onQuestStateChanged;
+
+
 
     // Get all quests in the Assets/Resources/Quests folder
     private Dictionary<string, Quest> CreateQuestMap()
@@ -58,7 +54,7 @@ public class QuestManager : MonoBehaviour
         return quest;
     }
 
-    private Quest GetQuestById(string questId)
+    public Quest GetQuestById(string questId)
     {
         Quest quest = questMap[questId];
         if (quest == null)
@@ -71,11 +67,11 @@ public class QuestManager : MonoBehaviour
     private void ChangeQuestState(Quest quest, QuestState questState)
     {
         quest.state = questState;
-        GameEventManager.Instance.questEvents.QuestStateChanged(quest);
+        onQuestStateChanged?.Invoke(quest);
     }
 
 
-    private void QuestStarted(string questId)
+    public void StartQuest(string questId)
     {
         Quest quest = GetQuestById(questId);
         // TODO: Make sure all prerequisite quest are completed
@@ -85,11 +81,11 @@ public class QuestManager : MonoBehaviour
             return;
         }
         Debug.Log($"{questId} Started");
-        activeQuests.Add(questId, quest);
+        ActiveQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.IN_PROGRESS);
     }
 
-    private void QuestAdvanced(string questId)
+    public void AdvanceQuest(string questId)
     {
         Quest quest = GetQuestById(questId);
 
@@ -106,17 +102,18 @@ public class QuestManager : MonoBehaviour
         // Finish the quest when all steps are completed
         if (quest.questProgress >= quest.info.questSteps)
         {
-            Debug.Log($"{questId} can be finished");
             ChangeQuestState(quest, QuestState.CAN_FINISH);
+            Debug.Log($"{questId} can be finished");
             if (quest.info.finishAutomatically)
             {
-                quest.info.FinishQuest();
+                FinishQuest(questId);
             }
         }
     }
 
-    private void QuestFinished(string questId)
+    public void FinishQuest(string questId)
     {
+        Debug.Log("Hello");
         Quest quest = GetQuestById(questId);
 
         if (quest.state != QuestState.CAN_FINISH)
@@ -126,18 +123,15 @@ public class QuestManager : MonoBehaviour
         }
 
         Debug.Log($"{questId} Finished");
-        activeQuests.Remove(questId);
-        finishedQuests.Add(questId, quest);
+        ActiveQuests.Remove(questId);
+        FinishedQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.FINISHED);
     }
 
-    private void LevelLoaded()
+    public QuestState GetQuestState(string questId)
     {
-        foreach (string questId in questMap.Keys)
-        {
-            Quest quest = GetQuestById(questId);
-            GameEventManager.Instance.questEvents.QuestStateChanged(quest);
-        }
+        Quest quest = GetQuestById(questId);
+        return quest.state;
     }
 }
 

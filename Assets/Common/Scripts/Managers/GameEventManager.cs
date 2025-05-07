@@ -7,7 +7,6 @@ public class GameEventManager : MonoBehaviour
 
 
     public UiEvents uiEvents;
-    public QuestEvents questEvents;
 
 
     private void Awake()
@@ -22,7 +21,6 @@ public class GameEventManager : MonoBehaviour
             Instance = this;
 
             uiEvents = new UiEvents();
-            questEvents = new QuestEvents();
         }
     }
 }

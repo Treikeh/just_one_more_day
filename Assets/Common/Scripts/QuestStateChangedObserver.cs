@@ -3,7 +3,6 @@ using UnityEngine.Events;
 
 // This component sends events when the QuestInfo it observes chagnes state
 
-
 public class QuestStateChangedObserver : MonoBehaviour
 {
     [SerializeField] private QuestInfoObject questInfoObject;
@@ -14,8 +13,14 @@ public class QuestStateChangedObserver : MonoBehaviour
     public UnityEvent finishedResponse;
 
 
-    private void OnEnable() { GameEventManager.Instance.questEvents.onQuestStateChanged += QuestStateChanged; }
-    private void OnDisable() { GameEventManager.Instance.questEvents.onQuestStateChanged -= QuestStateChanged; }
+    private void OnEnable() { QuestManager.Instance.onQuestStateChanged += QuestStateChanged; }
+    private void OnDisable() { QuestManager.Instance.onQuestStateChanged -= QuestStateChanged; }
+
+
+    private void Start()
+    {
+        QuestStateChanged(QuestManager.Instance.GetQuestById(questInfoObject.name));
+    }
 
 
     private void QuestStateChanged(Quest quest)

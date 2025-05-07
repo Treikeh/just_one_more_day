@@ -11,10 +11,8 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
     private QuestState currentQuestState = QuestState.NOT_STARTED;
 
 
-    private void OnEnable() { GameEventManager.Instance.questEvents.onQuestStateChanged += QuestStateChanged; }
-    private void OnDisable() { GameEventManager.Instance.questEvents.onQuestStateChanged -= QuestStateChanged; }
-
-
+    private void OnEnable() { QuestManager.Instance.onQuestStateChanged += QuestStateChanged; }
+    private void OnDisable() { QuestManager.Instance.onQuestStateChanged -= QuestStateChanged; }
     private void QuestStateChanged(Quest quest)
     {
         if (quest.info.name.Equals(questToCheck.name))
@@ -22,6 +20,18 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
             currentQuestState = quest.state;
             Debug.Log($"Quest Check {currentQuestState}");
         }
+    }
+
+
+    private void Start()
+    {
+        currentQuestState = QuestManager.Instance.GetQuestState(questToCheck.name);
+    }
+
+
+public void Interact()
+    {
+        CheckQuestProgress();
     }
 
     public void CheckQuestProgress()
@@ -41,11 +51,5 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
                 questFinished.Invoke();
                 break;
         }
-    }
-
-
-    public void Interact()
-    {
-        CheckQuestProgress();
     }
 }

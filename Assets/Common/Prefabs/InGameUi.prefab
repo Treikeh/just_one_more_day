@@ -1057,8 +1057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f8181701809384cae5f351e20a1d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeQuests: {fileID: 8935923007362596799}
-  finishedQuests: {fileID: 5048212945123656278}
+  activeQuestsText: {fileID: 8935923007362596799}
+  finishedQuestsText: {fileID: 5048212945123656278}
 --- !u!1 &5041624091357374526
 GameObject:
   m_ObjectHideFlags: 0
