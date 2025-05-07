@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1557941881232187018}
   - component: {fileID: 3138436611611859639}
   - component: {fileID: 4294089373050657406}
+  - component: {fileID: 8530874961150267669}
   m_Layer: 0
   m_Name: RedTriangle
   m_TagString: Untagged
@@ -240,3 +241,15 @@ MonoBehaviour:
   targetExitedTrigger:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8530874961150267669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706389809947440907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292f7abc6dba86141bfa560800f508a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

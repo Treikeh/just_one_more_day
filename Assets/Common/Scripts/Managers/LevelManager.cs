@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -34,8 +35,21 @@ private void Start()
     }
 
 
+    public Dictionary<string, int> saveDict = new();
+
+    private void SaveAllObjects()
+    {
+        var iSaveList = FindObjectsOfType<MonoBehaviour>().OfType<ISave>();
+        foreach (ISave s in iSaveList)
+        {
+            s.Save();
+        }
+    }
+
+
     public void StartLoadingLevel(string sceneName)
     {
+        SaveAllObjects();
         var scene = SceneManager.LoadSceneAsync(sceneName);
         StartCoroutine(ProgressLoadingScene(scene));
     }
