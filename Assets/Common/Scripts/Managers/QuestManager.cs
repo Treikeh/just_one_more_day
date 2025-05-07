@@ -22,7 +22,7 @@ public class QuestManager : MonoBehaviour
         GameEventManager.Instance.questEvents.onQuestAdvanced += QuestAdvanced;
         GameEventManager.Instance.questEvents.onQuestFinished += QuestFinished;
 
-        GameEventManager.Instance.levelEvents.onLevelLoaded += LevelLoaded;
+        LevelManager.onLevelLoaded += LevelLoaded;
     }
 
     private void OnDisable()
@@ -31,7 +31,7 @@ public class QuestManager : MonoBehaviour
         GameEventManager.Instance.questEvents.onQuestAdvanced -= QuestAdvanced;
         GameEventManager.Instance.questEvents.onQuestFinished -= QuestFinished;
 
-        GameEventManager.Instance.levelEvents.onLevelLoaded -= LevelLoaded;
+        LevelManager.onLevelLoaded -= LevelLoaded;
     }
 
     // Get all quests in the Assets/Resources/Quests folder

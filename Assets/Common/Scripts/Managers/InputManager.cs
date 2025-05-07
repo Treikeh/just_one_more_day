@@ -9,11 +9,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
+    // Create singleton instance
     public static InputManager Instance { get; private set; }
-    private PlayerInput playerInput;
-
-
-    // Set singleton instance
     private void Awake()
     {
         if (Instance != null)
@@ -24,6 +21,10 @@ public class InputManager : MonoBehaviour
         Instance = this;
         playerInput = GetComponent<PlayerInput>();
     }
+
+
+
+    private PlayerInput playerInput;
 
 
     public void ChangeActionMap(string actionMap)

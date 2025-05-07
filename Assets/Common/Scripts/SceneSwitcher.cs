@@ -9,12 +9,12 @@ public class SceneSwitcher : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            GameEventManager.Instance.levelEvents.StartLoadingLevel(sceneToLoad);
+            StartLoadingLevel();
         }
     }
 
     public void StartLoadingLevel()
     {
-            GameEventManager.Instance.levelEvents.StartLoadingLevel(sceneToLoad);
+        LevelManager.Instance.StartLoadingLevel(sceneToLoad);
     }
 }
