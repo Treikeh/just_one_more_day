@@ -12,4 +12,9 @@ public class SceneSwitcher : MonoBehaviour
             GameEventManager.Instance.levelEvents.StartLoadingLevel(sceneToLoad);
         }
     }
+
+    public void StartLoadingLevel()
+    {
+            GameEventManager.Instance.levelEvents.StartLoadingLevel(sceneToLoad);
+    }
 }

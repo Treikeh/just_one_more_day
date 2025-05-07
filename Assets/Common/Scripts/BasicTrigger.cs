@@ -5,13 +5,23 @@ using UnityEngine.Events;
 // If you want to disable the trigger after the player walks into it use the event to disable the trigger collider
 public class BasicTrigger : MonoBehaviour
 {
-    public UnityEvent playerEnteredTrigger;
+    [SerializeField] private string targetTag = "Player";
+    public UnityEvent targetEnteredTrigger;
+    public UnityEvent targetExitedTrigger;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == targetTag)
         {
-            playerEnteredTrigger.Invoke();
+            targetEnteredTrigger.Invoke();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == targetTag)
+        {
+            targetExitedTrigger.Invoke();
         }
     }
 }

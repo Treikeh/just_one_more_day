@@ -14,17 +14,15 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
 
-    private void Awake()
+    private void OnEnable() { GameEventManager.Instance.inputEvents.onMovePressed += MovePressed; }
+    private void OnDisable() { GameEventManager.Instance.inputEvents.onMovePressed -= MovePressed; }
+
+
+    private void Start()
     {
         // Get component references
         rb = GetComponent<Rigidbody2D>();
-        // Set movement 
-        GameEventManager.Instance.inputEvents.onMovePressed += MovePressed;
-    }
-
-    private void OnDestory()
-    {
-        GameEventManager.Instance.inputEvents.onMovePressed -= MovePressed;
+        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
     }
 
 

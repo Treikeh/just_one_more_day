@@ -53,6 +53,6 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(.25f);
         loadingScreen.SetActive(false);
         // Enalbe player inputs when scene has finished loading
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
+        // GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
     }
 }
