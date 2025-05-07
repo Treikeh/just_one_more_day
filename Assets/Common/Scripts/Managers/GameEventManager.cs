@@ -6,7 +6,6 @@ public class GameEventManager : MonoBehaviour
     public static GameEventManager Instance { get; private set; }
 
 
-    public InputEvents inputEvents;
     public LevelEvents levelEvents;
     public UiEvents uiEvents;
     public QuestEvents questEvents;
@@ -23,7 +22,6 @@ public class GameEventManager : MonoBehaviour
         {
             Instance = this;
 
-            inputEvents = new InputEvents();
             levelEvents = new LevelEvents();
             uiEvents = new UiEvents();
             questEvents = new QuestEvents();

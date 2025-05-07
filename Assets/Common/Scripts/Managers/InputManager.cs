@@ -9,93 +9,102 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
+    public static InputManager Instance { get; private set; }
     private PlayerInput playerInput;
 
 
-    private void OnEnable()
+    // Set singleton instance
+    private void Awake()
     {
-        GameEventManager.Instance.inputEvents.onActionMapChanged += ActionMapChanged;
-    }
-
-    private void OnDisable()
-    {
-        GameEventManager.Instance.inputEvents.onActionMapChanged -= ActionMapChanged;
-    }
-
-
-    private void ActionMapChanged(string actionMap)
-    {
+        if (Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
         playerInput = GetComponent<PlayerInput>();
+    }
+
+
+    public void ChangeActionMap(string actionMap)
+    {
         playerInput.SwitchCurrentActionMap(actionMap);
     }
 
 
     // PLAYER INPUTS
+    public event Action<Vector2> onMovePressed;
     public void OnMove(InputAction.CallbackContext context)
     {
         if (context.performed || context.canceled)
         {
-            GameEventManager.Instance.inputEvents.MovePressed(context.ReadValue<Vector2>());
+            onMovePressed?.Invoke(context.ReadValue<Vector2>());
         }
     }
 
+    public event Action onInteractPressed;
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.InteractPressed();
+            onInteractPressed?.Invoke();
         }
     }
 
+    public event Action onJournalPressed;
     public void OnJournal(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.JournalPressed();
+            onJournalPressed?.Invoke();
         }
     }
 
 
     // UI INPUTS
+    public event Action onAdvancePressed;
     public void OnAdvance(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.AdvancePressed();
+            onAdvancePressed?.Invoke();
         }
     }
 
+    public event Action onCancelPressed;
     public void OnCancel(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.CancelPressed();
+            onCancelPressed?.Invoke();
         }
     }
 
 
     // PUZZLE INPUTS
+    public event Action<bool> onLeftClickPressed;
     public void OnLeftClick(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.LeftClickPressed(true);
+            onLeftClickPressed?.Invoke(true);
         }
         else if (context.canceled)
         {
-            GameEventManager.Instance.inputEvents.LeftClickPressed(false);
+            onLeftClickPressed?.Invoke(false);
         }
     }
 
+    public event Action<bool> onRightClickPressed;
     public void OnRightClickPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.RightClickPressed(true);
+            onRightClickPressed?.Invoke(true);
         }
         else if (context.canceled)
         {
-            GameEventManager.Instance.inputEvents.RightClickPressed(false);
+            onRightClickPressed?.Invoke(true);
         }
     }
 }

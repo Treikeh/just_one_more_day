@@ -9,8 +9,8 @@ public class InteractionDetector : MonoBehaviour
 
 
     // Subscribe and unsubscribe from input events
-    private void OnEnable() { GameEventManager.Instance.inputEvents.onInteractPressed += InteractPressed; }
-    private void OnDisable() { GameEventManager.Instance.inputEvents.onInteractPressed -= InteractPressed; }
+    private void OnEnable() { InputManager.Instance.onInteractPressed += InteractPressed; }
+    private void OnDisable() { InputManager.Instance.onInteractPressed -= InteractPressed; }
 
     public void InteractPressed()
     {

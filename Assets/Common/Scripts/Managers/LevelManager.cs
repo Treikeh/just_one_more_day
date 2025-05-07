@@ -33,7 +33,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator ProgressLoadingScene(AsyncOperation scene)
     {
         // Diable player input when loading scene
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
+        InputManager.Instance.ChangeActionMap("Ui");
         // Show loading screen and stop scene from spawning until lodaing screen is fully visible
         scene.allowSceneActivation = false;
         loadingScreen.SetActive(true);

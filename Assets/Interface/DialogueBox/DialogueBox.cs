@@ -29,8 +29,8 @@ public class DialogueBox : MonoBehaviour
 
 
     // Subscribe and unsubscribe from input events
-    private void OnEnable() { GameEventManager.Instance.inputEvents.onAdvancePressed += AdvanceDialogue; }
-    private void OnDisable() { GameEventManager.Instance.inputEvents.onAdvancePressed -= AdvanceDialogue; }
+    private void OnEnable() { InputManager.Instance.onAdvancePressed += AdvanceDialogue; }
+    private void OnDisable() { InputManager.Instance.onAdvancePressed -= AdvanceDialogue; }
 
 
     // Advance sentence when pressing E

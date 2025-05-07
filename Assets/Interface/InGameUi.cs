@@ -10,8 +10,8 @@ public class InGameUi : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEventManager.Instance.inputEvents.onJournalPressed += JounralPressed;
-        GameEventManager.Instance.inputEvents.onCancelPressed += CancelPressed;
+        InputManager.Instance.onJournalPressed += JounralPressed;
+        InputManager.Instance.onCancelPressed += CancelPressed;
 
         GameEventManager.Instance.uiEvents.onDialogueStarted += DialogueStarted;
         GameEventManager.Instance.uiEvents.onDialogueFinished += DialogueFinished;
@@ -19,8 +19,8 @@ public class InGameUi : MonoBehaviour
 
     private void OnDisable()
     {
-        GameEventManager.Instance.inputEvents.onJournalPressed -= JounralPressed;
-        GameEventManager.Instance.inputEvents.onCancelPressed -= CancelPressed;
+        InputManager.Instance.onJournalPressed -= JounralPressed;
+        InputManager.Instance.onCancelPressed -= CancelPressed;
 
         GameEventManager.Instance.uiEvents.onDialogueStarted -= DialogueStarted;
         GameEventManager.Instance.uiEvents.onDialogueFinished -= DialogueFinished;
@@ -32,7 +32,7 @@ public class InGameUi : MonoBehaviour
         if (!journal.gameObject.activeInHierarchy)
         {
             journal.gameObject.SetActive(true);
-            GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
+            InputManager.Instance.ChangeActionMap("Ui");
         }
     }
 
@@ -42,7 +42,7 @@ public class InGameUi : MonoBehaviour
         if (journal.gameObject.activeInHierarchy)
         {
             journal.gameObject.SetActive(false);
-            GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
+            InputManager.Instance.ChangeActionMap("Player");
         }
     }
 
@@ -50,13 +50,13 @@ public class InGameUi : MonoBehaviour
     {
         dialogueBox.gameObject.SetActive(true);
         dialogueBox.StartDialogue(list, @event);
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Ui");
+        InputManager.Instance.ChangeActionMap("Ui");
     }
 
     private void DialogueFinished()
     {
         dialogueBox.gameObject.SetActive(false);
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
+        InputManager.Instance.ChangeActionMap("Player");
     }
 
 
