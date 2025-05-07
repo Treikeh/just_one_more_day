@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -42,26 +43,26 @@ private void Start()
 
     private IEnumerator ProgressLoadingScene(AsyncOperation scene)
     {
+        // Only allow new scene to spawn when the loading screen is shown
+        scene.allowSceneActivation = false;
         // Diable player input when loading scene
         InputManager.Instance.ChangeActionMap("Ui");
-        // Show loading screen and stop scene from spawning until lodaing screen is fully visible
-        scene.allowSceneActivation = false;
+
+        // Enable loading screen
         loadingScreen.SetActive(true);
-        // Start show loading screen animation
         loadingScreenAnimator.Play("LoadingScreen_Show");
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(Utils.GetAnimationLength(loadingScreenAnimator, "LoadingScreen_Show"));
 
         // Allow scene to spawn when ready
         scene.allowSceneActivation = true;
         // Check if the scene has finished loading
         while (!scene.isDone) { yield return null; }
-
+        // Trigger event that new level was loaded
         OnLevelLoaded?.Invoke();
-        // Hide loading screen when scene is ready
-        // Start hide loading screen animation
+
+        // Disable loading screen when scene has spawned
         loadingScreenAnimator.Play("LoadingScreen_Hide");
-        yield return new WaitForSeconds(.25f);
-        // Disable loading screen when the animation has finished
+        yield return new WaitForSeconds(Utils.GetAnimationLength(loadingScreenAnimator, "LoadingScreen_Hide"));
         loadingScreen.SetActive(false);
     }
 }

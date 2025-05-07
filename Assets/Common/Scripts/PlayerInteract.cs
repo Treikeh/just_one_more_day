@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 // CREDITS: Game Code Library - Youtube: https://www.youtube.com/watch?v=MPP9GLp44Pc
 
 public class PlayerInteract : MonoBehaviour
