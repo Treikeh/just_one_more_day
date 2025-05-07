@@ -35,12 +35,12 @@ private void Start()
     }
 
 
-    public Dictionary<string, int> saveDict = new();
+    public Dictionary<string, Dictionary<string, dynamic>> saveDict = new();
 
     private void SaveAllObjects()
     {
-        var iSaveList = FindObjectsOfType<MonoBehaviour>().OfType<ISave>();
-        foreach (ISave s in iSaveList)
+        var saveList = FindObjectsOfType<MonoBehaviour>().OfType<ISave>();
+        foreach (ISave s in saveList)
         {
             s.Save();
         }

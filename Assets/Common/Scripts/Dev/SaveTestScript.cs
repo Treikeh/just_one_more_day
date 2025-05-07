@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SaveTestScript : MonoBehaviour, ISave
@@ -11,15 +12,21 @@ public class SaveTestScript : MonoBehaviour, ISave
     public void Save()
     {
         int value = Random.Range(0, 100);
-        LevelManager.Instance.saveDict.Add(gameObject.name, value);
-        Debug.Log($"{gameObject.name} saved a value of {value}");
+        Dictionary<string, dynamic> dict = new()
+        {
+            { "name", gameObject.name },
+            { "value", value}
+        };
+        string key = Utils.GetSceneId(gameObject);
+        LevelManager.Instance.saveDict.Add(key, dict);
     }
 
     public void Load()
     {
-        if (LevelManager.Instance.saveDict.ContainsKey(gameObject.name))
+        string key = Utils.GetSceneId(gameObject);
+        if (LevelManager.Instance.saveDict.ContainsKey(key))
         {
-            Debug.Log($"{gameObject.name} had a value of {LevelManager.Instance.saveDict[gameObject.name]}");
+            Dictionary<string, dynamic> dict = LevelManager.Instance.saveDict[key];
         }
     }
 }
