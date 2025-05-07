@@ -806,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: ExampleQuestTest01
+  levelToLoad: ExampleQuestTest01
 --- !u!61 &1229861959
 BoxCollider2D:
   m_ObjectHideFlags: 0

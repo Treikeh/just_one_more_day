@@ -10,20 +10,20 @@ public class InGameUi : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.Instance.onJournalPressed += JounralPressed;
+        InputManager.Instance.OnJournalPressed += JounralPressed;
         InputManager.Instance.onCancelPressed += CancelPressed;
 
-        UiManager.Instance.onDialogueStarted += DialogueStarted;
-        UiManager.Instance.onDialogueFinished += DialogueFinished;
+        UiManager.Instance.OnDialogueStarted += DialogueStarted;
+        UiManager.Instance.OnDialogueFinished += DialogueFinished;
     }
 
     private void OnDisable()
     {
-        InputManager.Instance.onJournalPressed -= JounralPressed;
+        InputManager.Instance.OnJournalPressed -= JounralPressed;
         InputManager.Instance.onCancelPressed -= CancelPressed;
 
-        UiManager.Instance.onDialogueStarted -= DialogueStarted;
-        UiManager.Instance.onDialogueFinished -= DialogueFinished;
+        UiManager.Instance.OnDialogueStarted -= DialogueStarted;
+        UiManager.Instance.OnDialogueFinished -= DialogueFinished;
     }
 
 

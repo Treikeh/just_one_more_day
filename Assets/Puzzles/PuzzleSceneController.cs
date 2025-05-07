@@ -10,15 +10,16 @@ public class PuzzleSceneController : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.Instance.onLeftClickPressed += LeftClickPressed;
-        InputManager.Instance.onRightClickPressed += RightClickPressed;
+        InputManager.Instance.OnLeftClickPressed += LeftClickPressed;
+        InputManager.Instance.OnRightClickPressed += RightClickPressed;
     }
 
     private void OnDisable()
     {
-        InputManager.Instance.onLeftClickPressed -= LeftClickPressed;
-        InputManager.Instance.onRightClickPressed -= RightClickPressed;
+        InputManager.Instance.OnLeftClickPressed -= LeftClickPressed;
+        InputManager.Instance.OnRightClickPressed -= RightClickPressed;
     }
+
 
     private void Start()
     {

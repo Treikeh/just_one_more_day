@@ -1,14 +1,20 @@
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 //CREDITS: Shaped by Rain Studios - Github: https://github.com/shapedbyrainstudios/quest-system - Youtube: https://www.youtube.com/watch?v=UyTJLDGcT64
 // It's not an excat copy their code but a more simplified version.
 
 public class QuestManager : MonoBehaviour
 {
-    // Create singleton instance
+    public event Action<Quest> OnQuestStateChanged;
+
     public static QuestManager Instance { get; private set; }
+    public Dictionary<string, Quest> ActiveQuests { get; private set; } = new();
+    public Dictionary<string, Quest> FinishedQuests { get; private set; } = new();
+
+    private Dictionary<string, Quest> questMap;
+
+
     private void Awake()
     {
         if (Instance != null)
@@ -19,15 +25,6 @@ public class QuestManager : MonoBehaviour
         Instance = this;
         questMap = CreateQuestMap();
     }
-
-
-
-    private Dictionary<string, Quest> questMap;
-    public Dictionary<string, Quest> ActiveQuests { get; private set; } = new();
-    public Dictionary<string, Quest> FinishedQuests { get; private set; } = new();
-
-    public event Action<Quest> onQuestStateChanged;
-
 
 
     // Get all quests in the Assets/Resources/Quests folder
@@ -52,22 +49,6 @@ public class QuestManager : MonoBehaviour
     {
         Quest quest = new(questInfo);
         return quest;
-    }
-
-    public Quest GetQuestById(string questId)
-    {
-        Quest quest = questMap[questId];
-        if (quest == null)
-        {
-            Debug.LogError($"{questId} not found in the quest map");
-        }
-        return quest;
-    }
-
-    private void ChangeQuestState(Quest quest, QuestState questState)
-    {
-        quest.state = questState;
-        onQuestStateChanged?.Invoke(quest);
     }
 
 
@@ -128,10 +109,27 @@ public class QuestManager : MonoBehaviour
         ChangeQuestState(quest, QuestState.FINISHED);
     }
 
+    private void ChangeQuestState(Quest quest, QuestState questState)
+    {
+        quest.state = questState;
+        OnQuestStateChanged?.Invoke(quest);
+    }
+
+
     public QuestState GetQuestState(string questId)
     {
         Quest quest = GetQuestById(questId);
         return quest.state;
+    }
+
+    private Quest GetQuestById(string questId)
+    {
+        Quest quest = questMap[questId];
+        if (quest == null)
+        {
+            Debug.LogError($"{questId} not found in the quest map");
+        }
+        return quest;
     }
 }
 

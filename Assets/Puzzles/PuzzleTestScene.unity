@@ -1457,7 +1457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questInfoObject: {fileID: 11400000, guid: 51da75bc516ac5846b0a2e088f9413c2, type: 2}
+  questToCheck: {fileID: 11400000, guid: 51da75bc516ac5846b0a2e088f9413c2, type: 2}
   notStartedResponse:
     m_PersistentCalls:
       m_Calls:
@@ -1521,7 +1521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: ExampleQuestTest01
+  levelToLoad: ExampleQuestTest01
 --- !u!1 &814518730
 GameObject:
   m_ObjectHideFlags: 0

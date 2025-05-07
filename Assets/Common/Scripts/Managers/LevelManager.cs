@@ -4,13 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-// TODO: Find a way to not connect the inputManager to this script
-
-
 public class LevelManager : MonoBehaviour
 {
-    // Create singleton instance
+    public static event Action OnLevelLoaded;
+
     public static LevelManager Instance { get; private set; }
+
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private Animator loadingScreenAnimator;
+
+
     private void Awake()
     {
         if (Instance != null)
@@ -22,17 +25,11 @@ public class LevelManager : MonoBehaviour
     }
 
 
-
-    [SerializeField] private GameObject loadingScreen;
-    [SerializeField] private Animator loadingScreenAnimator;
-    public static event Action onLevelLoaded;
-
-
-    private void Start()
+private void Start()
     {
         // Trigger level loded event when the game starts.
         // This is to make sure that objects that depend on this event can setup correctly.
-        onLevelLoaded?.Invoke();
+        OnLevelLoaded?.Invoke();
     }
 
 
@@ -41,6 +38,7 @@ public class LevelManager : MonoBehaviour
         var scene = SceneManager.LoadSceneAsync(sceneName);
         StartCoroutine(ProgressLoadingScene(scene));
     }
+
 
     private IEnumerator ProgressLoadingScene(AsyncOperation scene)
     {
@@ -58,13 +56,12 @@ public class LevelManager : MonoBehaviour
         // Check if the scene has finished loading
         while (!scene.isDone) { yield return null; }
 
+        OnLevelLoaded?.Invoke();
         // Hide loading screen when scene is ready
         // Start hide loading screen animation
         loadingScreenAnimator.Play("LoadingScreen_Hide");
-        onLevelLoaded?.Invoke();
         yield return new WaitForSeconds(.25f);
+        // Disable loading screen when the animation has finished
         loadingScreen.SetActive(false);
-        // Enalbe player inputs when scene has finished loading
-        // GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
     }
 }

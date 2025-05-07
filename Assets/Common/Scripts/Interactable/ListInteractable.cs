@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactable : MonoBehaviour, IInteractable
+public class ListInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] private List<UnityEvent> indexResponses;
     public UnityEvent defaultResponse;
@@ -21,9 +21,4 @@ public class Interactable : MonoBehaviour, IInteractable
             defaultResponse?.Invoke();
         }
     }
-}
-
-public interface IInteractable
-{
-    void Interact();
 }

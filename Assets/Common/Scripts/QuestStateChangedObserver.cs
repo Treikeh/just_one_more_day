@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class QuestStateChangedObserver : MonoBehaviour
 {
-    [SerializeField] private QuestInfoObject questInfoObject;
+    [SerializeField] private QuestInfoObject questToCheck;
 
     public UnityEvent notStartedResponse;
     public UnityEvent inProgressResponse;
@@ -13,35 +13,41 @@ public class QuestStateChangedObserver : MonoBehaviour
     public UnityEvent finishedResponse;
 
 
-    private void OnEnable() { QuestManager.Instance.onQuestStateChanged += QuestStateChanged; }
-    private void OnDisable() { QuestManager.Instance.onQuestStateChanged -= QuestStateChanged; }
+    private void OnEnable() { QuestManager.Instance.OnQuestStateChanged += QuestStateChanged; }
+    private void OnDisable() { QuestManager.Instance.OnQuestStateChanged -= QuestStateChanged; }
 
 
     private void Start()
     {
-        QuestStateChanged(QuestManager.Instance.GetQuestById(questInfoObject.name));
+        // Check quest when the game starts
+        CheckQuestState(QuestManager.Instance.GetQuestState(questToCheck.name));
     }
 
 
     private void QuestStateChanged(Quest quest)
     {
-        if (quest.info.name.Equals(questInfoObject.name))
+        if (quest.info.name.Equals(questToCheck.name))
         {
-            switch (quest.state)
-            {
-                case QuestState.NOT_STARTED:
-                    notStartedResponse.Invoke();
-                    break;
-                case QuestState.IN_PROGRESS:
-                    inProgressResponse.Invoke();
-                    break;
-                case QuestState.CAN_FINISH:
-                    canFinishResponse.Invoke();
-                    break;
-                case QuestState.FINISHED:
-                    finishedResponse.Invoke();
-                    break;
-            }
+            CheckQuestState(quest.state);
+        }
+    }
+
+    private void CheckQuestState(QuestState state)
+    {
+        switch (state)
+        {
+            case QuestState.NOT_STARTED:
+                notStartedResponse.Invoke();
+                break;
+            case QuestState.IN_PROGRESS:
+                inProgressResponse.Invoke();
+                break;
+            case QuestState.CAN_FINISH:
+                canFinishResponse.Invoke();
+                break;
+            case QuestState.FINISHED:
+                finishedResponse.Invoke();
+                break;
         }
     }
 }

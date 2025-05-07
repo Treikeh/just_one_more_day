@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SceneSwitcher : MonoBehaviour
+public class LevelLoaderTrigger : MonoBehaviour
 {
-    [SerializeField] string sceneToLoad = "";
+    [SerializeField] string levelToLoad = "";
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -15,6 +15,6 @@ public class SceneSwitcher : MonoBehaviour
 
     public void StartLoadingLevel()
     {
-        LevelManager.Instance.StartLoadingLevel(sceneToLoad);
+        LevelManager.Instance.StartLoadingLevel(levelToLoad);
     }
 }

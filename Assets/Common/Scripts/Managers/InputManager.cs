@@ -1,16 +1,23 @@
 using System;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.InputSystem;
-// CREDITS: One Wheel Studio - Youtube: https://www.youtube.com/watch?v=T8fG0D2_V5M
 
-// Once again i don't like using manager classes especially not MonoBehaviours, but it works and that's the most importat part.
 
 [RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
-    // Create singleton instance
+    public event Action<Vector2> OnMovePressed;
+    public event Action OnInteractPressed;
+    public event Action OnJournalPressed;
+    public event Action OnAdvancePressed;
+    public event Action<bool> OnLeftClickPressed;
+    public event Action<bool> OnRightClickPressed;
+
     public static InputManager Instance { get; private set; }
+
+    private PlayerInput playerInput;
+
+
     private void Awake()
     {
         if (Instance != null)
@@ -23,52 +30,43 @@ public class InputManager : MonoBehaviour
     }
 
 
-
-    private PlayerInput playerInput;
-
-
     public void ChangeActionMap(string actionMap)
     {
         playerInput.SwitchCurrentActionMap(actionMap);
     }
 
 
-    // PLAYER INPUTS
-    public event Action<Vector2> onMovePressed;
     public void OnMove(InputAction.CallbackContext context)
     {
         if (context.performed || context.canceled)
         {
-            onMovePressed?.Invoke(context.ReadValue<Vector2>());
+            OnMovePressed?.Invoke(context.ReadValue<Vector2>());
         }
     }
 
-    public event Action onInteractPressed;
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            onInteractPressed?.Invoke();
+            OnInteractPressed?.Invoke();
         }
     }
 
-    public event Action onJournalPressed;
     public void OnJournal(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            onJournalPressed?.Invoke();
+            OnJournalPressed?.Invoke();
         }
     }
 
 
     // UI INPUTS
-    public event Action onAdvancePressed;
     public void OnAdvance(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            onAdvancePressed?.Invoke();
+            OnAdvancePressed?.Invoke();
         }
     }
 
@@ -83,29 +81,27 @@ public class InputManager : MonoBehaviour
 
 
     // PUZZLE INPUTS
-    public event Action<bool> onLeftClickPressed;
     public void OnLeftClick(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            onLeftClickPressed?.Invoke(true);
+            OnLeftClickPressed?.Invoke(true);
         }
         else if (context.canceled)
         {
-            onLeftClickPressed?.Invoke(false);
+            OnLeftClickPressed?.Invoke(false);
         }
     }
 
-    public event Action<bool> onRightClickPressed;
-    public void OnRightClickPressed(InputAction.CallbackContext context)
+    public void OnRightClick(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            onRightClickPressed?.Invoke(true);
+            OnRightClickPressed?.Invoke(true);
         }
         else if (context.canceled)
         {
-            onRightClickPressed?.Invoke(true);
+            OnRightClickPressed?.Invoke(true);
         }
     }
 }
