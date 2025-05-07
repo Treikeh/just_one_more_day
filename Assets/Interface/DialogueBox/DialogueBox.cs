@@ -148,7 +148,7 @@ public class DialogueBox : MonoBehaviour
         animator.SetBool("IsOpen", false);
         // Another small delay for the animation to finish
         yield return new WaitForSeconds(0.2f);
-        GameEventManager.Instance.uiEvents.DialogueFinished();
+        UiManager.Instance.DialogueFinished();
         Debug.Log("Dialogue finished");
     }
 }

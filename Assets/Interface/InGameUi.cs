@@ -13,8 +13,8 @@ public class InGameUi : MonoBehaviour
         InputManager.Instance.onJournalPressed += JounralPressed;
         InputManager.Instance.onCancelPressed += CancelPressed;
 
-        GameEventManager.Instance.uiEvents.onDialogueStarted += DialogueStarted;
-        GameEventManager.Instance.uiEvents.onDialogueFinished += DialogueFinished;
+        UiManager.Instance.onDialogueStarted += DialogueStarted;
+        UiManager.Instance.onDialogueFinished += DialogueFinished;
     }
 
     private void OnDisable()
@@ -22,8 +22,8 @@ public class InGameUi : MonoBehaviour
         InputManager.Instance.onJournalPressed -= JounralPressed;
         InputManager.Instance.onCancelPressed -= CancelPressed;
 
-        GameEventManager.Instance.uiEvents.onDialogueStarted -= DialogueStarted;
-        GameEventManager.Instance.uiEvents.onDialogueFinished -= DialogueFinished;
+        UiManager.Instance.onDialogueStarted -= DialogueStarted;
+        UiManager.Instance.onDialogueFinished -= DialogueFinished;
     }
 
 
