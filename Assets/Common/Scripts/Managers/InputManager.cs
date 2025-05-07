@@ -1,41 +1,46 @@
 using System;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.InputSystem;
-// CREDITS: One Wheel Studio - Youtube: https://www.youtube.com/watch?v=T8fG0D2_V5M
 
-// Once again i don't like using manager classes especially not MonoBehaviours, but it works and that's the most importat part.
 
 [RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
+    public event Action<Vector2> OnMovePressed;
+    public event Action OnInteractPressed;
+    public event Action OnJournalPressed;
+    public event Action OnAdvancePressed;
+    public event Action<bool> OnLeftClickPressed;
+    public event Action<bool> OnRightClickPressed;
+
+    public static InputManager Instance { get; private set; }
+
     private PlayerInput playerInput;
 
 
-    private void OnEnable()
+    private void Awake()
     {
-        GameEventManager.Instance.inputEvents.onActionMapChanged += ActionMapChanged;
-    }
-
-    private void OnDisable()
-    {
-        GameEventManager.Instance.inputEvents.onActionMapChanged -= ActionMapChanged;
-    }
-
-
-    private void ActionMapChanged(string actionMap)
-    {
+        if (Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
         playerInput = GetComponent<PlayerInput>();
+    }
+
+
+    public void ChangeActionMap(string actionMap)
+    {
         playerInput.SwitchCurrentActionMap(actionMap);
     }
 
 
-    // PLAYER INPUTS
     public void OnMove(InputAction.CallbackContext context)
     {
         if (context.performed || context.canceled)
         {
-            GameEventManager.Instance.inputEvents.MovePressed(context.ReadValue<Vector2>());
+            OnMovePressed?.Invoke(context.ReadValue<Vector2>());
         }
     }
 
@@ -43,7 +48,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.InteractPressed();
+            OnInteractPressed?.Invoke();
         }
     }
 
@@ -51,7 +56,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.JournalPressed();
+            OnJournalPressed?.Invoke();
         }
     }
 
@@ -61,15 +66,16 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.AdvancePressed();
+            OnAdvancePressed?.Invoke();
         }
     }
 
+    public event Action onCancelPressed;
     public void OnCancel(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.CancelPressed();
+            onCancelPressed?.Invoke();
         }
     }
 
@@ -79,23 +85,23 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.LeftClickPressed(true);
+            OnLeftClickPressed?.Invoke(true);
         }
         else if (context.canceled)
         {
-            GameEventManager.Instance.inputEvents.LeftClickPressed(false);
+            OnLeftClickPressed?.Invoke(false);
         }
     }
 
-    public void OnRightClickPressed(InputAction.CallbackContext context)
+    public void OnRightClick(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            GameEventManager.Instance.inputEvents.RightClickPressed(true);
+            OnRightClickPressed?.Invoke(true);
         }
         else if (context.canceled)
         {
-            GameEventManager.Instance.inputEvents.RightClickPressed(false);
+            OnRightClickPressed?.Invoke(true);
         }
     }
 }

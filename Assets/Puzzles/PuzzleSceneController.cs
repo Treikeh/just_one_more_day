@@ -10,20 +10,21 @@ public class PuzzleSceneController : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEventManager.Instance.inputEvents.onLeftClickPressed += LeftClickPressed;
-        GameEventManager.Instance.inputEvents.onRightClickPressed += RightClickPressed;
+        InputManager.Instance.OnLeftClickPressed += LeftClickPressed;
+        InputManager.Instance.OnRightClickPressed += RightClickPressed;
     }
 
     private void OnDisable()
     {
-        GameEventManager.Instance.inputEvents.onLeftClickPressed -= LeftClickPressed;
-        GameEventManager.Instance.inputEvents.onRightClickPressed -= RightClickPressed;
+        InputManager.Instance.OnLeftClickPressed -= LeftClickPressed;
+        InputManager.Instance.OnRightClickPressed -= RightClickPressed;
     }
+
 
     private void Start()
     {
         // Enable Puzzle InputActionMap
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Puzzle");
+        InputManager.Instance.ChangeActionMap("Puzzle");
     }
 
     private void Update()

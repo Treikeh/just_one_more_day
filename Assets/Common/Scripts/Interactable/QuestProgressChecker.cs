@@ -4,29 +4,22 @@ using UnityEngine.Events;
 public class QuestProgressChecker : MonoBehaviour, IInteractable
 {
     [SerializeField] private QuestInfoObject questToCheck;
+
     public UnityEvent questNotStarted;
     public UnityEvent questInProgress;
     public UnityEvent questCanFinish;
     public UnityEvent questFinished;
-    private QuestState currentQuestState = QuestState.NOT_STARTED;
 
 
-    private void OnEnable() { GameEventManager.Instance.questEvents.onQuestStateChanged += QuestStateChanged; }
-    private void OnDisable() { GameEventManager.Instance.questEvents.onQuestStateChanged -= QuestStateChanged; }
-
-
-    private void QuestStateChanged(Quest quest)
+public void Interact()
     {
-        if (quest.info.name.Equals(questToCheck.name))
-        {
-            currentQuestState = quest.state;
-            Debug.Log($"Quest Check {currentQuestState}");
-        }
+        CheckQuestProgress();
     }
 
     public void CheckQuestProgress()
     {
-        switch (currentQuestState)
+        QuestState state = QuestManager.Instance.GetQuestState(questToCheck.name);
+        switch (state)
         {
             case QuestState.NOT_STARTED:
                 questNotStarted.Invoke();
@@ -41,11 +34,5 @@ public class QuestProgressChecker : MonoBehaviour, IInteractable
                 questFinished.Invoke();
                 break;
         }
-    }
-
-
-    public void Interact()
-    {
-        CheckQuestProgress();
     }
 }

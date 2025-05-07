@@ -2,25 +2,26 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 // CREDITS: Game Code Library - Youtube: https://www.youtube.com/watch?v=MPP9GLp44Pc
 
-public class InteractionDetector : MonoBehaviour
+public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private GameObject interactIcon;
     private IInteractable interactableInRange = null; // Closeset Interactable
 
 
     // Subscribe and unsubscribe from input events
-    private void OnEnable() { GameEventManager.Instance.inputEvents.onInteractPressed += InteractPressed; }
-    private void OnDisable() { GameEventManager.Instance.inputEvents.onInteractPressed -= InteractPressed; }
-
-    public void InteractPressed()
-    {
-        interactableInRange?.Interact();
-    }
+    private void OnEnable() { InputManager.Instance.OnInteractPressed += InteractPressed; }
+    private void OnDisable() { InputManager.Instance.OnInteractPressed -= InteractPressed; }
 
 
     private void Start()
     {
         interactIcon.SetActive(false);
+    }
+
+
+    public void InteractPressed()
+    {
+        interactableInRange?.Interact();
     }
 
 

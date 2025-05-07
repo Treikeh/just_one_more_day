@@ -14,16 +14,16 @@ public class QuestInfoObject : ScriptableObject
 
     public void StartQuest()
     {
-        GameEventManager.Instance.questEvents.QuestStarted(this.name);
+        QuestManager.Instance.StartQuest(this.name);
     }
 
     public void AdvanceQuest()
     {
-        GameEventManager.Instance.questEvents.QuestAdvanced(this.name);
+        QuestManager.Instance.AdvanceQuest(this.name);
     }
 
     public void FinishQuest()
     {
-        GameEventManager.Instance.questEvents.QuestFinished(this.name);
+        QuestManager.Instance.FinishQuest(this.name);
     }
 }

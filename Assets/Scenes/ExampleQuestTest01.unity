@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: PuzzleTestScene
+  levelToLoad: PuzzleTestScene
 --- !u!114 &629987980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: ExampleQuestTest02
+  levelToLoad: ExampleQuestTest02
 --- !u!61 &1229861959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1801,7 +1801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questInfoObject: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
+  questToCheck: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
   notStartedResponse:
     m_PersistentCalls:
       m_Calls: []

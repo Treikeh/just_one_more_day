@@ -5,24 +5,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Input")]
-    private InputAction move;
-
     [Header("Movement")]
     [SerializeField] private float moveSpeed;
     private Vector2 velocity;
     private Rigidbody2D rb;
 
 
-    private void OnEnable() { GameEventManager.Instance.inputEvents.onMovePressed += MovePressed; }
-    private void OnDisable() { GameEventManager.Instance.inputEvents.onMovePressed -= MovePressed; }
+    private void OnEnable() { InputManager.Instance.OnMovePressed += MovePressed; }
+    private void OnDisable() { InputManager.Instance.OnMovePressed -= MovePressed; }
 
 
     private void Start()
     {
         // Get component references
         rb = GetComponent<Rigidbody2D>();
-        GameEventManager.Instance.inputEvents.ActionMapChanged("Player");
+        InputManager.Instance.ChangeActionMap("Player");
     }
 
 

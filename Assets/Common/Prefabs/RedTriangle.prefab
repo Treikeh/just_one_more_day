@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questInfoObject: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
+  questToCheck: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
   notStartedResponse:
     m_PersistentCalls:
       m_Calls: []

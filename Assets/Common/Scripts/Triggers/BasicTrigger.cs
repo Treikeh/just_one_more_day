@@ -9,6 +9,7 @@ public class BasicTrigger : MonoBehaviour
     public UnityEvent targetEnteredTrigger;
     public UnityEvent targetExitedTrigger;
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == targetTag)

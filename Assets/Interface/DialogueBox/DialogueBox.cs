@@ -29,8 +29,8 @@ public class DialogueBox : MonoBehaviour
 
 
     // Subscribe and unsubscribe from input events
-    private void OnEnable() { GameEventManager.Instance.inputEvents.onAdvancePressed += AdvanceDialogue; }
-    private void OnDisable() { GameEventManager.Instance.inputEvents.onAdvancePressed -= AdvanceDialogue; }
+    private void OnEnable() { InputManager.Instance.OnAdvancePressed += AdvanceDialogue; }
+    private void OnDisable() { InputManager.Instance.OnAdvancePressed -= AdvanceDialogue; }
 
 
     // Advance sentence when pressing E
@@ -132,7 +132,6 @@ public class DialogueBox : MonoBehaviour
         // Which means that if you chain DialogueTriggers only the first DialogueTrigger will display all of it's sentences,
         // since the second DialogueTrigger will be cut off by the dialogue window closing.
         StartCoroutine(ColseDialogueWindowDelay());
-        Debug.Log("End of Dialogue");
         // This is it's own event because we only want to trigger the dialogueFinishedEvent on the DialogueTrigger that triggered this dialogue.
         // If we had connected the DialogueTrigger to dialogueFinished all DialogueTriggers would trigger their dialogueFinishedEvent
         // whenever any dialogue finished, which would cause an unknowable amount of errors.
@@ -148,7 +147,7 @@ public class DialogueBox : MonoBehaviour
         animator.SetBool("IsOpen", false);
         // Another small delay for the animation to finish
         yield return new WaitForSeconds(0.2f);
-        GameEventManager.Instance.uiEvents.DialogueFinished();
+        UiManager.Instance.DialogueFinished();
         Debug.Log("Dialogue finished");
     }
 }
