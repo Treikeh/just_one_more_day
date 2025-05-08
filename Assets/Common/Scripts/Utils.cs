@@ -13,6 +13,6 @@ public class Utils
     // TODO: Add the GameObjects scene path to the string
     public static string GetSceneId(GameObject gameObject)
     {
-        return SceneManager.GetActiveScene().name + gameObject.name;
+        return SceneManager.GetActiveScene().name + gameObject.name + gameObject.transform.GetSiblingIndex();
     }
 }

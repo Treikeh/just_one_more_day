@@ -36,8 +36,8 @@ private void Start()
 
 
     // This could be stored in any script that is globaly avalible
-    private Dictionary<string, bool> saveDict = new();
-    public void SetSaveData(string key, bool data)
+    private Dictionary<string, object> saveDict = new();
+    public void SetSaveData(string key, object data)
     {
         // Set data
         if (saveDict.ContainsKey(key))
@@ -47,9 +47,9 @@ private void Start()
             { saveDict.Add(key, data); }
     }
 
-    public bool GetSaveData(string key)
+    public object GetSaveData(string key)
     {
-        bool data = true;
+        object data = new();
         if (saveDict.ContainsKey(key))
         {
             data = saveDict[key];
