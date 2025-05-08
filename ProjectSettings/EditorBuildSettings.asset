@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Puzzles/PuzzleTestScene.unity
     guid: 091b16bf5a9560540bfdda782588baea
+  - enabled: 1
+    path: Assets/Scenes/Hallways.unity
+    guid: 4dc5a48729ebe374c860b6834497c6c9
+  - enabled: 1
+    path: Assets/Rooms/Classroom.unity
+    guid: 939d8031aa5bc294cbf9346d049b3542
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 126f71e70691939428bebb0529fe5705, type: 3}
   m_UseUCBPForAssetBundles: 0
