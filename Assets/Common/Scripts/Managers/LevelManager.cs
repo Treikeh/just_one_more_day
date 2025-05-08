@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -64,5 +65,29 @@ private void Start()
         loadingScreenAnimator.Play("LoadingScreen_Hide");
         yield return new WaitForSeconds(Utils.GetAnimationLength(loadingScreenAnimator, "LoadingScreen_Hide"));
         loadingScreen.SetActive(false);
+    }
+
+
+// *SAVE SYSTEM
+    // This could be stored in any script that is globaly avalible
+    private Dictionary<string, object> saveDict = new();
+    public void SetSaveData(string key, object data)
+    {
+        // Set data
+        if (saveDict.ContainsKey(key))
+            { saveDict[key] = data; }
+        // Create data
+        else
+            { saveDict.Add(key, data); }
+    }
+
+    public object GetSaveData(string key)
+    {
+        object data = new();
+        if (saveDict.ContainsKey(key))
+        {
+            data = saveDict[key];
+        }
+        return data;
     }
 }
