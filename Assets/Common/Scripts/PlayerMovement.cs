@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour, ISave
     private void FixedUpdate()
     {
         rb.linearVelocity = velocity;
-        levelLoadCollider.position = transform.position + (new Vector3(rb.linearVelocityX, rb.linearVelocityY, 0f).normalized * 0.75f);
+        levelLoadCollider.position = transform.position + (new Vector3(rb.linearVelocityX, rb.linearVelocityY, 1f).normalized * 0.75f);
     }
 
 
