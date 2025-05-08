@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4232518404015446784}
   - component: {fileID: 462401145287433101}
   - component: {fileID: 1557941881232187018}
+  - component: {fileID: 1115818779853301642}
   - component: {fileID: 3138436611611859639}
   - component: {fileID: 4294089373050657406}
   m_Layer: 0
@@ -136,6 +137,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1115818779853301642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706389809947440907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772616435b7130647b7ca34e78d1d67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3138436611611859639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,34 +182,10 @@ MonoBehaviour:
         m_CallState: 2
   canFinishResponse:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3706389809947440907}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   finishedResponse:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3706389809947440907}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &4294089373050657406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,10 +202,10 @@ MonoBehaviour:
   targetEnteredTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3706389809947440907}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1115818779853301642}
+        m_TargetAssemblyTypeName: RedTriangle, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

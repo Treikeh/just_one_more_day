@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Utils
 {
@@ -7,5 +8,11 @@ public class Utils
     public static float GetAnimationLength(Animator animator, string clip)
     {
         return animator.runtimeAnimatorController.animationClips.First(a => a.name == clip).length;
+    }
+
+    // TODO: Add the GameObjects scene path to the string
+    public static string GetSceneId(GameObject gameObject)
+    {
+        return SceneManager.GetActiveScene().name + gameObject.name + gameObject.transform.GetSiblingIndex();
     }
 }
