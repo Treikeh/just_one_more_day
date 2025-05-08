@@ -35,21 +35,31 @@ private void Start()
     }
 
 
-    public Dictionary<string, Dictionary<string, dynamic>> saveDict = new();
-
-    private void SaveAllObjects()
+    // This could be stored in any script that is globaly avalible
+    private Dictionary<string, bool> saveDict = new();
+    public void SetSaveData(string key, bool data)
     {
-        var saveList = FindObjectsOfType<MonoBehaviour>().OfType<ISave>();
-        foreach (ISave s in saveList)
+        // Set data
+        if (saveDict.ContainsKey(key))
+            { saveDict[key] = data; }
+        // Create data
+        else
+            { saveDict.Add(key, data); }
+    }
+
+    public bool GetSaveData(string key)
+    {
+        bool data = true;
+        if (saveDict.ContainsKey(key))
         {
-            s.Save();
+            data = saveDict[key];
         }
+        return data;
     }
 
 
     public void StartLoadingLevel(string sceneName)
     {
-        SaveAllObjects();
         var scene = SceneManager.LoadSceneAsync(sceneName);
         StartCoroutine(ProgressLoadingScene(scene));
     }
