@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 494709561}
   - component: {fileID: 494709560}
   - component: {fileID: 494709559}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,8 +261,8 @@ Transform:
   m_GameObject: {fileID: 494709558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 36.67, y: 9.9, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalPosition: {x: 31.47, y: 9.9, z: 0}
+  m_LocalScale: {x: 2.9923396, y: 1.0388719, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -293,7 +293,7 @@ Transform:
   m_GameObject: {fileID: 622151618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2.9928195, y: 0.42834982, z: 0}
+  m_LocalPosition: {x: 2.63, y: 0.42834982, z: 0}
   m_LocalScale: {x: 8.925656, y: 0.37453714, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -524,8 +524,8 @@ Transform:
   m_GameObject: {fileID: 855579293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8333595, y: 0, z: 0}
-  m_LocalScale: {x: 1.95, y: 0.97700685, z: 1}
+  m_LocalPosition: {x: 1.654, y: 0, z: 0}
+  m_LocalScale: {x: 1.6004333, y: 0.97700685, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1226912314}
@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 955491621}
   - component: {fileID: 955491620}
   - component: {fileID: 955491619}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8, y: -20.630001, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalScale: {x: 2.9923396, y: 0.6622775, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 1210475908}
   - component: {fileID: 1210475907}
   - component: {fileID: 1210475906}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +963,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.14, y: -16.11, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalScale: {x: 2.9923396, y: 0.93498003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 1345714796}
   - component: {fileID: 1345714795}
   - component: {fileID: 1345714794}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Canteen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Classroom
+  levelToLoad: Canteen
 --- !u!212 &1345714796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1288,7 +1288,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.88, y: 20.17, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalScale: {x: 2.9923396, y: 0.92199934, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1305,7 +1305,7 @@ GameObject:
   - component: {fileID: 1498313958}
   - component: {fileID: 1498313957}
   - component: {fileID: 1498313956}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Canteen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1436,7 +1436,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 14.42, y: 22.95, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalScale: {x: 2.9923396, y: 1.0778294, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1453,7 +1453,7 @@ GameObject:
   - component: {fileID: 1650846789}
   - component: {fileID: 1650846788}
   - component: {fileID: 1650846787}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,8 +1583,8 @@ Transform:
   m_GameObject: {fileID: 1650846786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.31, y: -16.11, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalPosition: {x: 34.5, y: -18.56, z: 0}
+  m_LocalScale: {x: 2.9923396, y: 0.6007264, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1615,8 +1615,8 @@ Transform:
   m_GameObject: {fileID: 1701122474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1894374, y: 5.411947, z: 0}
-  m_LocalScale: {x: 1.9771557, y: 1.1034483, z: 1}
+  m_LocalPosition: {x: 2.012, y: 5.411947, z: 0}
+  m_LocalScale: {x: 1.6086477, y: 1.1034483, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1226912314}
@@ -1688,7 +1688,7 @@ GameObject:
   - component: {fileID: 1837343966}
   - component: {fileID: 1837343965}
   - component: {fileID: 1837343964}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Principal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1819,7 +1819,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.7, y: 25.17, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalScale: {x: 2.9923396, y: 0.93498003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1836,7 +1836,7 @@ GameObject:
   - component: {fileID: 1955077680}
   - component: {fileID: 1955077679}
   - component: {fileID: 1955077682}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Classroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,8 +1920,8 @@ Transform:
   m_GameObject: {fileID: 1955077678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.42, y: -16.43, z: 0}
-  m_LocalScale: {x: 2.9923396, y: 1.5583, z: 1}
+  m_LocalPosition: {x: 18.42, y: -16.24, z: 0}
+  m_LocalScale: {x: 2.9923396, y: 0.731651, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1976,7 +1976,6 @@ BoxCollider2D:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 852664333}
   - {fileID: 1248928631}
   - {fileID: 1955077681}
   - {fileID: 955491622}
@@ -1987,3 +1986,4 @@ SceneRoots:
   - {fileID: 1498313959}
   - {fileID: 1345714797}
   - {fileID: 1226912314}
+  - {fileID: 852664333}

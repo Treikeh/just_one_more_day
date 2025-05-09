@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.849566
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 1431030771}
   - component: {fileID: 1431030770}
   - component: {fileID: 1431030769}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ Transform:
   m_GameObject: {fileID: 1431030768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 5.55, z: 0}
+  m_LocalPosition: {x: 0.1, y: -4.55, z: 0}
   m_LocalScale: {x: 3.5917, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

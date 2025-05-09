@@ -60,6 +60,6 @@ public class PlayerMovement : MonoBehaviour, ISave
 
     private class SaveData
     {
-        public Vector2 position;
+        public Vector3 position;
     }
 }
