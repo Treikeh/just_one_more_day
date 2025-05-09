@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809348824352fa6458f9aa2c1d53eee3, type: 3}
   m_Name: ExampleQuestTest_TP_RepeatQuest_0
   m_EditorClassIdentifier: 
-  characterName: Tea pot
-  characterPortrait: {fileID: 5635092890522734083, guid: 65e22430a27660e49883c1e4196c2b79, type: 3}
+  characterName: Ramen bowl
+  characterPortrait: {fileID: 1570831357638300468, guid: 4736397040e337442bb44491a3964108, type: 3}
   sentences:
-  - You know i don't actually know what i need the triangles for
-  - I'm just supposed to give you a quest to test the system
-  - And gathering triangles is the only thing i con come up with
-  - Oh
+  - Oh!
   - And by the way
-  - The red barrier blocking the door way should be gone now
+  - ' If you press "CTRL"'
+  - You open the Jounral
+  - Where you can see ative and finished quests
+  textSpeed: 0.05

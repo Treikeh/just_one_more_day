@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809348824352fa6458f9aa2c1d53eee3, type: 3}
   m_Name: ExampleQuestTest_TP_CompleteQuest
   m_EditorClassIdentifier: 
-  characterName: Tea pot
-  characterPortrait: {fileID: 5635092890522734083, guid: 65e22430a27660e49883c1e4196c2b79, type: 3}
+  characterName: Ramen bowl
+  characterPortrait: {fileID: 1570831357638300468, guid: 4736397040e337442bb44491a3964108, type: 3}
   sentences:
   - What you're still here?
   - I don't have any more dialogue that this
-  - And everytime you talk to me I'l just repeat these sentences
+  - I'l just repeat these sentences
+  - Over and over again
+  - Until the game stops
+  - Or the universe explodes
+  textSpeed: 0.05
