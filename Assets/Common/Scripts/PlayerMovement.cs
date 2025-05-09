@@ -4,9 +4,7 @@ public class PlayerMovement : MonoBehaviour, ISave
 {
     [Header("Movement")]
     [SerializeField] private float moveSpeed;
-    // Is moved in front of the player to hit LevelLoadTriggers.
-    // This way i don't have to do a bunch of fancy vector math to set the palyers position outside of a trigger when loading the players position
-    [SerializeField] private Transform levelLoadCollider;
+
     private Vector2 velocity;
     private Rigidbody2D rb;
 
@@ -32,7 +30,6 @@ public class PlayerMovement : MonoBehaviour, ISave
     private void FixedUpdate()
     {
         rb.linearVelocity = velocity;
-        levelLoadCollider.position = transform.position + (new Vector3(rb.linearVelocityX, rb.linearVelocityY, 1f).normalized * 0.75f);
     }
 
 
@@ -42,7 +39,7 @@ public class PlayerMovement : MonoBehaviour, ISave
         // Create save data
         SaveData saveData = new()
         {
-            position = transform.position,
+            position = LevelManager.Instance.playerSpawnPosition != Vector2.zero ? LevelManager.Instance.playerSpawnPosition: transform.position,
         };
         // Save data to level manager
         LevelManager.Instance.SetSaveData(Utils.GetSceneId(gameObject), saveData);
