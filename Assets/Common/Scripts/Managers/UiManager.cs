@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class UiManager : MonoBehaviour
 {
-    public event Action<List<DialogueObject>, UnityEvent> OnDialogueStarted;
+    public event Action<List<DialogueSO>, UnityEvent> OnDialogueStarted;
     public event Action OnDialogueFinished;
 
     public static UiManager Instance { get; private set; }
@@ -23,7 +23,7 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void StartDialogue(List<DialogueObject> lsit, UnityEvent @event)
+    public void StartDialogue(List<DialogueSO> lsit, UnityEvent @event)
     {
         OnDialogueStarted?.Invoke(lsit, @event);
     }

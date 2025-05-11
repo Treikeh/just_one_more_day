@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class QuestProgressChecker : MonoBehaviour, IInteractable
 {
-    [SerializeField] private QuestInfoObject questToCheck;
+    [SerializeField] private QuestInfoSO questToCheck;
 
     public UnityEvent questNotStarted;
     public UnityEvent questInProgress;

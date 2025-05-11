@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "NewGameEventObject", menuName = "Data/GameEvent")]
-public class GameEventObject : ScriptableObject
+[CreateAssetMenu(fileName = "NewGameEvent", menuName = "Data/GameEvent")]
+public class GameEventSO : ScriptableObject
 {
     // All objects that are observing this event
     private readonly List<GameEventObjectObserver> observers = new();

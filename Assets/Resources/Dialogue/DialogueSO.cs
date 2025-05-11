@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "NewDialogueObject", menuName = "Data/Dialogue", order = 1)]
-public class DialogueObject : ScriptableObject
+[CreateAssetMenu(fileName = "NewDialogue", menuName = "Data/Dialogue", order = 1)]
+public class DialogueSO : ScriptableObject
 {
     public string characterName;
     public Sprite characterPortrait;

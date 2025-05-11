@@ -22,7 +22,7 @@ public class DialogueBox : MonoBehaviour
     private int currentDialogue = 0;
     // Starts as -1 since it would skip over the first sentence if it was 0
     private int currentSentence = -1;
-    private List<DialogueObject> dialogueList = new();
+    private List<DialogueSO> dialogueList = new();
     // Reference to the DialogueTriggers dialogueFinishedEvent
     private UnityEvent dialogueTriggerEvent;
     private Coroutine sentenceAnimation;
@@ -52,7 +52,7 @@ public class DialogueBox : MonoBehaviour
     }
 
 
-    public void StartDialogue(List<DialogueObject> list, UnityEvent dialogueEvent)
+    public void StartDialogue(List<DialogueSO> list, UnityEvent dialogueEvent)
     {
         Debug.Log("Dialogue started");
         // Show dialogue window
@@ -98,7 +98,7 @@ public class DialogueBox : MonoBehaviour
     }
 
     // *This function could do with a rewrite
-    private void UpdateUi(DialogueObject dialogue, int sentence)
+    private void UpdateUi(DialogueSO dialogue, int sentence)
     {
         // Clear Text
         dialogueSentence.text = string.Empty;

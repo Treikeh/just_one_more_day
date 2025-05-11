@@ -34,14 +34,14 @@ public class TsvToSo
             }
 
             // Update/Create dialogue objects
-            DialogueObject dialogueObject = AssetDatabase.LoadAssetAtPath<DialogueObject>($"Assets/Resources/Dialogue/{splitData[0]}.asset");
+            DialogueSO dialogueObject = AssetDatabase.LoadAssetAtPath<DialogueSO>($"Assets/Resources/Dialogue/{splitData[0]}.asset");
             if(dialogueObject) // Update dialogue object if it exists
             {
                 UpdateDialogueObject(dialogueObject ,splitData);
             }
             else // Create a new dialogue object if it doesn't exist
             {
-                dialogueObject = ScriptableObject.CreateInstance<DialogueObject>();
+                dialogueObject = ScriptableObject.CreateInstance<DialogueSO>();
                 UpdateDialogueObject(dialogueObject, splitData);
                 // Add object to asset folder
                 AssetDatabase.CreateAsset(dialogueObject, $"Assets/Resources/Dialogue/{splitData[0]}.asset");
@@ -56,7 +56,7 @@ public class TsvToSo
     }
 
     // Update values in dialogue object
-    public static void UpdateDialogueObject(DialogueObject dialogueObject, string[] dialogueData)
+    public static void UpdateDialogueObject(DialogueSO dialogueObject, string[] dialogueData)
     {
         dialogueObject.characterName = dialogueData[1];
         dialogueObject.sentences = GetSentences(dialogueData[2]);

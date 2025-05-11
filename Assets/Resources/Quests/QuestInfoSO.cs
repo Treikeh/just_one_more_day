@@ -1,15 +1,15 @@
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "NewQuestInfoObject", menuName = "Data/QuestInfo", order = 1)]
-public class QuestInfoObject : ScriptableObject
+[CreateAssetMenu(fileName = "NewQuestInfo", menuName = "Data/Quest", order = 1)]
+public class QuestInfoSO : ScriptableObject
 {
     [Header("General")]
     public string description;
     public bool finishAutomatically = false;
 
     [Header("Requirements")]
-    public QuestInfoObject[] questPrerequisites;
+    public QuestInfoSO[] questPrerequisites;
     public int questSteps = 1;
 
     public void StartQuest()

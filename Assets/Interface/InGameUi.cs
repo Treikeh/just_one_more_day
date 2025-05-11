@@ -46,7 +46,7 @@ public class InGameUi : MonoBehaviour
         }
     }
 
-    private void DialogueStarted(List<DialogueObject> list, UnityEvent @event)
+    private void DialogueStarted(List<DialogueSO> list, UnityEvent @event)
     {
         dialogueBox.gameObject.SetActive(true);
         dialogueBox.StartDialogue(list, @event);
