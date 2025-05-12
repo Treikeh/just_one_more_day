@@ -74,13 +74,13 @@ public class TsvToSo
         // Return the characters portrait. If the character isn't found return the default protrait
         Debug.Log(characterName);
         // The "??" executes the second AssetDatabase if the first AssetDatabase is null. Basicly the same as a if (asset == null) but in 1 line
-        return AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/Characters/{characterName}/{characterName}_Portrait.png") ?? AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Characters/DefaultPortrait.png");
+        return AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/Characters/{characterName}/{characterName}_Portrait.png") ?? AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Characters/Default_Portrait.png");
     }
 
     // Does the same as GetPortrait only that it gets a character profile instead of a sprite
     public static CharacterProfileSO GetProfile(string characterName)
     {
-        return AssetDatabase.LoadAssetAtPath<CharacterProfileSO>($"Assets/Characters/{characterName}/{characterName}_Portrait.png") ?? AssetDatabase.LoadAssetAtPath<CharacterProfileSO>("Assets/Characters/DefaultProfile.asset");
+        return AssetDatabase.LoadAssetAtPath<CharacterProfileSO>($"Assets/Characters/{characterName}/{characterName}_Profile.asset") ?? AssetDatabase.LoadAssetAtPath<CharacterProfileSO>("Assets/Characters/Default_Profile.asset");
     }
 
     // Turn text field in database into list of sentences

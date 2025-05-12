@@ -39,9 +39,13 @@ public class UiManager : MonoBehaviour
     {
         if (characterProfiles.Contains(profile))
         {
-            Debug.Log("Profile in list");
             return;
         }
         characterProfiles.Add(profile);
+    }
+
+    public List<CharacterProfileSO> GetCharacterProfiles()
+    {
+        return characterProfiles;
     }
 }
