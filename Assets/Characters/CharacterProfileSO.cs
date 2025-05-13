@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -7,7 +5,7 @@ using UnityEngine;
 public class CharacterProfileSO : ScriptableObject
 {
     public string characterName;
-    [SerializeField] private Sprite characterPortrait;
+    public Sprite characterPortrait;
     [TextArea]
     public string characterDescription;
 }
