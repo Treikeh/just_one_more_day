@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class QuestStateChangedObserver : MonoBehaviour
 {
-    [SerializeField] private QuestInfoObject questToCheck;
+    [SerializeField] private QuestInfoSO questToCheck;
 
     public UnityEvent notStartedResponse;
     public UnityEvent inProgressResponse;

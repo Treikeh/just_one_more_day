@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class InGameUi : MonoBehaviour
 {
-    [SerializeField] private JournalUi journal;
+    [SerializeField] private GameObject journal;
     [SerializeField] private DialogueBox dialogueBox;
 
 
@@ -27,11 +27,24 @@ public class InGameUi : MonoBehaviour
     }
 
 
+    // INPUTS
+    public void OnResumeButtonPressed()
+    {
+        CancelPressed();
+    }
+
+    public void OnQuitButtonPressed()
+    {
+        Application.Quit();
+    }
+
+
+    // JOURNAL
     private void JounralPressed()
     {
-        if (!journal.gameObject.activeInHierarchy)
+        if (!journal.activeInHierarchy)
         {
-            journal.gameObject.SetActive(true);
+            journal.SetActive(true);
             InputManager.Instance.ChangeActionMap("Ui");
         }
     }
@@ -39,14 +52,16 @@ public class InGameUi : MonoBehaviour
     // This function is public so that i can activate it with ui buttons
     private void CancelPressed()
     {
-        if (journal.gameObject.activeInHierarchy)
+        if (journal.activeInHierarchy)
         {
-            journal.gameObject.SetActive(false);
+            journal.SetActive(false);
             InputManager.Instance.ChangeActionMap("Player");
         }
     }
 
-    private void DialogueStarted(List<DialogueObject> list, UnityEvent @event)
+
+    // DIALOGUE
+    private void DialogueStarted(List<DialogueSO> list, UnityEvent @event)
     {
         dialogueBox.gameObject.SetActive(true);
         dialogueBox.StartDialogue(list, @event);
@@ -57,16 +72,5 @@ public class InGameUi : MonoBehaviour
     {
         dialogueBox.gameObject.SetActive(false);
         InputManager.Instance.ChangeActionMap("Player");
-    }
-
-
-    public void OnResumeButtonPressed()
-    {
-        CancelPressed();
-    }
-
-    public void OnQuitButtonPressed()
-    {
-        Application.Quit();
     }
 }

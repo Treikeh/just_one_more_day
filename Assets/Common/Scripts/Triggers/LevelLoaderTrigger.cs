@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class LevelLoaderTrigger : MonoBehaviour
 {
-    [SerializeField] string levelToLoad = "";
+    [SerializeField] private string levelToLoad = "";
+    [SerializeField] private Transform spawnTransform;
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "LevelLoadCollider")
+        if (other.tag == "Player")
         {
             StartLoadingLevel();
         }
@@ -15,6 +16,7 @@ public class LevelLoaderTrigger : MonoBehaviour
 
     public void StartLoadingLevel()
     {
-        LevelManager.Instance.StartLoadingLevel(levelToLoad);
+        Vector2 spawnPositon = spawnTransform != null ? spawnTransform.position: Vector2.zero;
+        LevelManager.Instance.StartLoadingLevel(levelToLoad, spawnPositon);
     }
 }

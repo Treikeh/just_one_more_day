@@ -30,22 +30,22 @@ public class QuestManager : MonoBehaviour
     // Get all quests in the Assets/Resources/Quests folder
     private Dictionary<string, Quest> CreateQuestMap()
     {
-        QuestInfoObject[] allQuests = Resources.LoadAll<QuestInfoObject>("Quests");
+        QuestInfoSO[] allQuests = Resources.LoadAll<QuestInfoSO>("Quests");
 
         Dictionary<string, Quest> idToQuestMap = new();
-        foreach (QuestInfoObject questInfoObject in allQuests)
+        foreach (QuestInfoSO questInfoSO in allQuests)
         {
-            if (idToQuestMap.ContainsKey(questInfoObject.name))
+            if (idToQuestMap.ContainsKey(questInfoSO.name))
             {
                 Debug.LogWarning("Quest is allready in the map");
             }
-            idToQuestMap.Add(questInfoObject.name, LoadQuest(questInfoObject));
+            idToQuestMap.Add(questInfoSO.name, LoadQuest(questInfoSO));
         }
         return idToQuestMap;
     }
 
     // Can use this function to load quest data from save game, when saving is added. Use try and catch
-    private Quest LoadQuest(QuestInfoObject questInfo)
+    private Quest LoadQuest(QuestInfoSO questInfo)
     {
         Quest quest = new(questInfo);
         return quest;
@@ -145,18 +145,18 @@ public enum QuestState
 
 public class Quest
 {
-    public QuestInfoObject info;
+    public QuestInfoSO info;
     public QuestState state;
     public int questProgress;
 
-    public Quest(QuestInfoObject questInfo, QuestState questState, int progress)
+    public Quest(QuestInfoSO questInfo, QuestState questState, int progress)
     {
         this.info = questInfo;
         this.state = questState;
         this.questProgress = progress;
     }
 
-    public Quest(QuestInfoObject questInfo)
+    public Quest(QuestInfoSO questInfo)
     {
         this.info = questInfo;
         this.state = QuestState.NOT_STARTED;

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +10,8 @@ public class LevelManager : MonoBehaviour
     public static event Action OnLevelLoaded;
 
     public static LevelManager Instance { get; private set; }
+    // Having this as a public variable just so that the PlayerMovement script can read the value whe saving is stupid
+    public Vector2 playerSpawnPosition { get; private set; }
 
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Animator loadingScreenAnimator;
@@ -35,8 +36,9 @@ private void Start()
     }
 
 
-    public void StartLoadingLevel(string sceneName)
+    public void StartLoadingLevel(string sceneName, Vector2 spawnPosition = default)
     {
+        playerSpawnPosition = spawnPosition;
         var scene = SceneManager.LoadSceneAsync(sceneName);
         StartCoroutine(ProgressLoadingScene(scene));
     }

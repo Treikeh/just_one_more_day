@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class DialogueStarter : MonoBehaviour, IInteractable
 {
-    public List<DialogueObject> dialogueList = new();
+    public List<DialogueSO> dialogueList = new();
     public UnityEvent dialogueFinishedEvent;
 
 
