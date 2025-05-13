@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 // CREDITS: Comp-3 Interactive - Youtube: https://www.youtube.com/watch?v=1EdLTF43d70
 
 
@@ -58,11 +59,28 @@ public class TsvToSo
     // Update values in dialogue object
     public static void UpdateDialogueObject(DialogueSO dialogueObject, string[] dialogueData)
     {
+        // Set character name
         dialogueObject.characterName = dialogueData[1];
-        dialogueObject.sentences = GetSentences(dialogueData[2]);
-        // Load character portrait
+        dialogueObject.characterProfile = GetProfile(dialogueData[1]);
         dialogueObject.characterPortrait = GetPortrait(dialogueData[1]);
+        dialogueObject.sentences = GetSentences(dialogueData[2]);
         dialogueObject.textSpeed = GetTextSpeed(dialogueData[3]);
+    }
+
+    // Load a protrait using the characters name as identifier.
+    // If no name is given or the name isn't in the function, load the Default portrait.
+    public static Sprite GetPortrait(string characterName)
+    {
+        // Return the characters portrait. If the character isn't found return the default protrait
+        Debug.Log(characterName);
+        // The "??" executes the second AssetDatabase if the first AssetDatabase is null. Basicly the same as a if (asset == null) but in 1 line
+        return AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/Characters/{characterName}/{characterName}_Portrait.png") ?? AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Characters/Default_Portrait.png");
+    }
+
+    // Does the same as GetPortrait only that it gets a character profile instead of a sprite
+    public static CharacterProfileSO GetProfile(string characterName)
+    {
+        return AssetDatabase.LoadAssetAtPath<CharacterProfileSO>($"Assets/Characters/{characterName}/{characterName}_Profile.asset") ?? AssetDatabase.LoadAssetAtPath<CharacterProfileSO>("Assets/Characters/Default_Profile.asset");
     }
 
     // Turn text field in database into list of sentences
@@ -82,15 +100,7 @@ public class TsvToSo
         return sentences;
     }
 
-    // Load a protrait using the characters name as identifier.
-    // If no name is given or the name isn't in the function, load the Default portrait.
-    public static Sprite GetPortrait(string characterName)
-    {
-        // Return the characters portrait. If the character isn't found return the default protrait
-        Debug.Log(characterName);
-        return AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/Characters/{characterName}/{characterName}_Portrait.png") ?? AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Characters/DefaultPortrait.png");
-    }
-
+    // Get the text speed from the dialogue data
     public static float GetTextSpeed(string speed)
     {
         // This was a switch statement

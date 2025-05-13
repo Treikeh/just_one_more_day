@@ -11,6 +11,8 @@ public class UiManager : MonoBehaviour
 
     public static UiManager Instance { get; private set; }
 
+    private List<CharacterProfileSO> characterProfiles = new();
+
 
     private void Awake()
     {
@@ -31,5 +33,19 @@ public class UiManager : MonoBehaviour
     public void DialogueFinished()
     {
         OnDialogueFinished?.Invoke();
+    }
+
+    public void AddCharacterProfile(CharacterProfileSO profile)
+    {
+        if (characterProfiles.Contains(profile))
+        {
+            return;
+        }
+        characterProfiles.Add(profile);
+    }
+
+    public List<CharacterProfileSO> GetCharacterProfiles()
+    {
+        return characterProfiles;
     }
 }

@@ -110,6 +110,9 @@ public class DialogueBox : MonoBehaviour
         characterName.text = dialogue.characterName;
         characterPortrait.sprite = dialogue.characterPortrait;
         sentenceAnimation = StartCoroutine(AnimateSentence(dialogue.sentences[sentence]));
+
+        // Send event to 
+        UiManager.Instance.AddCharacterProfile(dialogue.characterProfile);
     }
 
     // Text "animation"
