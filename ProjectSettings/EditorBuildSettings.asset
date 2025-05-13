@@ -24,11 +24,32 @@ EditorBuildSettings:
     path: Assets/Puzzles/PuzzleTestScene.unity
     guid: 091b16bf5a9560540bfdda782588baea
   - enabled: 1
-    path: Assets/Scenes/Hallways.unity
+    path: Assets/Rooms/Hallways.unity
     guid: 4dc5a48729ebe374c860b6834497c6c9
   - enabled: 1
     path: Assets/Rooms/Classroom.unity
     guid: 939d8031aa5bc294cbf9346d049b3542
+  - enabled: 1
+    path: Assets/Rooms/Principals.unity
+    guid: 70a9e05ae3aaea944aad508f93f776f3
+  - enabled: 1
+    path: Assets/Rooms/Canteen.unity
+    guid: 629af62e9c6dbbf43affec625df14375
+  - enabled: 1
+    path: Assets/Rooms/Bathroom.unity
+    guid: cbe1010db43aaaf41bd851284479dd3f
+  - enabled: 1
+    path: Assets/Rooms/Lab.unity
+    guid: 13111ad4990588c448ae6e312e6988bc
+  - enabled: 1
+    path: Assets/Rooms/Library.unity
+    guid: 735571bcb5fdacb40a53b03e85515e64
+  - enabled: 1
+    path: Assets/Rooms/Music.unity
+    guid: f8c0e6cb81c5dd1409f4932a43013542
+  - enabled: 1
+    path: Assets/Puzzles/Labpuzzle.unity
+    guid: 63557673b8ec10649bf7159982c15510
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 126f71e70691939428bebb0529fe5705, type: 3}
   m_UseUCBPForAssetBundles: 0

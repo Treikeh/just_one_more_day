@@ -127,13 +127,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 369790119396454226, guid: 518a116343532c440be978545f2820b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 369790119396454226, guid: 518a116343532c440be978545f2820b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 369790119396454226, guid: 518a116343532c440be978545f2820b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 369790119396454226, guid: 518a116343532c440be978545f2820b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 369790119396454226, guid: 518a116343532c440be978545f2820b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.027710795
       objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.849566
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -257,8 +277,8 @@ Transform:
   m_GameObject: {fileID: 1237233527}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 0.5, z: 0}
-  m_LocalScale: {x: 15.860664, y: 9.70083, z: 14.248827}
+  m_LocalPosition: {x: 2.92, y: -0.78, z: 0}
+  m_LocalScale: {x: 11.667544, y: 6.7097735, z: 14.248827}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -275,7 +295,7 @@ GameObject:
   - component: {fileID: 1431030771}
   - component: {fileID: 1431030770}
   - component: {fileID: 1431030769}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,8 +425,8 @@ Transform:
   m_GameObject: {fileID: 1431030768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 5.55, z: 0}
-  m_LocalScale: {x: 3.5917, y: 1, z: 1}
+  m_LocalPosition: {x: 0.1, y: -4.55, z: 0}
+  m_LocalScale: {x: 3.5917, y: 0.66667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
