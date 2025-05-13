@@ -5,22 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneTransitionTestScene.unity
     guid: f7f9cb47a3353bc45955e6022d1db459
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DialogueTestScene.unity
     guid: 7db7fb8dd471bf44695d9513dc2e84f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ExampleQuestTest01.unity
     guid: e3ce94175c744f1458b419898109ae1f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ExampleQuestTest02.unity
     guid: 270b23a1727470742a163a449bcc8b77
-  - enabled: 1
+  - enabled: 0
     path: Assets/Puzzles/PuzzleTestScene.unity
     guid: 091b16bf5a9560540bfdda782588baea
   - enabled: 1
