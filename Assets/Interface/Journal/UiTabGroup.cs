@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class UiTabGroup : MonoBehaviour
 {
-    public List<UiTabButton> tabButtons;
+    public List<UiTabButton> tabButtons = new();
     public List<GameObject> objectsToSwap;
 
+
+    // Add a tabButton to the tabButtons list
     public void Subscribe(UiTabButton button)
     {
-        if (tabButtons == null)
-        {
-            tabButtons = new List<UiTabButton>();
-        }
-
         tabButtons.Add(button);
     }
 
+    // Connect buttons to this function
     public void OnTabSelected(UiTabButton button)
     {
-        ResetTabs();
+        // Get selected button index
         int index = button.transform.GetSiblingIndex();
+        // Go through evey tab page and disable the ones that don't match "index" and enable the page that matches "index"
         for (int i = 0; i < objectsToSwap.Count; i++)
         {
             if (i == index)
@@ -31,14 +30,6 @@ public class UiTabGroup : MonoBehaviour
             {
                 objectsToSwap[i].SetActive(false);
             }
-        }
-    }
-
-    public void ResetTabs()
-    {
-        foreach (UiTabButton button in tabButtons)
-        {
-            //
         }
     }
 }

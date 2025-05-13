@@ -7,6 +7,7 @@ public class UiTabButton : MonoBehaviour
 
     private void Start()
     {
+        // Subscribe this button to the tabGroup
         tabGroup.Subscribe(this);
     }
 }
