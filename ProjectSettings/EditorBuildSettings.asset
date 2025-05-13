@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Rooms/Music.unity
     guid: f8c0e6cb81c5dd1409f4932a43013542
+  - enabled: 1
+    path: Assets/Puzzles/Labpuzzle.unity
+    guid: 63557673b8ec10649bf7159982c15510
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 126f71e70691939428bebb0529fe5705, type: 3}
   m_UseUCBPForAssetBundles: 0
