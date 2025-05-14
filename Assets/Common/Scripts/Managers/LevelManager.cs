@@ -40,6 +40,8 @@ private void Start()
     {
         playerSpawnPosition = spawnPosition;
         var scene = SceneManager.LoadSceneAsync(sceneName);
+        // Stop all Coroutines to avoid the bug where the loading screen disappears when the player quickly goes into and out of a room 
+        StopAllCoroutines();
         StartCoroutine(ProgressLoadingScene(scene));
     }
 
