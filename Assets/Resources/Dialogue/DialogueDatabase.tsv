@@ -6,6 +6,9 @@ plceholder_dialogue_event_02	Placeholder_2	Yes?	Default
 plceholder_dialogue_event_03	Placeholder_1	Well it's red now	Default	
 plceholder_dialogue_event_04	Placeholder_2	What!? | How?	Default	
 plceholder_dialogue_event_05	Placeholder_1	Magic | And {Insert praise for programmer} | But mostly magic	Default	
-plceholder_dialogue_speed_slow	Placeholder_2	This sentence has a slow animation	Slow	
+plceholder_dialogue_speed_slow	Placeholder_2	This sentence has a slow animation speed	Slow	
 plceholder_dialogue_speed_default	Placeholder_2	This sentence has the default animiation speed	Default	
 plceholder_dialogue_speed_fast	Placeholder_2	This sentence has a fast animation speed	Fast	
+Mother_dialogue_speed_default	Mother	Mika wake up!	Default	
+Teacher_dialogue_speed_default	Teacher	Mika your LATE!	Default	
+Teacher_dialogue_speed_default	Teacher	Go to the Principals office NOW!	Default	

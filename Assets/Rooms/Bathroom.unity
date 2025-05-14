@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 769351878}
   - component: {fileID: 769351877}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ Transform:
   m_GameObject: {fileID: 769351876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.92, y: -0.12, z: 0}
+  m_LocalPosition: {x: 3.92, y: -0.12, z: 1}
   m_LocalScale: {x: 10.346697, y: 5.257565, z: 13.236318}
   m_ConstrainProportionsScale: 0
   m_Children: []
