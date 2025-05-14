@@ -59,9 +59,9 @@ public class TsvToSo
     // Update values in dialogue object
     public static void UpdateDialogueObject(DialogueSO dialogueObject, string[] dialogueData)
     {
-        // Set character name
-        dialogueObject.characterName = dialogueData[1];
         dialogueObject.characterProfile = GetProfile(dialogueData[1]);
+        // Get character name form profile
+        dialogueObject.characterName = dialogueObject.characterProfile.characterName;
         dialogueObject.characterPortrait = GetPortrait(dialogueData[1]);
         dialogueObject.sentences = GetSentences(dialogueData[2]);
         dialogueObject.textSpeed = GetTextSpeed(dialogueData[3]);
