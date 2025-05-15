@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ddc0b7bbbf090aa9022d08351d9574, type: 3}
+  m_Name: Elijah_Profile
+  m_EditorClassIdentifier: 
+  characterName: Elijah
+  characterPortrait: {fileID: 4429727264878478278, guid: e041bc238b9c473449014f615e935936, type: 3}
+  characterDescription: Classmate

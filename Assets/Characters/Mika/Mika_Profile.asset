@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mika_Profile
   m_EditorClassIdentifier: 
   characterName: Mika
-  characterPortrait: {fileID: 0}
-  characterDescription: 
+  characterPortrait: {fileID: 5337644316685808433, guid: 462504ef152b99e2cbc8b152eec9d7c1, type: 3}
+  characterDescription: Me :)
