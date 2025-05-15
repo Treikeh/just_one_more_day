@@ -11,6 +11,7 @@ public class QuestManager : MonoBehaviour
     public static QuestManager Instance { get; private set; }
     public Dictionary<string, Quest> ActiveQuests { get; private set; } = new();
     public Dictionary<string, Quest> FinishedQuests { get; private set; } = new();
+    public int storyProgress = 0;
 
     private Dictionary<string, Quest> questMap;
 
@@ -94,7 +95,6 @@ public class QuestManager : MonoBehaviour
 
     public void FinishQuest(string questId)
     {
-        Debug.Log("Hello");
         Quest quest = GetQuestById(questId);
 
         if (quest.state != QuestState.CAN_FINISH)
@@ -107,6 +107,11 @@ public class QuestManager : MonoBehaviour
         ActiveQuests.Remove(questId);
         FinishedQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.FINISHED);
+        // Increase story progress when completing a mandatory quest
+        if (quest.info.mandatoryQuest)
+        {
+            storyProgress++;
+        }
     }
 
     private void ChangeQuestState(Quest quest, QuestState questState)

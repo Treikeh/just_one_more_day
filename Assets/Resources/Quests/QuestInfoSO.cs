@@ -7,6 +7,7 @@ public class QuestInfoSO : ScriptableObject
     [Header("General")]
     public string description;
     public bool finishAutomatically = false;
+    public bool mandatoryQuest = true;
 
     [Header("Requirements")]
     public QuestInfoSO[] questPrerequisites;
