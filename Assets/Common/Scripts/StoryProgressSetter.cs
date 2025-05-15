@@ -12,10 +12,10 @@ public class StoryProgressSetter : MonoBehaviour
 
     private void Start()
     {
-        CheckStoryProgress();
+        SetStoryState();
     }
 
-    public void CheckStoryProgress()
+    public void SetStoryState()
     {
         int storyProgress = QuestManager.Instance.storyProgress;
         foreach (StoryProgressState state in storyStates)
