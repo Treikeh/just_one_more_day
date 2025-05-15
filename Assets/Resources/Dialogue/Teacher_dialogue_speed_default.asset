@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Teacher_dialogue_speed_default
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: cad6724cd128e555a9a36925157507d3, type: 2}
-  characterName: Teacher
+  characterName: Soup
   characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
   sentences:
   - Go to the Principals office NOW!

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: plceholder_dialogue_event_01
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: e8e4d663bc22e6889b39d83545015fa7, type: 2}
-  characterName: Placeholder_1
+  characterName: Tea pot
   characterPortrait: {fileID: 5635092890522734083, guid: 65e22430a27660e49883c1e4196c2b79, type: 3}
   sentences:
   - You see that green box over there?
