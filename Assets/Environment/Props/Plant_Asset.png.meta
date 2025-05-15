@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d5cb4fa88cae4b6168a0362dc1f45e6c
+guid: faf11111fc70b0c1e985e628a62e3ac6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6767312254331599539
-    second: Restroom_Background_0
+      213: 3604581133320724505
+    second: Plant_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Restroom_Background_0
+      name: Plant_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 227
-        height: 90
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ba359bf3a25aed50800000000000000
-      internalID: 6767312254331599539
+      spriteID: 91028af517b060230800000000000000
+      internalID: 3604581133320724505
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Restroom_Background_0: 6767312254331599539
+      Plant_Asset_0: 3604581133320724505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

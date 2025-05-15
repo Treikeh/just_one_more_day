@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4292c8059f203d7db40e7b4ca72c324, type: 3}
-  m_Name: Get to the pricnipals office
+  m_Name: Beginning_Pricnipals_office
   m_EditorClassIdentifier: 
-  description: Get to the principals office
+  description: Go to the principal's office
   finishAutomatically: 1
+  mandatoryQuest: 1
   questPrerequisites: []
   questSteps: 1
