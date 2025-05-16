@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Rooms/Development/SceneTransitionTestScene.unity
     guid: f7f9cb47a3353bc45955e6022d1db459
   - enabled: 0
-    path: Assets/Rooms/Development/DialogueTestScene.unity
+    path: Assets/Scenes/DialogueTestScene.unity
     guid: 7db7fb8dd471bf44695d9513dc2e84f7
   - enabled: 0
     path: Assets/Rooms/Development/ExampleQuestTest01.unity
     guid: e3ce94175c744f1458b419898109ae1f
   - enabled: 0
-    path: Assets/Rooms/TestRooms/ExampleQuestTest02.unity
+    path: Assets/Scenes/ExampleQuestTest02.unity
     guid: 270b23a1727470742a163a449bcc8b77
   - enabled: 0
     path: Assets/Rooms/Puzzles/PuzzleTestScene.unity
