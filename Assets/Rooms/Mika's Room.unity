@@ -616,8 +616,8 @@ GameObject:
   - component: {fileID: 818884078}
   - component: {fileID: 818884077}
   - component: {fileID: 818884076}
+  - component: {fileID: 818884079}
   - component: {fileID: 818884075}
-  - component: {fileID: 818884074}
   - component: {fileID: 818884073}
   m_Layer: 0
   m_Name: Key
@@ -663,18 +663,6 @@ MonoBehaviour:
   finishedResponse:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &818884074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818884072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 772616435b7130647b7ca34e78d1d67d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &818884075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -737,8 +725,8 @@ MonoBehaviour:
   targetEnteredTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 818884074}
-        m_TargetAssemblyTypeName: RedTriangle, Assembly-CSharp
+      - m_Target: {fileID: 818884079}
+        m_TargetAssemblyTypeName: SaveActiveState, Assembly-CSharp
         m_MethodName: Save
         m_Mode: 1
         m_Arguments:
@@ -808,7 +796,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7625569410487585928, guid: 8834e954150213d449ea1307ed6b4d1e, type: 3}
+  m_Sprite: {fileID: 5970483107731145527, guid: 5e2b9d82453a0079a895f91a23678a39, type: 3}
   m_Color: {r: 1, g: 0.9968553, b: 0.9968553, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -829,11 +817,23 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.3275449, w: 0.94483566}
   m_LocalPosition: {x: -4.2, y: 1.5, z: -0.056782175}
-  m_LocalScale: {x: 1, y: 1.0083, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1697413279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.24}
+--- !u!114 &818884079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818884072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234bc6e2c2d2ce936a0e095a7c109e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &981880344
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +894,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
