@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f87e1ccefcedb5545a7ae0b8baeb740c
+guid: 92b417d91c501a07da0fab3a6cfe511b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8837041285214923234
-    second: TinyFlowerpot_Asset_0
+      213: 8284138712348610008
+    second: GreenHighChair_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TinyFlowerpot_Asset_0
+      name: GreenHighChair_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e169d4195c58c5580800000000000000
-      internalID: -8837041285214923234
+      spriteID: 8ddc993844c27f270800000000000000
+      internalID: 8284138712348610008
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8f95bc7abc676c5e2a89764f17f8280c
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TinyFlowerpot_Asset_0: -8837041285214923234
+      GreenHighChair_Asset_0: 8284138712348610008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

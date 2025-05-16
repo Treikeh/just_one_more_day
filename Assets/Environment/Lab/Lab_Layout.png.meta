@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f87e1ccefcedb5545a7ae0b8baeb740c
+guid: 8bbf7cc27f2313d379a72f7eb13cdfb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8837041285214923234
-    second: TinyFlowerpot_Asset_0
+      213: -7752108908912964883
+    second: Lab_Layout_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TinyFlowerpot_Asset_0
+      name: Lab_Layout_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7
-        height: 10
+        width: 238
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e169d4195c58c5580800000000000000
-      internalID: -8837041285214923234
+      spriteID: dea0a10150afa6490800000000000000
+      internalID: -7752108908912964883
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TinyFlowerpot_Asset_0: -8837041285214923234
+      Lab_Layout_0: -7752108908912964883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

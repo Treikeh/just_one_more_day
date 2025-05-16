@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f87e1ccefcedb5545a7ae0b8baeb740c
+guid: a0c2c038566349804a70950c06fe7e5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8837041285214923234
-    second: TinyFlowerpot_Asset_0
+      213: -3299071287632788412
+    second: JournalPresentation_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TinyFlowerpot_Asset_0
+      name: JournalPresentation_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 119
         y: 0
-        width: 7
-        height: 10
+        width: 1154
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e169d4195c58c5580800000000000000
-      internalID: -8837041285214923234
+      spriteID: 44405f3a4285732d0800000000000000
+      internalID: -3299071287632788412
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      TinyFlowerpot_Asset_0: -8837041285214923234
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

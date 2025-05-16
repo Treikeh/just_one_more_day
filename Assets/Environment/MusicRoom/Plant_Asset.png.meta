@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 14f36004b7c562507a9c66a83466ef6d
+guid: fe43a9c62b91e23f8a30c76c47a1f79d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8818439597233770533
-    second: Lab_Background_0
+      213: 3604581133320724505
+    second: Plant_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lab_Background_0
+      name: Plant_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 238
-        height: 170
+        width: 29
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5209b527714616a70800000000000000
-      internalID: 8818439597233770533
+      spriteID: 91028af517b060230800000000000000
+      internalID: 3604581133320724505
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 24cc7827ead473f9c9e84eef6c0f00fa
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lab_Background_0: 8818439597233770533
+      Plant_Asset_0: 3604581133320724505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
