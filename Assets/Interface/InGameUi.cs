@@ -38,6 +38,11 @@ public class InGameUi : MonoBehaviour
         Application.Quit();
     }
 
+    public void OnSaveGameButtonPressed()
+    {
+        SaveManager.SaveGame();
+    }
+
 
     // JOURNAL
     private void JounralPressed()
