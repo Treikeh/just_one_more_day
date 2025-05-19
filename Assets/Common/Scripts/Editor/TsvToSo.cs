@@ -65,6 +65,7 @@ public class TsvToSo
         dialogueObject.characterPortrait = GetPortrait(dialogueData[1]);
         dialogueObject.sentences = GetSentences(dialogueData[2]);
         dialogueObject.textSpeed = GetTextSpeed(dialogueData[3]);
+        dialogueObject.endAutomatically = GetAutomaticEndValue(dialogueData[4]);
     }
 
     // Load a protrait using the characters name as identifier.
@@ -110,5 +111,15 @@ public class TsvToSo
             "Slow" => 0.1f,
             _ => 0.05f,
         };
+    }
+
+    // Set if the dialogue should end automatically
+    public static bool GetAutomaticEndValue(string boolean)
+    {
+        if (boolean == "TRUE")
+        {
+            return true;
+        }
+        return false;
     }
 }

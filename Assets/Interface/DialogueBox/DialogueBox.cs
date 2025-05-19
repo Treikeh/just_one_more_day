@@ -18,6 +18,7 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private TMP_Text dialogueSentence;
     [SerializeField] private Animator animator;
 
+    private bool endAutomatically = false;
     private float textSpeed;
     private int currentDialogue = 0;
     // Starts as -1 since it would skip over the first sentence if it was 0
@@ -44,6 +45,10 @@ public class DialogueBox : MonoBehaviour
             sentenceAnimation = null;
             // Display the entire sentence
             dialogueSentence.text = dialogueList[currentDialogue].sentences[currentSentence];
+            if (endAutomatically)
+            {
+                DisplayNextSentence();
+            }
         }
         else
         {
@@ -107,6 +112,7 @@ public class DialogueBox : MonoBehaviour
 
         // Update display
         textSpeed = dialogue.textSpeed;
+        endAutomatically = dialogue.endAutomatically;
         characterName.text = dialogue.characterName;
         characterPortrait.sprite = dialogue.characterPortrait;
         sentenceAnimation = StartCoroutine(AnimateSentence(dialogue.sentences[sentence]));
@@ -126,6 +132,10 @@ public class DialogueBox : MonoBehaviour
         }
         // Remove reference to coroutine when it has finished
         sentenceAnimation = null;
+        if (endAutomatically)
+        {
+            DisplayNextSentence();
+        }
     }
 
     private void EndDialogue()

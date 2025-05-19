@@ -22,3 +22,4 @@ MonoBehaviour:
   - Great!
   - Just walk up to the purpule trigger to enter the next room
   textSpeed: 0.05
+  endAutomatically: 0

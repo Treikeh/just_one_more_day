@@ -10,4 +10,5 @@ public class DialogueSO : ScriptableObject
     public Sprite characterPortrait;
     public List<string> sentences;
     public float textSpeed = 0.05f;
+    public bool endAutomatically = false;
 }
