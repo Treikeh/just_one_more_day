@@ -12,10 +12,10 @@ public class SaveActiveState : MonoBehaviour, ISave
     public void Save()
     {
         // Create save data
-        SaveData saveData = new()
+        LevelSaveData saveData = new()
         {
             active = false,
-            name = Utils.GetSceneId(gameObject)
+            name = Utils.GetSceneId(gameObject),
         };
         // Save data to level manager
         LevelManager.Instance.SetSaveData(Utils.GetSceneId(gameObject), saveData);
@@ -26,18 +26,11 @@ public class SaveActiveState : MonoBehaviour, ISave
 
     public void Load()
     {
-        object obj = LevelManager.Instance.GetSaveData(Utils.GetSceneId(gameObject));
-        if (obj is not null and SaveData)
+        LevelSaveData saveData = LevelManager.Instance.GetSaveData(Utils.GetSceneId(gameObject));
+        if (saveData != null)
         {
-            SaveData saveData = (SaveData)obj;
             Debug.Log(saveData.name);
             gameObject.SetActive(saveData.active);
         }
-    }
-
-    private class SaveData
-    {
-        public bool active;
-        public string name;
     }
 }

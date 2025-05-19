@@ -12,7 +12,7 @@ public class UiManager : MonoBehaviour
     public static UiManager Instance { get; private set; }
     [SerializeField] private GameObject inGameUi;
 
-    private List<CharacterProfileSO> characterProfiles = new();
+    public List<CharacterProfileSO> characterProfiles = new();
 
 
     private void Awake()

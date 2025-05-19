@@ -33,6 +33,7 @@ public class InputManager : MonoBehaviour
     public void ChangeActionMap(string actionMap)
     {
         playerInput.SwitchCurrentActionMap(actionMap);
+        Debug.Log(actionMap);
     }
 
 

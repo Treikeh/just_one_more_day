@@ -74,24 +74,31 @@ private void Start()
 
 // *SAVE SYSTEM
     // This could be stored in any script that is globaly avalible
-    private Dictionary<string, object> saveDict = new();
-    public void SetSaveData(string key, object data)
+    public Dictionary<string, LevelSaveData> levelSaveDict = new();
+    public void SetSaveData(string key, LevelSaveData data)
     {
         // Set data
-        if (saveDict.ContainsKey(key))
-            { saveDict[key] = data; }
+        if (levelSaveDict.ContainsKey(key))
+            { levelSaveDict[key] = data; }
         // Create data
         else
-            { saveDict.Add(key, data); }
+            { levelSaveDict.Add(key, data); }
     }
 
-    public object GetSaveData(string key)
+    public LevelSaveData GetSaveData(string key)
     {
-        object data = new();
-        if (saveDict.ContainsKey(key))
+        if (levelSaveDict.ContainsKey(key))
         {
-            data = saveDict[key];
+            return levelSaveDict[key];
         }
-        return data;
+        return null;
     }
+}
+
+[Serializable]
+public class LevelSaveData
+{
+    public bool active;
+    public string name;
+    public Vector3 position;
 }

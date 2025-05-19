@@ -9,11 +9,11 @@ public class QuestManager : MonoBehaviour
     public event Action<Quest> OnQuestStateChanged;
 
     public static QuestManager Instance { get; private set; }
-    public Dictionary<string, Quest> ActiveQuests { get; private set; } = new();
-    public Dictionary<string, Quest> FinishedQuests { get; private set; } = new();
+    public Dictionary<string, Quest> ActiveQuests = new();
+    public Dictionary<string, Quest> FinishedQuests = new();
     public int storyProgress = 0;
 
-    private Dictionary<string, Quest> questMap;
+    public Dictionary<string, Quest> questMap;
 
 
     private void Awake()
@@ -33,6 +33,7 @@ public class QuestManager : MonoBehaviour
     {
         QuestInfoSO[] allQuests = Resources.LoadAll<QuestInfoSO>("Quests");
 
+        // Add the quest to the quest map using the name as QuestID
         Dictionary<string, Quest> idToQuestMap = new();
         foreach (QuestInfoSO questInfoSO in allQuests)
         {
@@ -148,6 +149,7 @@ public enum QuestState
 }
 
 
+[Serializable]
 public class Quest
 {
     public QuestInfoSO info;
