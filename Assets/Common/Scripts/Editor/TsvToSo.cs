@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 // CREDITS: Comp-3 Interactive - Youtube: https://www.youtube.com/watch?v=1EdLTF43d70
 
 
@@ -16,7 +15,7 @@ using Unity.VisualScripting;
 
 public class TsvToSo
 {
-    private static string dialogueTsvPath = "/Resources/Dialogue/DialogueDatabase.tsv";
+    private static readonly string dialogueTsvPath = "/Resources/Dialogue/DialogueDatabase.tsv";
 
     [MenuItem("Uitlities/Genertate Dialogue")]
     public static void GenerateDialogue()

@@ -10,7 +10,7 @@ public class CharactersPage : MonoBehaviour
     [SerializeField] private Image characterPortrait;
 
     private int currentCharacterIndex = 0;
-    private List<CharacterProfileSO> profiles;
+    private List<CharacterProfileSO> profiles = new();
 
 
     private void OnEnable()
