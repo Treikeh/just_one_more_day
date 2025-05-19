@@ -33,11 +33,11 @@ public class PlayerMovement : MonoBehaviour, ISave
     }
 
 
-    // SAVE DATA
+    // SAVE LEVEL DATA
     public void Save()
     {
         // Create save data
-        SaveData saveData = new()
+        LevelSaveData saveData = new()
         {
             position = LevelManager.Instance.playerSpawnPosition != Vector2.zero ? LevelManager.Instance.playerSpawnPosition: transform.position,
         };
@@ -47,16 +47,10 @@ public class PlayerMovement : MonoBehaviour, ISave
 
     public void Load()
     {
-        object obj = LevelManager.Instance.GetSaveData(Utils.GetSceneId(gameObject));
-        if (obj is not null and SaveData)
+        LevelSaveData saveData = LevelManager.Instance.GetSaveData(Utils.GetSceneId(gameObject));
+        if (saveData != null)
         {
-            SaveData saveData = (SaveData)obj;
             transform.position = saveData.position;
         }
-    }
-
-    private class SaveData
-    {
-        public Vector3 position;
     }
 }
