@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d5cb4fa88cae4b6168a0362dc1f45e6c
+guid: 2c00718884e04934598ccda5d9ee5ba4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6767312254331599539
-    second: Restroom_Background_0
+      213: -7004785557558909104
+    second: Sink_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Restroom_Background_0
+      name: Sink_Asset_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 12
-        width: 218
-        height: 78
+        y: 0
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5922d60117e3b204abd94273c7a45478
-      internalID: 6767312254331599539
+      spriteID: 0572ae9f5a00ace90800000000000000
+      internalID: -7004785557558909104
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bab5ace541ecec978ad11e9b0812d711
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Restroom_Background_0: 6767312254331599539
+      Sink_Asset_0: -7004785557558909104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
