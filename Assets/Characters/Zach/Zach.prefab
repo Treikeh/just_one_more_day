@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7305086159172591115}
   - component: {fileID: 3387611994969002869}
+  - component: {fileID: 2318115477924890785}
   m_Layer: 0
   m_Name: Zach
   m_TagString: Untagged
@@ -79,6 +80,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &2318115477924890785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742514202792407991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b922eeb8d6dca6291b0759d60ce196ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4441777225938594204}
+  characterFaceDir: 0
 --- !u!1 &6841280524433914672
 GameObject:
   m_ObjectHideFlags: 0
