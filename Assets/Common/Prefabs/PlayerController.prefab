@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 1788014078564962910}
   - component: {fileID: 216822262765901969}
   - component: {fileID: 5754840286117826338}
-  - component: {fileID: 311076229611670751}
+  - component: {fileID: 4665285955168512459}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
---- !u!114 &311076229611670751
+--- !u!114 &4665285955168512459
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,11 +233,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2790833512188719713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3170fd8fc7391beb19374adb3dc03f65, type: 3}
+  m_Script: {fileID: 11500000, guid: b922eeb8d6dca6291b0759d60ce196ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1890130804811255498}
-  moveInput: {x: 0, y: 0}
+  characterFaceDir: 0
 --- !u!1 &3017861395298555662
 GameObject:
   m_ObjectHideFlags: 0
