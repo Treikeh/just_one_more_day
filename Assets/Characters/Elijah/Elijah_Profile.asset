@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Elijah_Profile
   m_EditorClassIdentifier: 
   characterName: Elijah
-  characterPortrait: {fileID: 4429727264878478278, guid: e041bc238b9c473449014f615e935936, type: 3}
+  characterPortrait: {fileID: 722453533804952842, guid: 284da185deb9cb5ab84a88e02e1cda80, type: 3}
   characterDescription: Classmate

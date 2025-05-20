@@ -29,7 +29,7 @@ public class TsvToSo
             // Check that the file has the right amount of values
             if(splitData.Length < 3)
             {
-                Debug.LogWarning("Dialogue doesn't have less than 3 values! If this is a mistake contact the programmer to fix it!");
+                Debug.LogWarning("Dialogue doesn't have less than 5 values! If this is a mistake contact the programmer to fix it!");
                 return;
             }
 

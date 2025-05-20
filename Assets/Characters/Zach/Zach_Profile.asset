@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Zach_Profile
   m_EditorClassIdentifier: 
   characterName: Zach
-  characterPortrait: {fileID: -5876374134011792062, guid: 87ad4eb5cce7391449f15c30c46ba82f, type: 3}
+  characterPortrait: {fileID: 6969751096730711447, guid: 69f911cd1fe151307957082b4f501ee8, type: 3}
   characterDescription: Classmate

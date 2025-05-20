@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Milo_Profile
   m_EditorClassIdentifier: 
   characterName: Milo
-  characterPortrait: {fileID: -3807816483456469155, guid: 9d8b231a230e5a34e9df4eeb3e8df4a6, type: 3}
+  characterPortrait: {fileID: 4505196511648936495, guid: c1a91da943bcdfc7d90c753af57d7f8e, type: 3}
   characterDescription: Classmate
