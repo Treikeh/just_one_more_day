@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1c978473b7e01e7c8f571448d554c7e
+guid: 9324d7fce2dd1fb69b6cd050ed1481d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3056450147076268461
-    second: Musicroom_background_0
+      213: 1237510825579131482
+    second: Trashbin_Front_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Musicroom_background_0
+      name: Trashbin_Front_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 156
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 10
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e14d5f8ce4595d0800000000000000
-      internalID: -3056450147076268461
+      spriteID: a52385c0a858c2110800000000000000
+      internalID: 1237510825579131482
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 878b2be7d02551dc19966e7bc7c31b33
+    spriteID: 3c6fa5e0527f8b0da82b2225c943b90c
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Musicroom_background_0: -3056450147076268461
+      Trashbin_Front_Asset_0: 1237510825579131482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

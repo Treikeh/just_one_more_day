@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1c978473b7e01e7c8f571448d554c7e
+guid: ec4b158b7461cad558f2bf6357e82b96
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3056450147076268461
-    second: Musicroom_background_0
+      213: -7428282021362705485
+    second: VendingMachine_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Musicroom_background_0
+      name: VendingMachine_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 156
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 23
+        height: 35
+      alignment: 9
+      pivot: {x: 0.47826087, y: 0.4857143}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e14d5f8ce4595d0800000000000000
-      internalID: -3056450147076268461
+      spriteID: 3bb5149bbd079e890800000000000000
+      internalID: -7428282021362705485
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 878b2be7d02551dc19966e7bc7c31b33
+    spriteID: eec4ea165e19b0760ab451e3e826c9db
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Musicroom_background_0: -3056450147076268461
+      VendingMachine_Asset_0: -7428282021362705485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

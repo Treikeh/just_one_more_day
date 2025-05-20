@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1c978473b7e01e7c8f571448d554c7e
+guid: c9248084ca3276d5bbcbd83f05f28978
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3056450147076268461
-    second: Musicroom_background_0
+      213: 3464903912801005361
+    second: Cafeteria_Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Musicroom_background_0
+      name: Cafeteria_Background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 156
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 294
+        height: 171
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49707603}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e14d5f8ce4595d0800000000000000
-      internalID: -3056450147076268461
+      spriteID: 13f6d5730cfc51030800000000000000
+      internalID: 3464903912801005361
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 878b2be7d02551dc19966e7bc7c31b33
+    spriteID: bac928706baaa5c6b87645fbf437d2b4
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Musicroom_background_0: -3056450147076268461
+      Cafeteria_Background_0: 3464903912801005361
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

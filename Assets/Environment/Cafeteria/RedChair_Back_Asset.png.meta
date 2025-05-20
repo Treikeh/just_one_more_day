@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1c978473b7e01e7c8f571448d554c7e
+guid: f938200b8c0710c08b4aa57b07bc30be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3056450147076268461
-    second: Musicroom_background_0
+      213: -8166024434206177949
+    second: RedChair_Back_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Musicroom_background_0
+      name: RedChair_Back_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 156
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 13
+        height: 17
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e14d5f8ce4595d0800000000000000
-      internalID: -3056450147076268461
+      spriteID: 3650bf3ea047cae80800000000000000
+      internalID: -8166024434206177949
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 878b2be7d02551dc19966e7bc7c31b33
+    spriteID: 0e21a4455254f369d95fa2af2bf0ee62
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Musicroom_background_0: -3056450147076268461
+      RedChair_Back_Asset_0: -8166024434206177949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

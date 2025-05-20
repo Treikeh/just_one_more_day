@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1c978473b7e01e7c8f571448d554c7e
+guid: 307fe2aa3171dd75b9b38811b11cf4d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3056450147076268461
-    second: Musicroom_background_0
+      213: -6656561394440830737
+    second: WaterStation_Asset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Musicroom_background_0
+      name: WaterStation_Asset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 156
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 34
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47368422}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e14d5f8ce4595d0800000000000000
-      internalID: -3056450147076268461
+      spriteID: fe086c20ea42f93a0800000000000000
+      internalID: -6656561394440830737
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 878b2be7d02551dc19966e7bc7c31b33
+    spriteID: 47ddacac6111615ff9fe037e5639071e
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Musicroom_background_0: -3056450147076268461
+      WaterStation_Asset_0: -6656561394440830737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
