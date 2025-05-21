@@ -119,12 +119,12 @@ TextureImporter:
       name: Bookshelves_LowerRow_Asset_1
       rect:
         serializedVersion: 2
-        x: 114
+        x: 0
         y: 0
-        width: 49
-        height: 43
+        width: 56
+        height: 49
       alignment: 9
-      pivot: {x: 0.5102041, y: 0.4883721}
+      pivot: {x: 0.5, y: 0.48979592}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
