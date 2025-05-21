@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PuzzleSceneController : MonoBehaviour
 {
-    private Transform dragTarget = null;
     private Rigidbody2D rb = null;
     private Vector3 offset;
 
@@ -25,14 +24,16 @@ public class PuzzleSceneController : MonoBehaviour
     {
         // Enable Puzzle InputActionMap
         InputManager.Instance.ChangeActionMap("Puzzle");
+        UiManager.Instance.HideInGameUi();
     }
+
 
     private void Update()
     {
-        if (dragTarget)
+        if (rb)
         {
-            dragTarget.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
-            if (rb && rb.bodyType == RigidbodyType2D.Dynamic)
+            rb.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
+            if (rb.bodyType == RigidbodyType2D.Dynamic)
             {
                 rb.linearVelocity = Vector2.zero;
             }
@@ -47,20 +48,19 @@ public class PuzzleSceneController : MonoBehaviour
         {
             // Pick up target
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit)
+            if (hit && hit.collider.TryGetComponent(out Rigidbody2D rigidbody))
             {
-                dragTarget = hit.transform;
-                offset = dragTarget.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                rb = dragTarget.GetComponent<Rigidbody2D>();
+                rb = rigidbody;
+                offset = rb.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
             }
         }
         // Drop target
-        else if (!pressed && dragTarget)
+        else if (!pressed && rb)
         {
             rb = null;
-            dragTarget = null;
         }
     }
+
 
     private void RightClickPressed(bool pressed)
     {

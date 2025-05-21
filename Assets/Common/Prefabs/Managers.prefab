@@ -169,7 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe0abf30c8b1f8419348c3875501244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inGameUi: {fileID: 1252573987237013086, guid: 9850953e2ae4f584ab8d84693f564f80, type: 3}
+  inGameUiPrefab: {fileID: 1252573987237013086, guid: 9850953e2ae4f584ab8d84693f564f80, type: 3}
+  characterProfiles: []
 --- !u!1 &2837031855386099674
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e52604f59cb76146a079375cbd7bf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyProgress: 0
 --- !u!1 &4522047776646085428
 GameObject:
   m_ObjectHideFlags: 0

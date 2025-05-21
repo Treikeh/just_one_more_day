@@ -10,7 +10,9 @@ public class UiManager : MonoBehaviour
     public event Action OnDialogueFinished;
 
     public static UiManager Instance { get; private set; }
-    [SerializeField] private GameObject inGameUi;
+    [SerializeField] private GameObject inGameUiPrefab;
+
+    private GameObject inGameUi;
 
     public List<CharacterProfileSO> characterProfiles = new();
 
@@ -24,7 +26,19 @@ public class UiManager : MonoBehaviour
         }
         Instance = this;
         // Spawn InGameUi prefab and add it to don't destroy on load
-        DontDestroyOnLoad(Instantiate(inGameUi));
+        inGameUi = Instantiate(inGameUiPrefab);
+        DontDestroyOnLoad(inGameUi);
+    }
+
+
+    public void HideInGameUi()
+    {
+        inGameUi.SetActive(false);
+    }
+
+    public void ShowInGameUi()
+    {
+        inGameUi.SetActive(true);
     }
 
 
