@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6ddc0b7bbbf090aa9022d08351d9574, type: 3}
-  m_Name: Teacher_Profile
+  m_Name: Principal Smith_Profile
   m_EditorClassIdentifier: 
-  characterName: Mr. Williams
-  characterPortrait: {fileID: 6379875470751018860, guid: 2c3f7b4043ea410e2aa489d421ae49bf, type: 3}
-  characterDescription: Teacher
+  characterName: Principal Smith
+  characterPortrait: {fileID: 8746099069590478810, guid: a000ae6ab12658e019270d2211a827d3, type: 3}
+  characterDescription: A very normal principal

@@ -56,6 +56,7 @@ public class TagSorting : MonoBehaviour
             }
         }
         allBucketsSorted.Invoke();
+        UiManager.Instance.ShowInGameUi();
     }
 }
 

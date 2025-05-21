@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ruby_Profile
   m_EditorClassIdentifier: 
   characterName: Ruby
-  characterPortrait: {fileID: 6585432008266754060, guid: 0b651b0c7f890e74484e4f6967616679, type: 3}
+  characterPortrait: {fileID: -3827998281672765223, guid: d0ca327462f2a8b1fa8efe91e87299b9, type: 3}
   characterDescription: Best friend
