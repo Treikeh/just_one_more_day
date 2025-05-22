@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PRO_Get journal
   m_EditorClassIdentifier: 
   description: Get your journal
-  finishAutomatically: 1
+  finishAutomatically: 0
   mandatoryQuest: 1
   questPrerequisites: []
   questSteps: 1
