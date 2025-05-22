@@ -32,6 +32,11 @@ public class PlayerMovement : MonoBehaviour, ISave
         rb.linearVelocity = velocity;
     }
 
+    public void SetMovementSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
+
 
     // SAVE LEVEL DATA
     public void Save()
