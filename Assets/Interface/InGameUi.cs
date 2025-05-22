@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -50,6 +51,7 @@ public class InGameUi : MonoBehaviour
         if (!journal.activeInHierarchy)
         {
             journal.SetActive(true);
+            journal.GetComponent<Animator>().SetBool("isOpen", true);
             InputManager.Instance.ChangeActionMap("Ui");
         }
     }
@@ -59,9 +61,16 @@ public class InGameUi : MonoBehaviour
     {
         if (journal.activeInHierarchy)
         {
-            journal.SetActive(false);
+            journal.GetComponent<Animator>().SetBool("isOpen", false);
             InputManager.Instance.ChangeActionMap("Player");
+            StartCoroutine(CloseJournalDelay());
         }
+    }
+
+    private IEnumerator CloseJournalDelay()
+    {
+        yield return new WaitForSeconds(0.25f);
+        journal.SetActive(false);
     }
 
 

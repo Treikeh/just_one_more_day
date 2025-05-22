@@ -61,7 +61,7 @@ public class DialogueBox : MonoBehaviour
     {
         Debug.Log("Dialogue started");
         // Show dialogue window
-        animator.SetBool("IsOpen", true);
+        animator.SetBool("isOpen", true);
         // Reset values
         dialogueTriggerEvent = dialogueEvent;
         currentDialogue = 0;
@@ -157,7 +157,7 @@ public class DialogueBox : MonoBehaviour
     private IEnumerator ColseDialogueWindowDelay()
     {
         yield return new WaitForSeconds(0.1f);
-        animator.SetBool("IsOpen", false);
+        animator.SetBool("isOpen", false);
         // Another small delay for the animation to finish
         yield return new WaitForSeconds(0.2f);
         UiManager.Instance.DialogueFinished();
