@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Placeholder_Cutlery_0: -3983446787850864571
+      Placeholder_Cutlery_1: -3776937235549793470
+      Placeholder_Cutlery_2: 1481011253908163839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

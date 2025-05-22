@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mika_Portrait_0: 1819049650608724132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
