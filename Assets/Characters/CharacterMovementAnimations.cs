@@ -14,7 +14,7 @@ public class CharacterMovementAnimations : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 moveDir = transform.position - prevPosition;
-        if (moveDir.magnitude > 0.07f)
+        if (moveDir.magnitude > 0.01f)
         {
             animator.SetBool("isMoving", true);
             animator.SetFloat("x", moveDir.x);
