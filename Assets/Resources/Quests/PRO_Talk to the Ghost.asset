@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4292c8059f203d7db40e7b4ca72c324, type: 3}
   m_Name: PRO_Talk to the Ghost
   m_EditorClassIdentifier: 
-  description: Talk to the ??Ghost??
+  description: Check the noise?
   finishAutomatically: 1
   mandatoryQuest: 0
   questPrerequisites: []

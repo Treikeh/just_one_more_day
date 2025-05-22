@@ -406,7 +406,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.23529412}
     oldSize: {x: 0.75, y: 1.0625}
     newSize: {x: 0.75, y: 1.0625}
     adaptiveTilingThreshold: 0.5
@@ -1789,7 +1789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

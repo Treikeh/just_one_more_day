@@ -659,6 +659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luna
       objectReference: {fileID: 0}
+    - target: {fileID: 2195833759382056236, guid: e65f375201d7369ff8e702b0fa8446e3, type: 3}
+      propertyPath: characterFaceDir
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5951727337200366434, guid: e65f375201d7369ff8e702b0fa8446e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.375
@@ -1167,6 +1171,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1130335600}
     m_Modifications:
+    - target: {fileID: 2318115477924890785, guid: 9318bbeb30a6121b39e52d3a987b3973, type: 3}
+      propertyPath: characterFaceDir
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6742514202792407991, guid: 9318bbeb30a6121b39e52d3a987b3973, type: 3}
       propertyPath: m_Name
       value: Zach
@@ -1453,6 +1461,10 @@ PrefabInstance:
     - target: {fileID: 3198157163503240895, guid: bc536390b3495c6c3a3e127d85d85b9c, type: 3}
       propertyPath: m_Name
       value: Hazel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899329001973869018, guid: bc536390b3495c6c3a3e127d85d85b9c, type: 3}
+      propertyPath: characterFaceDir
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6094741312607967315, guid: bc536390b3495c6c3a3e127d85d85b9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3423,6 +3435,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
+      propertyPath: storyProgress
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4324,6 +4340,10 @@ PrefabInstance:
     - target: {fileID: 5172071494913242592, guid: f5f2592ff1d8876208096cd66a664f2e, type: 3}
       propertyPath: m_Name
       value: Elijah
+      objectReference: {fileID: 0}
+    - target: {fileID: 7645515903033733299, guid: f5f2592ff1d8876208096cd66a664f2e, type: 3}
+      propertyPath: characterFaceDir
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5711,6 +5731,10 @@ PrefabInstance:
     - target: {fileID: 3779240573475030841, guid: 2ea772b7a6e8c4a73a231bc6508fa49a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290783290321384408, guid: 2ea772b7a6e8c4a73a231bc6508fa49a, type: 3}
+      propertyPath: characterFaceDir
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7342,6 +7366,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1130335600}
     m_Modifications:
+    - target: {fileID: 1562110595655520292, guid: a7958d3a94b2274198e0fdeb45d149d4, type: 3}
+      propertyPath: characterFaceDir
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7078228244244193139, guid: a7958d3a94b2274198e0fdeb45d149d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.875

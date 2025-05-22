@@ -1425,11 +1425,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questToCheck: {fileID: 11400000, guid: 087357cc7267bd24f84126dbfb3fa6cc, type: 2}
+  questToCheck: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
   notStartedResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 087357cc7267bd24f84126dbfb3fa6cc, type: 2}
+      - m_Target: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
         m_TargetAssemblyTypeName: QuestInfoObject, Assembly-CSharp
         m_MethodName: StartQuest
         m_Mode: 1
@@ -1461,19 +1461,7 @@ MonoBehaviour:
         m_CallState: 2
   finishedResponse:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 797165476}
-        m_TargetAssemblyTypeName: LevelLoaderTrigger, Assembly-CSharp
-        m_MethodName: StartLoadingLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &797165475
 Transform:
   m_ObjectHideFlags: 0
