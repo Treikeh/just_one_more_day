@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
+  m_Name: BEG_Principal_02_Cutscene_02
+  m_EditorClassIdentifier: 
+  characterProfile: {fileID: 11400000, guid: fd6c30254485ad4b0aa1fa59a2c9162e, type: 2}
+  characterName: Principal Smith
+  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  sentences:
+  - I know school can be boring at your age
+  - You just want to sleep and play video games or watch TV all day
+  - I've been thinking, pondering even
+  - And I've come to the conclusion
+  - It is not accepteble
+  - Skipping and coming late, doing the bare minimum
+  - That is not how I want my students to behave
+  - Take this as a final warning, Mika
+  - This is the last time you're coming late to school
+  - Before I will have to contact your mother
+  textSpeed: 0.05
+  endAutomatically: 0

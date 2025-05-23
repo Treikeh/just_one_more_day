@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
+  m_Name: BTS_Sophia_02_Speed_Fast_SkipAuto
+  m_EditorClassIdentifier: 
+  characterProfile: {fileID: 11400000, guid: 818ad623f9b186b578de99d894093c17, type: 2}
+  characterName: Sophia
+  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  sentences:
+  - Did you know that the parasite that is in The First of You actually exists?
+  - It is called Ophiocordyceps unilateralis, but you can also call it by its cooler
+    name
+  - Zombie-ant fungus
+  - "It literally takes over the ant\u2019s body"
+  - I mean, it eats the ant from the inside out, but also controls it
+  - "Eventually it kills it and the fungi grows out of the ant\u2019s head"
+  - The coolest part is that
+  - If the human body was colder
+  - That could actually happen to us
+  - And we would all become zombies
+  - "Wouldn\u2019t that be cool?"
+  textSpeed: 0.01
+  endAutomatically: 1

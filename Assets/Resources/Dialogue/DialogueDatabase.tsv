@@ -1,14 +1,104 @@
-ID	Speaker/Name	Dialogue	Speed	 Use " | " to define different sentences in the same dialogue cell (It's importat that there's a space before and after the "|")
-placeholder_1_test	Placeholder_1	This is the first sentence | This is the second sentence | A third sentence	Default	To type | you have to press the button below ESC
-placeholder_2_test	Placeholder_2	A new person appears | Now with more than one sentence | Isn't that amazing!?	Default	To use it in Unity you have to Download this sheet as a .tsv. Then you have to replace the file that's allready in the editor
-plceholder_dialogue_event_01	Placeholder_1	You see that green box over there?	Default	The ID is also the File name the object will be saved as
-plceholder_dialogue_event_02	Placeholder_2	Yes?	Default	
-plceholder_dialogue_event_03	Placeholder_1	Well it's red now	Default	
-plceholder_dialogue_event_04	Placeholder_2	What!? | How?	Default	
-plceholder_dialogue_event_05	Placeholder_1	Magic | And {Insert praise for programmer} | But mostly magic	Default	
-plceholder_dialogue_speed_slow	Placeholder_2	This sentence has a slow animation speed	Slow	
-plceholder_dialogue_speed_default	Placeholder_2	This sentence has the default animiation speed	Default	
-plceholder_dialogue_speed_fast	Placeholder_2	This sentence has a fast animation speed	Fast	
-Mother_dialogue_speed_default	Mother	Mika wake up!	Default	
-Teacher_dialogue_speed_default	Teacher	Mika your LATE!	Default	
-Teacher_dialogue_speed_default	Teacher	Go to the Principals office NOW!	Default	
+ID	Speaker/Name	Dialogue	Speed	Skip Automatically	 Use " | " to define different sentences in the same dialogue cell (It's importat that there's a space before and after the "|")								Prologue/	Beginning/	BeforeTheSwitch/	InTheSwitch/	ThisIsBad/	ThisIsReallyBad/	TheEnd/
+PRO_Mother_01_CutScene	Mom	Mika! | Mika you need to wake up! | You're late for school!	Default	FALSE	To type | you have to press the button below ESC								PRO_	BEG_	BTS_	ITS_	TRB_	TRB_	END_
+PRO_Mika_01_CutScene	Mika	I'm so tired mom | Can I please stay home today?	Default	FALSE	To use it in Unity you have to Download this sheet as a .tsv. Then you have to replace the file that's allready in the editor														
+PRO_Mother_02_CutScene	Mom	No | You're not sick, so you're going to school | I need to leave, you're making me late as well you know	Default	FALSE	The ID is also the File name the object will be saved as														
+PRO_Hallucination_01_CutScene	??	Mika, I know you're tired | But I also know you can do this | Just one more day at school | You've done it before, and I know you can do it again | Just find your journal first	Default	FALSE															
+PRO_Mika_Find_Journal	Mika	I need to find my journal before I leave	Default	FALSE															
+			Default	FALSE															
+BEG_Teacher_01_CutScene_01	Mr. Williams	You are late	Default	FALSE															
+BEG_Mika_01_CutScene_01	Mika	I'm so sorry, sir | It won't happen again	Default	FALSE															
+BEG_Teacher_02_CutScene_01	Mr. Williams	It is alright | I have already spoken to the principal | She wants to see you in her office	Default	FALSE															
+BEG_Mika_02_CutScene_01	Mika	B-but, is that really...	Default	FALSE															
+BEG_Teacher_03_CutScene_01	Mr. Williams	Don't worry, I did nothing | She came to me and asked to see you | Now please | Let me continue my class	Default	FALSE															
+BEG_Mika_TryWalkingInto_Classroom_Musicroom_Lab	Mika	I shouldn't disrupt other classes	Default	FALSE															
+BEG_Mika_01_Cutscene_02	Mika	You wanted to see me, Mrs. Smith	Default	FALSE															
+BEG_Principal_01_Cutscene_02	Principal Smith	Yes, hello | take a seat please	Default	FALSE															
+BEG_Principal_02_Cutscene_02	Principal Smith	I know school can be boring at your age | You just want to sleep and play video games or watch TV all day | I've been thinking, pondering even | And I've come to the conclusion | It is not accepteble | Skipping and coming late, doing the bare minimum | That is not how I want my students to behave | Take this as a final warning, Mika | This is the last time you're coming late to school | Before I will have to contact your mother	Default	FALSE															
+BEG_Mika_02_Cutscene_02	Mika	No, please | You don't understand | In the morning when I wake up | It is physically impossiple for me to...	Default	FALSE															
+BEG_Principal_03_Cutscene_02	Principal Smith	This is my final warning	Default	FALSE															
+BEG_Mika_03_Cutscene_02	Mika	B-but please | Listen to me	Default	FALSE															
+BEG_Principal_04_Cutscene_02	Principal Smith	That is our cue | You are dismissed	Default	FALSE															
+																			
+BTS_Luna_01_Dialogue_01	Luna	OMG! | Are you ok? | What the hell is his problem?!	Default	FALSE															
+BTS_Ruby_01_Dialogue_01	Ruby	He made it sound so dramatic | But | What did she want?	Default	FALSE															
+BTS_Luna_02_Dialogue_01	Luna	Yeah! We talked about it all class | Getting sent to the principal because you're a little late | Is kind of an overreaction	Default	FALSE															
+BTS_Mika_01_Dialogue_01	Mika	Ugh | She just told me that if I skip or come late again | She will "have to contact my mom" | My mom don't have time for that	Default	FALSE															
+BTS_Ruby_02_Dialogue_01	Ruby	Exactly! | I told you, Luna	Default	FALSE															
+BTS_Luna_03_Dialogue_01	Luna	Whatever | We're here for you either way! | And we'll support you in any way we can	Default	FALSE															
+BTS_Ruby_03_Dialogue_01	Ruby	Word!	Default	FALSE															
+BTS_Mika_02_Dialogue_01	Mika	Thank you! | I love you guys | I have to freshen up a bit in the bathroom before class	Default	FALSE															
+BTS_Ruby_04_Dialogue_01	Ruby	You want us to join?	Default	FALSE															
+BTS_Mika_03_Dialogue_01	Mika	Nah | It's ok | I just need a little time to myself	Default	FALSE															
+BTS_Ruby_05_Dialogue_01	Ruby	Ok!	Default	FALSE															
+BTS_Luna_04_Dialogue_01	Luna	See you in chem	Default	FALSE															
+BTS_Elijah_01_Dialogue_02	Elijah	Dude, you look like shit | Did you actually try skateboarding?	Default	FALSE															
+BTS_Zach_01_Dialogue_02	Zach	Yeah, but I think I should stand steady before trying an ollie again	Default	FALSE															
+BTS_Elijah_02_Dialogue_02	Elijah	Bro! | An ollie? | You don't start with an ollie	Default	FALSE															
+BTS_Zach_02_Dialogue_02	Zach	Well duh | I learnt that the hard way	Default	FALSE															
+BTS_Hazel_01	Hazel	Ok, so if I help Milo on Thursday | Then I have time to practice on Wednesday | And aft- | Wah! | Oh | Hi, Mika | You scared me | Are you doing ok? | I think Mr. Williams should have told you face to face | It was kind of a douchey thing to do in front of the entire class | Anyways | You can always come talk to me if there's anything bothering you	Default	FALSE															
+BTS_Sophia_01_Speed_Default	Sophia	Hi! | That was kind of awkward | Bet hey, you weren't expelled | So, that's good | I guess | ... | Oh! Did you want to talk about anything? | Me first! Me first!	Default	FALSE															
+BTS_Sophia_02_Speed_Fast_SkipAuto	Sophia	Did you know that the parasite that is in The First of You actually exists? | It is called Ophiocordyceps unilateralis, but you can also call it by its cooler name | Zombie-ant fungus | It literally takes over the ant’s body | I mean, it eats the ant from the inside out, but also controls it | Eventually it kills it and the fungi grows out of the ant’s head | The coolest part is that | If the human body was colder | That could actually happen to us | And we would all become zombies | Wouldn’t that be cool?	Fast	TRUE															
+BTS_Sophia_03_Speed_Default	Sophia	Hey, are you ok? | You look kind of dizzy	Default	FALSE															
+BTS_Milo_01	Milo	Ahh! No! | Stupid boss! | Hi, Mika | You caught me at a bad time | I just can't take down this boss | Could we talk later maybe?	Default	FALSE															
+BTS_Hallucination_01_Cutscene_01	??	No | We need to be better	Default	FALSE															
+BTS_Mika_01_Cutscene_01	Mika	Hello?	Default	FALSE															
+BTS_Hallucination_02_Cutscene_01	??	She can't call mom | Mom will get mad at us	Default	FALSE															
+BTS_Mika_02_Cutscene_01	Mika	Are you alright?	Default	FALSE															
+BTS_Hallucintation_03_Cutscene_01	??	No | She'll get mad at you! | You're the problem!	Default	FALSE															
+BTS_Mika_03_Cutscene_01	Mika	I swear I heard... | Shit! | I need to get to class!	Default	FALSE															
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+				FALSE															

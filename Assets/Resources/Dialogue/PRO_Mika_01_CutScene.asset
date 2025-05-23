@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: ID
+  m_Name: PRO_Mika_01_CutScene
   m_EditorClassIdentifier: 
-  characterProfile: {fileID: 11400000, guid: cad6724cd128e555a9a36925157507d3, type: 2}
-  characterName: ??
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterProfile: {fileID: 11400000, guid: 4e2aff72272bbcc1382c87c0459eb039, type: 2}
+  characterName: Mika
+  characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - Dialogue
+  - I'm so tired mom
+  - Can I please stay home today?
   textSpeed: 0.05
   endAutomatically: 0

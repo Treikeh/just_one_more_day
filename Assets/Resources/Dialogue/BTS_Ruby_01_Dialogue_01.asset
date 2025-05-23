@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: ID
+  m_Name: BTS_Ruby_01_Dialogue_01
   m_EditorClassIdentifier: 
-  characterProfile: {fileID: 11400000, guid: cad6724cd128e555a9a36925157507d3, type: 2}
-  characterName: ??
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterProfile: {fileID: 11400000, guid: d7449ac7dc3129b8ba3db950a48c12bd, type: 2}
+  characterName: Ruby
+  characterPortrait: {fileID: -3827998281672765223, guid: d0ca327462f2a8b1fa8efe91e87299b9, type: 3}
   sentences:
-  - Dialogue
+  - He made it sound so dramatic
+  - But
+  - What did she want?
   textSpeed: 0.05
   endAutomatically: 0
