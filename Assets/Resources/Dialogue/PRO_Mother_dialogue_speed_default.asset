@@ -17,5 +17,5 @@ MonoBehaviour:
   characterPortrait: {fileID: 0}
   sentences:
   - Mika wake up!
-  textSpeed: 0.05
+  textSpeed: 0.1
   endAutomatically: 0
