@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -29,7 +31,6 @@ public class PuzzleSceneController : MonoBehaviour
     {
         // Enable Puzzle InputActionMap
         InputManager.Instance.ChangeActionMap("Puzzle");
-        UiManager.Instance.HideInGameUi();
     }
 
 
@@ -46,11 +47,22 @@ public class PuzzleSceneController : MonoBehaviour
 
         // Hover effect
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-        if (hit && hit.collider.GetComponent<Rigidbody2D>() && !hoverObject)
+        if (hit && hit.collider.GetComponent<Rigidbody2D>())
         {
-            hoverObject = hit.collider.gameObject;
-            hoverObject.transform.localScale = new Vector3(hoverScale, hoverScale, 1f);
+            // Reduce the size of the current hoverObject if hitting a new object
+            if (hoverObject && hoverObject != hit.collider.gameObject)
+            {
+                hoverObject.transform.localScale = new Vector3(1f, 1f, 1f);
+                hoverObject = null;
+            }
+            // Increase the size of the object the mouse is hovering over
+            if (!hoverObject)
+            {
+                hoverObject = hit.collider.gameObject;
+                hoverObject.transform.localScale = new Vector3(hoverScale, hoverScale, 1f);
+            }
         }
+        // Reduce the szie of the hoverObject if raycast is not hitting anything
         else if (!hit && hoverObject && !lmbPressed)
         {
             hoverObject.transform.localScale = new Vector3(1f, 1f, 1f);

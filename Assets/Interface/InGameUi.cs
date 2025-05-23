@@ -48,7 +48,7 @@ public class InGameUi : MonoBehaviour
     // JOURNAL
     private void JounralPressed()
     {
-        if (!journal.activeInHierarchy)
+        if (!journal.activeInHierarchy && QuestManager.Instance.storyProgress > 0)
         {
             journal.SetActive(true);
             journal.GetComponent<Animator>().SetBool("isOpen", true);
