@@ -28,5 +28,5 @@ MonoBehaviour:
   - That could actually happen to us
   - And we would all become zombies
   - "Wouldn\u2019t that be cool?"
-  textSpeed: 0.01
+  textSpeed: 0.02
   endAutomatically: 1

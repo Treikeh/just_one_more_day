@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Rooms/Development/SceneTransitionTestScene.unity
     guid: f7f9cb47a3353bc45955e6022d1db459
   - enabled: 0
-    path: Assets/Rooms/Development/ExampleQuestTest01.unity
+    path: Assets/Rooms/Development/ExampleQuestTest/ExampleQuestTest01.unity
     guid: e3ce94175c744f1458b419898109ae1f
   - enabled: 0
     path: Assets/Rooms/Puzzles/PuzzleTest/PuzzleTestScene.unity

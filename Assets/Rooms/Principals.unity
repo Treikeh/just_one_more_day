@@ -2415,7 +2415,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: 79436154580664682aabcd76f419d526, type: 2}
+  - {fileID: 11400000, guid: 6b7090b854e66acadb83a7cea9a6ecb7, type: 2}
+  - {fileID: 11400000, guid: 9c93ce35ca5c3219aa15e16ee39e48e4, type: 2}
+  - {fileID: 11400000, guid: 8594ea3f8b7283e08b55aa948dbca96a, type: 2}
+  - {fileID: 11400000, guid: 9275d2fbf79bf42b8b371cde89dde2b6, type: 2}
+  - {fileID: 11400000, guid: 51f251b492a8884caaba2fef8f7704fc, type: 2}
+  - {fileID: 11400000, guid: 25cd34db712c4c20b869a14a40e63b4d, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
