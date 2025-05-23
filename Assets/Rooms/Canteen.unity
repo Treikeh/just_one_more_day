@@ -315,11 +315,11 @@ MonoBehaviour:
     minStoryProgress: 0
     maxStoryProgress: 4
   - objectToActivate: {fileID: 1204390562}
-    minStoryProgress: 5
-    maxStoryProgress: 5
-  - objectToActivate: {fileID: 229774284}
     minStoryProgress: 6
     maxStoryProgress: 6
+  - objectToActivate: {fileID: 229774284}
+    minStoryProgress: 7
+    maxStoryProgress: 8
 --- !u!4 &62388582
 Transform:
   m_ObjectHideFlags: 0
@@ -2342,7 +2342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

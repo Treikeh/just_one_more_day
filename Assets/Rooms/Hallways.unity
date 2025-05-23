@@ -1785,23 +1785,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyStates:
   - objectToActivate: {fileID: 1955077678}
-    minStoryProgress: 10
-    maxStoryProgress: 10
+    minStoryProgress: 11
+    maxStoryProgress: 11
   - objectToActivate: {fileID: 1210475905}
     minStoryProgress: 2
-    maxStoryProgress: 10
+    maxStoryProgress: 11
   - objectToActivate: {fileID: 1650846786}
     minStoryProgress: 5
     maxStoryProgress: 6
   - objectToActivate: {fileID: 1345714793}
     minStoryProgress: 2
-    maxStoryProgress: 10
+    maxStoryProgress: 11
   - objectToActivate: {fileID: 955491618}
     minStoryProgress: 3
     maxStoryProgress: 3
   - objectToActivate: {fileID: 494709558}
-    minStoryProgress: 10
-    maxStoryProgress: 10
+    minStoryProgress: 11
+    maxStoryProgress: 11
   - objectToActivate: {fileID: 1054099234}
     minStoryProgress: 3
     maxStoryProgress: 3
@@ -1809,11 +1809,11 @@ MonoBehaviour:
     minStoryProgress: 2
     maxStoryProgress: 2
   - objectToActivate: {fileID: 1867783464}
-    minStoryProgress: 5
-    maxStoryProgress: 6
-  - objectToActivate: {fileID: 698509366}
     minStoryProgress: 7
-    maxStoryProgress: 8
+    maxStoryProgress: 7
+  - objectToActivate: {fileID: 698509366}
+    minStoryProgress: 8
+    maxStoryProgress: 10
   - objectToActivate: {fileID: 2113582856}
     minStoryProgress: 2
     maxStoryProgress: 2
@@ -4193,11 +4193,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.09
+      value: 2.125
       objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.78
+      value: -16.3125
       objectReference: {fileID: 0}
     - target: {fileID: 2083727000908189349, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_LocalPosition.z

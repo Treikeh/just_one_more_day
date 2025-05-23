@@ -175,7 +175,7 @@ MonoBehaviour:
     minStoryProgress: 0
     maxStoryProgress: 4
   - objectToActivate: {fileID: 1496000973}
-    minStoryProgress: 6
+    minStoryProgress: 7
     maxStoryProgress: 7
 --- !u!4 &41279933 stripped
 Transform:

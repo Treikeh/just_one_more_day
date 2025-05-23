@@ -1027,8 +1027,8 @@ MonoBehaviour:
   allBucketsSorted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 51da75bc516ac5846b0a2e088f9413c2, type: 2}
-        m_TargetAssemblyTypeName: QuestInfoObject, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
+        m_TargetAssemblyTypeName: QuestInfoSO, Assembly-CSharp
         m_MethodName: AdvanceQuest
         m_Mode: 1
         m_Arguments:
@@ -1457,11 +1457,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questToCheck: {fileID: 11400000, guid: 51da75bc516ac5846b0a2e088f9413c2, type: 2}
+  questToCheck: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
   notStartedResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 51da75bc516ac5846b0a2e088f9413c2, type: 2}
+      - m_Target: {fileID: 11400000, guid: 5385d61de6f2c984ba5eb27e52d83d06, type: 2}
         m_TargetAssemblyTypeName: QuestInfoObject, Assembly-CSharp
         m_MethodName: StartQuest
         m_Mode: 1
@@ -1478,9 +1478,12 @@ MonoBehaviour:
       m_Calls: []
   canFinishResponse:
     m_PersistentCalls:
+      m_Calls: []
+  finishedResponse:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 797165476}
-        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelLoaderTrigger, Assembly-CSharp
         m_MethodName: StartLoadingLevel
         m_Mode: 1
         m_Arguments:
@@ -1491,9 +1494,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  finishedResponse:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &797165475
 Transform:
   m_ObjectHideFlags: 0
@@ -1724,7 +1724,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.15304625, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -2151,7 +2151,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.06132078, g: 0.99061793, b: 1, a: 1}
   m_FlipX: 0
@@ -2609,7 +2609,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0

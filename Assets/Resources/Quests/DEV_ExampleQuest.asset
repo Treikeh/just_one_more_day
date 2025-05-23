@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4292c8059f203d7db40e7b4ca72c324, type: 3}
   m_Name: DEV_ExampleQuest
   m_EditorClassIdentifier: 
-  description: Collect red triangles
-  finishAutomatically: 0
+  description: Sort colours
+  finishAutomatically: 1
+  mandatoryQuest: 1
   questPrerequisites: []
-  questSteps: 5
+  questSteps: 1

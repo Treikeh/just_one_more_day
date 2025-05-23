@@ -1067,11 +1067,26 @@ MonoBehaviour:
   questToCheck: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
   notStartedResponse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
+        m_TargetAssemblyTypeName: QuestInfoSO, Assembly-CSharp
+        m_MethodName: StartQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inProgressResponse:
     m_PersistentCalls:
       m_Calls: []
   canFinishResponse:
+    m_PersistentCalls:
+      m_Calls: []
+  finishedResponse:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 573347719}
@@ -1086,9 +1101,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  finishedResponse:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &583669558
 GameObject:
   m_ObjectHideFlags: 0
