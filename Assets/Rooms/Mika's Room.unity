@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 5958a644af9ff1c42ad0a71747147ff2, type: 2}
+  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: c47dad61528fb854ea58caedf75ad96d, type: 2}
+  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d26800587bf9daa40bc4c1f675a54500, type: 2}
+  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: c86139720ec0ac348921793a06346509, type: 2}
+  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
