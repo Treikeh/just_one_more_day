@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
 {
     public event Action<List<DialogueSO>, UnityEvent> OnDialogueStarted;
     public event Action OnDialogueFinished;
+    public event Action OnJournalNotification;
 
     public static UiManager Instance { get; private set; }
     [SerializeField] private GameObject inGameUiPrefab;
@@ -59,6 +60,12 @@ public class UiManager : MonoBehaviour
             return;
         }
         characterProfiles.Add(profile);
+        EmitJournalNotification();
+    }
+
+    public void EmitJournalNotification()
+    {
+        OnJournalNotification?.Invoke();
     }
 
     public List<CharacterProfileSO> GetCharacterProfiles()
