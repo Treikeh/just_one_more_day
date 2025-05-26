@@ -139,7 +139,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 309
-        y: 96
+        y: 104
         width: 88
         height: 66
       alignment: 0
@@ -251,9 +251,9 @@ TextureImporter:
         x: 679
         y: 158
         width: 96
-        height: 85
+        height: 27
       alignment: 9
-      pivot: {x: 0.5, y: 0.5058824}
+      pivot: {x: 0.5, y: 0.4814815}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,6 +262,50 @@ TextureImporter:
       bones: []
       spriteID: 6b7cab07c24cb8dcba97608159d1e5a5
       internalID: -1377661864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hallway_Endless_Backgrod_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 185
+        width: 96
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45ee62a26fffb0b183d03bff6fc043d
+      internalID: 1468964039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hallway_Endless_Backgrod_8
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 248
+        width: 104
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49746192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed9e9ce105e4a4c4b3a9a2e4264d65d
+      internalID: -1670375904
       vertices: []
       indices: 
       edges: []
@@ -287,6 +331,8 @@ TextureImporter:
       Hallway_Endless_Backgrod_4: -520689254
       Hallway_Endless_Backgrod_5: -603894451
       Hallway_Endless_Backgrod_6: -1377661864
+      Hallway_Endless_Backgrod_7: 1468964039
+      Hallway_Endless_Backgrod_8: -1670375904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
