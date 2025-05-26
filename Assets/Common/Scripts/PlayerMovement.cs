@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour, ISave
     private Rigidbody2D rb;
 
 
-    private void OnEnable() { InputManager.Instance.OnMovePressed += MovePressed; }
+    private void OnEnable() { InputManager.Instance.OnMovePressed += MovePressed; velocity = Vector2.zero; }
     private void OnDisable() { InputManager.Instance.OnMovePressed -= MovePressed; Save(); }
 
 
