@@ -3836,6 +3836,9 @@ MonoBehaviour:
   - objectToActivate: {fileID: 1038886980}
     minStoryProgress: 5
     maxStoryProgress: 10
+  - objectToActivate: {fileID: 1699239894}
+    minStoryProgress: 5
+    maxStoryProgress: 10
 --- !u!1 &1827617730
 GameObject:
   m_ObjectHideFlags: 0
