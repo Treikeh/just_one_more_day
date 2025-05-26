@@ -66,6 +66,7 @@ public class QuestManager : MonoBehaviour
         Debug.Log($"{questId} Started");
         ActiveQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.IN_PROGRESS);
+        UiManager.Instance.EmitJournalNotification();
     }
 
     public void AdvanceQuest(string questId)
@@ -108,6 +109,7 @@ public class QuestManager : MonoBehaviour
         ActiveQuests.Remove(questId);
         FinishedQuests.Add(questId, quest);
         ChangeQuestState(quest, QuestState.FINISHED);
+        UiManager.Instance.EmitJournalNotification();
         // Increase story progress when completing a mandatory quest
         if (quest.info.mandatoryQuest)
         {
