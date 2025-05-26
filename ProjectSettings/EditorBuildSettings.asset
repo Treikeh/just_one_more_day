@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Rooms/Hallways.unity
     guid: 4dc5a48729ebe374c860b6834497c6c9
   - enabled: 1
+    path: Assets/Rooms/Hallways_Endless.unity
+    guid: bb95c2cc4cd45c5129522f02304c4187
+  - enabled: 1
     path: Assets/Rooms/Classroom.unity
     guid: 939d8031aa5bc294cbf9346d049b3542
   - enabled: 1
@@ -41,9 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Rooms/Music.unity
     guid: f8c0e6cb81c5dd1409f4932a43013542
-  - enabled: 0
-    path: Assets/Rooms/Puzzles/MikaRoomPuzzle/MikaPuzzle.unity
-    guid: f4b5e8da8bfb42b479e8c080c22d78f3
   - enabled: 1
     path: Assets/Rooms/Puzzles/LabPuzzle/LabPuzzle.unity
     guid: 63557673b8ec10649bf7159982c15510
@@ -53,12 +53,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Rooms/Mika's Room.unity
     guid: 42b5db37560904949962eefc84379f8d
-  - enabled: 1
-    path: Assets/Rooms/Puzzles/MikaRoomPuzzle/MikaPuzzle 1.unity
-    guid: cb9eb66a00e76734397015a33208aa50
-  - enabled: 1
-    path: Assets/Rooms/Puzzles/PuzzleTest/MikaPuzzle.unity
-    guid: d491676ddca378049aaea7c41a2d8850
   - enabled: 1
     path: Assets/Rooms/Puzzles/PuzzleTest/Labpuzzle 1.unity
     guid: b02a1b7e49f744a4b8febec36f599f8e
