@@ -1006,7 +1006,7 @@ MonoBehaviour:
   allBucketsSorted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
+      - m_Target: {fileID: 11400000, guid: 26261415307865edc9811f40961da44f, type: 2}
         m_TargetAssemblyTypeName: QuestInfoSO, Assembly-CSharp
         m_MethodName: AdvanceQuest
         m_Mode: 1
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Mika's Room
+  levelToLoad: Lab
   spawnTransform: {fileID: 0}
 --- !u!114 &573347720
 MonoBehaviour:
@@ -1064,11 +1064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76cfdc60028554cb50728c74066d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questToCheck: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
+  questToCheck: {fileID: 11400000, guid: 26261415307865edc9811f40961da44f, type: 2}
   notStartedResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 1af4fad1ce94e35e78c20a41295e28a1, type: 2}
+      - m_Target: {fileID: 11400000, guid: 26261415307865edc9811f40961da44f, type: 2}
         m_TargetAssemblyTypeName: QuestInfoSO, Assembly-CSharp
         m_MethodName: StartQuest
         m_Mode: 1
