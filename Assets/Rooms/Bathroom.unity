@@ -398,8 +398,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: e7989d1b19bf88885bd8f29d3fda39cf, type: 2}
+  - {fileID: 11400000, guid: 1c25af5667126d2f4a7fd12526a58f18, type: 2}
+  - {fileID: 11400000, guid: c57b998bf0f49558985c218981274382, type: 2}
+  - {fileID: 11400000, guid: edcc144bbfd33fe0486b853cdeabe8e4, type: 2}
+  - {fileID: 11400000, guid: 34c960c63eb586d65ab1c4ff589aaecf, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2081,7 +2084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1014480161
 Transform:
   m_ObjectHideFlags: 0
@@ -2091,7 +2094,7 @@ Transform:
   m_GameObject: {fileID: 1014480160}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.76, y: -0.27, z: -9.982677}
+  m_LocalPosition: {x: 2.11, y: -0.27, z: -9.982677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2778,14 +2781,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: 625705479445e4f078f8ca9879108d8b, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 1b4457048a939c047b2e09cc30d1a1af, type: 2}
         m_TargetAssemblyTypeName: QuestInfoSO, Assembly-CSharp
         m_MethodName: AdvanceQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 11609993a8eb6714180bf1581f656352, type: 2}
+        m_TargetAssemblyTypeName: QuestInfoSO, Assembly-CSharp
+        m_MethodName: StartQuest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3792,10 +3806,10 @@ PlayableDirector:
     value: {fileID: 1181407188}
   - key: {fileID: 6559175828072143034, guid: dcc496d5ccb486940931ec7173cd7fb8, type: 2}
     value: {fileID: 610907}
-  - key: {fileID: -8894603377582443903, guid: dcc496d5ccb486940931ec7173cd7fb8, type: 2}
-    value: {fileID: 610907}
-  - key: {fileID: -5861072223593583600, guid: dcc496d5ccb486940931ec7173cd7fb8, type: 2}
-    value: {fileID: 1014480162}
+  - key: {fileID: -6916297872667767259, guid: dcc496d5ccb486940931ec7173cd7fb8, type: 2}
+    value: {fileID: 1181407188}
+  - key: {fileID: -426140368176332105, guid: dcc496d5ccb486940931ec7173cd7fb8, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &2050867319

@@ -1159,10 +1159,10 @@ MonoBehaviour:
   targetEnteredTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 237563594}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 1508656839}
+        m_TargetAssemblyTypeName: ListInteractable, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1185,7 +1185,19 @@ MonoBehaviour:
         m_CallState: 2
   targetExitedTrigger:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 237563592}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &237563595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5577,7 +5589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9602,6 +9614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1508656837}
   - component: {fileID: 1508656838}
+  - component: {fileID: 1508656839}
   m_Layer: 4
   m_Name: Dialogue
   m_TagString: Untagged
@@ -9637,22 +9650,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: 49b6e8d938d03c42ab12404fee8957ff, type: 2}
+  - {fileID: 11400000, guid: 754da59537cdd062da51aaf43a127c0f, type: 2}
+  - {fileID: 11400000, guid: 84f3fb8fc2613b94b9041131666b6548, type: 2}
+  - {fileID: 11400000, guid: 7f0b8586b5c82041198d7fdb65c3b4aa, type: 2}
+  - {fileID: 11400000, guid: 4635be9c23b261fe5bc2fa27387eaf95, type: 2}
+  - {fileID: 11400000, guid: 3cc834b07b9bfb8bdb32d464e820f0f1, type: 2}
+  - {fileID: 11400000, guid: fd37be3f913e004219be04513733bd1d, type: 2}
+  - {fileID: 11400000, guid: 3cc834b07b9bfb8bdb32d464e820f0f1, type: 2}
+  - {fileID: 11400000, guid: c28ac46212b535eb6bf235f46f08e9bd, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1508656839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508656836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexResponses:
+  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 1508656838}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  defaultResponse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1537172627
 GameObject:
   m_ObjectHideFlags: 0
