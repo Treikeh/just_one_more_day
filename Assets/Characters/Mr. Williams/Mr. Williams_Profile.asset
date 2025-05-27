@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mr. Williams_Profile
   m_EditorClassIdentifier: 
   characterName: Mr. Williams
-  characterPortrait: {fileID: 6379875470751018860, guid: 2c3f7b4043ea410e2aa489d421ae49bf, type: 3}
+  characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
   characterDescription: Teacher

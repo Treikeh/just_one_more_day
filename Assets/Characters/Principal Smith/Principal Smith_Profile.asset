@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Principal Smith_Profile
   m_EditorClassIdentifier: 
   characterName: Principal Smith
-  characterPortrait: {fileID: 8746099069590478810, guid: a000ae6ab12658e019270d2211a827d3, type: 3}
+  characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   characterDescription: A very normal principal

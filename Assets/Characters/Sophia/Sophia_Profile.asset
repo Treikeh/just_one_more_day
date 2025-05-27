@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sophia_Profile
   m_EditorClassIdentifier: 
   characterName: Sophia
-  characterPortrait: {fileID: -1559081639449049771, guid: 18f5ddc5a7ac4124d81b9a0e0539022b, type: 3}
+  characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   characterDescription: Classmate

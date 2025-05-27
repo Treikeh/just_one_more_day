@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: 9edf969aa41eeea3a8908b300598a4b2, type: 2}
   characterName: Zach
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterPortrait: {fileID: 2443202940234210757, guid: 3a0046d18bb188dae988268678ca0499, type: 3}
   sentences:
   - ...
   textSpeed: 0.05

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: fd6c30254485ad4b0aa1fa59a2c9162e, type: 2}
   characterName: Principal Smith
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   sentences:
   - "Don\u2019t you talk back to me, young lady"
   textSpeed: 0.05

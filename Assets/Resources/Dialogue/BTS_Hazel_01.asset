@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: 398222dfcdf0a250683d293be1bd0c01, type: 2}
   characterName: Hazel
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
   - "Don\u2019t stop me noooow"
   - "I\u2019m bablebelabe, I\u2019m having a baaaaall"
