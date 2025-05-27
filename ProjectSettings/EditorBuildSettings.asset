@@ -8,15 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Interface/MainMenu/MainMenu.unity
     guid: 7856c5b8d3dd78f09b3d5a37b4096d00
-  - enabled: 0
-    path: Assets/Rooms/Development/SceneTransitionTestScene.unity
-    guid: f7f9cb47a3353bc45955e6022d1db459
-  - enabled: 0
-    path: Assets/Rooms/Development/ExampleQuestTest/ExampleQuestTest01.unity
-    guid: e3ce94175c744f1458b419898109ae1f
-  - enabled: 0
-    path: Assets/Rooms/Puzzles/PuzzleTest/PuzzleTestScene.unity
-    guid: 091b16bf5a9560540bfdda782588baea
+  - enabled: 1
+    path: Assets/Interface/Credits/Credits.unity
+    guid: b1da73849e3315c3b9b864201d6cbbc3
+  - enabled: 1
+    path: Assets/Rooms/Mika's Room.unity
+    guid: 42b5db37560904949962eefc84379f8d
   - enabled: 1
     path: Assets/Rooms/Hallways.unity
     guid: 4dc5a48729ebe374c860b6834497c6c9
@@ -30,14 +27,14 @@ EditorBuildSettings:
     path: Assets/Rooms/Principals.unity
     guid: 70a9e05ae3aaea944aad508f93f776f3
   - enabled: 1
-    path: Assets/Rooms/Canteen.unity
-    guid: 629af62e9c6dbbf43affec625df14375
+    path: Assets/Rooms/Lab.unity
+    guid: 13111ad4990588c448ae6e312e6988bc
   - enabled: 1
     path: Assets/Rooms/Bathroom.unity
     guid: cbe1010db43aaaf41bd851284479dd3f
   - enabled: 1
-    path: Assets/Rooms/Lab.unity
-    guid: 13111ad4990588c448ae6e312e6988bc
+    path: Assets/Rooms/Canteen.unity
+    guid: 629af62e9c6dbbf43affec625df14375
   - enabled: 1
     path: Assets/Rooms/Library.unity
     guid: 735571bcb5fdacb40a53b03e85515e64
@@ -45,20 +42,17 @@ EditorBuildSettings:
     path: Assets/Rooms/Music.unity
     guid: f8c0e6cb81c5dd1409f4932a43013542
   - enabled: 1
+    path: Assets/Rooms/Puzzles/MikaRoomPuzzle/MikaRoomPuzzle.unity
+    guid: 83570294fbdc0534d8d188f3a79eee8a
+  - enabled: 1
     path: Assets/Rooms/Puzzles/LabPuzzle/LabPuzzle.unity
     guid: 63557673b8ec10649bf7159982c15510
   - enabled: 1
     path: Assets/Rooms/Puzzles/SortCutleryPuzzle/SortCutleryPuzzle.unity
     guid: f998ec554da7948608533d6c3c948b54
   - enabled: 1
-    path: Assets/Rooms/Mika's Room.unity
-    guid: 42b5db37560904949962eefc84379f8d
-  - enabled: 1
-    path: Assets/Rooms/Puzzles/PuzzleTest/Labpuzzle 1.unity
-    guid: b02a1b7e49f744a4b8febec36f599f8e
-  - enabled: 1
-    path: Assets/Rooms/Puzzles/MikaRoomPuzzle/MikaRoomPuzzle.unity
-    guid: 83570294fbdc0534d8d188f3a79eee8a
+    path: Assets/Rooms/Puzzles/DoorsPuzzle/DoorPuzzle.unity
+    guid: 34adcf4d45a9fafc6bd556b23a1a2f4d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 126f71e70691939428bebb0529fe5705, type: 3}
   m_UseUCBPForAssetBundles: 0

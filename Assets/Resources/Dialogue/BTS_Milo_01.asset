@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: edd7bc6cc862efabaa4b6ff2e6eb57ee, type: 2}
   characterName: Milo
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterPortrait: {fileID: -8239315831306480127, guid: 3e4f47c750e177eaa90a3f0f45dc8990, type: 3}
   sentences:
   - What?!
   - Oh

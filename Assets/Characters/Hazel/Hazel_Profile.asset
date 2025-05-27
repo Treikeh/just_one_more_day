@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Hazel_Profile
   m_EditorClassIdentifier: 
   characterName: Hazel
-  characterPortrait: {fileID: -1854211085468740748, guid: a2541bf8d795c0ac2b8febbdb599773a, type: 3}
+  characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   characterDescription: Classmate

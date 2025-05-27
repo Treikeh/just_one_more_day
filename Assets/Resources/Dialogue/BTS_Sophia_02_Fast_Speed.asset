@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: 818ad623f9b186b578de99d894093c17, type: 2}
   characterName: Sophia
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   sentences:
   - Almost exactly like in the game It Starts with You
   - "All of Effie\u2019s friends die"

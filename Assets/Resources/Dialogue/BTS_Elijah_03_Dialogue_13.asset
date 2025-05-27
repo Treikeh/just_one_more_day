@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: 37e7f471bdb7e17fcb34efbc67dfa157, type: 2}
   characterName: Elijah
-  characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
+  characterPortrait: {fileID: -5069966965014826970, guid: db28b44e36e3bd5c18b374082d9f1a8e, type: 3}
   sentences:
   - Oh come on
   - That was a good one
