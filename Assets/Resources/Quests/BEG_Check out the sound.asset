@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Check on the stall?
   finishAutomatically: 1
-  mandatoryQuest: 0
+  mandatoryQuest: 1
   questPrerequisites: []
   questSteps: 1

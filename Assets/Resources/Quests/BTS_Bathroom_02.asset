@@ -16,4 +16,4 @@ MonoBehaviour:
   finishAutomatically: 1
   mandatoryQuest: 1
   questPrerequisites: []
-  questSteps: 1
+  questSteps: 0
