@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: BTS_Hazel_01
+  m_Name: BTS_Principal_04_Dialogue_03
   m_EditorClassIdentifier: 
-  characterProfile: {fileID: 11400000, guid: 398222dfcdf0a250683d293be1bd0c01, type: 2}
-  characterName: Hazel
+  characterProfile: {fileID: 11400000, guid: fd6c30254485ad4b0aa1fa59a2c9162e, type: 2}
+  characterName: Principal Smith
   characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
   sentences:
-  - "Don\u2019t stop me noooow"
-  - "I\u2019m bablebelabe, I\u2019m having a baaaaall"
-  - "Don\u2019t stop me noooo ahhhh"
-  - Mika! You need to stop sneaking up on people like that
-  - "You\u2019re going to give someone a heartattack"
+  - After lunch, you will sort cutlery in the kitchen
+  - Maybe that will teach you a lesson
   textSpeed: 0.05
   endAutomatically: 0

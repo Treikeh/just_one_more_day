@@ -16,11 +16,15 @@ MonoBehaviour:
   characterName: Milo
   characterPortrait: {fileID: 2568956360853038877, guid: ef7dcaf3f511c1944af9ea28835b166c, type: 3}
   sentences:
-  - Ahh! No!
-  - Stupid boss!
-  - Hi, Mika
-  - You caught me at a bad time
-  - I just can't take down this boss
-  - Could we talk later maybe?
+  - What?!
+  - Oh
+  - "I didn\u2019t see you"
+  - I was just continuing my game
+  - I finally killed the boss
+  - I needed to use a fire extinguisher on the dragon
+  - "I searched it up though so I can\u2019t really take all the praise"
+  - "\u2026"
+  - Oh..
+  - My food is cold
   textSpeed: 0.05
   endAutomatically: 0

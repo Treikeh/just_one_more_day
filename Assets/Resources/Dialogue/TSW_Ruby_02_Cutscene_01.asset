@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
+  m_Name: TSW_Ruby_02_Cutscene_01
+  m_EditorClassIdentifier: 
+  characterProfile: {fileID: 11400000, guid: d7449ac7dc3129b8ba3db950a48c12bd, type: 2}
+  characterName: Ruby
+  characterPortrait: {fileID: -3827998281672765223, guid: d0ca327462f2a8b1fa8efe91e87299b9, type: 3}
+  sentences:
+  - "Why didn\u2019t you talk with your doctor after you literally almost died last
+    year?"
+  - "That\u2019s kind of doctors are for"
+  textSpeed: 0.05
+  endAutomatically: 0
