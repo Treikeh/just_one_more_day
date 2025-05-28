@@ -50,9 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Rooms/Puzzles/SortCutleryPuzzle/SortCutleryPuzzle.unity
     guid: f998ec554da7948608533d6c3c948b54
-  - enabled: 1
-    path: Assets/Rooms/Puzzles/DoorsPuzzle/DoorPuzzle.unity
-    guid: 34adcf4d45a9fafc6bd556b23a1a2f4d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 126f71e70691939428bebb0529fe5705, type: 3}
   m_UseUCBPForAssetBundles: 0
