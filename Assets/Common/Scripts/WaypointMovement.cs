@@ -4,11 +4,21 @@ using UnityEngine;
 public class WaypointMovement : MonoBehaviour
 {
     [SerializeField] private List<Transform> waypoints = new();
+    [SerializeField] private bool moveOnStart = false;
     [SerializeField] private float moveSpeed = 10f;
 
     private bool isMoving = false;
     private int waypointIndex = 0;
     private Vector2 targetPosition;
+
+
+    private void Start()
+    {
+        if (moveOnStart)
+        {
+            StartMoving();
+        }
+    }
 
 
     private void FixedUpdate()
