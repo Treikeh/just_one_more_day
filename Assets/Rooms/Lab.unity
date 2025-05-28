@@ -5829,7 +5829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1711539268
 Transform:
   m_ObjectHideFlags: 0
@@ -6056,10 +6056,10 @@ MonoBehaviour:
     minStoryProgress: 5
     maxStoryProgress: 6
   - objectToActivate: {fileID: 1711539267}
-    minStoryProgress: 7
-    maxStoryProgress: 7
-  - objectToActivate: {fileID: 513563512}
     minStoryProgress: 8
+    maxStoryProgress: 8
+  - objectToActivate: {fileID: 513563512}
+    minStoryProgress: 9
     maxStoryProgress: 10
 --- !u!1 &1827617730
 GameObject:
