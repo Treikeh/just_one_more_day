@@ -69,6 +69,7 @@ private void Start()
         loadingScreenAnimator.Play("LoadingScreen_Hide");
         yield return new WaitForSeconds(Utils.GetAnimationLength(loadingScreenAnimator, "LoadingScreen_Hide"));
         loadingScreen.SetActive(false);
+        playerSpawnPosition = Vector2.zero;
     }
 
 

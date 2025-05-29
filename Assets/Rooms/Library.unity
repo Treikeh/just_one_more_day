@@ -474,7 +474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3017861395298555662, guid: 518a116343532c440be978545f2820b6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1995,7 +1995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1588458927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2671,9 +2671,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: 82c6d34efd54cea479427eb48379387f, type: 2}
+  - {fileID: 11400000, guid: 5c73bed451f88bf03b77090b8ca249fc, type: 2}
+  - {fileID: 11400000, guid: 6e588d358342adf04b3f72373e738052, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2918,9 +2918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: a89855f9326e14fe1a14b0af3ea19981, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
