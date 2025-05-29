@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 241992913}
   - component: {fileID: 241992912}
   m_Layer: 5
-  m_Name: QuitGameButton
+  m_Name: LoadGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 772210075}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: OnQuitGamePressed
+        m_MethodName: OnLoadGameButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Load game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6398de42c8be974bd9cf3f38fc3113f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadGameButton: {fileID: 241992912}
 --- !u!1 &1034241120
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: New game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -787,7 +788,7 @@ GameObject:
   - component: {fileID: 1180372469}
   - component: {fileID: 1180372468}
   m_Layer: 5
-  m_Name: PlayGameButton
+  m_Name: NewGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +860,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 772210075}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: OnPlayButtonPressed
+        m_MethodName: OnNewGameButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

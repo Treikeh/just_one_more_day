@@ -1,26 +1,37 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public void OnPlayButtonPressed()
+    [SerializeField] private Button loadGameButton;
+
+
+    private void Start()
     {
-        if (SaveManager.SaveGameExist())
+        if (!SaveManager.SaveGameExist())
         {
-            SaveManager.LoadGame();
-        }
-        else
-        {
-            LevelManager.Instance.StartLoadingLevel("Mika's Room");
+            loadGameButton.interactable = false;
         }
     }
 
-    public void OnQuitGamePressed()
+
+    public void OnNewGameButtonPressed()
     {
-        Application.Quit();
+        if (SaveManager.SaveGameExist())
+        {
+            SaveManager.DeleteSaveGame();
+        }
+        LevelManager.Instance.StartLoadingLevel("Mika's Room");
+    }
+
+    public void OnLoadGameButtonPressed()
+    {
+        SaveManager.LoadGame();
     }
 
     public void OnDeleteSaveGameButtonPressed()
     {
+        loadGameButton.interactable = false;
         SaveManager.DeleteSaveGame();
     }
 }

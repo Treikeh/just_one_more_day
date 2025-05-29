@@ -39,6 +39,14 @@ public class InGameUi : MonoBehaviour
         Application.Quit();
     }
 
+    public void OnMainMenuButtonPressed()
+    {
+        QuestManager.Instance.Reset();
+        LevelManager.Instance.Reset();
+        LevelManager.Instance.StartLoadingLevel("MainMenu");
+        CancelPressed();
+    }
+
     public void OnSaveGameButtonPressed()
     {
         SaveManager.SaveGame();

@@ -28,6 +28,13 @@ public class LevelManager : MonoBehaviour
     }
 
 
+    public void Reset()
+    {
+        levelSaveDict = new();
+        playerSpawnPosition = Vector2.zero;
+    }
+
+
 private void Start()
     {
         // Trigger level loded event when the game starts.

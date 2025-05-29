@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SaveManager
 {
-    private static readonly string saveFilePath = Application.persistentDataPath + "/SaveData.json";
+    private static readonly string saveFileKey = "THIS_STRING_IS_WHAT_IS_USED_TO_IDENTIFY_THE_SAVE_GAME";
 
 
     public static void SaveGame()
@@ -48,16 +48,21 @@ public class SaveManager
         }
 
         // Turn GameSaveData into json
-        File.WriteAllText(saveFilePath, JsonUtility.ToJson(saveData));
+        //File.WriteAllText(saveFilePath, JsonUtility.ToJson(saveData));
+        PlayerPrefs.SetString(saveFileKey, JsonUtility.ToJson(saveData));
+        PlayerPrefs.Save();
     }
 
 
     public static void LoadGame()
     {
+        //Debug.Log(saveFilePath);
+        //Debug.Log(PlayerPrefs.GetString(saveFileKey));
         if (SaveGameExist())
         {
             // Load GameSaveData from file
-            GameSaveData loadData = JsonUtility.FromJson<GameSaveData>(File.ReadAllText(saveFilePath));
+            //GameSaveData loadData = JsonUtility.FromJson<GameSaveData>(File.ReadAllText(saveFilePath));
+            GameSaveData loadData = JsonUtility.FromJson<GameSaveData>(PlayerPrefs.GetString(saveFileKey));
 
             // Set story progress
             QuestManager.Instance.storyProgress = loadData.storyProgress;
@@ -109,15 +114,17 @@ public class SaveManager
     {
         if (SaveGameExist())
         {
-            File.Delete(saveFilePath);
-            Debug.Log("Save game deleted");
+            //File.Delete(saveFileKey);
+            PlayerPrefs.DeleteAll();
+            QuestManager.Instance.Reset();
+            LevelManager.Instance.Reset();
         }
     }
 
 
     public static bool SaveGameExist()
     {
-        if (File.Exists(saveFilePath))
+        if (PlayerPrefs.HasKey(saveFileKey))
         {
             return true;
         }

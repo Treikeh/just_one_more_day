@@ -28,6 +28,15 @@ public class QuestManager : MonoBehaviour
     }
 
 
+    public void Reset()
+    {
+        storyProgress = 0;
+        ActiveQuests = new();
+        FinishedQuests = new();
+        questMap = CreateQuestMap();
+    }
+
+
     // Get all quests in the Assets/Resources/Quests folder
     private Dictionary<string, Quest> CreateQuestMap()
     {
