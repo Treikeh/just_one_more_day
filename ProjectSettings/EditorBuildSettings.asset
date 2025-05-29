@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Rooms/Hallways.unity
     guid: 4dc5a48729ebe374c860b6834497c6c9
   - enabled: 1
-    path: Assets/Rooms/Hallways_Endless.unity
+    path: Assets/Rooms/Puzzles/HallwaysEndless/Hallways_Endless.unity
     guid: bb95c2cc4cd45c5129522f02304c4187
   - enabled: 1
     path: Assets/Rooms/Classroom.unity

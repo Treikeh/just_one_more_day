@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndlessObstacle : MonoBehaviour
 {
+    public static Action<int> ObstacleHit;
     private static int lives = 3;
     private float flashDelay = 0.15f;
 
@@ -20,6 +22,7 @@ public class EndlessObstacle : MonoBehaviour
         if (other.tag == "Player")
         {
             lives--;
+            ObstacleHit?.Invoke(lives);
             if (lives <= 0)
             {
                 LevelManager.Instance.StartLoadingLevel(SceneManager.GetActiveScene().name);
