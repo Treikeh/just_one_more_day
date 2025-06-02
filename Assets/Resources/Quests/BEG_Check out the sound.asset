@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BEG_Check out the sound
   m_EditorClassIdentifier: 
   description: Check on the stall?
-  finishAutomatically: 0
-  mandatoryQuest: 1
+  finishAutomatically: 1
+  mandatoryQuest: 0
   questPrerequisites: []
-  questSteps: 1
+  questSteps: 0
