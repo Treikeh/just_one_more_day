@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3feb9b768ac44f4f8cf7c536156c86f
+guid: d3cc3ead4c130a74393f5d789b7dfac7
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,9 +116,9 @@ TextureImporter:
       name: Toilets_Asset_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 40
         y: 0
-        width: 59
+        width: 19
         height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
