@@ -59,14 +59,12 @@ public class InGameUi : MonoBehaviour
     // HUD
     public void ShowHud()
     {
-        Animator hudAnimator = hud.GetComponent<Animator>();
-        hudAnimator.SetBool("isOpen", true);
+        hud.GetComponent<Animator>().SetBool("isOpen", true);
     }
 
     public void HideHud()
     {
-        Animator hudAnimator = hud.GetComponent<Animator>();
-        hudAnimator.SetBool("isOpen", false);
+        hud.GetComponent<Animator>().SetBool("isOpen", false);
     }
 
 
@@ -78,6 +76,7 @@ public class InGameUi : MonoBehaviour
             journal.SetActive(true);
             journal.GetComponent<Animator>().SetBool("isOpen", true);
             InputManager.Instance.ChangeActionMap("Ui");
+            UiManager.Instance.EmitJournalNotificationSeen();
             HideHud();
         }
     }

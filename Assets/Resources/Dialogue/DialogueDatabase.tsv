@@ -8,7 +8,7 @@ PRO_Mika_Find_Journal	Mika	I need to find my journal before I leave	Default	FALS
 BEG_Teacher_01_CutScene_01	Mr. Williams	You are late	Default	FALSE																
 BEG_Mika_01_CutScene_01	Mika	I'm so sorry, sir | It won't happen again	Default	FALSE																
 BEG_Teacher_02_CutScene_01	Mr. Williams	It is alright | I have already spoken to the principal | She wants to see you in her office	Default	FALSE																
-BEG_Mika_02_CutScene_01	Mika	B-but, is that really...	Default	FALSE																
+BEG_Mika_02_CutScene_01	Mika	B-but, is that really...	Default	TRUE																
 BEG_Teacher_03_CutScene_01	Mr. Williams	Don't worry, I did nothing | She came to me and asked to see you | Now please | Let me continue my class	Default	FALSE																
 BEG_Mika_TryWalkingInto_Classroom_Musicroom_Lab	Mika	I shouldn't disrupt other classes	Default	FALSE																
 BEG_Mika_01_Cutscene_02	Mika	You wanted to see me, Mrs. Smith	Default	FALSE																
@@ -46,80 +46,86 @@ BTS_Hallucination_02_Cutscene_01	??	She can't call mom | Mom will get mad at us	
 BTS_Mika_02_Cutscene_01	Mika	Are you alright?	Default	FALSE																
 BTS_Hallucintation_03_Cutscene_01	??	No | She'll get mad at you! | You're the problem!	Default	FALSE																
 BTS_Mika_03_Cutscene_01	Mika	I swear I heard... | Shit! | I need to get to class!	Default	FALSE																
-BTS_Principal_01_Dialogue_03	Principal Smith	You’re late!																		
-BTS_Mika_01_Dialogue_03	Mika	I was just going to the bathroom | I’m sorry																		
-BTS_Principal_02_Dialogue_03	Principal Smith	You don’t have a hall- or bathroom pass | Which means you’re skipping class																		
-BTS_Mika_02_Dialogue_03	Mika	I’m not, I promi…																		
-BTS_Principal_03_Dialogue_03	Principal Smith	Don’t you talk back to me, young lady																		
-BTS_Mika_03_Dialogue_03	Mika	...																		
-BTS_Principal_04_Dialogue_03	Principal Smith	After lunch, you will sort cutlery in the kitchen | Maybe that will teach you a lesson																		
-BTS_Mika_04_Dialogue_03	Mika	...																		
-BTS_Principal_05_Dialogue_03	Principal Smith	Good | Now get to class!																		
+BTS_Principal_01_Dialogue_03	Principal Smith	You’re late!	Default	FALSE																
+BTS_Mika_01_Dialogue_03	Mika	I was just going to the bathroom | I’m sorry	Default	FALSE																
+BTS_Principal_02_Dialogue_03	Principal Smith	You don’t have a hall- or bathroom pass | Which means you’re skipping class	Default	FALSE																
+BTS_Mika_02_Dialogue_03	Mika	I’m not, I promi…	Default	TRUE																
+BTS_Principal_03_Dialogue_03	Principal Smith	Don’t you talk back to me, young lady	Default	FALSE																
+BTS_Mika_03_Dialogue_03	Mika	...	Default	FALSE																
+BTS_Principal_04_Dialogue_03	Principal Smith	After lunch, you will sort cutlery in the kitchen | Maybe that will teach you a lesson	Default	FALSE																
+BTS_Mika_04_Dialogue_03	Mika	...	Default	FALSE																
+BTS_Principal_05_Dialogue_03	Principal Smith	Good | Now get to class!	Default	FALSE																
 BTS_Ruby_01_Dialogue_04	Ruby	Ugh! | I hate this class! | Why can’t we have agility or something instead	Default	FALSE																
 BTS_Luna_01_Dialogue_04	Luna	You know both Hazel and Zach is allergic to dogs | So that would be a bad idea | Plus | It has nothing to do with chemistry 	Default	FALSE																
 BTS_Ruby_02_Dialogue_04	Ruby	You’re no fun | Mika! | We should have dogs here don’t you think?	Default	FALSE																
 BTS_Mika_01_Dialogue_04	Mika	What if the dogs eat something here? | We have a lot of chemicals here you know	Default	FALSE																
 BTS_Ruby_03_Dialogue_04	Ruby	Oh my God | You guys are both so boring!	Default	FALSE																
 BTS_Luna_02_Dialogue_04	Luna	Let’s focus on the project now	Default	FALSE																
-BTS_Zach_01_Dialogue_05	Zach	You guys! | I literally don’t understand any of this		FALSE																
-BTS_Elijah_01_Dialogue_05	Elijah	That’s cause you’re a bonehead | And you don’t want to																		
-BTS_Milo_01_Dialogue_05	Milo	What happened to your palm, Zach?																		
-BTS_Zach_02_Dialogue_05	Zach	Uhh, I trie…																		
-BTS_Elijah_02_Dialogue_05	Elijah	 He sucks at skating | That’s what happened | He and the board didn’t have the “chemistry” | Heh..																		
-BTS_Zach_03_Dialogue_05	Zach	Wow | That sure was a good try																		
-BTS_Elijah_03_Dialogue_05	Elijah	Screw you																		
-BTS_Milo_01_Dialogue_06	Milo	What are you looking for, Mika?																		
-BTS_Zach_01_Dialogue_06	Zach	I think you’re with Luna and Ruby | If they haven’t already told you																		
-BTS_Sophia_01_Dialogue_07	Sophia	Why can’t we have biology?																		
-BTS_Hazel_01_Dialogue_07	Hazel	We had biology yesterday and we have biology tomorrow 																		
-BTS_Sophia_02_Dialogue_07	Sophia	But why can’t we have it everyday | It’s not fair																		
-BTS_Hazel_02_Dialogue_07	Hazel	That’s what university is for																		
-BTS_Sophia_03_Dialogue_07	Sophia	Ugh																		
-BTS_Hazel_Dialogue_08	Hazel	Is something wrong, Mika? | Can we help you with something?																		
-BTS_Sophia_Dialogue_08	Sophia	We’re just continuing the group project from last week | And you’re with Luna and Ruby, remember?																		
-BTS_Teacher_01	Mr. Williams	Do you not remember what we did last week? | We’re working in groups and finding info about… | You know what | Talk with your group before asking me																		
-BTS_Teacher_AfterPuzzle	Mr. Williams	Good work today everyone | Now go eat some food | Class dismissed																		
-BTS_Luna_Dialogue_09	Luna	Was it really that bad, Ruby?																		
-BTS_Ruby_Dialogue_09	Ruby	Of course not | But I still think it would be better to do something else | including dogs of course																		
-BTS_Hazel_01_Dialogue_10	Hazel	Sophia? | Why are you not tutoring anyone in biology?																		
-BTS_Sophia_Dialogue_10	Sophia	Oh, that’s easy | I don’t want to																		
-BTS_Hazel_02_Dialogue_10	Hazel	Huh | You know what? | That’s fair																		
-BTS_Elijah_01_Dialogue_11	Elijah	Why do you pretend to be stupid?																		
-BTS_Zach_01_Dialogue_11	Zach	Huh?																		
-BTS_Elijah_02_Dialogue_11	Elijah	You literally know everything about this project! | You were just pretending! | I know what you’re trying to do!																		
-BTS_Milo_Dialogue_11	Milo	I don’t think this is the right way to…																		
-BTS_Zach_02_Dialogue_11	Zach	Like you don’t pretend every once in a while																		
-BTS_Elijah_03_Dialogue_11	Elijah	HAH! | Of course I have																		
-BTS_Teacher_01_AfterClass	Mr. Williams	Just four more hours | Then I can go home to my beautiful wife																		
-BTS_Teacher_02_AfterClass	Mr. Williams	Did you not hear me? | Go eat!																		
-BTS_Luna_01_Dialogue_12	Luna	The food here sucks so many butts																		
-BTS_Ruby_01_Dialogue_12	Ruby	Don’t judge																		
-BTS_Luna_02_Dialogue_12	Luna	Which one?																		
-BTS_Ruby_02_Dialogue_12	Ruby	Both the food | And people sucking b…																		
-BTS_Luna_03_Dialogue_12	Luna	Ok | I get it																		
-BTS_Ruby_03_Dialogue_12	Ruby	I wanna go home to Rufus | I miss his cute little face																		
-BTS_Luna_04_Dialogue_12	Luna	Sure you do | Mika, you’re here | Ruby and I talked about self studying in the library after lunch | You can join us if you want to																		
-BTS_Ruby_04_Dialogue_12	Ruby	Mhm																		
-BTS_Hazel_01	Hazel	Don’t stop me noooow | I’m bablebelabe, I’m having a baaaaall | Don’t stop me noooo ahhhh | Mika! You need to stop sneaking up on people like that | You’re going to give someone a heartattack																		
-BTS_Sophia_01_Default_Speed	Sophia	Mika, hi | I’m just thinking about something | Imagine if all of your friends one day disappeared | Just like | POOF																		
-BTS_Sophia_02_Fast_Speed	Sophia	Almost exactly like in the game It Starts with You | All of Effie’s friends die | And when she finally has someone she trusts | They die as well | It’s quite sad actually | Imagine a whole life without any friends | That must be really really sad																		
-BTS_Sophia_03_Default_Speed	Sophia	Right? | You look dizzy, have you eaten anything today?																		
-BTS_Milo_01	Milo	What?! | Oh | I didn’t see you | I was just continuing my game | I finally killed the boss | I needed to use a fire extinguisher on the dragon | I searched it up though so I can’t really take all the praise | … | Oh.. | My food is cold																		
-BTS_Elijah_01_Dialogue_13	Elijah	I thought I got lucky today | Mrs. Smith didn’t take my board | Until now																		
-BTS_Zach_01_Dialogue_13	Zach	Hahaha | Why do you keep bringing it to school anyway | You should know by now that she’s going to confiscate it																		
-BTS_Elijah_02_Dialogue_13	Elijah	Hah | Don’t you mean confi*skate*																		
-BTS_Zach_02_Dialogue_13	Zach	...																		
-BTS_Elijah_03_Dialogue_13	Elijah	Oh come on | That was a good one		FALSE																
+BTS_Zach_01_Dialogue_05	Zach	You guys! | I literally don’t understand any of this	Default	FALSE																
+BTS_Elijah_01_Dialogue_05	Elijah	That’s cause you’re a bonehead | And you don’t want to	Default	FALSE																
+BTS_Milo_01_Dialogue_05	Milo	What happened to your palm, Zach?	Default	FALSE																
+BTS_Zach_02_Dialogue_05	Zach	Uhh, I trie…	Default	TRUE																
+BTS_Elijah_02_Dialogue_05	Elijah	 He sucks at skating | That’s what happened | He and the board didn’t have the “chemistry” | Heh..	Default	FALSE																
+BTS_Zach_03_Dialogue_05	Zach	Wow | That sure was a good try	Default	FALSE																
+BTS_Elijah_03_Dialogue_05	Elijah	Screw you	Default	FALSE																
+BTS_Milo_01_Dialogue_06	Milo	What are you looking for, Mika?	Default	FALSE																
+BTS_Zach_01_Dialogue_06	Zach	I think you’re with Luna and Ruby | If they haven’t already told you	Default	FALSE																
+BTS_Sophia_01_Dialogue_07	Sophia	Why can’t we have biology?	Default	FALSE																
+BTS_Hazel_01_Dialogue_07	Hazel	We had biology yesterday and we have biology tomorrow 	Default	FALSE																
+BTS_Sophia_02_Dialogue_07	Sophia	But why can’t we have it everyday | It’s not fair	Default	FALSE																
+BTS_Hazel_02_Dialogue_07	Hazel	That’s what university is for	Default	FALSE																
+BTS_Sophia_03_Dialogue_07	Sophia	Ugh	Default	FALSE																
+BTS_Hazel_Dialogue_08	Hazel	Is something wrong, Mika? | Can we help you with something?	Default	FALSE																
+BTS_Sophia_Dialogue_08	Sophia	We’re just continuing the group project from last week | And you’re with Luna and Ruby, remember?	Default	FALSE																
+BTS_Teacher_01	Mr. Williams	Do you not remember what we did last week? | We’re working in groups and finding info about… | You know what | Talk with your group before asking me	Default	FALSE																
+BTS_Teacher_AfterPuzzle	Mr. Williams	Good work today everyone | Now go eat some food | Class dismissed	Default	FALSE																
+BTS_Luna_Dialogue_09	Luna	Was it really that bad, Ruby?	Default	FALSE																
+BTS_Ruby_Dialogue_09	Ruby	Of course not | But I still think it would be better to do something else | including dogs of course	Default	FALSE																
+BTS_Hazel_01_Dialogue_10	Hazel	Sophia? | Why are you not tutoring anyone in biology?	Default	FALSE																
+BTS_Sophia_Dialogue_10	Sophia	Oh, that’s easy | I don’t want to	Default	FALSE																
+BTS_Hazel_02_Dialogue_10	Hazel	Huh | You know what? | That’s fair	Default	FALSE																
+BTS_Elijah_01_Dialogue_11	Elijah	Why do you pretend to be stupid?	Default	FALSE																
+BTS_Zach_01_Dialogue_11	Zach	Huh?	Default	FALSE																
+BTS_Elijah_02_Dialogue_11	Elijah	You literally know everything about this project! | You were just pretending! | I know what you’re trying to do!	Default	FALSE																
+BTS_Milo_Dialogue_11	Milo	I don’t think this is the right way to…	Default	TRUE																
+BTS_Zach_02_Dialogue_11	Zach	Like you don’t pretend every once in a while	Default	FALSE																
+BTS_Elijah_03_Dialogue_11	Elijah	HAH! | Of course I have	Default	FALSE																
+BTS_Teacher_01_AfterClass	Mr. Williams	Just four more hours | Then I can go home to my beautiful wife	Default	FALSE																
+BTS_Teacher_02_AfterClass	Mr. Williams	Did you not hear me? | Go eat!	Default	FALSE																
+BTS_Luna_01_Dialogue_12	Luna	The food here sucks so many butts	Default	FALSE																
+BTS_Ruby_01_Dialogue_12	Ruby	Don’t judge	Default	FALSE																
+BTS_Luna_02_Dialogue_12	Luna	Which one?	Default	FALSE																
+BTS_Ruby_02_Dialogue_12	Ruby	Both the food | And people sucking b…	Default	FALSE																
+BTS_Luna_03_Dialogue_12	Luna	Ok | I get it	Default	FALSE																
+BTS_Ruby_03_Dialogue_12	Ruby	I wanna go home to Rufus | I miss his cute little face	Default	FALSE																
+BTS_Luna_04_Dialogue_12	Luna	Sure you do | Mika, you’re here | Ruby and I talked about self studying in the library after lunch | You can join us if you want to	Default	FALSE																
+BTS_Ruby_04_Dialogue_12	Ruby	Mhm	Default	FALSE																
+BTS_Hazel_01	Hazel	Don’t stop me noooow | I’m bablebelabe, I’m having a baaaaall | Don’t stop me noooo ahhhh | Mika! You need to stop sneaking up on people like that | You’re going to give someone a heartattack	Default	FALSE																
+BTS_Sophia_01_Default_Speed	Sophia	Mika, hi | I’m just thinking about something | Imagine if all of your friends one day disappeared | Just like | POOF	Default	FALSE																
+BTS_Sophia_02_Fast_Speed	Sophia	Almost exactly like in the game TheFirst of You | All of Effie’s friends die | And when she finally has someone she trusts | They die as well | It’s quite sad actually | Imagine a whole life without any friends | That must be really really sad	Fast	TRUE																
+BTS_Sophia_03_Default_Speed	Sophia	Right? | You look dizzy, have you eaten anything today?	Default	FALSE																
+BTS_Milo_01	Milo	What?! | Oh | I didn’t see you | I was just continuing my game | I finally killed the boss | I needed to use a fire extinguisher on the dragon | I searched it up though so I can’t really take all the praise | … | Oh.. | My food is cold	Default	FALSE																
+BTS_Elijah_01_Dialogue_13	Elijah	I thought I got lucky today | Mrs. Smith didn’t take my board | Until now	Default	FALSE																
+BTS_Zach_01_Dialogue_13	Zach	Hahaha | Why do you keep bringing it to school anyway | You should know by now that she’s going to confiscate it	Default	FALSE																
+BTS_Elijah_02_Dialogue_13	Elijah	Hah | Don’t you mean confi*skate*	Default	FALSE																
+BTS_Zach_02_Dialogue_13	Zach	...	Default	FALSE																
+BTS_Elijah_03_Dialogue_13	Elijah	Oh come on | That was a good one	Default	FALSE																
 																				
-ITS_Sophia_Dialogue_01	Sophia	Mika is acting so weird																		
-ITS_Hazel_Dialogue_01	Hazel	I know right | There must be something wrong with her																		
-ITS_Zach_Dialogue_02	Zach	What is wrong with her?																		
-ITS_Elijah_Dialogue_02	Elijah	I don’t know, but don’t speak so loud | She might hear you																		
-ITS_Milo	Milo	I don’t really want to talk now, Mika | Please don’t bother me																		
+ITS_Sophia_Dialogue_01	Sophia	Mika is acting so weird	Default	FALSE																
+ITS_Hazel_Dialogue_01	Hazel	I know right | There must be something wrong with her	Default	FALSE																
+ITS_Zach_Dialogue_02	Zach	What is wrong with her?	Default	FALSE																
+ITS_Elijah_Dialogue_02	Elijah	I don’t know, but don’t speak so loud | She might hear you	Default	FALSE																
+ITS_Milo	Milo	I don’t really want to talk now, Mika | Please don’t bother me	Default	FALSE																
 																				
-TSW_Ruby_01_Cutscene_01	Ruby	Mika, you’re acting weird again | We tried to ignore it, but you’re completely out of yourself																		
-TSW_Luna_01_Cutscene_01	Luna	You’re going to hurt yourself again | You’re scaring us																		
-TSW_Ruby_02_Cutscene_01	Ruby	Why didn’t you talk with your doctor after you literally almost died last year? | That’s kind of doctors are for																		
-TSW_Luna_02_Cutscene_01	Luna	Are you even listening, Mika?! | You almost killed yourself! | We know it wasn’t an accident | We know when you lie																		
-TSW_Ruby_03_Cutscene_01	Ruby	And you’ve been doing it a lot lately | Just like last time																		
-TSW_Ruby_04_Cutscene_01	Ruby	What the hell, Mika? | You just hurt Luna																		
+TSW_Ruby_01_Cutscene_01	Ruby	Mika, you’re acting weird again | We tried to ignore it, but you’re completely out of yourself	Default	FALSE																
+TSW_Luna_01_Cutscene_01	Luna	You’re going to hurt yourself again | You’re scaring us	Default	FALSE																
+TSW_Ruby_02_Cutscene_01	Ruby	Why didn’t you talk with your doctor after you literally almost died last year? | That’s kind of doctors are for	Default	FALSE																
+TSW_Luna_02_Cutscene_01	Luna	Are you even listening, Mika?! | You almost killed yourself! | We know it wasn’t an accident | We know when you lie	Default	FALSE																
+TSW_Ruby_03_Cutscene_01	Ruby	And you’ve been doing it a lot lately | Just like last time	Default	FALSE																
+TSW_Ruby_04_Cutscene_01	Ruby	What the hell, Mika? | You just hurt Luna	Default	FALSE																
+																				
+TRB_Ruby_01_Cutscene_01	Ruby	What the hell have you done?! | … | Luna… | I'm gonna be sick																		
+TRB_Teacher_01_Cutscene_01	Mr. Williams	Oh.. God…																		
+																				
+END_Hallucination_01	??	Mika | Mika, wake up																		
+END_Nurse_01	Nurse	Morning, Mika | Dr. Hill is ready to see you																		

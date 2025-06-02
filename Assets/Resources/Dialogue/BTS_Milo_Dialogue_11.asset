@@ -18,4 +18,4 @@ MonoBehaviour:
   sentences:
   - "I don\u2019t think this is the right way to\u2026"
   textSpeed: 0.05
-  endAutomatically: 0
+  endAutomatically: 1

@@ -18,4 +18,4 @@ MonoBehaviour:
   sentences:
   - B-but, is that really...
   textSpeed: 0.05
-  endAutomatically: 0
+  endAutomatically: 1

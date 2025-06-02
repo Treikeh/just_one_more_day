@@ -18,4 +18,4 @@ MonoBehaviour:
   sentences:
   - "Uhh, I trie\u2026"
   textSpeed: 0.05
-  endAutomatically: 0
+  endAutomatically: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30a30e38531718d20b7af2841521f488
+guid: 54874e67b6d0aa215af06ba7d05c3163
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 8
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638844644042951590
+  platformSettingsDirtyTick: 638844716838415240
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Spoon
+  - name: Hallucination
     originalName: 
-    pivot: {x: 0.49999997, y: 0}
+    pivot: {x: 0.42857143, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 7
-      height: 21
-    spriteID: cc6b7a0771a6a7be9a40e5ad31c10bc5
+      width: 14
+      height: 22
+    spriteID: 8423dc3c77c359ea08b2c5b8dcc2ccf1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,25 +148,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3114231769
+      value0: 2291914321
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Spoon
+    name: Hallucination
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Spoon
+    - name: Hallucination
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 7
+        x: 6
         y: 0
-        width: 7
-        height: 21
-      spriteId: cc6b7a0771a6a7be9a40e5ad31c10bc5
+        width: 14
+        height: 22
+      spriteId: 8423dc3c77c359ea08b2c5b8dcc2ccf1
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -221,5 +221,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 21, y: 21}
-  previousTextureSize: {x: 16, y: 32}
+  canvasSize: {x: 24, y: 24}
+  previousTextureSize: {x: 32, y: 32}
