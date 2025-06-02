@@ -9,13 +9,13 @@ public class UiManager : MonoBehaviour
     public event Action<List<DialogueSO>, UnityEvent> OnDialogueStarted;
     public event Action OnDialogueFinished;
     public event Action OnJournalNotification;
+    public event Action OnJounralNotificationSeen;
 
     public static UiManager Instance { get; private set; }
-    [SerializeField] private GameObject inGameUiPrefab;
-
-    private GameObject inGameUi;
-
     public List<CharacterProfileSO> characterProfiles = new();
+
+    [SerializeField] private GameObject inGameUiPrefab;
+    private GameObject inGameUi;
 
 
     private void Awake()
@@ -66,6 +66,11 @@ public class UiManager : MonoBehaviour
     public void EmitJournalNotification()
     {
         OnJournalNotification?.Invoke();
+    }
+
+    public void EmitJournalNotificationSeen()
+    {
+        OnJounralNotificationSeen?.Invoke();
     }
 
     public List<CharacterProfileSO> GetCharacterProfiles()
