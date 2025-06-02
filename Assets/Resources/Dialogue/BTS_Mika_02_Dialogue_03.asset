@@ -18,4 +18,4 @@ MonoBehaviour:
   sentences:
   - "I\u2019m not, I promi\u2026"
   textSpeed: 0.05
-  endAutomatically: 0
+  endAutomatically: 1

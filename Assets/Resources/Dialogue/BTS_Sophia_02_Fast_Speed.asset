@@ -16,12 +16,12 @@ MonoBehaviour:
   characterName: Sophia
   characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   sentences:
-  - Almost exactly like in the game It Starts with You
+  - Almost exactly like in the game TheFirst of You
   - "All of Effie\u2019s friends die"
   - And when she finally has someone she trusts
   - They die as well
   - "It\u2019s quite sad actually"
   - Imagine a whole life without any friends
   - That must be really really sad
-  textSpeed: 0.05
-  endAutomatically: 0
+  textSpeed: 0.01
+  endAutomatically: 1
