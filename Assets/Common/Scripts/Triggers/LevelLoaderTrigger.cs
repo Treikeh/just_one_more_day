@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class LevelLoaderTrigger : MonoBehaviour
 {
+    [SerializeField] private bool hideUi = false;
     [SerializeField] private string levelToLoad = "";
     [SerializeField] private Transform spawnTransform;
 
@@ -17,6 +18,6 @@ public class LevelLoaderTrigger : MonoBehaviour
     public void StartLoadingLevel()
     {
         Vector2 spawnPositon = spawnTransform != null ? spawnTransform.position: Vector2.zero;
-        LevelManager.Instance.StartLoadingLevel(levelToLoad, spawnPositon);
+        LevelManager.Instance.StartLoadingLevel(levelToLoad, spawnPositon, hideUi);
     }
 }

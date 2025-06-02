@@ -941,9 +941,6 @@ MonoBehaviour:
       m_Calls: []
   canFinishResponse:
     m_PersistentCalls:
-      m_Calls: []
-  finishedResponse:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 797165476}
         m_TargetAssemblyTypeName: LevelLoaderTrigger, Assembly-CSharp
@@ -957,6 +954,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  finishedResponse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &797165475
 Transform:
   m_ObjectHideFlags: 0
