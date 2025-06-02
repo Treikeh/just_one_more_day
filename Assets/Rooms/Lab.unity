@@ -1015,6 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideUi: 0
   levelToLoad: LabPuzzle
   spawnTransform: {fileID: 203628515}
 --- !u!1 &367629954
@@ -2475,6 +2476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideUi: 0
   levelToLoad: Lab
   spawnTransform: {fileID: 1443466584}
 --- !u!61 &838830679
@@ -6076,6 +6078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideUi: 0
   levelToLoad: Hallways
   spawnTransform: {fileID: 578518319}
 --- !u!212 &1699239896
@@ -7512,6 +7515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideUi: 0
   levelToLoad: Mika's Room
   spawnTransform: {fileID: 0}
 --- !u!61 &2061403955
