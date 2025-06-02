@@ -1,12 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-
-public class Hud : MonoBehaviour
+public class NotificationAnimationController : MonoBehaviour
 {
-    [SerializeField] private Animator notificationAnimator;
-
-    private float notificationDisplayDuration = 2f;
+    [SerializeField] private Animator animator;
     private Coroutine notificationCoroutine;
 
 
@@ -27,10 +24,8 @@ public class Hud : MonoBehaviour
 
     private IEnumerator JournalNotificationSequence()
     {
-        notificationAnimator.SetBool("isShown", true);
-        yield return new WaitForSeconds(notificationDisplayDuration);
-        notificationAnimator.SetBool("isShown", false);
+        animator.SetBool("isOpen", true);
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("isOpen", false);
     }
 }
-
-

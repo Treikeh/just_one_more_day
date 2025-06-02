@@ -43,17 +43,17 @@ private void Start()
     }
 
 
-    public void StartLoadingLevel(string sceneName, Vector2 spawnPosition = default)
+    public void StartLoadingLevel(string sceneName, Vector2 spawnPosition = default, bool hideUi = false)
     {
         playerSpawnPosition = spawnPosition;
         var scene = SceneManager.LoadSceneAsync(sceneName);
         // Stop all Coroutines to avoid the bug where the loading screen disappears when the player quickly goes into and out of a room 
         StopAllCoroutines();
-        StartCoroutine(ProgressLoadingScene(scene));
+        StartCoroutine(ProgressLoadingScene(scene, hideUi));
     }
 
 
-    private IEnumerator ProgressLoadingScene(AsyncOperation scene)
+    private IEnumerator ProgressLoadingScene(AsyncOperation scene, bool hideUi)
     {
         // Only allow new scene to spawn when the loading screen is shown
         scene.allowSceneActivation = false;
@@ -65,6 +65,9 @@ private void Start()
         loadingScreenAnimator.Play("LoadingScreen_Show");
         yield return new WaitForSeconds(Utils.GetAnimationLength(loadingScreenAnimator, "LoadingScreen_Show"));
 
+        // Hide UI or show ui when the loading screen is fully covering the screen
+        if (hideUi) { UiManager.Instance.HideInGameUi(); }
+        else { UiManager.Instance.ShowInGameUi(); }
         // Allow scene to spawn when ready
         scene.allowSceneActivation = true;
         // Check if the scene has finished loading
