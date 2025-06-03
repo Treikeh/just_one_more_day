@@ -15,19 +15,36 @@ public class InGameUi : MonoBehaviour
     private void OnEnable()
     {
         InputManager.Instance.OnJournalPressed += JounralPressed;
-        InputManager.Instance.onCancelPressed += CancelPressed;
+        InputManager.Instance.OnCancelPressed += CancelPressed;
 
         UiManager.Instance.OnDialogueStarted += DialogueStarted;
         UiManager.Instance.OnDialogueFinished += DialogueFinished;
+
+        SaveManager.GameLoaded += OnGameLoaded;
     }
 
     private void OnDisable()
     {
         InputManager.Instance.OnJournalPressed -= JounralPressed;
-        InputManager.Instance.onCancelPressed -= CancelPressed;
+        InputManager.Instance.OnCancelPressed -= CancelPressed;
 
         UiManager.Instance.OnDialogueStarted -= DialogueStarted;
         UiManager.Instance.OnDialogueFinished -= DialogueFinished;
+
+        SaveManager.GameLoaded -= OnGameLoaded;
+    }
+
+    private void Start()
+    {
+        if (QuestManager.Instance.hasJournal)
+        {
+            ShowHud();
+        }
+    }
+
+    private void OnGameLoaded()
+    {
+        Invoke(nameof(Start), 0.5f);
     }
 
 
@@ -44,10 +61,11 @@ public class InGameUi : MonoBehaviour
 
     public void OnMainMenuButtonPressed()
     {
+        CancelPressed();
         QuestManager.Instance.Reset();
         LevelManager.Instance.Reset();
         LevelManager.Instance.StartLoadingLevel("MainMenu");
-        CancelPressed();
+        HideHud();
     }
 
     public void OnSaveGameButtonPressed()
@@ -57,6 +75,12 @@ public class InGameUi : MonoBehaviour
 
 
     // HUD
+    public void ActivateHud(bool active)
+    {
+        ShowHud();
+        QuestManager.Instance.hasJournal = active;
+    }
+
     public void ShowHud()
     {
         hud.GetComponent<Animator>().SetBool("isOpen", true);
@@ -71,7 +95,7 @@ public class InGameUi : MonoBehaviour
     // JOURNAL
     private void JounralPressed()
     {
-        if (!journal.activeInHierarchy && hud.activeInHierarchy && !inDialogue)
+        if (!journal.activeInHierarchy && QuestManager.Instance.hasJournal && !inDialogue)
         {
             journal.SetActive(true);
             journal.GetComponent<Animator>().SetBool("isOpen", true);
@@ -84,7 +108,7 @@ public class InGameUi : MonoBehaviour
     // This function is public so that i can activate it with ui buttons
     private void CancelPressed()
     {
-        if (journal.activeInHierarchy && hud.activeInHierarchy)
+        if (journal.activeInHierarchy && QuestManager.Instance.hasJournal)
         {
             journal.GetComponent<Animator>().SetBool("isOpen", false);
             // Set player input if not in dialogue

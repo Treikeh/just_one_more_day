@@ -12,6 +12,7 @@ public class UiManager : MonoBehaviour
     public event Action OnJounralNotificationSeen;
 
     public static UiManager Instance { get; private set; }
+    public bool hudActive = false;
     public List<CharacterProfileSO> characterProfiles = new();
 
     [SerializeField] private GameObject inGameUiPrefab;

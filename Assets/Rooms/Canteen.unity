@@ -1543,6 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideUi: 0
   levelToLoad: Hallways
   spawnTransform: {fileID: 1397897251}
 --- !u!1 &1171006675
@@ -2847,6 +2848,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
+      propertyPath: hasJournal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
       value: 6
       objectReference: {fileID: 0}
@@ -2902,6 +2907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideUi: 0
   levelToLoad: SortCutleryPuzzle
   spawnTransform: {fileID: 626677330}
 --- !u!61 &1805554826

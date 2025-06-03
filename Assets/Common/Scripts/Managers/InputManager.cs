@@ -71,12 +71,12 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    public event Action onCancelPressed;
+    public event Action OnCancelPressed;
     public void OnCancel(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            onCancelPressed?.Invoke();
+            OnCancelPressed?.Invoke();
         }
     }
 
