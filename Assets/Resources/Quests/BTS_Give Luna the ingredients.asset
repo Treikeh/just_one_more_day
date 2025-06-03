@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4292c8059f203d7db40e7b4ca72c324, type: 3}
-  m_Name: BTS_Find the ingredients
+  m_Name: BTS_Give Luna the ingredients
   m_EditorClassIdentifier: 
-  description: Find three ingredients
+  description: Give the ingredients to Luna
   finishAutomatically: 1
   mandatoryQuest: 1
   questPrerequisites: []
-  questSteps: 3
+  questSteps: 1
