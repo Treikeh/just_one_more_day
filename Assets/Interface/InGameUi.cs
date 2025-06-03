@@ -21,6 +21,8 @@ public class InGameUi : MonoBehaviour
         UiManager.Instance.OnDialogueFinished += DialogueFinished;
 
         SaveManager.GameLoaded += OnGameLoaded;
+
+        OnGameLoaded();
     }
 
     private void OnDisable()
@@ -34,17 +36,19 @@ public class InGameUi : MonoBehaviour
         SaveManager.GameLoaded -= OnGameLoaded;
     }
 
-    private void Start()
+
+    private void OnGameLoaded()
+    {
+        Invoke(nameof(WhoCares), 0.5f);
+    }
+
+
+    private void WhoCares()
     {
         if (QuestManager.Instance.hasJournal)
         {
             ShowHud();
         }
-    }
-
-    private void OnGameLoaded()
-    {
-        Invoke(nameof(Start), 0.5f);
     }
 
 

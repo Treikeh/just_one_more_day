@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 450487a13fcdbbe6eb954e7efa286c5c
+guid: 887cc34142905759688bf961188f5dfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3840735493910417382
-    second: SophiaPortrait_0
+      213: -5468944216784889154
+    second: HomeTab_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SophiaPortrait_0
+      name: HomeTab_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 88
         y: 0
-        width: 256
-        height: 256
+        width: 152
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a103c39da67f2bac0800000000000000
-      internalID: -3840735493910417382
+      spriteID: eba1c16e5386a14b0800000000000000
+      internalID: -5468944216784889154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeTab_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 240
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddad3f76baeafc7db8b630ad7e054f1
+      internalID: -1784363214
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8a2e2c7142b6a58f81d5050e2778336
+    spriteID: 980ba9fe3a588e51f953f9a93b8abf9c
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SophiaPortrait_0: -3840735493910417382
+      HomeTab_0: -5468944216784889154
+      HomeTab_1: -1784363214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1268,7 +1268,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1888750350
+--- !u!1001 &2093836400
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1276,10 +1276,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 36541522425022581, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
-      propertyPath: spawnUiOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4522047776646085428, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -1324,6 +1320,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
+      propertyPath: hasJournal
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1336,4 +1336,4 @@ SceneRoots:
   - {fileID: 1683585032}
   - {fileID: 1813715757}
   - {fileID: 772210074}
-  - {fileID: 1888750350}
+  - {fileID: 2093836400}

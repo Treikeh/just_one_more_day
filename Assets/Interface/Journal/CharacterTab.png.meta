@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 450487a13fcdbbe6eb954e7efa286c5c
+guid: 9a5a8736f2c792ac68afbbc55996fc2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3840735493910417382
-    second: SophiaPortrait_0
+      213: -2749028971940501578
+    second: CharacterTab_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SophiaPortrait_0
+      name: CharacterTab_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 256
-        height: 256
+        width: 152
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a103c39da67f2bac0800000000000000
-      internalID: -3840735493910417382
+      spriteID: 6b7aa3a07bc79d9d0800000000000000
+      internalID: -2749028971940501578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterTab_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 240
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf185103e1548959d948e4539f29e8dd
+      internalID: 1349578761
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8a2e2c7142b6a58f81d5050e2778336
+    spriteID: 7abc47b3126100710b0b51872a2832ce
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SophiaPortrait_0: -3840735493910417382
+      CharacterTab_0: -2749028971940501578
+      CharacterTab_1: 1349578761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,7 +15,7 @@ public class QuestPage : MonoBehaviour
         // Display active quests
         // Get all active quests from the QuestManager
         Dictionary<string, Quest> activeQuests = QuestManager.Instance.ActiveQuests;
-        activeQuestsText.text = "Active Quessts:\n";
+        activeQuestsText.text = "";
         // Go through every active quest and add the quest description and progress to activeQuestsText
         foreach (string key in activeQuests.Keys)
         {
@@ -26,7 +26,7 @@ public class QuestPage : MonoBehaviour
         // Get all finished quests from the QuestManager
         Dictionary<string, Quest> finishedQuests = QuestManager.Instance.FinishedQuests;
         // Reset finishedQuestsText.
-        finishedQuestsText.text = "Finished Quests:\n";
+        finishedQuestsText.text = "";
         // Go through every finished quest and add the quest description to finishedQuestsText
         foreach (string key in finishedQuests.Keys)
         {
