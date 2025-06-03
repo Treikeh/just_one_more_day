@@ -11,7 +11,7 @@ public class QuestManager : MonoBehaviour
     public static QuestManager Instance { get; private set; }
     public Dictionary<string, Quest> ActiveQuests = new();
     public Dictionary<string, Quest> FinishedQuests = new();
-    public bool hasJournal = false;
+    public bool hasJournal = true;
     public int storyProgress = 0;
 
     public Dictionary<string, Quest> questMap;

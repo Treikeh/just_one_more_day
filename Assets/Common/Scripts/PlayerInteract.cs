@@ -26,7 +26,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent(out IInteractable interactable))
+        if (other.TryGetComponent(out IInteractable interactable) && !other.isTrigger)
         {
             interactableInRange = interactable;
             interactIcon.SetActive(true);

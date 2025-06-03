@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d918e8d83c9a099eeaeb0677dfdf4c13
+guid: 9a5a8736f2c792ac68afbbc55996fc2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7967399658093801750
-    second: CafeteriaTable_Asset_0
+      213: -2749028971940501578
+    second: CharacterTab_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CafeteriaTable_Asset_0
+      name: CharacterTab_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 34
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5217391}
+        width: 152
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 611ff34a6c3e19e60800000000000000
-      internalID: 7967399658093801750
+      spriteID: 6b7aa3a07bc79d9d0800000000000000
+      internalID: -2749028971940501578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterTab_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 240
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf185103e1548959d948e4539f29e8dd
+      internalID: 1349578761
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7adb6e7908c4170e4aa20bf607ea1e1b
+    spriteID: 7abc47b3126100710b0b51872a2832ce
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CafeteriaTable_Asset_0: 7967399658093801750
+      CharacterTab_0: -2749028971940501578
+      CharacterTab_1: 1349578761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
