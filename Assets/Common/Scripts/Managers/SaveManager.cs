@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SaveManager
 {
+    public static event Action GameLoaded;
     private static readonly string saveFileKey = "THIS_STRING_IS_WHAT_IS_USED_TO_IDENTIFY_THE_SAVE_GAME";
 
 
@@ -16,6 +17,7 @@ public class SaveManager
         {
             // Save current level
             levelName = SceneManager.GetActiveScene().name,
+            hasJournal = QuestManager.Instance.hasJournal,
             // Save story progress
             storyProgress = QuestManager.Instance.storyProgress,
             // Save character profiles
@@ -64,6 +66,8 @@ public class SaveManager
             //GameSaveData loadData = JsonUtility.FromJson<GameSaveData>(File.ReadAllText(saveFilePath));
             GameSaveData loadData = JsonUtility.FromJson<GameSaveData>(PlayerPrefs.GetString(saveFileKey));
 
+            QuestManager.Instance.hasJournal = loadData.hasJournal;
+
             // Set story progress
             QuestManager.Instance.storyProgress = loadData.storyProgress;
 
@@ -102,6 +106,7 @@ public class SaveManager
 
             // Load level
             LevelManager.Instance.StartLoadingLevel(loadData.levelName);
+            GameLoaded?.Invoke();
         }
         else
         {
@@ -135,6 +140,7 @@ public class SaveManager
     public class GameSaveData
     {
         public string levelName;
+        public bool hasJournal;
         public int storyProgress;
         public List<QuestMapDictPair> questMapData;
         public List<LevelSaveDictPair> levelSaveData;
