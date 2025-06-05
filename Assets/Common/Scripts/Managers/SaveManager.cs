@@ -120,9 +120,9 @@ public class SaveManager
         if (SaveGameExist())
         {
             PlayerPrefs.DeleteAll();
-            QuestManager.Instance.Reset();
-            LevelManager.Instance.Reset();
         }
+        QuestManager.Instance.Reset();
+        LevelManager.Instance.Reset();
     }
 
 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Unknown_Profile
   m_EditorClassIdentifier: 
   characterName: ??
-  characterPortrait: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  characterPortrait: {fileID: -6240195989010939929, guid: 117bbf14717728e858e447e26383b565, type: 3}
   characterDescription: ??
