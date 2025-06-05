@@ -10,14 +10,16 @@ BEG_Mika_01_CutScene_01	Mika	I'm so sorry, sir | It won't happen again	Default	F
 BEG_Teacher_02_CutScene_01	Mr. Williams	It is alright | I have already spoken to the principal | She wants to see you in her office	Default	FALSE																
 BEG_Mika_02_CutScene_01	Mika	B-but, is that really...	Default	TRUE																
 BEG_Teacher_03_CutScene_01	Mr. Williams	Don't worry, I did nothing | She came to me and asked to see you | Now please | Let me continue my class	Default	FALSE																
+BEG_Teacher_01	Mr. Williams	I just told you the principal wanted to see you	Default	FALSE																
 BEG_Mika_TryWalkingInto_Classroom_Musicroom_Lab	Mika	I shouldn't disrupt other classes	Default	FALSE																
 BEG_Mika_01_Cutscene_02	Mika	You wanted to see me, Mrs. Smith	Default	FALSE																
-BEG_Principal_01_Cutscene_02	Principal Smith	Yes, hello | take a seat please	Default	FALSE																
+BEG_Principal_01_Cutscene_02	Principal Smith	Yes, hello | come in	Default	FALSE																
 BEG_Principal_02_Cutscene_02	Principal Smith	I know school can be boring at your age | You just want to sleep and play video games or watch TV all day | I've been thinking, pondering even | And I've come to the conclusion | It is not accepteble | Skipping and coming late, doing the bare minimum | That is not how I want my students to behave | Take this as a final warning, Mika | This is the last time you're coming late to school | Before I will have to contact your mother	Default	FALSE																
 BEG_Mika_02_Cutscene_02	Mika	No, please | You don't understand | In the morning when I wake up | It is physically impossiple for me to...	Default	FALSE																
 BEG_Principal_03_Cutscene_02	Principal Smith	This is my final warning	Default	FALSE																
 BEG_Mika_03_Cutscene_02	Mika	B-but please | Listen to me	Default	FALSE																
 BEG_Principal_04_Cutscene_02	Principal Smith	That is our cue | You are dismissed	Default	FALSE																
+BEG_Principal_01	Principal Smith	You are dismissed																		
 																				
 BTS_Luna_01_Dialogue_01	Luna	OMG! | Are you ok? | What the hell is his problem?!	Default	FALSE																
 BTS_Ruby_01_Dialogue_01	Ruby	He made it sound so dramatic | But | What did she want?	Default	FALSE																
@@ -110,6 +112,7 @@ BTS_Zach_01_Dialogue_13	Zach	Hahaha | Why do you keep bringing it to school anyw
 BTS_Elijah_02_Dialogue_13	Elijah	Hah | Don’t you mean confi*skate*	Default	FALSE																
 BTS_Zach_02_Dialogue_13	Zach	...	Default	FALSE																
 BTS_Elijah_03_Dialogue_13	Elijah	Oh come on | That was a good one	Default	FALSE																
+BTS_Canteen_Mika_Cant_Leave	Mika	I have to sort the cutlery before leaving	Default	FALSE																
 																				
 ITS_Sophia_Dialogue_01	Sophia	Mika is acting so weird	Default	FALSE																
 ITS_Hazel_Dialogue_01	Hazel	I know right | There must be something wrong with her	Default	FALSE																
@@ -124,8 +127,56 @@ TSW_Luna_02_Cutscene_01	Luna	Are you even listening, Mika?! | You almost killed 
 TSW_Ruby_03_Cutscene_01	Ruby	And you’ve been doing it a lot lately | Just like last time	Default	FALSE																
 TSW_Ruby_04_Cutscene_01	Ruby	What the hell, Mika? | You just hurt Luna	Default	FALSE																
 																				
-TRB_Ruby_01_Cutscene_01	Ruby	What the hell have you done?! | … | Luna… | I'm gonna be sick																		
-TRB_Teacher_01_Cutscene_01	Mr. Williams	Oh.. God…																		
+TRB_Ruby_01_Cutscene_01	Ruby	What the hell have you done?! | … | Luna… | I'm gonna be sick	Default	FALSE																
+TRB_Teacher_01_Cutscene_01	Mr. Williams	Oh.. God…	Slow	FALSE																
 																				
-END_Hallucination_01	??	Mika | Mika, wake up																		
-END_Nurse_01	Nurse	Morning, Mika | Dr. Hill is ready to see you																		
+END_Hallucination_01	??	Mika | Mika, wake up	Slow	FALSE																
+END_Nurse_01	Nurse	Morning, Mika | Dr. Hill is ready to see you	Default	FALSE																
+																				
+Objects																				
+MikasRoom_Bed	Mika	I just wanna crawl back in	Default	FALSE																
+MikasRoom_Clothes	Mika	I don’t have the energy right now	Default	FALSE																
+MikasRoom_BookShelf	Mika	So many books I will never read	Default	FALSE																
+MikasRoom_Desk	Mika	A poem.. Wow I’m depressing	Default	FALSE																
+MikasRoom_Plant	Mika	It’s fake	Default	FALSE																
+MikasRoom_Mirror	Mika	It’s me! God, I look terrible	Default	FALSE																
+MikasRoom_Game	Mika	I wish I could sit here all day	Default	FALSE																
+																				
+Hallway_Windows	Mika	It’s a beautiful day outside	Default	FALSE																
+Hallway_PostBoard_1		“If you have legs you can run. Join the track team!”	Default	FALSE																
+Hallway_PostBoard_2		“Meowtsune Mewku concert 20.06.xx”	Default	FALSE																
+Hallway_PostBoard_3		“Are you tired of hanging around? Join the literature club!”	Default	FALSE																
+Hallway_PostBoard_4		“Eat at the cantine! (We have taco baguettes on fridays)”	Default	FALSE																
+Hallway_PostBoard_5		“Remember to sign up to this years GENDER REVEAL PROM”	Default	FALSE																
+Hallway_Clock	Mika	Time goes by, so slowly	Default	FALSE																
+Hallway_Plant_1	Mika	It’s a plant	Default	FALSE																
+Hallway_Plant_2	Mika	It’s another plant	Default	FALSE																
+Hallway_Plant_3	Mika	It’s plant pot.. with a pot inside	Default	FALSE																
+Hallway_Lockers	Mika	It’s locked	Default	FALSE																
+Hallway_TrashBin	Mika	I don’t feel like digging through the trash today	Default	FALSE																
+																				
+PrincipalsOffice_Trophies	Mika	Trophies from when Mrs. Smith went to school	Default	FALSE																
+PrincipalsOffice_Window	Mika	I wanna go home	Default	FALSE																
+																				
+Bathroom_Mirror	Mika	It’s me	Default	FALSE																
+Bathroom_BathroomStall	Mika	I don’t have to go	Default	FALSE																
+Bathroom_DarkRoom	Mika	Ugh, they need to fix this light	Default	FALSE																
+																				
+Lab_Table	Mika	That sure is a table	Default	FALSE																
+Lab_FireHydrant	Mika	My noodle arms can’t lift this	Default	FALSE																
+Lab_Plant	Mika	There’s so many plants in this school	Default	FALSE																
+Lab_Blackboard	Mika	Boring!	Default	FALSE																
+Lab_Shelf	Mika	There are some chemicals on the shelf	Default	FALSE																
+Lab_Pictures	Mika	I don’t remember any of this, whoops	Default	FALSE																
+Lab_Tube	Mika	I have no idea what this is	Default	FALSE																
+																				
+Library_BookShelfs	Mika	I don’t wanna read!	Default	FALSE																
+Library_Computers	Mika	The last search is “What happens if zombies actually become alive” | It’s not hard to guess who was here	Default	FALSE																
+Library_Sofa	Mika	Looks comfy	Default	FALSE																
+																				
+Canteen_VendingMachine	Mika	If only I had some money	Default	FALSE																
+Canteen_FoodTables	Mika	I don’t have the appetite right now	Default	FALSE																
+Canteen_FoodTray	Mika	Just some food	Default	FALSE																
+Canteen_WaterDispenser	Mika	It’s broken, it’s been like that for a while	Default	FALSE																
+Canteen_TrashBin	Mika	Someone didn’t like their food	Default	FALSE																
+Canteen_Plant	Mika	So. Many. Plants.	Default	FALSE																
