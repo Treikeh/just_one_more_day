@@ -25,10 +25,4 @@ public class MainMenu : MonoBehaviour
     {
         SaveManager.LoadGame();
     }
-
-    public void OnDeleteSaveGameButtonPressed()
-    {
-        loadGameButton.interactable = false;
-        SaveManager.DeleteSaveGame();
-    }
 }
