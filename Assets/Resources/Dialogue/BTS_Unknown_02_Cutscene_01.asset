@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ddc0b7bbbf090aa9022d08351d9574, type: 3}
-  m_Name: Hallucination_Profile
+  m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
+  m_Name: BTS_Unknown_02_Cutscene_01
   m_EditorClassIdentifier: 
+  characterProfile: {fileID: 11400000, guid: 297d900f8e7fbd0628ec6a7af4025402, type: 2}
   characterName: ??
   characterPortrait: {fileID: -6240195989010939929, guid: 117bbf14717728e858e447e26383b565, type: 3}
-  characterDescription: ??
+  sentences:
+  - She can't call mom
+  - Mom will get mad at us
+  textSpeed: 0.05
+  endAutomatically: 0

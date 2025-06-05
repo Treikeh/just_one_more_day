@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: END_Nurse_01
+  m_Name: BTS_Unknown_03_Cutscene_01
   m_EditorClassIdentifier: 
-  characterProfile: {fileID: 11400000, guid: bedd30c69e3969a3ab34508b2c59a6f2, type: 2}
-  characterName: 
-  characterPortrait: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  characterProfile: {fileID: 11400000, guid: 297d900f8e7fbd0628ec6a7af4025402, type: 2}
+  characterName: ??
+  characterPortrait: {fileID: -6240195989010939929, guid: 117bbf14717728e858e447e26383b565, type: 3}
   sentences:
-  - Morning, Mika
-  - Dr. Hill is ready to see you
+  - No
+  - She'll get mad at you!
+  - You're the problem!
   textSpeed: 0.05
   endAutomatically: 0

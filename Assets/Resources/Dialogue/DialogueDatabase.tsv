@@ -2,7 +2,7 @@ ID	Speaker/Name	Dialogue	Speed	Skip Automatically	 Use " | " to define different
 PRO_Mother_01_CutScene	Mom	Mika! | Mika you need to wake up! | You're late for school!	Default	FALSE	To type | you have to press the button below ESC								PRO_	BEG_	BTS_	ITS_	TSW_	TRB_	TRB_	END_
 PRO_Mika_01_CutScene	Mika	I'm so tired mom | Can I please stay home today?	Default	FALSE	To use it in Unity you have to Download this sheet as a .tsv. Then you have to replace the file that's allready in the editor															
 PRO_Mother_02_CutScene	Mom	No | You're not sick, so you're going to school | I need to leave, you're making me late as well you know	Default	FALSE	The ID is also the File name the object will be saved as															
-PRO_Hallucination_01_CutScene	??	Mika, I know you're tired | But I also know you can do this | Just one more day at school | You've done it before, and I know you can do it again | Just find your journal first	Default	FALSE																
+PRO_Unknown_01_CutScene	Unknown	Mika, I know you're tired | But I also know you can do this | Just one more day at school | You've done it before, and I know you can do it again | Just find your journal first	Default	FALSE																
 PRO_Mika_Find_Journal	Mika	I need to find my journal before I leave	Default	FALSE																
 			Default	FALSE																
 BEG_Teacher_01_CutScene_01	Mr. Williams	You are late	Default	FALSE																
@@ -42,11 +42,11 @@ BTS_Sophia_01_Speed_Default	Sophia	Hi! | That was kind of awkward | Bet hey, you
 BTS_Sophia_02_Speed_Fast_SkipAuto	Sophia	Did you know that the parasite that is in The First of You actually exists? | It is called Ophiocordyceps unilateralis, but you can also call it by its cooler name | Zombie-ant fungus | It literally takes over the ant’s body | I mean, it eats the ant from the inside out, but also controls it | Eventually it kills it and the fungi grows out of the ant’s head | The coolest part is that | If the human body was colder | That could actually happen to us | And we would all become zombies | Wouldn’t that be cool?	Fast	TRUE																
 BTS_Sophia_03_Speed_Default	Sophia	Hey, are you ok? | You look kind of dizzy	Default	FALSE																
 BTS_Milo_01	Milo	Ahh! No! | Stupid boss! | Hi, Mika | You caught me at a bad time | I just can't take down this boss | Could we talk later maybe?	Default	FALSE																
-BTS_Hallucination_01_Cutscene_01	??	No | We need to be better	Default	FALSE																
+BTS_Unknown_01_Cutscene_01	Unknown	No | We need to be better	Default	FALSE																
 BTS_Mika_01_Cutscene_01	Mika	Hello?	Default	FALSE																
-BTS_Hallucination_02_Cutscene_01	??	She can't call mom | Mom will get mad at us	Default	FALSE																
+BTS_Unknown_02_Cutscene_01	Unknown	She can't call mom | Mom will get mad at us	Default	FALSE																
 BTS_Mika_02_Cutscene_01	Mika	Are you alright?	Default	FALSE																
-BTS_Hallucintation_03_Cutscene_01	??	No | She'll get mad at you! | You're the problem!	Default	FALSE																
+BTS_Unknown_03_Cutscene_01	Unknown	No | She'll get mad at you! | You're the problem!	Default	FALSE																
 BTS_Mika_03_Cutscene_01	Mika	I swear I heard... | Shit! | I need to get to class!	Default	FALSE																
 BTS_Principal_01_Dialogue_03	Principal Smith	You’re late!	Default	FALSE																
 BTS_Mika_01_Dialogue_03	Mika	I was just going to the bathroom | I’m sorry	Default	FALSE																
@@ -130,16 +130,16 @@ TSW_Ruby_04_Cutscene_01	Ruby	What the hell, Mika? | You just hurt Luna	Default	F
 TRB_Ruby_01_Cutscene_01	Ruby	What the hell have you done?! | … | Luna… | I'm gonna be sick	Default	FALSE																
 TRB_Teacher_01_Cutscene_01	Mr. Williams	Oh.. God…	Slow	FALSE																
 																				
-END_Hallucination_01	??	Mika | Mika, wake up	Slow	FALSE																
+END_Unknown_01	Unknown	Mika | Mika, wake up	Slow	FALSE																
 END_Nurse_01	Nurse	Morning, Mika | Dr. Hill is ready to see you	Default	FALSE																
 																				
 Objects																				
 MikasRoom_Bed	Mika	I just wanna crawl back in	Default	FALSE																
 MikasRoom_Clothes	Mika	I don’t have the energy right now	Default	FALSE																
-MikasRoom_BookShelf	Mika	So many books I will never read	Default	FALSE																
+MikasRoom_RecordPlayer	Mika	I forgot to remove my favourite vinyl | Texasication by The Green Spicy Jalapeños	Default	FALSE																
 MikasRoom_Desk	Mika	A poem.. Wow I’m depressing	Default	FALSE																
 MikasRoom_Plant	Mika	It’s fake	Default	FALSE																
-MikasRoom_Mirror	Mika	It’s me! God, I look terrible	Default	FALSE																
+MikasRoom_Guitar	Mika	I haven't played in a long time | Maybe I should pick you up sometime	Default	FALSE																
 MikasRoom_Game	Mika	I wish I could sit here all day	Default	FALSE																
 																				
 Hallway_Windows	Mika	It’s a beautiful day outside	Default	FALSE																
