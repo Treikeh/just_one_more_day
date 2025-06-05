@@ -1,10 +1,52 @@
 fileFormatVersion: 2
-guid: 40ba5ef444792f2a5a53f36141de778f
+guid: d032847678a8472ba8334c4f25e6c8ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8464531728553398512
-    second: Plate_Orange_Asset_0
+      213: 5901133803502969348
+    second: MapInJournal2_0
+  - first:
+      213: -6702415782869446031
+    second: MapInJournal2_1
+  - first:
+      213: -350049929542331406
+    second: MapInJournal2_2
+  - first:
+      213: -8524333021177843221
+    second: MapInJournal2_3
+  - first:
+      213: 8615518161706373544
+    second: MapInJournal2_4
+  - first:
+      213: 8252909891062290963
+    second: MapInJournal2_5
+  - first:
+      213: 3656967743595597149
+    second: MapInJournal2_6
+  - first:
+      213: -8126955802153507485
+    second: MapInJournal2_7
+  - first:
+      213: -389170136120696490
+    second: MapInJournal2_8
+  - first:
+      213: -6475761198312765251
+    second: MapInJournal2_9
+  - first:
+      213: 7108143898132199161
+    second: MapInJournal2_10
+  - first:
+      213: -1387264623111794327
+    second: MapInJournal2_11
+  - first:
+      213: -4594575299628445035
+    second: MapInJournal2_12
+  - first:
+      213: 6570664132107513484
+    second: MapInJournal2_13
+  - first:
+      213: -688953104667076599
+    second: MapInJournal2_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +155,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plate_Orange_Asset_0
+      name: MapInJournal2_14
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 5
-        height: 4
-      alignment: 9
-      pivot: {x: 0.6, y: -1.75}
+        width: 1500
+        height: 2100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01f2d896d31f78a80800000000000000
-      internalID: -8464531728553398512
+      spriteID: 9089a613dc85076f0800000000000000
+      internalID: -688953104667076599
       vertices: []
       indices: 
       edges: []
@@ -138,7 +180,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: abc7fc01f512f01ad9e18b1a79e3ae46
+    spriteID: 19b5a2ea3e194246f9318d7094fed710
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +190,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plate_Orange_Asset_0: -8464531728553398512
+      MapInJournal2_14: -688953104667076599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
