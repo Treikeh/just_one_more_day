@@ -124,32 +124,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 11
+        width: 45
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2923a2e0af9cbb80800000000000000
-      internalID: -8377645693470037718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VinylplayerWSpeakers_Asset_1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 0
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4888889, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,33 +140,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: VinylplayerWSpeakers_Asset_2
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 994ff3bde5ab62ae0800000000000000
-      internalID: -1574366103151315815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 63b8383a207cfd66bbd4d19b158bbcfd
     internalID: 0
     vertices: []
     indices: 
@@ -198,8 +154,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      VinylplayerWSpeakers_Asset_0: -8377645693470037718
-      VinylplayerWSpeakers_Asset_1: 2870290739936289566
+      VinylplayerWSpeakers_Asset_0: 2870290739936289566
       VinylplayerWSpeakers_Asset_2: -1574366103151315815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

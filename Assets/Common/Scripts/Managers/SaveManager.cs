@@ -119,7 +119,6 @@ public class SaveManager
     {
         if (SaveGameExist())
         {
-            //File.Delete(saveFileKey);
             PlayerPrefs.DeleteAll();
             QuestManager.Instance.Reset();
             LevelManager.Instance.Reset();

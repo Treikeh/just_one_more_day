@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d98924ee34d427e9492ba188cb0775f7
+guid: e57a4720d12310016b16b0190fb42e59
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6699589244671072138
-    second: Classroom_Layout_0
+      213: 2353571312451627304
+    second: Book_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Classroom_Layout_0
+      name: Book_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 151
-        height: 171
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 7
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6786a52f3174603a0800000000000000
-      internalID: -6699589244671072138
+      spriteID: 829aa3093a099a020800000000000000
+      internalID: 2353571312451627304
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b283adaff5453f33ba4c5233e09f2c73
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Classroom_Layout_0: -6699589244671072138
+      Book_0: 2353571312451627304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

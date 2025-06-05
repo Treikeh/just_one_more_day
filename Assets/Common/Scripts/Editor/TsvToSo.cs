@@ -61,7 +61,8 @@ public class TsvToSo
         dialogueObject.characterProfile = GetProfile(dialogueData[1]);
         // Get character name form profile
         dialogueObject.characterName = dialogueObject.characterProfile.characterName;
-        dialogueObject.characterPortrait = GetPortrait(dialogueData[1]);
+        dialogueObject.characterPortrait = dialogueObject.characterProfile.characterPortrait;
+        //dialogueObject.characterPortrait = GetPortrait(dialogueData[1]);
         dialogueObject.sentences = GetSentences(dialogueData[2]);
         dialogueObject.textSpeed = GetTextSpeed(dialogueData[3]);
         dialogueObject.endAutomatically = GetAutomaticEndValue(dialogueData[4]);

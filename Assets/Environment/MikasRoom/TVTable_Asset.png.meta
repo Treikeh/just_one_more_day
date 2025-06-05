@@ -120,33 +120,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 15
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f53d584a8c4c6fb0800000000000000
-      internalID: -4653260158177298957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TVTable_Asset_1
-      rect:
-        serializedVersion: 2
-        x: 2
         y: 0
-        width: 34
+        width: 36
         height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4857143}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 98df29c8c79b960b89594f08bb4fa606
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +151,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TVTable_Asset_0: -4653260158177298957
-      TVTable_Asset_1: -961666859532552956
+      TVTable_Asset_0: -961666859532552956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

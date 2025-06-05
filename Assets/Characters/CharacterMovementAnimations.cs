@@ -53,4 +53,27 @@ public class CharacterMovementAnimations : MonoBehaviour
                 break;
         }
     }
+
+    public void SetCharacterFaceDirByString(string dir)
+    {
+        dir.ToUpper();
+        switch (dir)
+        {
+            case "FRONT":
+                characterFaceDir = CharacterFaceDir.FRONT;
+                break;
+            case "BACK":
+                characterFaceDir = CharacterFaceDir.BACK;
+                break;
+            case "LEFT":
+                characterFaceDir = CharacterFaceDir.LEFT;
+                break;
+            case "RIGHT":
+                characterFaceDir = CharacterFaceDir.RIGHT;
+                break;
+            default:
+                characterFaceDir = CharacterFaceDir.FOLLOW_MOVEMENT;
+                break;
+        }
+    }
 }
