@@ -399,10 +399,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueList:
   - {fileID: 11400000, guid: 1c25af5667126d2f4a7fd12526a58f18, type: 2}
-  - {fileID: 11400000, guid: c57b998bf0f49558985c218981274382, type: 2}
+  - {fileID: 11400000, guid: bcc9977e7ead47e16920d69430938711, type: 2}
   - {fileID: 11400000, guid: edcc144bbfd33fe0486b853cdeabe8e4, type: 2}
-  - {fileID: 11400000, guid: 34c960c63eb586d65ab1c4ff589aaecf, type: 2}
-  - {fileID: 11400000, guid: e7989d1b19bf88885bd8f29d3fda39cf, type: 2}
+  - {fileID: 11400000, guid: 1fd54785038a726ebb71111c6c9d0bed, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2896,7 +2895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: e7989d1b19bf88885bd8f29d3fda39cf, type: 2}
+  - {fileID: 11400000, guid: bcc9977e7ead47e16920d69430938711, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4291,10 +4290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueList:
   - {fileID: 11400000, guid: 1c25af5667126d2f4a7fd12526a58f18, type: 2}
-  - {fileID: 11400000, guid: c57b998bf0f49558985c218981274382, type: 2}
+  - {fileID: 11400000, guid: bcc9977e7ead47e16920d69430938711, type: 2}
   - {fileID: 11400000, guid: edcc144bbfd33fe0486b853cdeabe8e4, type: 2}
-  - {fileID: 11400000, guid: 34c960c63eb586d65ab1c4ff589aaecf, type: 2}
-  - {fileID: 11400000, guid: e7989d1b19bf88885bd8f29d3fda39cf, type: 2}
+  - {fileID: 11400000, guid: 1fd54785038a726ebb71111c6c9d0bed, type: 2}
+  - {fileID: 11400000, guid: fefadcdb35f35e9d3a6ebb8ee84579b1, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:

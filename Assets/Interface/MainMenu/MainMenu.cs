@@ -17,10 +17,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnNewGameButtonPressed()
     {
-        if (SaveManager.SaveGameExist())
-        {
-            SaveManager.DeleteSaveGame();
-        }
+        SaveManager.DeleteSaveGame();
         LevelManager.Instance.StartLoadingLevel("Mika's Room");
     }
 
