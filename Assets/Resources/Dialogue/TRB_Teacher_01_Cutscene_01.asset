@@ -17,5 +17,5 @@ MonoBehaviour:
   characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
   sentences:
   - "Oh.. God\u2026"
-  textSpeed: 0.05
+  textSpeed: 0.1
   endAutomatically: 0

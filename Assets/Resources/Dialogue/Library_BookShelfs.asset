@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: BTS_Canteen_Mika_Cant_Leave
+  m_Name: Library_BookShelfs
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: 4e2aff72272bbcc1382c87c0459eb039, type: 2}
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - I have to sort the cutlery before leaving
+  - "I don\u2019t wanna read!"
   textSpeed: 0.05
   endAutomatically: 0
