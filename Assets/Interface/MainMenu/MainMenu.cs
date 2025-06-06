@@ -25,4 +25,9 @@ public class MainMenu : MonoBehaviour
     {
         SaveManager.LoadGame();
     }
+
+    public void OnCreditsButtonPressed()
+    {
+        LevelManager.Instance.StartLoadingLevel("Credits");
+    }
 }
