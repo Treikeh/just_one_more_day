@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Give the ingredients to Luna
   finishAutomatically: 1
-  mandatoryQuest: 1
+  mandatoryQuest: 0
   questPrerequisites: []
   questSteps: 1
