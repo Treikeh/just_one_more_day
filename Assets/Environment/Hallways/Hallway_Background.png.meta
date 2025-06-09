@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b99ffa3d0ffac77da1b8166e51c4597
+guid: aa7b909a3d9fec964bace3d627eb697f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7683361320886261479
-    second: Hallway_Background_0
+      213: 1394872590554166562
+    second: Hallway_Background_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hallway_Background_0
+      name: Hallway_Background_2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 775
-        height: 586
+        height: 596
       alignment: 9
-      pivot: {x: 0.49935484, y: 0.5}
+      pivot: {x: 0.49935484, y: 0.5067114}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 919299b36973f5590800000000000000
-      internalID: -7683361320886261479
+      spriteID: 225f8e21b359b5310800000000000000
+      internalID: 1394872590554166562
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: aaed15ac95957fc238a9ba00f1d04781
+    spriteID: 3b872a1ffccb99e1bb420221068b418f
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hallway_Background_0: -7683361320886261479
+      Hallway_Background_2_0: 1394872590554166562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

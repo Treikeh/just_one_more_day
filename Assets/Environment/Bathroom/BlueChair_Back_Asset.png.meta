@@ -117,11 +117,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 10
         width: 12
-        height: 17
+        height: 7
       alignment: 9
-      pivot: {x: 0.5, y: 0.23529412}
+      pivot: {x: 0.5, y: -1.4285715}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,6 +130,50 @@ TextureImporter:
       bones: []
       spriteID: e3caa88562180be80800000000000000
       internalID: -8164884122728485826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueChair_Back_Asset_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 12
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f1b74f06cd0c73688dd2d2d90894aa
+      internalID: 1431854442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueChair_Back_Asset_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 12
+        height: 3
+      alignment: 9
+      pivot: {x: 0.5, y: 3.3333333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ce03fe7c7cf48d58f96f1ddc7bfa08
+      internalID: -264387780
       vertices: []
       indices: 
       edges: []
@@ -149,6 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       BlueChair_Back_Asset_0: -8164884122728485826
+      BlueChair_Back_Asset_1: 1431854442
+      BlueChair_Back_Asset_2: -264387780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

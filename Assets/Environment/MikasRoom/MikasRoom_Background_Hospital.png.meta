@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b07dcac9bd25284ca58a15844e25464
+guid: f8dc72872a08548a1a715277608e201b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8247266831992311310
-    second: StudentDesk_Asset_0
+      213: 1604105431002500312
+    second: MikasRoom_Background_Hospital_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StudentDesk_Asset_0
+      name: MikasRoom_Background_Hospital_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 22
-        height: 17
+        width: 218
+        height: 137
       alignment: 9
-      pivot: {x: 0.5, y: 0.47058824}
+      pivot: {x: 0.5, y: 0.49635038}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f1bc3f1382db8d80800000000000000
-      internalID: -8247266831992311310
+      spriteID: 8dccd2df36de24610800000000000000
+      internalID: 1604105431002500312
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 00d556d9b47f1e47d88e786722f236ee
+    spriteID: f9b8899a056bc06e3b3334b180885cce
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StudentDesk_Asset_0: -8247266831992311310
+      MikasRoom_Background_Hospital_0: 1604105431002500312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
