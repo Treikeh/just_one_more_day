@@ -10,23 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: BTS_Hazel_01
+  m_Name: BTS_Hazel_01_Default_Speed
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: 398222dfcdf0a250683d293be1bd0c01, type: 2}
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
-  - Ok, so if I help Milo on Thursday
-  - Then I have time to practice on Wednesday
-  - And aft-
-  - Wah!
-  - Oh
-  - Hi, Mika
-  - You scared me
-  - Are you doing ok?
-  - I think Mr. Williams should have told you face to face
-  - It was kind of a douchey thing to do in front of the entire class
-  - Anyways
-  - You can always come talk to me if there's anything bothering you
+  - "Don\u2019t stop me noooow"
+  - "I\u2019m bablebelabe, I\u2019m having a baaaaall"
+  - "Don\u2019t stop me noooo ahhhh"
+  - Mika! You need to stop sneaking up on people like that
+  - "You\u2019re going to give someone a heartattack"
   textSpeed: 0.05
   endAutomatically: 0
