@@ -18,7 +18,7 @@ BEG_Principal_02_Cutscene_02	Principal Smith	I know school can be boring at your
 BEG_Mika_02_Cutscene_02	Mika	No, please | You don't understand | In the morning when I wake up | It is physically impossiple for me to...	Default	FALSE																
 BEG_Principal_03_Cutscene_02	Principal Smith	This is my final warning	Default	FALSE																
 BEG_Mika_03_Cutscene_02	Mika	B-but please | Listen to me	Default	FALSE																
-BEG_Principal_04_Cutscene_02	Principal Smith	That is our cue | You are dismissed	Default	FALSE																
+BEG_Principal_04_Cutscene_02	Principal Smith	That is your cue | You are dismissed	Default	FALSE																
 BEG_Principal_01	Principal Smith	You are dismissed																		
 																				
 BTS_Luna_01_Dialogue_01	Luna	OMG! | Are you ok? | What the hell is his problem?!	Default	FALSE																
@@ -80,6 +80,7 @@ BTS_Sophia_03_Dialogue_07	Sophia	Ugh	Default	FALSE
 BTS_Hazel_Dialogue_08	Hazel	Is something wrong, Mika? | Can we help you with something?	Default	FALSE																
 BTS_Sophia_Dialogue_08	Sophia	We’re just continuing the group project from last week | And you’re with Luna and Ruby, remember?	Default	FALSE																
 BTS_Teacher_01	Mr. Williams	Do you not remember what we did last week? | We’re working in groups and finding info about… | You know what | Talk with your group before asking me	Default	FALSE																
+BTS_Luna_Puzzle_01	Luna	Could you get three chemistry glasses for us please?	Default	FALSE																
 BTS_Teacher_AfterPuzzle	Mr. Williams	Good work today everyone | Now go eat some food | Class dismissed	Default	FALSE																
 BTS_Luna_Dialogue_09	Luna	Was it really that bad, Ruby?	Default	FALSE																
 BTS_Ruby_Dialogue_09	Ruby	Of course not | But I still think it would be better to do something else | including dogs of course	Default	FALSE																
@@ -102,11 +103,11 @@ BTS_Luna_03_Dialogue_12	Luna	Ok | I get it	Default	FALSE
 BTS_Ruby_03_Dialogue_12	Ruby	I wanna go home to Rufus | I miss his cute little face	Default	FALSE																
 BTS_Luna_04_Dialogue_12	Luna	Sure you do | Mika, you’re here | Ruby and I talked about self studying in the library after lunch | You can join us if you want to	Default	FALSE																
 BTS_Ruby_04_Dialogue_12	Ruby	Mhm	Default	FALSE																
-BTS_Hazel_01	Hazel	Don’t stop me noooow | I’m bablebelabe, I’m having a baaaaall | Don’t stop me noooo ahhhh | Mika! You need to stop sneaking up on people like that | You’re going to give someone a heartattack	Default	FALSE																
+BTS_Hazel_01_Default_Speed	Hazel	Don’t stop me noooow | I’m bablebelabe, I’m having a baaaaall | Don’t stop me noooo ahhhh | Mika! You need to stop sneaking up on people like that | You’re going to give someone a heartattack	Default	FALSE																
 BTS_Sophia_01_Default_Speed	Sophia	Mika, hi | I’m just thinking about something | Imagine if all of your friends one day disappeared | Just like | POOF	Default	FALSE																
 BTS_Sophia_02_Fast_Speed	Sophia	Almost exactly like in the game TheFirst of You | All of Effie’s friends die | And when she finally has someone she trusts | They die as well | It’s quite sad actually | Imagine a whole life without any friends | That must be really really sad	Fast	TRUE																
 BTS_Sophia_03_Default_Speed	Sophia	Right? | You look dizzy, have you eaten anything today?	Default	FALSE																
-BTS_Milo_01	Milo	What?! | Oh | I didn’t see you | I was just continuing my game | I finally killed the boss | I needed to use a fire extinguisher on the dragon | I searched it up though so I can’t really take all the praise | … | Oh.. | My food is cold	Default	FALSE																
+BTS_Milo_01_Default_Speed	Milo	What?! | Oh | I didn’t see you | I was just continuing my game | I finally killed the boss | I needed to use a fire extinguisher on the dragon | I searched it up though so I can’t really take all the praise | … | Oh.. | My food is cold	Default	FALSE																
 BTS_Elijah_01_Dialogue_13	Elijah	I thought I got lucky today | Mrs. Smith didn’t take my board | Until now	Default	FALSE																
 BTS_Zach_01_Dialogue_13	Zach	Hahaha | Why do you keep bringing it to school anyway | You should know by now that she’s going to confiscate it	Default	FALSE																
 BTS_Elijah_02_Dialogue_13	Elijah	Hah | Don’t you mean confi*skate*	Default	FALSE																
