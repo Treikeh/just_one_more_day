@@ -3143,7 +3143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 659c424de0aaf05e4855ad401f483ef1, type: 2}
+  - {fileID: 11400000, guid: d3ef0f9b0357a79a4bec020420e56e13, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3851,7 +3851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: b6b3c15be8c12377089184cedaceb265, type: 2}
+  - {fileID: 11400000, guid: 2c365cbf21835554bbb982413cbb5900, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4044,7 +4044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1204390563
 Transform:
   m_ObjectHideFlags: 0

@@ -1939,6 +1939,7 @@ GameObject:
   - component: {fileID: 163083711}
   - component: {fileID: 163083710}
   - component: {fileID: 163083709}
+  - component: {fileID: 163083713}
   m_Layer: 4
   m_Name: Lab
   m_TagString: Untagged
@@ -2017,6 +2018,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1711700556}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   targetExitedTrigger:
     m_PersistentCalls:
@@ -2122,6 +2135,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &163083713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163083707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexResponses:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 163083709}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  defaultResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 163083709}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &194300011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3291,7 +3346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: 659c424de0aaf05e4855ad401f483ef1, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3386,7 +3441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: d4019c7a4d947f74d86656498acfdd1a, type: 2}
+  - {fileID: 11400000, guid: b6b3c15be8c12377089184cedaceb265, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4319,6 +4374,15 @@ MonoBehaviour:
     maxStoryProgress: 6
   - objectToActivate: {fileID: 1231715201}
     minStoryProgress: 7
+    maxStoryProgress: 15
+  - objectToActivate: {fileID: 1711700552}
+    minStoryProgress: 0
+    maxStoryProgress: 15
+  - objectToActivate: {fileID: 2110133890}
+    minStoryProgress: 0
+    maxStoryProgress: 15
+  - objectToActivate: {fileID: 1338811691}
+    minStoryProgress: 0
     maxStoryProgress: 15
 --- !u!4 &574442818
 Transform:
@@ -11206,8 +11270,9 @@ GameObject:
   - component: {fileID: 1338811692}
   - component: {fileID: 1338811696}
   - component: {fileID: 1338811695}
-  - component: {fileID: 1338811694}
   - component: {fileID: 1338811693}
+  - component: {fileID: 1338811697}
+  - component: {fileID: 1338811694}
   m_Layer: 4
   m_Name: Gym
   m_TagString: Untagged
@@ -11224,7 +11289,7 @@ Transform:
   m_GameObject: {fileID: 1338811691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.90625, y: -15.125, z: 0}
+  m_LocalPosition: {x: -9.90625, y: -15, z: 0}
   m_LocalScale: {x: 1.5625, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11243,7 +11308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 98384455347d122d899010c869821fe9, type: 2}
+  - {fileID: 11400000, guid: 9b0ea1344a54ffa47935e2185dd8d7cb, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -11257,7 +11322,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1338811694
 MonoBehaviour:
@@ -11381,7 +11446,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.0543108, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6843238, b: 0.059748232, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11391,6 +11456,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1338811697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338811691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexResponses:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1338811693}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  defaultResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1338811693}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1340566228
 GameObject:
   m_ObjectHideFlags: 0
@@ -13253,6 +13360,7 @@ GameObject:
   - component: {fileID: 1621742939}
   - component: {fileID: 1621742938}
   - component: {fileID: 1621742937}
+  - component: {fileID: 1621742941}
   m_Layer: 4
   m_Name: MusicRoom
   m_TagString: Untagged
@@ -13288,7 +13396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 98384455347d122d899010c869821fe9, type: 2}
+  - {fileID: 11400000, guid: 9b0ea1344a54ffa47935e2185dd8d7cb, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13302,7 +13410,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1621742938
 MonoBehaviour:
@@ -13426,7 +13534,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.0543108, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6157811, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13436,6 +13544,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621742941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621742935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexResponses:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1621742937}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  defaultResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1621742937}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1623337482
 GameObject:
   m_ObjectHideFlags: 0
@@ -14091,8 +14241,8 @@ GameObject:
   - component: {fileID: 1711700553}
   - component: {fileID: 1711700557}
   - component: {fileID: 1711700556}
-  - component: {fileID: 1711700555}
   - component: {fileID: 1711700554}
+  - component: {fileID: 1711700558}
   m_Layer: 4
   m_Name: Art
   m_TagString: Untagged
@@ -14128,7 +14278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 98384455347d122d899010c869821fe9, type: 2}
+  - {fileID: 11400000, guid: 9b0ea1344a54ffa47935e2185dd8d7cb, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -14142,39 +14292,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &1711700555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711700552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fe7037c861974d44b67f6f8e1a6815b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: Player
-  targetEnteredTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1711700554}
-        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  targetExitedTrigger:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!61 &1711700556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14266,7 +14385,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.0543108, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6410339, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14276,6 +14395,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1711700558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711700552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexResponses:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1711700554}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  defaultResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1711700554}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1729183408
 GameObject:
   m_ObjectHideFlags: 0
@@ -17095,8 +17256,8 @@ GameObject:
   - component: {fileID: 2110133891}
   - component: {fileID: 2110133895}
   - component: {fileID: 2110133894}
-  - component: {fileID: 2110133893}
   - component: {fileID: 2110133892}
+  - component: {fileID: 2110133896}
   m_Layer: 4
   m_Name: Study
   m_TagString: Untagged
@@ -17132,7 +17293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 98384455347d122d899010c869821fe9, type: 2}
+  - {fileID: 11400000, guid: 9b0ea1344a54ffa47935e2185dd8d7cb, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -17146,39 +17307,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &2110133893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110133890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fe7037c861974d44b67f6f8e1a6815b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: Player
-  targetEnteredTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2110133892}
-        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  targetExitedTrigger:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!61 &2110133894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17270,7 +17400,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.0543108, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.56914705, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17280,6 +17410,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2110133896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110133890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cb31b3cac66cb4094194946d952112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexResponses:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2110133892}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  defaultResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2110133892}
+        m_TargetAssemblyTypeName: DialogueStarter, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2122264142
 GameObject:
   m_ObjectHideFlags: 0
