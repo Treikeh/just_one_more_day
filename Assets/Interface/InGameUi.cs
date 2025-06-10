@@ -103,6 +103,7 @@ public class InGameUi : MonoBehaviour
         {
             journal.SetActive(true);
             journal.GetComponent<Animator>().SetBool("isOpen", true);
+            Utils.ShowMouseCursor();
             InputManager.Instance.ChangeActionMap("Ui");
             UiManager.Instance.EmitJournalNotificationSeen();
             HideHud();
@@ -125,9 +126,11 @@ public class InGameUi : MonoBehaviour
         }
     }
 
+    // Small delay to allow the animatinon to finish before disabling Journal
     private IEnumerator CloseJournalDelay()
     {
         yield return new WaitForSeconds(0.25f);
+        Utils.HideMouseCursor();
         journal.SetActive(false);
     }
 

@@ -105,7 +105,7 @@ public class SaveManager
             }
 
             // Load level
-            LevelManager.Instance.StartLoadingLevel(loadData.levelName);
+            LevelManager.Instance.StartLoadingLevel(loadData.levelName, default, false);
             GameLoaded?.Invoke();
         }
         else

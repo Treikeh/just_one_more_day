@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,7 +19,7 @@ public class MainMenu : MonoBehaviour
     public void OnNewGameButtonPressed()
     {
         SaveManager.DeleteSaveGame();
-        LevelManager.Instance.StartLoadingLevel("Mika's Room");
+        LevelManager.Instance.StartLoadingLevel("Mika's Room", default, false);
     }
 
     public void OnLoadGameButtonPressed()
@@ -26,8 +27,13 @@ public class MainMenu : MonoBehaviour
         SaveManager.LoadGame();
     }
 
+    public void OnControlsMenuButtonPressed()
+    {
+        LevelManager.Instance.StartLoadingLevel("ControlsMenu", default, true);
+    }
+
     public void OnCreditsButtonPressed()
     {
-        LevelManager.Instance.StartLoadingLevel("Credits");
+        LevelManager.Instance.StartLoadingLevel("Credits", default, true);
     }
 }

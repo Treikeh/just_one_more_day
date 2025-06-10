@@ -15,4 +15,16 @@ public class Utils
     {
         return SceneManager.GetActiveScene().name + gameObject.name + gameObject.transform.GetSiblingIndex();
     }
+
+    public static void HideMouseCursor()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public static void ShowMouseCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 }
