@@ -66,8 +66,16 @@ private void Start()
         yield return new WaitForSeconds(Utils.GetAnimationLength(loadingScreenAnimator, "LoadingScreen_Show"));
 
         // Hide UI or show ui when the loading screen is fully covering the screen
-        if (hideUi) { UiManager.Instance.HideInGameUi(); }
-        else { UiManager.Instance.ShowInGameUi(); }
+        if (hideUi)
+        {
+            UiManager.Instance.HideInGameUi();
+            Utils.ShowMouseCursor();
+        }
+        else
+        {
+            UiManager.Instance.ShowInGameUi();
+            Utils.HideMouseCursor();
+        }
         // Allow scene to spawn when ready
         scene.allowSceneActivation = true;
         // Check if the scene has finished loading
