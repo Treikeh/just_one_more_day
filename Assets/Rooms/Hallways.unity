@@ -15814,7 +15814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 98384455347d122d899010c869821fe9, type: 2}
+  - {fileID: 11400000, guid: ea6bd522f2d6eeb44aefc1796a2a0d8e, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
