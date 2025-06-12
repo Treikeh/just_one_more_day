@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4292c8059f203d7db40e7b4ca72c324, type: 3}
-  m_Name: BTS_Find the ingredients
+  m_Name: BTS_Get to Lab class 2
   m_EditorClassIdentifier: 
-  description: Find three different bottles
+  description: Hurry back to Lab class
   finishAutomatically: 1
-  mandatoryQuest: 1
+  mandatoryQuest: 0
   questPrerequisites: []
-  questSteps: 3
+  questSteps: 1
