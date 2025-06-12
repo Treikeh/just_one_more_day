@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mom_Portrait_0: 8874177258785407260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

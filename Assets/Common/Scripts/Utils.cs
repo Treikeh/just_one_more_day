@@ -19,12 +19,12 @@ public class Utils
     public static void HideMouseCursor()
     {
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public static void ShowMouseCursor()
     {
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
