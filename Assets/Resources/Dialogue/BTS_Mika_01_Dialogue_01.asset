@@ -16,9 +16,9 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - Ugh
-  - She just told me that if I skip or come late again
-  - She will "have to contact my mom"
-  - My mom don't have time for that
+  - Ugh.
+  - She just told me that if I skip or come late again.
+  - She will "have to contact my mom".
+  - My mom don't have time for that.
   textSpeed: 0.05
   endAutomatically: 0

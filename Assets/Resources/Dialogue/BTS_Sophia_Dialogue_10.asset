@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Sophia
   characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   sentences:
-  - "Oh, that\u2019s easy"
-  - "I don\u2019t want to"
+  - "Oh, that\u2019s easy."
+  - "I don\u2019t want to."
   textSpeed: 0.05
   endAutomatically: 0

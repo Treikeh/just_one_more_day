@@ -1,183 +1,183 @@
 ID	Speaker/Name	Dialogue	Speed	Skip Automatically	 Use " | " to define different sentences in the same dialogue cell (It's importat that there's a space before and after the "|")								Prologue/	Beginning/	BeforeTheSwitch/	InTheSwitch/	TheSwitch/	ThisIsBad/	ThisIsReallyBad/	TheEnd/
 PRO_Mother_01_CutScene	Mom	Mika! | Mika you need to wake up! | You're late for school!	Default	FALSE	To type | you have to press the button below ESC								PRO_	BEG_	BTS_	ITS_	TSW_	TRB_	TRB_	END_
-PRO_Mika_01_CutScene	Mika	I'm so tired mom | Can I please stay home today?	Default	FALSE	To use it in Unity you have to Download this sheet as a .tsv. Then you have to replace the file that's allready in the editor															
-PRO_Mother_02_CutScene	Mom	No | You're not sick, so you're going to school | I need to leave, you're making me late as well you know	Default	FALSE	The ID is also the File name the object will be saved as															
-PRO_Unknown_01_CutScene	Unknown	Mika, I know you're tired | But I also know you can do this | Just one more day at school | You've done it before, and I know you can do it again | Just find your journal first	Default	FALSE																
-PRO_Mika_Find_Journal	Mika	I need to find my journal before I leave	Default	FALSE																
+PRO_Mika_01_CutScene	Mika	I'm so tired mom. | Can I please stay home today?	Default	FALSE	To use it in Unity you have to Download this sheet as a .tsv. Then you have to replace the file that's allready in the editor															
+PRO_Mother_02_CutScene	Mom	No. | You're not sick, so you're going to school. | I need to leave, you're making me late as well you know!	Default	FALSE	The ID is also the File name the object will be saved as															
+PRO_Unknown_01_CutScene	Unknown	Mika, I know you're tired. | But I also know you can do this. | Just one more day at school. | You've done it before, and I know you can do it again. | Just find your journal first.	Default	FALSE																
+PRO_Mika_Find_Journal	Mika	I need to find my journal before I leave.	Default	FALSE																
 			Default	FALSE																
-BEG_Teacher_01_CutScene_01	Mr. Williams	You are late	Default	FALSE																
-BEG_Mika_01_CutScene_01	Mika	I'm so sorry, sir | It won't happen again	Default	FALSE																
-BEG_Teacher_02_CutScene_01	Mr. Williams	It is alright | I have already spoken to the principal | She wants to see you in her office	Default	FALSE																
+BEG_Teacher_01_CutScene_01	Mr. Williams	You are late.	Default	FALSE																
+BEG_Mika_01_CutScene_01	Mika	I'm so sorry, sir. | It won't happen again.	Default	FALSE																
+BEG_Teacher_02_CutScene_01	Mr. Williams	It is alright. | I have already spoken to the Principal. | She wants to see you in her office.	Default	FALSE																
 BEG_Mika_02_CutScene_01	Mika	B-but, is that really...	Default	TRUE																
-BEG_Teacher_03_CutScene_01	Mr. Williams	Don't worry, I did nothing | She came to me and asked to see you | Now please | Let me continue my class	Default	FALSE																
-BEG_Teacher_01	Mr. Williams	I just told you the principal wanted to see you	Default	FALSE																
-BEG_Mika_TryWalkingInto_Classroom_Musicroom_Lab	Mika	I shouldn't disrupt other classes	Default	FALSE																
-BEG_Mika_01_Cutscene_02	Mika	You wanted to see me, Mrs. Smith	Default	FALSE																
-BEG_Principal_01_Cutscene_02	Principal Smith	Yes, hello | come in	Default	FALSE																
-BEG_Principal_02_Cutscene_02	Principal Smith	I know school can be boring at your age | You just want to sleep and play video games or watch TV all day | I've been thinking, pondering even | And I've come to the conclusion | It is not accepteble | Skipping and coming late, doing the bare minimum | That is not how I want my students to behave | Take this as a final warning, Mika | This is the last time you're coming late to school | Before I will have to contact your mother	Default	FALSE																
-BEG_Mika_02_Cutscene_02	Mika	No, please | You don't understand | In the morning when I wake up | It is physically impossiple for me to...	Default	FALSE																
-BEG_Principal_03_Cutscene_02	Principal Smith	This is my final warning	Default	FALSE																
-BEG_Mika_03_Cutscene_02	Mika	B-but please | Listen to me	Default	FALSE																
-BEG_Principal_04_Cutscene_02	Principal Smith	That is your cue | You are dismissed	Default	FALSE																
-BEG_Principal_01	Principal Smith	You are dismissed																		
+BEG_Teacher_03_CutScene_01	Mr. Williams	Her orders, not mine. | Now please, let me continue my class.	Default	FALSE																
+BEG_Teacher_01	Mr. Williams	I just told you, the Principal wanted to see you.	Default	FALSE																
+BEG_Mika_TryWalkingInto_Classroom_Musicroom_Lab	Mika	I shouldn't disrupt other classes.	Default	FALSE																
+BEG_Mika_01_Cutscene_02	Mika	You wanted to see me, Mrs. Smith.	Default	FALSE																
+BEG_Principal_01_Cutscene_02	Principal Smith	Yes, hello. | Come in.	Default	FALSE																
+BEG_Principal_02_Cutscene_02	Principal Smith	I know school can be boring at your age. | You just want to sleep and play video games, or watch TV all day. | I've been thinking, pondering even. | And I've come to the conclusion. | It is not accepteble. | Skipping and coming late, doing the bare minimum. | That is not how I want my students to behave. | Take this as a final warning, Mika. | This is the last time you're coming late to school. | Before I will have to contact your mother.	Default	FALSE																
+BEG_Mika_02_Cutscene_02	Mika	No, please! | You don't understand. | In the morning when I wake up. | It is physically impossiple for me to...	Default	FALSE																
+BEG_Principal_03_Cutscene_02	Principal Smith	This is your final warning.	Default	FALSE																
+BEG_Mika_03_Cutscene_02	Mika	B-but please. | Listen to me.	Default	FALSE																
+BEG_Principal_04_Cutscene_02	Principal Smith	You are dismissed.	Default	FALSE																
+BEG_Principal_01	Principal Smith	This is for your own good, Mika.	Default	FALSE																
 																				
 BTS_Luna_01_Dialogue_01	Luna	OMG! | Are you ok? | What the hell is his problem?!	Default	FALSE																
-BTS_Ruby_01_Dialogue_01	Ruby	He made it sound so dramatic | But | What did she want?	Default	FALSE																
-BTS_Luna_02_Dialogue_01	Luna	Yeah! We talked about it all class | Getting sent to the principal because you're a little late | Is kind of an overreaction	Default	FALSE																
-BTS_Mika_01_Dialogue_01	Mika	Ugh | She just told me that if I skip or come late again | She will "have to contact my mom" | My mom don't have time for that	Default	FALSE																
-BTS_Ruby_02_Dialogue_01	Ruby	Exactly! | I told you, Luna	Default	FALSE																
-BTS_Luna_03_Dialogue_01	Luna	Whatever | We're here for you either way! | And we'll support you in any way we can	Default	FALSE																
+BTS_Ruby_01_Dialogue_01	Ruby	He made it sound so dramatic. | But.. | What did she want?	Default	FALSE																
+BTS_Luna_02_Dialogue_01	Luna	Yeah! We talked about it all class. | Getting sent to the principal because you're a little late. | It's kind of an overreaction.	Default	FALSE																
+BTS_Mika_01_Dialogue_01	Mika	Ugh. | She just told me that if I skip or come late again. | She will "have to contact my mom". | My mom don't have time for that.	Default	FALSE																
+BTS_Ruby_02_Dialogue_01	Ruby	Exactly! | I told you, Luna.	Default	FALSE																
+BTS_Luna_03_Dialogue_01	Luna	Whatever. | We're here for you either way! | And we'll support you in any way we can.	Default	FALSE																
 BTS_Ruby_03_Dialogue_01	Ruby	Word!	Default	FALSE																
-BTS_Mika_02_Dialogue_01	Mika	Thank you! | I love you guys | I have to freshen up a bit in the bathroom before class	Default	FALSE																
+BTS_Mika_02_Dialogue_01	Mika	Thank you! | I love you guys. | I have to freshen up a bit in the bathroom before class.	Default	FALSE																
 BTS_Ruby_04_Dialogue_01	Ruby	You want us to join?	Default	FALSE																
-BTS_Mika_03_Dialogue_01	Mika	Nah | It's ok | I just need a little time to myself	Default	FALSE																
+BTS_Mika_03_Dialogue_01	Mika	Nah. | It's ok. | I just need a little time to myself.	Default	FALSE																
 BTS_Ruby_05_Dialogue_01	Ruby	Ok!	Default	FALSE																
-BTS_Luna_04_Dialogue_01	Luna	See you in chem	Default	FALSE																
-BTS_Elijah_01_Dialogue_02	Elijah	Dude, you look like shit | Did you actually try skateboarding?	Default	FALSE																
-BTS_Zach_01_Dialogue_02	Zach	Yeah, but I think I should stand steady before trying an ollie again	Default	FALSE																
-BTS_Elijah_02_Dialogue_02	Elijah	Bro! | An ollie? | You don't start with an ollie	Default	FALSE																
-BTS_Zach_02_Dialogue_02	Zach	Well duh | I learnt that the hard way	Default	FALSE																
-BTS_Hazel_01	Hazel	Ok, so if I help Milo on Thursday | Then I have time to practice on Wednesday | And aft- | Wah! | Oh | Hi, Mika | You scared me | Are you doing ok? | I think Mr. Williams should have told you face to face | It was kind of a douchey thing to do in front of the entire class | Anyways | You can always come talk to me if there's anything bothering you	Default	FALSE																
-BTS_Sophia_01_Speed_Default	Sophia	Hi! | That was kind of awkward | Bet hey, you weren't expelled | So, that's good | I guess | ... | Oh! Did you want to talk about anything? | Me first! Me first!	Default	FALSE																
-BTS_Sophia_02_Speed_Fast_SkipAuto	Sophia	Did you know that the parasite that is in The First of You actually exists? | It is called Ophiocordyceps unilateralis, but you can also call it by its cooler name | Zombie-ant fungus | It literally takes over the ant’s body | I mean, it eats the ant from the inside out, but also controls it | Eventually it kills it and the fungi grows out of the ant’s head | The coolest part is that | If the human body was colder | That could actually happen to us | And we would all become zombies | Wouldn’t that be cool?	Fast	TRUE																
-BTS_Sophia_03_Speed_Default	Sophia	Hey, are you ok? | You look kind of dizzy	Default	FALSE																
-BTS_Milo_01	Milo	Ahh! No! | Stupid boss! | Hi, Mika | You caught me at a bad time | I just can't take down this boss | Could we talk later maybe?	Default	FALSE																
-BTS_Unknown_01_Cutscene_01	Unknown	No | We need to be better	Default	FALSE																
+BTS_Luna_04_Dialogue_01	Luna	See you in chem.	Default	FALSE																
+BTS_Elijah_01_Dialogue_02	Elijah	Dude, you look like shit. | Did you actually try skateboarding?	Default	FALSE																
+BTS_Zach_01_Dialogue_02	Zach	Yeah, but I think I should stand steady before trying an ollie again.	Default	FALSE																
+BTS_Elijah_02_Dialogue_02	Elijah	Bro! | An ollie? | You don't start with an ollie.	Default	FALSE																
+BTS_Zach_02_Dialogue_02	Zach	Well duh. | I learnt that the hard way.	Default	FALSE																
+BTS_Hazel_01	Hazel	Ok, so if I help Milo on Thursday. | Then I have time to practice on Wednesday. | And aft- | Wah! | Oh. | Hi, Mika. | You scared me. | Are you doing ok? | I think Mr. Williams should have told you face to face. | It was kind of a douchey thing to do in front of the entire class. | Anyways. | You can always come talk to me if there's anything bothering you.	Default	FALSE																
+BTS_Sophia_01_Speed_Default	Sophia	Hi! | That was kind of awkward. | But hey, you weren't expelled. | So, that's good. | I guess. | ... | Oh! Did you want to talk about anything? | Me first! Me first!	Default	FALSE																
+BTS_Sophia_02_Speed_Fast_SkipAuto	Sophia	Did you know that the parasite that is in The First of You actually exists? | It is called Ophiocordyceps unilateralis, but you can also call it by its cooler name. | Zombie-ant fungus. | It literally takes over the ant’s body. | I mean, it eats the ant from the inside out, but also controls it. | Eventually it kills it and the fungi grows out of the ant’s head. | The coolest part is that. | If the human body was colder. | That could actually happen to us. | And we would all become zombies. | Wouldn’t that be cool?	Fast	TRUE																
+BTS_Sophia_03_Speed_Default	Sophia	Hey, are you ok? | You look kind of dizzy.	Default	FALSE																
+BTS_Milo_01	Milo	Ahh! No! | Stupid boss! | Hi, Mika. | You caught me at a bad time. | I just can't take down this boss. | Could we talk later maybe?	Default	FALSE																
+BTS_Unknown_01_Cutscene_01	Unknown	No. | We need to be better.	Default	FALSE																
 BTS_Mika_01_Cutscene_01	Mika	Hello?	Default	FALSE																
-BTS_Unknown_02_Cutscene_01	Unknown	She can't call mom | Mom will get mad at us	Default	FALSE																
+BTS_Unknown_02_Cutscene_01	Unknown	She can't call mom. | Mom will get mad at us.	Default	FALSE																
 BTS_Mika_02_Cutscene_01	Mika	Are you alright?	Default	FALSE																
-BTS_Unknown_03_Cutscene_01	Unknown	No | She'll get mad at you! | You're the problem!	Default	FALSE																
+BTS_Unknown_03_Cutscene_01	Unknown	No. | She'll get mad at you! | You're the problem!	Default	FALSE																
 BTS_Mika_03_Cutscene_01	Mika	I swear I heard... | Shit! | I need to get to class!	Default	FALSE																
 BTS_Principal_01_Dialogue_03	Principal Smith	You’re late!	Default	FALSE																
-BTS_Mika_01_Dialogue_03	Mika	I was just going to the bathroom | I’m sorry	Default	FALSE																
-BTS_Principal_02_Dialogue_03	Principal Smith	You don’t have a hall- or bathroom pass | Which means you’re skipping class	Default	FALSE																
+BTS_Mika_01_Dialogue_03	Mika	I was just going to the bathroom. | I’m sorry.	Default	FALSE																
+BTS_Principal_02_Dialogue_03	Principal Smith	You don’t have a hall- or bathroom pass. | Which means you’re skipping class.	Default	FALSE																
 BTS_Mika_02_Dialogue_03	Mika	I’m not, I promi…	Default	TRUE																
-BTS_Principal_03_Dialogue_03	Principal Smith	Don’t you talk back to me, young lady	Default	FALSE																
+BTS_Principal_03_Dialogue_03	Principal Smith	Don’t you talk back to me, young lady.	Default	FALSE																
 BTS_Mika_03_Dialogue_03	Mika	...	Default	FALSE																
-BTS_Principal_04_Dialogue_03	Principal Smith	After lunch, you will sort cutlery in the kitchen | Maybe that will teach you a lesson	Default	FALSE																
+BTS_Principal_04_Dialogue_03	Principal Smith	After lunch, you will sort cutlery in the kitchen. | Maybe that will teach you a lesson.	Default	FALSE																
 BTS_Mika_04_Dialogue_03	Mika	...	Default	FALSE																
-BTS_Principal_05_Dialogue_03	Principal Smith	Good | Now get to class!	Default	FALSE																
-BTS_Ruby_01_Dialogue_04	Ruby	Ugh! | I hate this class! | Why can’t we have agility or something instead	Default	FALSE																
-BTS_Luna_01_Dialogue_04	Luna	You know both Hazel and Zach is allergic to dogs | So that would be a bad idea | Plus | It has nothing to do with chemistry 	Default	FALSE																
-BTS_Ruby_02_Dialogue_04	Ruby	You’re no fun | Mika! | We should have dogs here don’t you think?	Default	FALSE																
-BTS_Mika_01_Dialogue_04	Mika	What if the dogs eat something here? | We have a lot of chemicals here you know	Default	FALSE																
-BTS_Ruby_03_Dialogue_04	Ruby	Oh my God | You guys are both so boring!	Default	FALSE																
-BTS_Luna_02_Dialogue_04	Luna	Let’s focus on the project now	Default	FALSE																
-BTS_Zach_01_Dialogue_05	Zach	You guys! | I literally don’t understand any of this	Default	FALSE																
-BTS_Elijah_01_Dialogue_05	Elijah	That’s cause you’re a bonehead | And you don’t want to	Default	FALSE																
+BTS_Principal_05_Dialogue_03	Principal Smith	Good. | Now get to class!	Default	FALSE																
+BTS_Ruby_01_Dialogue_04	Ruby	Ugh! | I hate this class! | Why can’t we have agility or something instead?	Default	FALSE																
+BTS_Luna_01_Dialogue_04	Luna	You know both Hazel and Zach is allergic to dogs. | So that would be a bad idea. | Plus. | It has nothing to do with chemistry. 	Default	FALSE																
+BTS_Ruby_02_Dialogue_04	Ruby	You’re no fun. | Mika! | We should have dogs here don’t you think?	Default	FALSE																
+BTS_Mika_01_Dialogue_04	Mika	What if the dogs eat something here? | We have a lot of chemicals here you know.	Default	FALSE																
+BTS_Ruby_03_Dialogue_04	Ruby	Oh my God. | You guys are both so boring!	Default	FALSE																
+BTS_Luna_02_Dialogue_04	Luna	Let’s focus on the project now.	Default	FALSE																
+BTS_Zach_01_Dialogue_05	Zach	You guys! | I literally don’t understand any of this.	Default	FALSE																
+BTS_Elijah_01_Dialogue_05	Elijah	That’s cause you’re a bonehead. | And you don’t want to.	Default	FALSE																
 BTS_Milo_01_Dialogue_05	Milo	What happened to your palm, Zach?	Default	FALSE																
 BTS_Zach_02_Dialogue_05	Zach	Uhh, I trie…	Default	TRUE																
-BTS_Elijah_02_Dialogue_05	Elijah	 He sucks at skating | That’s what happened | He and the board didn’t have the “chemistry” | Heh..	Default	FALSE																
-BTS_Zach_03_Dialogue_05	Zach	Wow | That sure was a good try	Default	FALSE																
-BTS_Elijah_03_Dialogue_05	Elijah	Screw you	Default	FALSE																
+BTS_Elijah_02_Dialogue_05	Elijah	 He sucks at skating. | That’s what happened. | He and the board didn’t have the “chemistry”. | Heh..	Default	FALSE																
+BTS_Zach_03_Dialogue_05	Zach	Wow. | That sure was a good try.	Default	FALSE																
+BTS_Elijah_03_Dialogue_05	Elijah	Screw you.	Default	FALSE																
 BTS_Milo_01_Dialogue_06	Milo	What are you looking for, Mika?	Default	FALSE																
-BTS_Zach_01_Dialogue_06	Zach	I think you’re with Luna and Ruby | If they haven’t already told you	Default	FALSE																
+BTS_Zach_01_Dialogue_06	Zach	I think you’re with Luna and Ruby. | If they haven’t already told you.	Default	FALSE																
 BTS_Sophia_01_Dialogue_07	Sophia	Why can’t we have biology?	Default	FALSE																
-BTS_Hazel_01_Dialogue_07	Hazel	We had biology yesterday and we have biology tomorrow 	Default	FALSE																
-BTS_Sophia_02_Dialogue_07	Sophia	But why can’t we have it everyday | It’s not fair	Default	FALSE																
-BTS_Hazel_02_Dialogue_07	Hazel	That’s what university is for	Default	FALSE																
-BTS_Sophia_03_Dialogue_07	Sophia	Ugh	Default	FALSE																
+BTS_Hazel_01_Dialogue_07	Hazel	We had biology yesterday, and we have biology tomorrow.	Default	FALSE																
+BTS_Sophia_02_Dialogue_07	Sophia	But why can’t we have it everyday. | It’s not fair.	Default	FALSE																
+BTS_Hazel_02_Dialogue_07	Hazel	That’s what university is for.	Default	FALSE																
+BTS_Sophia_03_Dialogue_07	Sophia	Ugh.	Default	FALSE																
 BTS_Hazel_Dialogue_08	Hazel	Is something wrong, Mika? | Can we help you with something?	Default	FALSE																
-BTS_Sophia_Dialogue_08	Sophia	We’re just continuing the group project from last week | And you’re with Luna and Ruby, remember?	Default	FALSE																
-BTS_Teacher_01	Mr. Williams	Do you not remember what we did last week? | We’re working in groups and finding info about… | You know what | Talk with your group before asking me	Default	FALSE																
-BTS_Luna_Puzzle_01	Luna	Could you get three chemistry glasses for us please?	Default	FALSE																
-BTS_Teacher_AfterPuzzle	Mr. Williams	Good work today everyone | Now go eat some food | Class dismissed	Default	FALSE																
+BTS_Sophia_Dialogue_08	Sophia	We’re just continuing the group project from last week. | You’re with Luna and Ruby, remember?	Default	FALSE																
+BTS_Teacher_01	Mr. Williams	Do you not remember what we did last week? | We’re working in groups and finding info about… | You know what. | Talk with your group before asking me.	Default	FALSE																
+BTS_Luna_Puzzle_01	Luna	Could you get three chemistry glasses for us please? | They should be laying in here somewhere.	Default	FALSE																
+BTS_Teacher_AfterPuzzle	Mr. Williams	Good work today everyone. | Now go eat some food. | Class dismissed.	Default	FALSE																
 BTS_Luna_Dialogue_09	Luna	Was it really that bad, Ruby?	Default	FALSE																
-BTS_Ruby_Dialogue_09	Ruby	Of course not | But I still think it would be better to do something else | including dogs of course	Default	FALSE																
+BTS_Ruby_Dialogue_09	Ruby	Of course not. | But I still think it would be better to do something else. | Including dogs of course.	Default	FALSE																
 BTS_Hazel_01_Dialogue_10	Hazel	Sophia? | Why are you not tutoring anyone in biology?	Default	FALSE																
-BTS_Sophia_Dialogue_10	Sophia	Oh, that’s easy | I don’t want to	Default	FALSE																
-BTS_Hazel_02_Dialogue_10	Hazel	Huh | You know what? | That’s fair	Default	FALSE																
+BTS_Sophia_Dialogue_10	Sophia	Oh, that’s easy. | I don’t want to.	Default	FALSE																
+BTS_Hazel_02_Dialogue_10	Hazel	Huh. | You know what? | That’s fair.	Default	FALSE																
 BTS_Elijah_01_Dialogue_11	Elijah	Why do you pretend to be stupid?	Default	FALSE																
 BTS_Zach_01_Dialogue_11	Zach	Huh?	Default	FALSE																
 BTS_Elijah_02_Dialogue_11	Elijah	You literally know everything about this project! | You were just pretending! | I know what you’re trying to do!	Default	FALSE																
 BTS_Milo_Dialogue_11	Milo	I don’t think this is the right way to…	Default	TRUE																
-BTS_Zach_02_Dialogue_11	Zach	Like you don’t pretend every once in a while	Default	FALSE																
-BTS_Elijah_03_Dialogue_11	Elijah	HAH! | Of course I have	Default	FALSE																
-BTS_Teacher_01_AfterClass	Mr. Williams	Just four more hours | Then I can go home to my beautiful wife	Default	FALSE																
+BTS_Zach_02_Dialogue_11	Zach	Like you don’t pretend every once in a while.	Default	FALSE																
+BTS_Elijah_03_Dialogue_11	Elijah	HAH! | Of course I do.	Default	FALSE																
+BTS_Teacher_01_AfterClass	Mr. Williams	Just four more hours. | Then I can go home to my beautiful wife.	Default	FALSE																
 BTS_Teacher_02_AfterClass	Mr. Williams	Did you not hear me? | Go eat!	Default	FALSE																
-BTS_Luna_01_Dialogue_12	Luna	The food here sucks so many butts	Default	FALSE																
-BTS_Ruby_01_Dialogue_12	Ruby	Don’t judge	Default	FALSE																
+BTS_Luna_01_Dialogue_12	Luna	The food here sucks so many butts.	Default	FALSE																
+BTS_Ruby_01_Dialogue_12	Ruby	Don’t judge.	Default	FALSE																
 BTS_Luna_02_Dialogue_12	Luna	Which one?	Default	FALSE																
 BTS_Ruby_02_Dialogue_12	Ruby	Both the food | And people sucking b…	Default	FALSE																
-BTS_Luna_03_Dialogue_12	Luna	Ok | I get it	Default	FALSE																
-BTS_Ruby_03_Dialogue_12	Ruby	I wanna go home to Rufus | I miss his cute little face	Default	FALSE																
-BTS_Luna_04_Dialogue_12	Luna	Sure you do | Mika, you’re here | Ruby and I talked about self studying in the library after lunch | You can join us if you want to	Default	FALSE																
-BTS_Ruby_04_Dialogue_12	Ruby	Mhm	Default	FALSE																
-BTS_Hazel_01_Default_Speed	Hazel	Don’t stop me noooow | I’m bablebelabe, I’m having a baaaaall | Don’t stop me noooo ahhhh | Mika! You need to stop sneaking up on people like that | You’re going to give someone a heartattack	Default	FALSE																
-BTS_Sophia_01_Default_Speed	Sophia	Mika, hi | I’m just thinking about something | Imagine if all of your friends one day disappeared | Just like | POOF	Default	FALSE																
-BTS_Sophia_02_Fast_Speed	Sophia	Almost exactly like in the game TheFirst of You | All of Effie’s friends die | And when she finally has someone she trusts | They die as well | It’s quite sad actually | Imagine a whole life without any friends | That must be really really sad	Fast	TRUE																
+BTS_Luna_03_Dialogue_12	Luna	Ok. | I get it.	Default	FALSE																
+BTS_Ruby_03_Dialogue_12	Ruby	I wanna go home to Rufus. | I miss his cute little face.	Default	FALSE																
+BTS_Luna_04_Dialogue_12	Luna	Sure you do. | Mika, you’re here. | Ruby and I talked about self studying in the library after lunch. | You can join us if you want to.	Default	FALSE																
+BTS_Ruby_04_Dialogue_12	Ruby	Mhm.	Default	FALSE																
+BTS_Hazel_01_Default_Speed	Hazel	Don’t stop me noooow. | I’m bablebelabe, I’m having a baaaaall. | Don’t stop me noooow ahhhh. | Mika! You need to stop sneaking up on people like that. | You’re going to give someone a heartattack.	Default	FALSE																
+BTS_Sophia_01_Default_Speed	Sophia	Mika, hi. | I’m just thinking about something. | Imagine if all of your friends one day disappeared. | Just like. | POOF.	Default	FALSE																
+BTS_Sophia_02_Fast_Speed	Sophia	Almost exactly like in the game The First of You. | All of Effie’s friends die. | And when she finally has someone she trusts. | They die as well. | It’s quite sad actually. | Imagine a whole life without any friends. | That must be really really sad.	Fast	TRUE																
 BTS_Sophia_03_Default_Speed	Sophia	Right? | You look dizzy, have you eaten anything today?	Default	FALSE																
-BTS_Milo_01_Default_Speed	Milo	What?! | Oh | I didn’t see you | I was just continuing my game | I finally killed the boss | I needed to use a fire extinguisher on the dragon | I searched it up though so I can’t really take all the praise | … | Oh.. | My food is cold	Default	FALSE																
-BTS_Elijah_01_Dialogue_13	Elijah	I thought I got lucky today | Mrs. Smith didn’t take my board | Until now	Default	FALSE																
-BTS_Zach_01_Dialogue_13	Zach	Hahaha | Why do you keep bringing it to school anyway | You should know by now that she’s going to confiscate it	Default	FALSE																
-BTS_Elijah_02_Dialogue_13	Elijah	Hah | Don’t you mean confi*skate*	Default	FALSE																
+BTS_Milo_01_Default_Speed	Milo	What?! | Oh. | I didn’t see you. | I was just continuing my game. | I finally killed the boss. | I needed to use a fire extinguisher on the dragon. | I searched it up though so I can’t really take all the praise. | … | Oh.. | My food is cold.	Default	FALSE																
+BTS_Elijah_01_Dialogue_13	Elijah	I thought I got lucky today. | Mrs. Smith didn’t take my board. | ... | Until now.	Default	FALSE																
+BTS_Zach_01_Dialogue_13	Zach	Hahaha. | Why do you keep bringing it to school anyway. | You should know by now that she’s going to confiscate it.	Default	FALSE																
+BTS_Elijah_02_Dialogue_13	Elijah	Hah. | Don’t you mean confi*skate*.	Default	FALSE																
 BTS_Zach_02_Dialogue_13	Zach	...	Default	FALSE																
-BTS_Elijah_03_Dialogue_13	Elijah	Oh come on | That was a good one	Default	FALSE																
-BTS_Canteen_Mika_Cant_Leave	Mika	I have to sort the cutlery before leaving	Default	FALSE																
+BTS_Elijah_03_Dialogue_13	Elijah	Oh, come on. | That was a good one.	Default	FALSE																
+BTS_Canteen_Mika_Cant_Leave	Mika	I have to sort the cutlery before leaving.	Default	FALSE																
 																				
-ITS_Sophia_Dialogue_01	Sophia	Mika is acting so weird	Default	FALSE																
-ITS_Hazel_Dialogue_01	Hazel	I know right | There must be something wrong with her	Default	FALSE																
+ITS_Sophia_Dialogue_01	Sophia	Mika is acting so weird.	Default	FALSE																
+ITS_Hazel_Dialogue_01	Hazel	I know right. | There must be something wrong with her.	Default	FALSE																
 ITS_Zach_Dialogue_02	Zach	What is wrong with her?	Default	FALSE																
-ITS_Elijah_Dialogue_02	Elijah	I don’t know, but don’t speak so loud | She might hear you	Default	FALSE																
-ITS_Milo	Milo	I don’t really want to talk now, Mika | Please don’t bother me	Default	FALSE																
+ITS_Elijah_Dialogue_02	Elijah	I don’t know, but don’t speak so loud. | She might hear you.	Default	FALSE																
+ITS_Milo	Milo	I don’t really want to talk now, Mika. | Please don’t bother me.	Default	FALSE																
 																				
-TSW_Ruby_01_Cutscene_01	Ruby	Mika, you’re acting weird again | We tried to ignore it, but you’re completely out of yourself	Default	FALSE																
-TSW_Luna_01_Cutscene_01	Luna	You’re going to hurt yourself again | You’re scaring us	Default	FALSE																
-TSW_Ruby_02_Cutscene_01	Ruby	Why didn’t you talk with your doctor after you literally almost died last year? | That’s kind of doctors are for	Default	FALSE																
-TSW_Luna_02_Cutscene_01	Luna	Are you even listening, Mika?! | You almost killed yourself! | We know it wasn’t an accident | We know when you lie	Default	FALSE																
-TSW_Ruby_03_Cutscene_01	Ruby	And you’ve been doing it a lot lately | Just like last time	Default	FALSE																
-TSW_Ruby_04_Cutscene_01	Ruby	What the hell, Mika? | You just hurt Luna	Default	FALSE																
+TSW_Ruby_01_Cutscene_01	Ruby	Mika, you’re acting weird again. | We tried to ignore it, but you’re completely out of yourself.	Default	FALSE																
+TSW_Luna_01_Cutscene_01	Luna	You’re going to hurt yourself again. | You’re scaring us.	Default	FALSE																
+TSW_Ruby_02_Cutscene_01	Ruby	Why didn’t you talk with your doctor after you literally almost died last year? | That’s kind of doctors are for.	Default	FALSE																
+TSW_Luna_02_Cutscene_01	Luna	Are you even listening, Mika?! | You almost killed yourself! | We know it wasn’t an accident. | We know when you lie.	Default	FALSE																
+TSW_Ruby_03_Cutscene_01	Ruby	And you’ve been doing it a lot lately. | Just like last time.	Default	FALSE																
+TSW_Ruby_04_Cutscene_01	Ruby	What the hell, Mika? | You just hurt Luna.	Default	FALSE																
 																				
-TRB_Ruby_01_Cutscene_01	Ruby	What the hell have you done?! | … | Luna… | I'm gonna be sick	Default	FALSE																
+TRB_Ruby_01_Cutscene_01	Ruby	What the hell have you done?! | … | Luna… | I'm gonna be sick.	Default	FALSE																
 TRB_Teacher_01_Cutscene_01	Mr. Williams	Oh.. God…	Slow	FALSE																
 																				
-END_Unknown_01	Unknown	Mika | Mika, wake up	Slow	FALSE																
-END_Nurse_01	Nurse	Morning, Mika | Dr. Hill is ready to see you	Default	FALSE																
+END_Unknown_01	Unknown	Mika. | Mika, wake up.	Slow	FALSE																
+END_Nurse_01	Nurse	Morning, Mika. | Dr. Hill is ready to see you.	Default	FALSE																
 																				
 Objects																				
-MikasRoom_Bed	Mika	I just wanna crawl back in	Default	FALSE																
-MikasRoom_Clothes	Mika	I don’t have the energy right now	Default	FALSE																
-MikasRoom_RecordPlayer	Mika	I forgot to remove my favourite vinyl | Texasication by The Green Spicy Jalapeños	Default	FALSE																
-MikasRoom_Desk	Mika	A poem.. Wow I’m depressing	Default	FALSE																
-MikasRoom_Plant	Mika	It’s fake	Default	FALSE																
-MikasRoom_Guitar	Mika	I haven't played in a long time | Maybe I should pick you up sometime	Default	FALSE																
-MikasRoom_Game	Mika	I wish I could sit here all day	Default	FALSE																
+MikasRoom_Bed	Mika	I just wanna crawl back in.	Default	FALSE																
+MikasRoom_Clothes	Mika	I don’t have the energy right now.	Default	FALSE																
+MikasRoom_RecordPlayer	Mika	I forgot to remove my favourite vinyl. | Texasication by The Green Spicy Jalapeños.	Default	FALSE																
+MikasRoom_Desk	Mika	A poem.. Wow I’m depressing.	Default	FALSE																
+MikasRoom_Plant	Mika	It’s fake.	Default	FALSE																
+MikasRoom_Guitar	Mika	I haven't played in a long time. | Maybe I should pick you up sometime.	Default	FALSE																
+MikasRoom_Game	Mika	I wish I could sit here all day.	Default	FALSE																
 																				
-Hallway_Windows	Mika	It’s a beautiful day outside	Default	FALSE																
+Hallway_Windows	Mika	It’s a beautiful day outside.	Default	FALSE																
 Hallway_PostBoard_1		“If you have legs you can run. Join the track team!”	Default	FALSE																
 Hallway_PostBoard_2		“Meowtsune Mewku concert 20.06.xx”	Default	FALSE																
 Hallway_PostBoard_3		“Are you tired of hanging around? Join the literature club!”	Default	FALSE																
 Hallway_PostBoard_4		“Eat at the cantine! (We have taco baguettes on fridays)”	Default	FALSE																
 Hallway_PostBoard_5		“Remember to sign up to this years GENDER REVEAL PROM”	Default	FALSE																
-Hallway_Clock	Mika	Time goes by, so slowly	Default	FALSE																
-Hallway_Plant_1	Mika	It’s a plant	Default	FALSE																
-Hallway_Plant_2	Mika	It’s another plant	Default	FALSE																
-Hallway_Plant_3	Mika	It’s plant pot.. with a pot inside	Default	FALSE																
-Hallway_Lockers	Mika	It’s locked	Default	FALSE																
-Hallway_TrashBin	Mika	I don’t feel like digging through the trash today	Default	FALSE																
+Hallway_Clock	Mika	Time goes by, so slowly.	Default	FALSE																
+Hallway_Plant_1	Mika	It’s a plant.	Default	FALSE																
+Hallway_Plant_2	Mika	It’s another plant.	Default	FALSE																
+Hallway_Plant_3	Mika	It’s plant pot.. with a pot inside.	Default	FALSE																
+Hallway_Lockers	Mika	It’s locked.	Default	FALSE																
+Hallway_TrashBin	Mika	I don’t feel like digging through the trash today.	Default	FALSE																
 																				
-PrincipalsOffice_Trophies	Mika	Trophies from when Mrs. Smith went to school	Default	FALSE																
-PrincipalsOffice_Window	Mika	I wanna go home	Default	FALSE																
+PrincipalsOffice_Trophies	Mika	Trophies from when Mrs. Smith went to school.	Default	FALSE																
+PrincipalsOffice_Window	Mika	I wanna go home.	Default	FALSE																
 																				
-Bathroom_Mirror	Mika	It’s me	Default	FALSE																
-Bathroom_BathroomStall	Mika	I don’t have to go	Default	FALSE																
-Bathroom_DarkRoom	Mika	Ugh, they need to fix this light	Default	FALSE																
+Bathroom_Mirror	Mika	It’s me.	Default	FALSE																
+Bathroom_BathroomStall	Mika	I don’t have to go.	Default	FALSE																
+Bathroom_DarkRoom	Mika	Ugh, they need to fix this light.	Default	FALSE																
 																				
-Lab_Table	Mika	That sure is a table	Default	FALSE																
-Lab_FireHydrant	Mika	My noodle arms can’t lift this	Default	FALSE																
-Lab_Plant	Mika	There’s so many plants in this school	Default	FALSE																
+Lab_Table	Mika	That sure is a table.	Default	FALSE																
+Lab_FireHydrant	Mika	My noodle arms can’t lift this.	Default	FALSE																
+Lab_Plant	Mika	There’s so many plants in this school.	Default	FALSE																
 Lab_Blackboard	Mika	Boring!	Default	FALSE																
-Lab_Shelf	Mika	There are some chemicals on the shelf	Default	FALSE																
-Lab_Pictures	Mika	I don’t remember any of this, whoops	Default	FALSE																
-Lab_Tube	Mika	I have no idea what this is	Default	FALSE																
+Lab_Shelf	Mika	There are some chemicals on the shelf.	Default	FALSE																
+Lab_Pictures	Mika	I don’t remember any of this, whoops.	Default	FALSE																
+Lab_Tube	Mika	I have no idea what this is.	Default	FALSE																
 																				
 Library_BookShelfs	Mika	I don’t wanna read!	Default	FALSE																
-Library_Computers	Mika	The last search is “What happens if zombies actually become alive” | It’s not hard to guess who was here	Default	FALSE																
-Library_Sofa	Mika	Looks comfy	Default	FALSE																
+Library_Computers	Mika	The last search is “What happens if zombies actually become alive”. | It’s not hard to guess who was here.	Default	FALSE																
+Library_Sofa	Mika	Looks comfy.	Default	FALSE																
 																				
-Canteen_VendingMachine	Mika	If only I had some money	Default	FALSE																
-Canteen_FoodTables	Mika	I don’t have the appetite right now	Default	FALSE																
-Canteen_FoodTray	Mika	Just some food	Default	FALSE																
-Canteen_WaterDispenser	Mika	It’s broken, it’s been like that for a while	Default	FALSE																
-Canteen_TrashBin	Mika	Someone didn’t like their food	Default	FALSE																
+Canteen_VendingMachine	Mika	If only I had some money.	Default	FALSE																
+Canteen_FoodTables	Mika	I don’t have the appetite right now.	Default	FALSE																
+Canteen_FoodTray	Mika	Just some food.	Default	FALSE																
+Canteen_WaterDispenser	Mika	It’s broken, it’s been like that for a while.	Default	FALSE																
+Canteen_TrashBin	Mika	Someone didn’t like their food.	Default	FALSE																
 Canteen_Plant	Mika	So. Many. Plants.	Default	FALSE																

@@ -16,9 +16,7 @@ MonoBehaviour:
   characterName: Mr. Williams
   characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
   sentences:
-  - Don't worry, I did nothing
-  - She came to me and asked to see you
-  - Now please
-  - Let me continue my class
+  - Her orders, not mine.
+  - Now please, let me continue my class.
   textSpeed: 0.05
   endAutomatically: 0

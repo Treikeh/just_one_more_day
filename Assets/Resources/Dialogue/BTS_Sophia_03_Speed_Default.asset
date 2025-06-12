@@ -17,6 +17,6 @@ MonoBehaviour:
   characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   sentences:
   - Hey, are you ok?
-  - You look kind of dizzy
+  - You look kind of dizzy.
   textSpeed: 0.05
   endAutomatically: 0

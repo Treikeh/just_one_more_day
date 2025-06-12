@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - B-but please
-  - Listen to me
+  - B-but please.
+  - Listen to me.
   textSpeed: 0.05
   endAutomatically: 0

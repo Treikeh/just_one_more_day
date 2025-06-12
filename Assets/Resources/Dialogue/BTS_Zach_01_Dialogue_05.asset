@@ -17,6 +17,6 @@ MonoBehaviour:
   characterPortrait: {fileID: 2443202940234210757, guid: 3a0046d18bb188dae988268678ca0499, type: 3}
   sentences:
   - You guys!
-  - "I literally don\u2019t understand any of this"
+  - "I literally don\u2019t understand any of this."
   textSpeed: 0.05
   endAutomatically: 0

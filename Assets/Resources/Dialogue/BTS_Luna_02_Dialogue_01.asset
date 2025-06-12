@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Luna
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
   sentences:
-  - Yeah! We talked about it all class
-  - Getting sent to the principal because you're a little late
-  - Is kind of an overreaction
+  - Yeah! We talked about it all class.
+  - Getting sent to the principal because you're a little late.
+  - It's kind of an overreaction.
   textSpeed: 0.05
   endAutomatically: 0

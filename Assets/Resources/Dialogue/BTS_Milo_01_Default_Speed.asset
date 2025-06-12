@@ -17,14 +17,14 @@ MonoBehaviour:
   characterPortrait: {fileID: -8239315831306480127, guid: 3e4f47c750e177eaa90a3f0f45dc8990, type: 3}
   sentences:
   - What?!
-  - Oh
-  - "I didn\u2019t see you"
-  - I was just continuing my game
-  - I finally killed the boss
-  - I needed to use a fire extinguisher on the dragon
-  - "I searched it up though so I can\u2019t really take all the praise"
+  - Oh.
+  - "I didn\u2019t see you."
+  - I was just continuing my game.
+  - I finally killed the boss.
+  - I needed to use a fire extinguisher on the dragon.
+  - "I searched it up though so I can\u2019t really take all the praise."
   - "\u2026"
   - Oh..
-  - My food is cold
+  - My food is cold.
   textSpeed: 0.05
   endAutomatically: 0

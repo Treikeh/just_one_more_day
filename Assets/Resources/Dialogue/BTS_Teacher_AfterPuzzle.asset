@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Mr. Williams
   characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
   sentences:
-  - Good work today everyone
-  - Now go eat some food
-  - Class dismissed
+  - Good work today everyone.
+  - Now go eat some food.
+  - Class dismissed.
   textSpeed: 0.05
   endAutomatically: 0

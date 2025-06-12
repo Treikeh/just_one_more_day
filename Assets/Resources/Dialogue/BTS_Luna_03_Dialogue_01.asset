@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Luna
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
   sentences:
-  - Whatever
+  - Whatever.
   - We're here for you either way!
-  - And we'll support you in any way we can
+  - And we'll support you in any way we can.
   textSpeed: 0.05
   endAutomatically: 0

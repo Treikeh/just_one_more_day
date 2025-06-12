@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Ruby
   characterPortrait: {fileID: -3827998281672765223, guid: d0ca327462f2a8b1fa8efe91e87299b9, type: 3}
   sentences:
-  - "Don\u2019t judge"
+  - "Don\u2019t judge."
   textSpeed: 0.05
   endAutomatically: 0

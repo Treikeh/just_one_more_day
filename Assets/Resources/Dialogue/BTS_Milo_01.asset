@@ -18,9 +18,9 @@ MonoBehaviour:
   sentences:
   - Ahh! No!
   - Stupid boss!
-  - Hi, Mika
-  - You caught me at a bad time
-  - I just can't take down this boss
+  - Hi, Mika.
+  - You caught me at a bad time.
+  - I just can't take down this boss.
   - Could we talk later maybe?
   textSpeed: 0.05
   endAutomatically: 0

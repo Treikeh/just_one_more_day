@@ -18,7 +18,7 @@ MonoBehaviour:
   sentences:
   - Are you even listening, Mika?!
   - You almost killed yourself!
-  - "We know it wasn\u2019t an accident"
-  - We know when you lie
+  - "We know it wasn\u2019t an accident."
+  - We know when you lie.
   textSpeed: 0.05
   endAutomatically: 0

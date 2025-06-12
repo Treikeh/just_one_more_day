@@ -16,7 +16,6 @@ MonoBehaviour:
   characterName: Principal Smith
   characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   sentences:
-  - That is your cue
-  - You are dismissed
+  - You are dismissed.
   textSpeed: 0.05
   endAutomatically: 0

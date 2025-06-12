@@ -18,6 +18,6 @@ MonoBehaviour:
   sentences:
   - "Why didn\u2019t you talk with your doctor after you literally almost died last
     year?"
-  - "That\u2019s kind of doctors are for"
+  - "That\u2019s kind of doctors are for."
   textSpeed: 0.05
   endAutomatically: 0

@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Principal Smith
   characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   sentences:
-  - "Don\u2019t you talk back to me, young lady"
+  - "Don\u2019t you talk back to me, young lady."
   textSpeed: 0.05
   endAutomatically: 0

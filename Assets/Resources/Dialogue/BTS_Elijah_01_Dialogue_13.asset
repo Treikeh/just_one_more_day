@@ -16,8 +16,9 @@ MonoBehaviour:
   characterName: Elijah
   characterPortrait: {fileID: -5069966965014826970, guid: db28b44e36e3bd5c18b374082d9f1a8e, type: 3}
   sentences:
-  - I thought I got lucky today
-  - "Mrs. Smith didn\u2019t take my board"
-  - Until now
+  - I thought I got lucky today.
+  - "Mrs. Smith didn\u2019t take my board."
+  - ...
+  - Until now.
   textSpeed: 0.05
   endAutomatically: 0

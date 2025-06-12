@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
-  - "That\u2019s what university is for"
+  - "That\u2019s what university is for."
   textSpeed: 0.05
   endAutomatically: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterProfile: {fileID: 11400000, guid: a170e942df9619b07920b3e3db051b17, type: 2}
   characterName: Mom
-  characterPortrait: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  characterPortrait: {fileID: 8874177258785407260, guid: 495f948b38992a803b3114fec65e8418, type: 3}
   sentences:
   - Mika!
   - Mika you need to wake up!

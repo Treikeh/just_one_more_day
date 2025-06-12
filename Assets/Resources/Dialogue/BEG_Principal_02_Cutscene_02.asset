@@ -16,15 +16,15 @@ MonoBehaviour:
   characterName: Principal Smith
   characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   sentences:
-  - I know school can be boring at your age
-  - You just want to sleep and play video games or watch TV all day
-  - I've been thinking, pondering even
-  - And I've come to the conclusion
-  - It is not accepteble
-  - Skipping and coming late, doing the bare minimum
-  - That is not how I want my students to behave
-  - Take this as a final warning, Mika
-  - This is the last time you're coming late to school
-  - Before I will have to contact your mother
+  - I know school can be boring at your age.
+  - You just want to sleep and play video games, or watch TV all day.
+  - I've been thinking, pondering even.
+  - And I've come to the conclusion.
+  - It is not accepteble.
+  - Skipping and coming late, doing the bare minimum.
+  - That is not how I want my students to behave.
+  - Take this as a final warning, Mika.
+  - This is the last time you're coming late to school.
+  - Before I will have to contact your mother.
   textSpeed: 0.05
   endAutomatically: 0

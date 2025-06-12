@@ -18,15 +18,15 @@ MonoBehaviour:
   sentences:
   - Did you know that the parasite that is in The First of You actually exists?
   - It is called Ophiocordyceps unilateralis, but you can also call it by its cooler
-    name
-  - Zombie-ant fungus
-  - "It literally takes over the ant\u2019s body"
-  - I mean, it eats the ant from the inside out, but also controls it
-  - "Eventually it kills it and the fungi grows out of the ant\u2019s head"
-  - The coolest part is that
-  - If the human body was colder
-  - That could actually happen to us
-  - And we would all become zombies
+    name.
+  - Zombie-ant fungus.
+  - "It literally takes over the ant\u2019s body."
+  - I mean, it eats the ant from the inside out, but also controls it.
+  - "Eventually it kills it and the fungi grows out of the ant\u2019s head."
+  - The coolest part is that.
+  - If the human body was colder.
+  - That could actually happen to us.
+  - And we would all become zombies.
   - "Wouldn\u2019t that be cool?"
   textSpeed: 0.01
   endAutomatically: 1

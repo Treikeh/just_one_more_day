@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Ruby
   characterPortrait: {fileID: -3827998281672765223, guid: d0ca327462f2a8b1fa8efe91e87299b9, type: 3}
   sentences:
-  - "Mika, you\u2019re acting weird again"
-  - "We tried to ignore it, but you\u2019re completely out of yourself"
+  - "Mika, you\u2019re acting weird again."
+  - "We tried to ignore it, but you\u2019re completely out of yourself."
   textSpeed: 0.05
   endAutomatically: 0
