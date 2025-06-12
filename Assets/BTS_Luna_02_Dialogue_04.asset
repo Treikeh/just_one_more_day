@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Luna
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
   sentences:
-  - "Let\u2019s focus on the project now"
+  - "Let\u2019s focus on the project now."
   textSpeed: 0.05
   endAutomatically: 0

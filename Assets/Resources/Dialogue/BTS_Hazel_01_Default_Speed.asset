@@ -16,10 +16,10 @@ MonoBehaviour:
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
-  - "Don\u2019t stop me noooow"
-  - "I\u2019m bablebelabe, I\u2019m having a baaaaall"
-  - "Don\u2019t stop me noooo ahhhh"
-  - Mika! You need to stop sneaking up on people like that
-  - "You\u2019re going to give someone a heartattack"
+  - "Don\u2019t stop me noooow."
+  - "I\u2019m bablebelabe, I\u2019m having a baaaaall."
+  - "Don\u2019t stop me noooow ahhhh."
+  - Mika! You need to stop sneaking up on people like that.
+  - "You\u2019re going to give someone a heartattack."
   textSpeed: 0.05
   endAutomatically: 0

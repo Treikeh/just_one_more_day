@@ -18,6 +18,6 @@ MonoBehaviour:
   sentences:
   - Bro!
   - An ollie?
-  - You don't start with an ollie
+  - You don't start with an ollie.
   textSpeed: 0.05
   endAutomatically: 0

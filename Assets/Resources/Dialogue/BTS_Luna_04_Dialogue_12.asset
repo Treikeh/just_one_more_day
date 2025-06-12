@@ -16,9 +16,9 @@ MonoBehaviour:
   characterName: Luna
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
   sentences:
-  - Sure you do
-  - "Mika, you\u2019re here"
-  - Ruby and I talked about self studying in the library after lunch
-  - You can join us if you want to
+  - Sure you do.
+  - "Mika, you\u2019re here."
+  - Ruby and I talked about self studying in the library after lunch.
+  - You can join us if you want to.
   textSpeed: 0.05
   endAutomatically: 0

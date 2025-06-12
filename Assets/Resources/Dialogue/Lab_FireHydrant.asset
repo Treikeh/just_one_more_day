@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - "My noodle arms can\u2019t lift this"
+  - "My noodle arms can\u2019t lift this."
   textSpeed: 0.05
   endAutomatically: 0

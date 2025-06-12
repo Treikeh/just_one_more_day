@@ -16,9 +16,9 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - No, please
-  - You don't understand
-  - In the morning when I wake up
+  - No, please!
+  - You don't understand.
+  - In the morning when I wake up.
   - It is physically impossiple for me to...
   textSpeed: 0.05
   endAutomatically: 0

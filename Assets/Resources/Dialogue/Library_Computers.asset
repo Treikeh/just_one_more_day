@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - "The last search is \u201CWhat happens if zombies actually become alive\u201D"
-  - "It\u2019s not hard to guess who was here"
+  - "The last search is \u201CWhat happens if zombies actually become alive\u201D."
+  - "It\u2019s not hard to guess who was here."
   textSpeed: 0.05
   endAutomatically: 0

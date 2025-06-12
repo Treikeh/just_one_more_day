@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Mr. Williams
   characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
   sentences:
-  - It is alright
-  - I have already spoken to the principal
-  - She wants to see you in her office
+  - It is alright.
+  - I have already spoken to the Principal.
+  - She wants to see you in her office.
   textSpeed: 0.05
   endAutomatically: 0

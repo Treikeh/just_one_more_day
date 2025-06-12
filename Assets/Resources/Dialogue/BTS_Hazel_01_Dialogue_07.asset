@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
-  - 'We had biology yesterday and we have biology tomorrow '
+  - We had biology yesterday, and we have biology tomorrow.
   textSpeed: 0.05
   endAutomatically: 0

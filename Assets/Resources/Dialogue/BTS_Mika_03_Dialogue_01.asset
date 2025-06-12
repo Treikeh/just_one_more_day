@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - Nah
-  - It's ok
-  - I just need a little time to myself
+  - Nah.
+  - It's ok.
+  - I just need a little time to myself.
   textSpeed: 0.05
   endAutomatically: 0

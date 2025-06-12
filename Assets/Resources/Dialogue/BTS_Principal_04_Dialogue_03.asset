@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Principal Smith
   characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   sentences:
-  - After lunch, you will sort cutlery in the kitchen
-  - Maybe that will teach you a lesson
+  - After lunch, you will sort cutlery in the kitchen.
+  - Maybe that will teach you a lesson.
   textSpeed: 0.05
   endAutomatically: 0

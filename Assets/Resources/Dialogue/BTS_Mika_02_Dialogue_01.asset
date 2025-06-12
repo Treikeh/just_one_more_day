@@ -17,7 +17,7 @@ MonoBehaviour:
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
   - Thank you!
-  - I love you guys
-  - I have to freshen up a bit in the bathroom before class
+  - I love you guys.
+  - I have to freshen up a bit in the bathroom before class.
   textSpeed: 0.05
   endAutomatically: 0

@@ -17,5 +17,6 @@ MonoBehaviour:
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
   sentences:
   - Could you get three chemistry glasses for us please?
+  - They should be laying in here somewhere.
   textSpeed: 0.05
   endAutomatically: 0

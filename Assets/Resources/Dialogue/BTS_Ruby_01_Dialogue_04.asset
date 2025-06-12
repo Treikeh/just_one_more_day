@@ -18,6 +18,6 @@ MonoBehaviour:
   sentences:
   - Ugh!
   - I hate this class!
-  - "Why can\u2019t we have agility or something instead"
+  - "Why can\u2019t we have agility or something instead?"
   textSpeed: 0.05
   endAutomatically: 0

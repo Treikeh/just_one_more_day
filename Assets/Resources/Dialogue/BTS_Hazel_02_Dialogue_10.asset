@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
-  - Huh
+  - Huh.
   - You know what?
-  - "That\u2019s fair"
+  - "That\u2019s fair."
   textSpeed: 0.05
   endAutomatically: 0

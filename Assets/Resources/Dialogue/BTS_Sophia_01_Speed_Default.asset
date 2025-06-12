@@ -17,10 +17,10 @@ MonoBehaviour:
   characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   sentences:
   - Hi!
-  - That was kind of awkward
-  - Bet hey, you weren't expelled
-  - So, that's good
-  - I guess
+  - That was kind of awkward.
+  - But hey, you weren't expelled.
+  - So, that's good.
+  - I guess.
   - ...
   - Oh! Did you want to talk about anything?
   - Me first! Me first!

@@ -18,7 +18,7 @@ MonoBehaviour:
   sentences:
   - Do you not remember what we did last week?
   - "We\u2019re working in groups and finding info about\u2026"
-  - You know what
-  - Talk with your group before asking me
+  - You know what.
+  - Talk with your group before asking me.
   textSpeed: 0.05
   endAutomatically: 0

@@ -16,17 +16,17 @@ MonoBehaviour:
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
   sentences:
-  - Ok, so if I help Milo on Thursday
-  - Then I have time to practice on Wednesday
+  - Ok, so if I help Milo on Thursday.
+  - Then I have time to practice on Wednesday.
   - And aft-
   - Wah!
-  - Oh
-  - Hi, Mika
-  - You scared me
+  - Oh.
+  - Hi, Mika.
+  - You scared me.
   - Are you doing ok?
-  - I think Mr. Williams should have told you face to face
-  - It was kind of a douchey thing to do in front of the entire class
-  - Anyways
-  - You can always come talk to me if there's anything bothering you
+  - I think Mr. Williams should have told you face to face.
+  - It was kind of a douchey thing to do in front of the entire class.
+  - Anyways.
+  - You can always come talk to me if there's anything bothering you.
   textSpeed: 0.05
   endAutomatically: 0

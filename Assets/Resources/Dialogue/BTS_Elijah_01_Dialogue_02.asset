@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Elijah
   characterPortrait: {fileID: -5069966965014826970, guid: db28b44e36e3bd5c18b374082d9f1a8e, type: 3}
   sentences:
-  - Dude, you look like shit
+  - Dude, you look like shit.
   - Did you actually try skateboarding?
   textSpeed: 0.05
   endAutomatically: 0

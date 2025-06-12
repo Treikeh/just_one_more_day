@@ -16,9 +16,9 @@ MonoBehaviour:
   characterName: Luna
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
   sentences:
-  - You know both Hazel and Zach is allergic to dogs
-  - So that would be a bad idea
-  - Plus
-  - 'It has nothing to do with chemistry '
+  - You know both Hazel and Zach is allergic to dogs.
+  - So that would be a bad idea.
+  - Plus.
+  - 'It has nothing to do with chemistry. '
   textSpeed: 0.05
   endAutomatically: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Mika
   characterPortrait: {fileID: 1819049650608724132, guid: 2c22a4854aabda1c298ede2f05e642ec, type: 3}
   sentences:
-  - I haven't played in a long time
-  - Maybe I should pick you up sometime
+  - I haven't played in a long time.
+  - Maybe I should pick you up sometime.
   textSpeed: 0.05
   endAutomatically: 0

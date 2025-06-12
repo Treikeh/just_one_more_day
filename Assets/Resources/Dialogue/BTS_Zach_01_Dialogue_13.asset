@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: Zach
   characterPortrait: {fileID: 2443202940234210757, guid: 3a0046d18bb188dae988268678ca0499, type: 3}
   sentences:
-  - Hahaha
-  - Why do you keep bringing it to school anyway
-  - "You should know by now that she\u2019s going to confiscate it"
+  - Hahaha.
+  - Why do you keep bringing it to school anyway.
+  - "You should know by now that she\u2019s going to confiscate it."
   textSpeed: 0.05
   endAutomatically: 0

@@ -16,6 +16,6 @@ MonoBehaviour:
   characterName: Zach
   characterPortrait: {fileID: 2443202940234210757, guid: 3a0046d18bb188dae988268678ca0499, type: 3}
   sentences:
-  - Yeah, but I think I should stand steady before trying an ollie again
+  - Yeah, but I think I should stand steady before trying an ollie again.
   textSpeed: 0.05
   endAutomatically: 0

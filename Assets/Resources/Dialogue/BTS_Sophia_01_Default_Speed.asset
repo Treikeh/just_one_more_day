@@ -16,10 +16,10 @@ MonoBehaviour:
   characterName: Sophia
   characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
   sentences:
-  - Mika, hi
-  - "I\u2019m just thinking about something"
-  - Imagine if all of your friends one day disappeared
-  - Just like
-  - POOF
+  - Mika, hi.
+  - "I\u2019m just thinking about something."
+  - Imagine if all of your friends one day disappeared.
+  - Just like.
+  - POOF.
   textSpeed: 0.05
   endAutomatically: 0

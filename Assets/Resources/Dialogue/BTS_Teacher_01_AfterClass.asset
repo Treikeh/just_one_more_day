@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Mr. Williams
   characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
   sentences:
-  - Just four more hours
-  - Then I can go home to my beautiful wife
+  - Just four more hours.
+  - Then I can go home to my beautiful wife.
   textSpeed: 0.05
   endAutomatically: 0
