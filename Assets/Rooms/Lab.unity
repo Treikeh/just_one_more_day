@@ -1993,7 +1993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2672,7 +2672,7 @@ PlayableDirector:
   m_GameObject: {fileID: 513563512}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 28fccb5fb23ce7a20b961dc1f50b57bc, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: efee915b8684bb5079ff4304cb0ca463, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -4771,7 +4771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueList:
-  - {fileID: 11400000, guid: 4c5cce211d124b58d94d47c0abfe7ace, type: 2}
+  - {fileID: 11400000, guid: 98a8bb9924d7d1e26ab8df8eb0af8576, type: 2}
   dialogueFinishedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4780,7 +4780,7 @@ MonoBehaviour:
         m_MethodName: Play
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4521cbbc5c26ab13c8fe32177e8672f2, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 28fccb5fb23ce7a20b961dc1f50b57bc, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Playables.PlayableAsset,
             UnityEngine
           m_IntArgument: 0
