@@ -7,6 +7,7 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     public event Action<Quest> OnQuestStateChanged;
+    public event Action<int> OnStoryProgressChanged;
 
     public static QuestManager Instance { get; private set; }
     public Dictionary<string, Quest> ActiveQuests = new();
@@ -125,6 +126,7 @@ public class QuestManager : MonoBehaviour
         if (quest.info.mandatoryQuest)
         {
             storyProgress++;
+            OnStoryProgressChanged.Invoke(storyProgress);
         }
     }
 

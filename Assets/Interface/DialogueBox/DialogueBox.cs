@@ -17,6 +17,9 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private TMP_Text characterName;
     [SerializeField] private TMP_Text dialogueSentence;
     [SerializeField] private Animator animator;
+    [Range(0.8f, 1.4f)] [SerializeField] private float dialogueSoundMinPitch = 0.9f;
+    [Range(0.8f, 1.4f)] [SerializeField] private float dialogueSoundMaxPitch = 1.1f;
+    [SerializeField] private AudioSource dialogueSound;
 
     private bool endAutomatically = false;
     private float textSpeed;
@@ -40,6 +43,7 @@ public class DialogueBox : MonoBehaviour
         // Check if the sentece is still being animated and if so stop the animation and display the entire sentence
         if (sentenceAnimation != null)
         {
+            dialogueSound.Stop();
             // Stop sentence animation
             StopCoroutine(sentenceAnimation);
             sentenceAnimation = null;
@@ -110,6 +114,8 @@ public class DialogueBox : MonoBehaviour
         // Stop sentence animation
         StopAllCoroutines();
 
+        // Start playing dialogue audio
+        dialogueSound.Play();
         // Update display
         textSpeed = dialogue.textSpeed;
         endAutomatically = dialogue.endAutomatically;
@@ -128,14 +134,52 @@ public class DialogueBox : MonoBehaviour
         foreach(char letter in sentence.ToCharArray())
         {
             dialogueSentence.text += letter;
+            dialogueSound.pitch = Random.Range(dialogueSoundMinPitch, dialogueSoundMaxPitch);
+            //dialogueSound.pitch = GetPitchByLetter(letter);
+            //dialogueSound.Play();
             yield return new WaitForSeconds(textSpeed);
         }
+        dialogueSound.Stop();
         // Remove reference to coroutine when it has finished
         sentenceAnimation = null;
         if (endAutomatically)
         {
             DisplayNextSentence();
         }
+    }
+
+    private float GetPitchByLetter(char letter)
+    {
+        return letter switch
+        {
+            'A' => 1f,
+            'B' => 1f,
+            'C' => 1f,
+            'D' => 1f,
+            'E' => 1f,
+            'F' => 1f,
+            'G' => 1f,
+            'H' => 1f,
+            'I' => 1f,
+            'J' => 1f,
+            'K' => 1f,
+            'L' => 1f,
+            'M' => 1f,
+            'N' => 1f,
+            'O' => 1f,
+            'P' => 1f,
+            'Q' => 1f,
+            'R' => 1f,
+            'S' => 1f,
+            'T' => 1f,
+            'U' => 1f,
+            'V' => 1f,
+            'W' => 1f,
+            'X' => 1f,
+            'Y' => 1f,
+            'Z' => 1f,
+            _ => 1,
+        };
     }
 
     private void EndDialogue()

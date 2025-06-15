@@ -11,6 +11,7 @@ public class PuzzleSceneController : MonoBehaviour
     private bool lmbPressed = false;
     private Vector3 offset;
     private Rigidbody2D rb = null;
+    private PuzzlePickupObject puzzleObject = null;
     private GameObject hoverObject = null;
 
 
@@ -47,7 +48,7 @@ public class PuzzleSceneController : MonoBehaviour
 
         // Hover effect
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-        if (hit && hit.collider.GetComponent<Rigidbody2D>())
+        if (hit && hit.collider.GetComponent<Rigidbody2D>() && hit.collider.GetComponent<PuzzlePickupObject>())
         {
             // Reduce the size of the current hoverObject if hitting a new object
             if (hoverObject && hoverObject != hit.collider.gameObject)
@@ -78,11 +79,13 @@ public class PuzzleSceneController : MonoBehaviour
         if (lmbPressed && hoverObject)
         {
             rb = hoverObject.GetComponent<Rigidbody2D>();
+            hoverObject.GetComponent<PuzzlePickupObject>().PickUp();
             offset = rb.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
         else if (!lmbPressed && rb)
         {
             rb = null;
+            hoverObject.GetComponent<PuzzlePickupObject>().Drop();
         }
     }
 
