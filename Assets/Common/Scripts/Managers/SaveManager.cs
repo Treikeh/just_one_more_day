@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,8 +24,11 @@ public class SaveManager
             // Save character profiles
             characterProfiles = UiManager.Instance.characterProfiles,
 
+            whiteNoiseEnabled = AudioManager.Instance.whiteNoise.isPlaying,
+
             questMapData = new(),
             levelSaveData = new(),
+            audioVolumes = new(),
         };
 
         // Save QuestManagers questMap
@@ -47,6 +51,12 @@ public class SaveManager
                 data = item.Value
             };
             saveData.levelSaveData.Add(save);
+        }
+
+        // Save music tracks volumes
+        for (int i = 0; i < AudioManager.Instance.tracks.Count - 1; i++)
+        {
+            saveData.audioVolumes.Add(AudioManager.Instance.tracks[i].volume);
         }
 
         // Turn GameSaveData into json
@@ -104,6 +114,11 @@ public class SaveManager
                 LevelManager.Instance.SetSaveData(pair.key, pair.data);
             }
 
+            for (int i = 0; i < AudioManager.Instance.tracks.Count - 1; i++)
+            {
+                AudioManager.Instance.tracks[i].volume = loadData.audioVolumes[i];
+            }
+
             // Load level
             LevelManager.Instance.StartLoadingLevel(loadData.levelName, default, false);
             GameLoaded?.Invoke();
@@ -144,6 +159,8 @@ public class SaveManager
         public List<QuestMapDictPair> questMapData;
         public List<LevelSaveDictPair> levelSaveData;
         public List<CharacterProfileSO> characterProfiles;
+        public List<float> audioVolumes;
+        public bool whiteNoiseEnabled;
     }
 
 

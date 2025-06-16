@@ -1154,10 +1154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9894fd182b61efeaf76a3c756bb7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  track_1: {fileID: 4705837463361904623}
-  track_3: {fileID: 1405292077958456477}
-  track_2: {fileID: 4246696789764602543}
-  track_4: {fileID: 7021015935975845623}
+  tracks:
+  - {fileID: 4705837463361904623}
+  - {fileID: 1405292077958456477}
+  - {fileID: 4246696789764602543}
+  - {fileID: 7021015935975845623}
   whiteNoise: {fileID: 8472252320737546854}
 --- !u!1 &6493180354034763144
 GameObject:

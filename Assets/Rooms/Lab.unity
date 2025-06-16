@@ -1662,7 +1662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2440,7 +2440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &513563513
 Transform:
   m_ObjectHideFlags: 0
@@ -10988,6 +10988,7 @@ GameObject:
   - component: {fileID: 2061403956}
   - component: {fileID: 2061403955}
   - component: {fileID: 2061403954}
+  - component: {fileID: 2061403958}
   - component: {fileID: 2061403957}
   m_Layer: 0
   m_Name: LevelLoadTrigger
@@ -11149,6 +11150,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2061403958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061403952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68eac6ba107c099db623f8a1b5c1470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startNoise: 0
 --- !u!1 &2072596808
 GameObject:
   m_ObjectHideFlags: 0

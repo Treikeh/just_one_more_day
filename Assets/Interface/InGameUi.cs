@@ -71,7 +71,8 @@ public class InGameUi : MonoBehaviour
         CancelPressed();
         QuestManager.Instance.Reset();
         LevelManager.Instance.Reset();
-        LevelManager.Instance.StartLoadingLevel("MainMenu");
+        AudioManager.Instance.Reset();
+        LevelManager.Instance.StartLoadingLevel("MainMenu", default, true);
         Utils.ShowMouseCursor();
         HideHud();
     }
