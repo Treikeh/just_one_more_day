@@ -4543,6 +4543,9 @@ MonoBehaviour:
   - objectToActivate: {fileID: 565248182}
     minStoryProgress: 0
     maxStoryProgress: 15
+  - objectToActivate: {fileID: 1610324337}
+    minStoryProgress: 0
+    maxStoryProgress: 3
 --- !u!4 &574442818
 Transform:
   m_ObjectHideFlags: 0
