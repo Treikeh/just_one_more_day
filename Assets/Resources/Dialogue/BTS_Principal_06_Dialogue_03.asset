@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbe06230b5fa4b217b0a8df2fc8cf115, type: 3}
-  m_Name: BEG_Teacher_01_DIalogue_01
+  m_Name: BTS_Principal_06_Dialogue_03
   m_EditorClassIdentifier: 
-  characterProfile: {fileID: 11400000, guid: ee5bcc0066cb17d82ace3e09582f6a64, type: 2}
-  characterName: Mr. Williams
-  characterPortrait: {fileID: -3718646810861621369, guid: 863f092d9085104c3a1cd99a9ab40a66, type: 3}
+  characterProfile: {fileID: 11400000, guid: fd6c30254485ad4b0aa1fa59a2c9162e, type: 2}
+  characterName: Principal Smith
+  characterPortrait: {fileID: 4382555452683144737, guid: 6affef330c821fdf48e762abae79fbed, type: 3}
   sentences:
-  - Go to the office!
-  - The Principal is waiting.
+  - Good.
   textSpeed: 0.05
   endAutomatically: 0
