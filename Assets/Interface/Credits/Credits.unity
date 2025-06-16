@@ -1650,7 +1650,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Art
 
-    Narrative'
+    Narrative
+
+    SFX'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
   m_sharedMaterial: {fileID: -366077559154752701, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
@@ -1689,7 +1691,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1786,7 +1788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  m_Sprite: {fileID: -7197062828723124392, guid: f270108430ab067f8a11c8b33bb1bfdd, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2167,7 +2169,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Programmer
+  m_text: 'Programmer
+
+    SFX'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
   m_sharedMaterial: {fileID: -366077559154752701, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
@@ -2206,7 +2210,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2441,7 +2445,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  m_Sprite: {fileID: -8406443369664899595, guid: 362a486b0d96213d78b5fbf2d53f43bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2518,9 +2522,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Art
 
-    Audio
+    Narrative
 
-    Narrative'
+    Music'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
   m_sharedMaterial: {fileID: -366077559154752701, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
@@ -2559,7 +2563,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3421,7 +3425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  m_Sprite: {fileID: -2220649135050239598, guid: c57438d9d4641cf6c8919943faabab13, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4959,7 +4963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4822281409407241470, guid: 35a1a92a7400040a8bd04f01a1c0a147, type: 3}
+  m_Sprite: {fileID: 1085003388485572407, guid: 2e7c0385dd97c281cb8789dc984da51a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5129,7 +5133,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Designer
+  m_text: 'Designer
+
+    SFX'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
   m_sharedMaterial: {fileID: -366077559154752701, guid: 66b9fa58e1761bb4db2ac354bb22a87b, type: 2}
@@ -5168,7 +5174,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
