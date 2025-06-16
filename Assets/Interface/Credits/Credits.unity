@@ -868,8 +868,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1451155778}
   m_HandleRect: {fileID: 1451155777}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 0.9999995
+  m_Size: 0.7562498
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3747,7 +3747,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000061035156}
-  m_SizeDelta: {x: 0, y: -774.48}
+  m_SizeDelta: {x: 0, y: 260.43005}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1319065171
 MonoBehaviour:
@@ -3783,10 +3783,71 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'door.wav by jackjames_tomknevitt -- https://freesound.org/s/209534/ --
-    License: Creative Commons 0
+  m_text: 'Birds chirping 04 by swiftoid -- https://freesound.org/s/182500/ -- License:
+    Creative Commons 0
 
-'
+
+    door.wav by jackjames_tomknevitt -- https://freesound.org/s/209534/
+    -- License: Creative Commons 0
+
+
+    FaceWash01.wav by Otakua -- https://freesound.org/s/219930/
+    -- License: Attribution 3.0
+
+
+    Monster scream by Marvin_Chiriguaya -- https://freesound.org/s/705784/
+    -- License: Creative Commons 0
+
+
+    Opening and Closing a Book by Ultra-Edward
+    -- https://freesound.org/s/793604/ -- License: Creative Commons 0
+
+
+    Custom_Heavy_intense_punches_or_kicking_sounds_11152024
+    by Artninja -- https://freesound.org/s/768327/ -- License: Attribution 4.0
+
+
+    Major
+    punch by janbezouska -- https://freesound.org/s/399183/ -- License: Creative
+    Commons 0
+
+
+    Aluminium baseball bat impacts by shadoWisp -- https://freesound.org/s/252044/
+    -- License: Attribution 3.0
+
+
+    Bedroom Door - Knock Close 3.wav by MWsfx --
+    https://freesound.org/s/573695/ -- License: Creative Commons 0
+
+
+    Footsteps
+    on a wooden floor.wav by doctorphil -- https://freesound.org/s/536770/ -- License:
+    Creative Commons 0
+
+    8-bit Pickup.aif by timgormly -- https://freesound.org/s/170170/
+    -- License: Attribution 4.0
+
+
+    cutlery, knife and fork.wav by hinzebeat --
+    https://freesound.org/s/275582/ -- License: Creative Commons 0
+
+
+    Putting
+    cutlery in drawer by fthgurdy -- https://freesound.org/s/376600/ -- License:
+    Creative Commons 0
+
+
+    Casual mumble 01 by Larakaa -- https://freesound.org/s/503415/
+    -- License: Attribution 4.0
+
+
+    Foley_Cloth_Movement_Jacket_96khz.wav by Nox_Sound
+    -- https://freesound.org/s/555307/ -- License: Creative Commons 0
+
+
+    Quick
+    Pencil Writing 2 by Frostnox -- https://freesound.org/s/796645/ -- License: Attribution
+    4.0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4073,8 +4134,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1241961260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.2437501}
+  m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

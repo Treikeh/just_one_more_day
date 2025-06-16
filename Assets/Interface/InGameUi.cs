@@ -8,6 +8,9 @@ public class InGameUi : MonoBehaviour
     [SerializeField] private GameObject hud;
     [SerializeField] private GameObject journal;
     [SerializeField] private DialogueBox dialogueBox;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip openJournalClip;
+    [SerializeField] private AudioClip closeJournalClip;
 
     private bool inDialogue = false;
 
@@ -102,6 +105,7 @@ public class InGameUi : MonoBehaviour
     {
         if (!journal.activeInHierarchy && QuestManager.Instance.hasJournal && !inDialogue)
         {
+            audioSource.PlayOneShot(openJournalClip);
             journal.SetActive(true);
             journal.GetComponent<Animator>().SetBool("isOpen", true);
             Utils.ShowMouseCursor();
@@ -111,9 +115,9 @@ public class InGameUi : MonoBehaviour
         }
     }
 
-    // This function is public so that i can activate it with ui buttons
     private void CancelPressed()
     {
+        audioSource.PlayOneShot(closeJournalClip);
         if (journal.activeInHierarchy && QuestManager.Instance.hasJournal)
         {
             journal.GetComponent<Animator>().SetBool("isOpen", false);
