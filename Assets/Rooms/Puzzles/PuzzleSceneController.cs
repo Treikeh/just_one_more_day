@@ -11,7 +11,6 @@ public class PuzzleSceneController : MonoBehaviour
     private bool lmbPressed = false;
     private Vector3 offset;
     private Rigidbody2D rb = null;
-    private PuzzlePickupObject puzzleObject = null;
     private GameObject hoverObject = null;
 
 
