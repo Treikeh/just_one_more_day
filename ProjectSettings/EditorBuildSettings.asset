@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Rooms/Hallways.unity
     guid: 4dc5a48729ebe374c860b6834497c6c9
   - enabled: 1
-    path: Assets/Rooms/Puzzles/HallwaysEndless/Hallways_Endless.unity
-    guid: bb95c2cc4cd45c5129522f02304c4187
-  - enabled: 1
     path: Assets/Rooms/Classroom.unity
     guid: 939d8031aa5bc294cbf9346d049b3542
   - enabled: 1
@@ -45,11 +42,11 @@ EditorBuildSettings:
     path: Assets/Rooms/Music.unity
     guid: f8c0e6cb81c5dd1409f4932a43013542
   - enabled: 1
+    path: Assets/Rooms/Puzzles/HallwaysEndless/Hallways_Endless.unity
+    guid: bb95c2cc4cd45c5129522f02304c4187
+  - enabled: 1
     path: Assets/Rooms/Puzzles/MikaRoomPuzzle/MikaRoomPuzzle.unity
     guid: 83570294fbdc0534d8d188f3a79eee8a
-  - enabled: 1
-    path: Assets/Rooms/Puzzles/LabPuzzle/LabPuzzle.unity
-    guid: 63557673b8ec10649bf7159982c15510
   - enabled: 1
     path: Assets/Rooms/Puzzles/SortCutleryPuzzle/SortCutleryPuzzle.unity
     guid: f998ec554da7948608533d6c3c948b54
