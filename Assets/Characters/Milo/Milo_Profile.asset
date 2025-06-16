@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Milo
   characterPortrait: {fileID: -8239315831306480127, guid: 3e4f47c750e177eaa90a3f0f45dc8990, type: 3}
-  characterDescription: Classmate
+  characterDescription: He's shy and plays video games all the time, really nice
+    guy, but he's a little wierd (don't interrupt him while he's gaming).

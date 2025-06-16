@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sophia
   characterPortrait: {fileID: -3840735493910417382, guid: 450487a13fcdbbe6eb954e7efa286c5c, type: 3}
-  characterDescription: Classmate
+  characterDescription: She's obsessed with biology and zombies, she talks so fast,
+    it's impossible to understand everything.

@@ -19,6 +19,7 @@ public class TagSorting : MonoBehaviour
         }
         SortingBucket bucket = sortingBuckets[bucketIndex];
         bucket.currentPoints++;
+        bucket.pointAddedToBucket?.Invoke();
         Debug.Log($"Bucket {bucketIndex} has {bucket.currentPoints} points");
         if (bucket.currentPoints >= bucket.requiredPoints)
         {
@@ -66,6 +67,7 @@ public class SortingBucket
     public int requiredPoints;
     public UnityEvent bucketDone;
     public UnityEvent bucketUndone;
+    public UnityEvent pointAddedToBucket;
     [HideInInspector] public int currentPoints = 0;
     [HideInInspector] public bool done = false;
 }

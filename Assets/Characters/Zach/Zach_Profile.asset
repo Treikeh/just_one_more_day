@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Zach
   characterPortrait: {fileID: 2443202940234210757, guid: 3a0046d18bb188dae988268678ca0499, type: 3}
-  characterDescription: Classmate
+  characterDescription: Elijah's best friend, the only difference between them is
+    that Zach plays football.

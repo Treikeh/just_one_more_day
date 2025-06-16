@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: ??
   characterPortrait: {fileID: -6240195989010939929, guid: 117bbf14717728e858e447e26383b565, type: 3}
-  characterDescription: ??
+  characterDescription: It talks to me (I'm kind of scared of it).

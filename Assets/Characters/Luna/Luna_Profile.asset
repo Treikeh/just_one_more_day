@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Luna
   characterPortrait: {fileID: -7061002712922655210, guid: 4e211038b075474ad871d1af349c425d, type: 3}
-  characterDescription: Best friend
+  characterDescription: My best friend, she's always so positive and I can talk about
+    anything with her.

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Hazel
   characterPortrait: {fileID: -9041400792458832494, guid: 110d7405c54d37c40a17555f1f96dd21, type: 3}
-  characterDescription: Classmate
+  characterDescription: She's good at everything when it comes to school, she gets
+    scared easily though.
