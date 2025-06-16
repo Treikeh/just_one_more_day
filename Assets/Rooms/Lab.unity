@@ -1606,7 +1606,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 36541522425022581, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: hudActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 36541522425022581, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: characterProfiles.Array.size
@@ -1662,7 +1662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8087206835911990709, guid: 2ef2d73795ea4f64b91387ad33b62879, type: 3}
       propertyPath: storyProgress
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2440,7 +2440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &513563513
 Transform:
   m_ObjectHideFlags: 0
@@ -2502,6 +2502,8 @@ PlayableDirector:
     value: {fileID: 2061403957}
   - key: {fileID: 3694066288714398330, guid: 28fccb5fb23ce7a20b961dc1f50b57bc, type: 2}
     value: {fileID: 1588887011}
+  - key: {fileID: 3444688544469927243, guid: 28fccb5fb23ce7a20b961dc1f50b57bc, type: 2}
+    value: {fileID: 1659370189}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &526066256
@@ -2519,7 +2521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &526066257
 Transform:
   m_ObjectHideFlags: 0
@@ -5268,7 +5270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1038886981
 Transform:
   m_ObjectHideFlags: 0
@@ -10923,7 +10925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf086be0e126c34088a9e80835b3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hideUi: 1
+  hideUi: 0
   levelToLoad: Mika's Room
   spawnTransform: {fileID: 0}
 --- !u!61 &2061403955
