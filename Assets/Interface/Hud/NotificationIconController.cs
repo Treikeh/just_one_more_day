@@ -3,6 +3,7 @@ using UnityEngine;
 public class NotificationIconController: MonoBehaviour
 {
     [SerializeField] private GameObject notificationIcon;
+    [SerializeField] private AudioSource audioSource;
 
 
     private void OnEnable()
@@ -19,6 +20,7 @@ public class NotificationIconController: MonoBehaviour
     private void ShowIcon()
     {
         notificationIcon.SetActive(true);
+        audioSource.Play();
     }
 
     private void HideIcon()
