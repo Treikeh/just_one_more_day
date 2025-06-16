@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource track_3;
     [SerializeField] private AudioSource track_2;
     [SerializeField] private AudioSource track_4;
+    [SerializeField] private AudioSource whiteNoise;
 
 
     private void Awake()
@@ -80,6 +81,18 @@ public class AudioManager : MonoBehaviour
             // This ensures that the total precived volume stays the same
             newTrack.volume = 1f - oldTrack.volume;
             yield return new WaitForSeconds(WaitTime);
+        }
+    }
+
+    public void EnableWhiteNoise(bool enable)
+    {
+        if (enable)
+        {
+            whiteNoise.Play();
+        }
+        else
+        {
+            whiteNoise.Stop();
         }
     }
 }
