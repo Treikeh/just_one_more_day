@@ -8514,7 +8514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c963cbb46e2f3d26bbadc5b845d48b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 1
+  waitTime: 2
   startOnStart: 0
   timeout:
     m_PersistentCalls:

@@ -4,6 +4,8 @@ using UnityEngine;
 public class HallwaysEndlessCanvas : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip hitSound;
 
 
     private void OnEnable() { EndlessObstacle.ObstacleHit += OnObstacleHit; }
@@ -19,5 +21,6 @@ public class HallwaysEndlessCanvas : MonoBehaviour
     private void OnObstacleHit(int livesRemaining)
     {
         animator.SetInteger("lives", livesRemaining);
+        audioSource.PlayOneShot(hitSound);
     }
 }
