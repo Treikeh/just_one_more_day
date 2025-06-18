@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
 
     public void Reset()
     {
-        for (int i = 0; i < tracks.Count - 1; i++)
+        for (int i = 0; i < tracks.Count; i++)
         {
             tracks[i].volume = 0f;
         }
@@ -64,11 +64,12 @@ public class AudioManager : MonoBehaviour
                 StartCoroutine(SwitchTracksWithBlend(tracks[2], tracks[3]));
                 break;
             case 8:
+                StartCoroutine(SwitchTracksWithBlend(tracks[3], tracks[4]));
                 break;
             case 9:
                 break;
             case 10:
-                StartCoroutine(SwitchTracksWithBlend(tracks[3], tracks[0]));
+                StartCoroutine(SwitchTracksWithBlend(tracks[4], tracks[0]));
                 break;
             
         }
